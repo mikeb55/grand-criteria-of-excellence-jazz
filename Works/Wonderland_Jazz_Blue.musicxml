@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.1 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="3.1">
+  <work>
+    <work-title>Blue Wonderland (GCE Jazz Mix)</work-title>
+  </work>
+  <part-list>
+    <score-part id="P1">
+      <part-name>Soprano Sax</part-name>
+      <score-instrument id="P1-I1">
+        <instrument-name>Soprano Saxophone</instrument-name>
+      </score-instrument>
+      <midi-instrument id="P1-I1">
+        <midi-program>65</midi-program>
+      </midi-instrument>
+    </score-part>
+    <score-part id="P2">
+      <part-name>Jazz Piano</part-name>
+      <score-instrument id="P2-I1">
+        <instrument-name>Piano</instrument-name>
+      </score-instrument>
+      <midi-instrument id="P2-I1">
+        <midi-program>1</midi-program>
+      </midi-instrument>
+    </score-part>
+    <score-part id="P3">
+      <part-name>Double Bass</part-name>
+      <score-instrument id="P3-I1">
+        <instrument-name>Double Bass</instrument-name>
+      </score-instrument>
+      <midi-instrument id="P3-I1">
+        <midi-program>33</midi-program>
+      </midi-instrument>
+    </score-part>
+  </part-list>
+  <part id="P1">
+    <!-- Soprano Saxophone Line -->
+    <measure number="1">
+      <attributes>
+        <divisions>24</divisions>
+        <key>
+          <fifths>0</fifths>
+        </key>
+        <time>
+          <beats>9</beats>
+          <beat-type>8</beat-type>
+        </time>
+        <clef>
+          <sign>G</sign>
+          <line>2</line>
+        </clef>
+      </attributes>
+      <direction><direction-type><words>Swing Feel (Afro-Blue 9/8)</words></direction-type></direction>
+      <!-- C E G A B rephrased with swing eighths -->
+      <note>
+        <pitch><step>C</step><octave>5</octave></pitch>
+        <duration>12</duration>
+        <type>eighth</type>
+        <accidental>natural</accidental>
+      </note>
+      <note>
+        <pitch><step>E</step><octave>5</octave></pitch>
+        <duration>12</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>G</step><octave>5</octave></pitch>
+        <duration>24</duration>
+        <type>quarter</type>
+      </note>
+      <note>
+        <pitch><step>A</step><octave>5</octave></pitch><duration>24</duration><type>quarter</type>
+      </note>
+      <note>
+        <pitch><step>B</step><octave>5</octave></pitch><duration>24</duration><type>quarter</type>
+        <notations><articulations><accent/></articulations></notations>
+      </note>
+      <!-- Total 12+12+24+24+24 = 96 ticks. 9*12=108 ticks needed? Wait. 1/8 = 12 ticks. 9*12=108. My math: 96. Missing 12 (eighth). Adding syncopated rest. -->
+      <note><rest/><duration>12</duration><type>eighth</type></note>
+    </measure>
+    <measure number="2">
+      <!-- Original: C5 B4 A4 G4 -->
+      <!-- Jazz Variation: Enclosure pattern -->
+      <note><pitch><step>D</step><octave>5</octave></pitch><duration>12</duration><type>eighth</type></note>
+      <note><pitch><step>C</step><alter>1</alter><octave>5</octave></pitch><duration>12</duration><type>eighth</type><accidental>sharp</accidental></note>
+      <note><pitch><step>C</step><alter>0</alter><octave>5</octave></pitch><duration>24</duration><type>quarter</type><accidental>natural</accidental></note>
+      <note><pitch><step>B</step><octave>4</octave></pitch><duration>24</duration><type>quarter</type></note>
+      <note><pitch><step>A</step><octave>4</octave></pitch><duration>24</duration><type>quarter</type></note>
+      <note><pitch><step>G</step><octave>4</octave></pitch><duration>12</duration><type>eighth</type></note>
+    </measure>
+  </part>
+
+  <part id="P2">
+    <!-- Piano Comping -->
+    <measure number="1">
+      <attributes>
+        <divisions>24</divisions>
+        <key><fifths>0</fifths></key>
+        <time><beats>9</beats><beat-type>8</beat-type></time>
+        <clef><sign>F</sign><line>4</line></clef>
+      </attributes>
+      <harmony print-frame="no">
+        <root><root-step>C</root-step></root>
+        <kind text="maj9">major-ninth</kind>
+        <bass><bass-step>C</bass-step></bass>
+      </harmony>
+      <!-- Voicing: E G B D (Rootless Cmaj9) -->
+      <note>
+        <pitch><step>C</step><octave>3</octave></pitch>
+        <duration>72</duration>
+        <type>half</type>
+        <dot/>
+      </note>
+      <note>
+        <chord/>
+        <pitch><step>E</step><octave>3</octave></pitch>
+        <duration>72</duration>
+        <type>half</type>
+        <dot/>
+      </note>
+      <note>
+        <chord/>
+        <pitch><step>B</step><octave>3</octave></pitch>
+        <duration>72</duration>
+        <type>half</type>
+        <dot/>
+      </note>
+      <note>
+        <chord/>
+        <pitch><step>D</step><octave>4</octave></pitch>
+        <duration>72</duration>
+        <type>half</type>
+        <dot/>
+      </note>
+      <!-- Rhythmic stab at end -->
+      <note><rest/><duration>12</duration><type>eighth</type></note>
+      <note>
+        <pitch><step>E</step><octave>3</octave></pitch>
+        <duration>24</duration><type>quarter</type>
+      </note>
+      <note>
+        <chord/>
+        <pitch><step>B</step><octave>3</octave></pitch>
+        <duration>24</duration><type>quarter</type>
+      </note>
+    </measure>
+    <measure number="2">
+      <harmony print-frame="no">
+        <root><root-step>F</root-step></root>
+        <kind text="13">dominant-13th</kind>
+      </harmony>
+      <note><rest/><duration>108</duration><type>measure</type></note>
+    </measure>
+  </part>
+  
+  <part id="P3">
+    <!-- Bass Ostinato -->
+    <measure number="1">
+      <attributes>
+        <divisions>24</divisions>
+        <key><fifths>0</fifths></key>
+        <time><beats>9</beats><beat-type>8</beat-type></time>
+        <clef><sign>F</sign><line>4</line></clef>
+      </attributes>
+      <!-- 3 note pattern -->
+      <note><pitch><step>C</step><octave>2</octave></pitch><duration>36</duration><type>quarter</type><dot/></note>
+      <note><pitch><step>G</step><octave>2</octave></pitch><duration>36</duration><type>quarter</type><dot/></note>
+      <note><pitch><step>D</step><octave>3</octave></pitch><duration>36</duration><type>quarter</type><dot/></note>
+    </measure>
+    <measure number="2">
+      <note><pitch><step>F</step><octave>2</octave></pitch><duration>36</duration><type>quarter</type><dot/></note>
+      <note><pitch><step>C</step><octave>3</octave></pitch><duration>36</duration><type>quarter</type><dot/></note>
+      <note><pitch><step>E</step><alter>-1</alter><octave>3</octave></pitch><duration>36</duration><type>quarter</type><dot/><accidental>flat</accidental></note>
+    </measure>
+  </part>
+</score-partwise>
+
