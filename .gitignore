@@ -1,0 +1,19 @@
+# Generated Music Files
+*.musicxml
+*.sib
+*.wmv
+*.mxl
+*.pdf
+*.mid
+*.midi
+*.wav
+*.mp3
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
