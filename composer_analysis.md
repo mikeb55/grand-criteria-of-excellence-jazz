@@ -1,10 +1,22 @@
 # Deep Analysis of Composers for GCE Jazz Project
 
-## 1. Wayne Shorter
-*   **Style:** Post-Bop / Modal / Fusion
-*   **Harmonic Sig:** "Shorter Changes" - non-functional root movement (e.g., ascending minor 3rds), m11 chords, sus4 chords that don't resolve. Use of Lydian (#11) sounds.
-*   **Melodic Sig:** Intervallic, spacious, "cryptic" lines. Often sustains "wrong" notes (e.g., Maj 7 on a Dom chord) as color tones.
-*   **Riff/Motif:** The "Yes or No" vamp, descending 4ths.
+## 1. Wayne Shorter (The Visionary)
+*   **Style:** Post-Bop / Modal / Fusion / "Astral Jazz"
+*   **Harmonic Sig:** 
+    *   "Shorter Changes": Non-functional root movement (e.g., ascending minor 3rds), m11 chords, sus4 chords that don't resolve. 
+    *   Use of Lydian (#11) sounds as stable home chords.
+    *   Pedal points with shifting upper structures (Polychords).
+*   **Melodic Sig:** 
+    *   Intervallic, spacious, "cryptic" lines. 
+    *   Often sustains "wrong" notes (e.g., Maj 7 on a Dom chord) as color tones.
+    *   Motivic economy: Repeating a simple 3-4 note phrase while transposing it across complex harmony.
+*   **Rhythmic Sig:** Hemiola (3 against 2), floating time signatures (6/4), interactions with "talking" drums.
+*   **Key Motifs:** 
+    *   *Footprints:* 6/4 Hemiola Bass, Quartal melody.
+    *   *Speak No Evil:* Lyrical "Cry", Major 7th interval leaps.
+    *   *Yes or No:* Driving chromatic vamp, fast swing.
+    *   *Adam's Apple:* Soul-jazz/Boogaloo double-stops.
+    *   *Juju:* Repetitive pentatonic motifs over pedal points.
 
 ## 2. Pat Metheny
 *   **Style:** Fusion / Contemporary
