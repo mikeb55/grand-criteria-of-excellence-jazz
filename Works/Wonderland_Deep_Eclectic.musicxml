@@ -116,6 +116,11 @@
           <beat-type>4</beat-type>
         </time>
       </attributes>
+      <direction placement="above">
+        <direction-type>
+          <rehearsal>A - Gil Evans</rehearsal>
+        </direction-type>
+      </direction>
       <note>
         <pitch>
           <step>E</step>
@@ -206,6 +211,11 @@
       </note>
     </measure>
     <measure number="10">
+      <direction placement="above">
+        <direction-type>
+          <rehearsal>B - Charlie Parker</rehearsal>
+        </direction-type>
+      </direction>
       <note>
         <pitch>
           <step>C</step>
@@ -664,6 +674,11 @@
       </note>
     </measure>
     <measure number="19">
+      <direction placement="above">
+        <direction-type>
+          <rehearsal>C - Monk</rehearsal>
+        </direction-type>
+      </direction>
       <note>
         <rest />
         <duration>8</duration>
@@ -857,6 +872,11 @@
           <beat-type>4</beat-type>
         </time>
       </attributes>
+      <direction placement="above">
+        <direction-type>
+          <rehearsal>D - Scofield</rehearsal>
+        </direction-type>
+      </direction>
       <note>
         <rest />
         <duration>14</duration>
@@ -926,6 +946,11 @@
           <beat-type>4</beat-type>
         </time>
       </attributes>
+      <direction placement="above">
+        <direction-type>
+          <rehearsal>E - ECM</rehearsal>
+        </direction-type>
+      </direction>
       <note>
         <rest />
         <duration>8</duration>
