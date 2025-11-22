@@ -11,128 +11,99 @@
     *   Often sustains "wrong" notes (e.g., Maj 7 on a Dom chord) as color tones.
     *   Motivic economy: Repeating a simple 3-4 note phrase while transposing it across complex harmony.
 *   **Rhythmic Sig:** Hemiola (3 against 2), floating time signatures (6/4), interactions with "talking" drums.
-*   **Key Motifs:** 
-    *   *Footprints:* 6/4 Hemiola Bass, Quartal melody.
-    *   *Speak No Evil:* Lyrical "Cry", Major 7th interval leaps.
-    *   *Yes or No:* Driving chromatic vamp, fast swing.
-    *   *Adam's Apple:* Soul-jazz/Boogaloo double-stops.
-    *   *Juju:* Repetitive pentatonic motifs over pedal points.
 
-## 2. Pat Metheny
-*   **Style:** Fusion / Contemporary
-*   **Harmonic Sig:** Lush, folk-influenced triads over changing bass notes (Slash Chords). Major key modulation (often up a minor 3rd).
-*   **Melodic Sig:** Triadic, singing melodies with rhythmic "skips" (dotted 8th/16th). Chromatic approach tones to diatonic targets.
-*   **Sound:** Delay/Reverb heavy, "Synth Guitar" texture.
+## 2. Gil Evans (The Colorist)
+*   **Style:** Cool Jazz / Third Stream / Orchestral Jazz
+*   **Harmonic Sig:** Parallel planing chords (So What), dense non-functional voicings (5-8 notes).
+*   **Texture:** Pastel colors (French Horn, Tuba, Flute). Soft attacks, long sustains.
+*   **Key Works:** *Sketches of Spain*, *Porgy and Bess*, *Miles Ahead*.
 
-## 3. John Scofield
-*   **Style:** Jazz Funk / Fusion
-*   **Harmonic Sig:** Altered Dominants (Alt scale), Quartal voicings (stacked 4ths).
-*   **Melodic Sig:** "Inside-Outside" playing. Blues licks mixed with diminished scale runs. Angular intervals.
-*   **Rhythm:** "Behind the beat" phrasing over tight funk grooves.
+## 3. Carla Bley (The Eccentric)
+*   **Style:** Avant-Garde / Big Band / Free Jazz
+*   **Harmonic Sig:** Humorous, cabaret-influence. Simple triads used ironically or dissonantly.
+*   **Melodic Sig:** Quirky, memorable tunes.
+*   **Key Works:** *Escalator Over The Hill*, *The Jazz Composer's Orchestra*.
 
-## 4. Bill Frisell
-*   **Style:** Americana / Avant-Garde
-*   **Harmonic Sig:** Diatonic simplicity mixed with sudden dissonance. Open strings, clusters.
-*   **Melodic Sig:** Fragmented, folk-like motifs. Loop-based development.
-*   **Texture:** Swells, looping, space.
+## 4. Michael Mantler (The Avant-Gardist)
+*   **Style:** Jazz Orchestra / Avant-Garde
+*   **Harmonic Sig:** Dense, atonal clusters. Emphasis on texture over functional harmony.
+*   **Form:** Through-composed, often setting text/poetry (Beckett).
+*   **Key Works:** *The Jazz Composer's Orchestra* (with Bley).
 
-## 5. Thelonious Monk
-*   **Style:** Bebop / Modern
-*   **Harmonic Sig:** Whole-tone scale usage. Cluster voicings (minor 2nds) in LH. Stripped down chords (Root-7th or Root-3rd).
-*   **Melodic Sig:** Jagged, angular lines using tritones and major 7ths. Rhythmic displacement (playing on weak beats).
-*   **Riff:** "Straight, No Chaser" chromatic motif.
+## 5. Bob Brookmeyer (The Architect)
+*   **Style:** Modern Big Band / Contemporary
+*   **Harmonic Sig:** Advanced chromaticism, polytonality, "Pitch Class Sets" in jazz.
+*   **Orchestration:** Specific motivic development across sections.
+*   **Influence:** Mentor to Maria Schneider and John Hollenbeck.
 
-## 6. Charles Mingus
+## 6. John Hollenbeck (The Minimalist)
+*   **Style:** Post-Modern Big Band / Minimalism
+*   **Rhythmic Sig:** Repetitive, cycling patterns (Steve Reich influence).
+*   **Texture:** Voice as instrument, blending with winds.
+*   **Key Works:** *The Claudia Quintet*, *Large Ensemble*.
+
+## 7. Charles Mingus (The Dramatist)
 *   **Style:** Hard Bop / Gospel / Avant-Garde
 *   **Harmonic Sig:** Blues-infused church chords (I-IV-I). Collective improvisation textures.
 *   **Melodic Sig:** Vocal-like shouts, blues riffs, aggressive bass lines.
 *   **Form:** Extended suites, changing tempos (accelerando).
 
-## 7. Duke Ellington
+## 8. Dave Holland (The Polyrhythmicist)
+*   **Style:** Modern Jazz / Large Ensemble
+*   **Rhythmic Sig:** Odd meters (5/4, 7/4, 11/8) that groove. 
+*   **Bass Lines:** Ostinato-driven, serving as the anchor for complex horn layers.
+*   **Key Works:** *What Goes Around*, *Overtime*.
+
+## 9. Satoko Fujii (The Expressionist)
+*   **Style:** Avant-Garde / Orchestral / Free
+*   **Texture:** Extreme dynamics, from whisper-quiet to chaotic noise.
+*   **Fusion:** Blends Japanese folk scales with free jazz.
+
+## 10. Wynton Marsalis (The Neoclassicist)
 *   **Style:** Swing / Orchestral Jazz
-*   **Harmonic Sig:** Cross-section voicing (e.g., Bari Sax above Tenor). "Mood" harmony (chromatic inner lines).
-*   **Melodic Sig:** Writing for specific personalities. Blues-based but sophisticated.
-*   **Texture:** "The Ellington Effect" (unique blends like Muted Trumpet + Clarinet).
+*   **Harmonic Sig:** Integration of Ellingtonian swing with classical forms (Oratorio, Symphony).
+*   **Orchestration:** "Democracy" in the band—voices trading roles.
+*   **Key Works:** *Blood on the Fields*, *Swing Symphony*.
 
-## 8. Gil Evans
-*   **Style:** Cool / Third Stream
-*   **Harmonic Sig:** Parallel planing chords. Dense, non-functional voicings (5-8 notes).
-*   **Texture:** Pastel colors (French Horn, Tuba, Flute). Soft attacks, long sustains.
-*   **Form:** Seamless flow between written and improvised sections.
+## 11. Michael Gibbs (The Fusion Orchestrator)
+*   **Style:** Jazz Rock / Fusion / Orchestral
+*   **Harmonic Sig:** Rock energy mixed with Messiaen-like harmony.
+*   **Influence:** Major influence on Gary Burton and Pat Metheny.
 
-## 9. Maria Schneider
+## 12. Maria Schneider (The Painter)
 *   **Style:** Contemporary Big Band
 *   **Harmonic Sig:** "Cloud" chords (clusters with specific intervals). Through-composed forms.
 *   **Melodic Sig:** Long, lyrical lines that develop over long periods.
 *   **Rhythm:** Mixed meters, fluid time.
 
-## 10. Kenny Wheeler
+## 13. Kenny Wheeler (The Melancholic)
 *   **Style:** ECM / European
 *   **Harmonic Sig:** "Slash Chords" (e.g., Fmaj7/E). Melancholic, minor-mode centric.
 *   **Melodic Sig:** Wide leaps (octaves, 10ths). Lyrical, trumpet-led lines.
+*   **Key Works:** *Music for Large and Small Ensembles*.
 
-## 11. Joe Zawinul
-*   **Style:** Fusion (Weather Report)
-*   **Harmonic Sig:** Inverted chords, synth textures. "Global" scales.
-*   **Rhythm:** Global grooves (African, Latin). Syncopated bass lines.
-
-## 12. Chick Corea
-*   **Style:** Fusion / Latin / Post-Bop
-*   **Harmonic Sig:** Spanish Phrygian mode. Pentatonic patterns.
-*   **Melodic Sig:** Percussive, crisp articulation. "Spain" unison lines.
-
-## 13. Brad Mehldau
-*   **Style:** Modern Piano Trio
-*   **Harmonic Sig:** Pop-influenced progressions re-harmonized with classical counterpoint.
-*   **Texture:** Independent LH/RH lines (Bach influence).
-
-## 14. Vijay Iyer
-*   **Style:** Modern / Math Jazz
-*   **Rhythm:** Micro-rhythms, complex additive meters (e.g., 13/8).
-*   **Texture:** Dense, rhythmic piano clusters.
-
-## 15. Ornette Coleman
-*   **Style:** Free Jazz / Harmolodics
-*   **Harmonic Sig:** Pan-tonality (no fixed key centers).
-*   **Melodic Sig:** Blues-drenched, vocal-like "cries." Free association.
-
-## 16. Carla Bley
-*   **Style:** Avant-Garde / Big Band
-*   **Harmonic Sig:** Humorous, cabaret-influence. Simple triads used ironically or dissonantly.
-*   **Melodic Sig:** Quiky, memorable tunes.
-
-## 17. Wayne Horvitz
-*   **Style:** Downtown / Electronic
-*   **Texture:** Electronic processing, minimalism.
-
-## 18. Henry Threadgill
-*   **Style:** AACM / Avant-Garde
-*   **Texture:** Unusual instrument combinations (flute, tuba, cello).
-*   **Form:** Modular forms (Zoom).
-
-## 19. Esbjörn Svensson
-*   **Style:** EST / European Trio
-*   **Texture:** Rock/Pop influence, loop-like piano riffs, distortion.
-
-## 20. Classical Influences (Bartok, Messiaen, etc.)
-*   **Bartok:** Axis system, folk scales, aggressive rhythm.
-*   **Messiaen:** Modes of Limited Transposition (Whole Tone, Octatonic), bird song.
-
-## 21. Charlie Parker (Bird)
-*   **Style:** Bebop (Architect)
-*   **Harmonic Sig:** ii-V-I cadence mastery. Extensive use of tritone substitutions (e.g., Db7 for G7). "Bird Changes" (Blues with chromatic descending cycle of 5ths).
-*   **Melodic Sig:** 
-    *   **Enclosures:** Surrounding a target note with chromatic neighbors (above and below) before landing on it.
-    *   **Arpeggios:** Ascending extended arpeggios (1-3-5-7-9) often starting on offbeats.
-    *   **Chromaticism:** Connecting chord tones with passing chromatic notes to ensure chord tones land on strong beats (Bebop Scales).
-*   **Rhythmic Sig:** Double-time runs (16th notes) in medium tempos. Heavy swing accentuation on the "and" of 4. Displaced phrases that cross the bar line.
-*   **Key Motifs:** 
-    *   *Ornithology:* Descending triplet pickup.
-    *   *Donna Lee:* Chromatic, winding 8th note lines.
-    *   *Scrapple:* Rhythmic riffs ("Ba-da BAP").
-    *   *Yardbird:* Grace-note blues scoops.
+## 14. Barry Guy (The Structural Improviser)
+*   **Style:** European Free Jazz / Large Ensemble
+*   **Ensemble:** London Jazz Composers Orchestra.
+*   **Technique:** Graphic scores, conducted improvisation (Conduction).
 
 ---
-This analysis will form the basis of the `generate_deep_eclectic.py` script.
 
+## Other Key Figures
+*   **Pat Metheny:** Fusion / Contemporary (Lush, folk-influenced triads).
+*   **John Scofield:** Jazz Funk / Fusion (Altered Dominants, "Inside-Outside").
+*   **Bill Frisell:** Americana / Avant-Garde (Loop-based development).
+*   **Thelonious Monk:** Bebop (Whole-tone scales, angular lines).
+*   **Duke Ellington:** Swing (Cross-section voicing, "Mood" harmony).
+*   **Joe Zawinul:** Fusion (Inverted chords, global scales).
+*   **Chick Corea:** Fusion / Latin (Spanish Phrygian).
+*   **Brad Mehldau:** Modern Piano (Pop re-harmonization, Counterpoint).
+*   **Vijay Iyer:** Modern / Math Jazz (Micro-rhythms).
+*   **Ornette Coleman:** Free Jazz (Harmolodics).
+*   **Wayne Horvitz:** Downtown / Electronic.
+*   **Henry Threadgill:** AACM / Modular forms.
+*   **Esbjörn Svensson:** EST / Pop-Rock influence.
 
+## Classical Influences
+*   **Bartok:** Axis system, folk scales.
+*   **Messiaen:** Modes of Limited Transposition.
