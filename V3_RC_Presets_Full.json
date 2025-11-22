@@ -1,0 +1,147 @@
+{
+  "version": "3.0",
+  "description": "Bebop-Language Project V3.0 Presets",
+  "engines": {
+    "Engine_A_Bebop": {
+      "description": "Parker / Stitt / Barry Harris / Bailey / Martino / Django / Hawkins / Wes",
+      "features": {
+        "target_gravity": [
+          "3rd",
+          "5th",
+          "7th",
+          "9th"
+        ],
+        "scales": [
+          "Bebop Major",
+          "Bebop Dominant",
+          "6th-Diminished"
+        ],
+        "ornamentation": [
+          "Approach Tones",
+          "Enclosures (SB/Django)"
+        ],
+        "rhythm": "Swing Cells + Anticipations",
+        "behavior": "Up-Scale, Down-Chord (Barry Harris)"
+      },
+      "phrases": [
+        {
+          "name": "Parker Enclosure",
+          "type": "melodic",
+          "length": "2 beats"
+        },
+        {
+          "name": "Martino Minor Convert",
+          "type": "harmonic",
+          "rule": "Minor for Dom7"
+        },
+        {
+          "name": "Hawkins Arpeggio",
+          "type": "arpeggio",
+          "direction": "vertical"
+        },
+        {
+          "name": "Wes Octaves",
+          "type": "voicing",
+          "interval": 12
+        }
+      ]
+    },
+    "Engine_B_Avant": {
+      "description": "Shorter / Coltrane / Avant Engine",
+      "features": {
+        "intervals": [
+          "2nds",
+          "4ths",
+          "5ths"
+        ],
+        "harmony": [
+          "Pentatonic",
+          "Hexatonic",
+          "Triad Superimposition"
+        ],
+        "scales": [
+          "Altered",
+          "Whole Tone",
+          "Acoustic",
+          "Diminished"
+        ],
+        "rhythm": [
+          "3+3+2",
+          "5+3",
+          "Over-the-barline"
+        ]
+      },
+      "phrases": [
+        {
+          "name": "Sheets of Sound",
+          "pattern": "1-2-3-5"
+        },
+        {
+          "name": "Side Slipping",
+          "rule": "Shift +/- 1 semitone"
+        },
+        {
+          "name": "Harmolodic",
+          "mode": "Free"
+        }
+      ]
+    },
+    "Engine_C_Orchestral": {
+      "description": "Maria Schneider Orchestral Jazz Engine",
+      "features": {
+        "modal_color": [
+          "Lydian",
+          "Lydian b7"
+        ],
+        "texture": [
+          "Planed Clusters",
+          "Pastel Triad Pairs"
+        ],
+        "orchestration": [
+          "String Arcs",
+          "Woodwind Dovetailing"
+        ]
+      },
+      "phrases": [
+        {
+          "name": "Polyrhythm 3:2",
+          "ratio": "3:2"
+        },
+        {
+          "name": "Polyrhythm 5:4",
+          "ratio": "5:4"
+        },
+        {
+          "name": "Color Voice Leading",
+          "method": "semitone_shift"
+        }
+      ]
+    },
+    "Engine_D_GuitarModernism": {
+      "description": "Metheny / Scofield / Rosenwinkel / Abercrombie / Coryell / Martino",
+      "features": {
+        "melody": "Wide Intervals + Pentatonics",
+        "rhythm": "Chromatic Displacement",
+        "texture": "Multi-octave lines"
+      },
+      "phrases": [
+        {
+          "name": "Metheny Pentatonic",
+          "type": "melodic"
+        },
+        {
+          "name": "Scofield Outside",
+          "type": "chromatic_displacement"
+        },
+        {
+          "name": "Rosenwinkel Triads",
+          "type": "superimposition"
+        },
+        {
+          "name": "ECM Ostinato",
+          "length": "5 notes"
+        }
+      ]
+    }
+  }
+}

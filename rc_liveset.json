@@ -1,0 +1,33 @@
+{
+  "name": "Bebop V3 Live Set",
+  "tracks": [
+    {
+      "id": 1,
+      "name": "Lead",
+      "engine": "Engine_A_Bebop",
+      "midi_channel": 1
+    },
+    {
+      "id": 2,
+      "name": "Counterpoint",
+      "engine": "Engine_B_Avant",
+      "midi_channel": 2
+    },
+    {
+      "id": 3,
+      "name": "Orchestra",
+      "engine": "Engine_C_Orchestral",
+      "midi_channel": 3
+    },
+    {
+      "id": 4,
+      "name": "Guitar",
+      "engine": "Engine_D_GuitarModernism",
+      "midi_channel": 4
+    }
+  ],
+  "global_transformations": [
+    "F2_Polychord",
+    "F3_Polyrhythm"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "F2_Polychord_Generator": {
+    "structures": [
+      {
+        "name": "Martino Minor",
+        "formula": "Minor + Diminished"
+      },
+      {
+        "name": "Lydian Stack",
+        "formula": "Major + Major"
+      },
+      {
+        "name": "Dorian Hex",
+        "formula": "Major + Minor"
+      },
+      {
+        "name": "Altered Hex",
+        "formula": "Major + Augmented"
+      }
+    ]
+  },
+  "F3_Polyrhythm_Engine": {
+    "ratios": [
+      "3:2",
+      "5:4",
+      "2:3:4"
+    ],
+    "pitch_pool": "Shared Triad Pair",
+    "cluster_type": "Symmetrical (Dim/Aug)"
+  }
+}

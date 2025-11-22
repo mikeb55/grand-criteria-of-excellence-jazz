@@ -1,0 +1,19 @@
+
+# The Score Playback Map for Bebop V3
+
+1. Flute        - CH1
+2. Clarinet     - CH2
+3. Flugelhorn   - CH3
+4. Violin I     - CH4
+5. Violin II    - CH5
+6. Viola        - CH6
+7. Cello        - CH7
+8. Elec Guitar  - CH8
+9. Piano        - CH9
+10. Bass        - CH10
+11. Percussion  - CH11
+
+# KeySwitches
+Sustain: C0
+Staccato: C#0
+Pizzicato (Strings): D0

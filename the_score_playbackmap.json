@@ -1,0 +1,70 @@
+{
+  "map_name": "Bebop V3 Ensemble",
+  "instruments": [
+    {
+      "name": "Flute",
+      "channel": 1,
+      "ks_sustain": "C0",
+      "ks_staccato": "C#0"
+    },
+    {
+      "name": "Clarinet in Bb",
+      "channel": 2,
+      "ks_sustain": "C0",
+      "ks_staccato": "C#0"
+    },
+    {
+      "name": "Flugelhorn",
+      "channel": 3,
+      "ks_sustain": "C0",
+      "ks_staccato": "C#0"
+    },
+    {
+      "name": "Violin I",
+      "channel": 4,
+      "ks_sustain": "C0",
+      "ks_staccato": "C#0"
+    },
+    {
+      "name": "Violin II",
+      "channel": 5,
+      "ks_sustain": "C0",
+      "ks_staccato": "C#0"
+    },
+    {
+      "name": "Viola",
+      "channel": 6,
+      "ks_sustain": "C0",
+      "ks_staccato": "C#0"
+    },
+    {
+      "name": "Cello",
+      "channel": 7,
+      "ks_sustain": "C0",
+      "ks_staccato": "C#0"
+    },
+    {
+      "name": "Electric Guitar",
+      "channel": 8,
+      "ks_sustain": "C0",
+      "ks_staccato": "C#0"
+    },
+    {
+      "name": "Piano",
+      "channel": 9,
+      "ks_sustain": "C0",
+      "ks_staccato": "C#0"
+    },
+    {
+      "name": "Double Bass",
+      "channel": 10,
+      "ks_sustain": "C0",
+      "ks_pizz": "C#0"
+    },
+    {
+      "name": "Light Percussion",
+      "channel": 11,
+      "map": "General MIDI"
+    }
+  ]
+}
