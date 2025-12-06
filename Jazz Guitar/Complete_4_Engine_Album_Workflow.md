@@ -30,6 +30,52 @@ Any criterion scoring < maximum must trigger automatic revision.
 
 ---
 
+**Create and maintain the following directory structure for this project, both locally and in the GitHub repo at:
+
+`https://github.com/mikeb55/grand-criteria-of-excellence-jazz/tree/main/Trio Tunes`
+
+Local base directory name:
+
+`/Trio Tunes Album Project/`
+
+Repo base directory name:
+
+`/Trio Tunes/`
+
+Ensure that the local directory and repo directory always remain in sync.
+
+For each tune generated, automatically create a new folder in both locations using the pattern:
+
+`/Trio Tunes/TuneXX/`
+
+Inside each TuneXX folder, automatically create:
+
+* `/PDF/`
+
+* `/XML/`
+
+* `/Source/` for all markdown outputs
+
+* `/Notes/` for metadata or analysis files
+
+When exporting any PDFs, follow this rule:
+
+All etudes, lead sheets, and triad-pair maps must be rendered as fully engraved music-notation PDFs, never plain text.
+
+To produce engraved notation, always follow this two-step process:
+
+1. First generate clean, complete MusicXML for each component (lead sheet, etudes, triad-pair map) with correct measures, barlines, rhythms, articulations, chord symbols, and spacing.
+
+2. Then render each MusicXML file into an engraved PDF using standard jazz notation engraving (MuseScore-style defaults), ensuring proper beaming, swing interpretation where appropriate, correct hyphens (no black squares), clean spacing, chord-symbol formatting, and page layout.
+
+Save all resulting PDFs into `/Trio Tunes/TuneXX/PDF/` and all XML files into `/Trio Tunes/TuneXX/XML/`.
+
+All markdown and analysis files must be saved into `/Trio Tunes/TuneXX/Source/`.
+
+All auxiliary notes, metadata, or evaluation summaries must be saved into `/Trio Tunes/TuneXX/Notes/`.**
+
+---
+
 # ⭐ **STAGE 1 — TABLE OF CONTENTS ONLY**
 
 Wait for the command:
@@ -205,4 +251,3 @@ These may be called inside any tune request.
 ---
 
 # **END OF PROMPT**
-
