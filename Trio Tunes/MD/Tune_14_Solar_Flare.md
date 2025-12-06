@@ -1,43 +1,50 @@
 # TUNE #14: "SOLAR FLARE"
 
-**Style:** Fusion/Original | **Key:** C# Minor | **Tempo:** 150 BPM | **Time:** 7/8
+**Style:** Fusion/Original | **Key:** C# Major | **Tempo:** 150 BPM | **Time:** 7/8
 **Uniqueness Tagline:** Rapid-fire triad pairs in a 7/8 ostinato.
-**Playing Tip:** Accent the first beat of the 3 and the 2 groups (1-2-3, 1-2, 1-2).
+**Playing Tip:** Accent the first beat of the 3 and the 2 groups.
 
 ---
 
-## 1. COMPACT LEAD SHEET (Form: 16-Bar AABA)
+## 1. COMPACT LEAD SHEET (Form: AABA — 28 Bars [7/8])
 
-| Bar | Harmony | Function | Melody Note |
+| Bar | Harmony | Function | Melody Note (Target) |
 |:---:|:---|:---|:---|
-| **1** | **C#m11** | i (Dorian) | F# (11th) |
-| **2** | **C#m11** | i | E (3rd) |
-| **3** | **Amaj7#11/C#** | bVI (Lydian) | G# (7th) |
-| **4** | **Amaj7#11/C#** | bVI | D# (Sharp 11) |
-| **5** | **F#m9** | iv | G# (9th) |
-| **6** | **B13** | bVII | G# (13th) |
-| **7** | **Emaj7** | bIII | F# (9th) |
-| **8** | **G#7alt** | V7 | E (b13) |
-| **9** | **C#m11** | i | F# (11th) |
-| **10** | **C#m11** | i | E (3rd) |
-| **11** | **Amaj7#11** | bVI | G# (7th) |
-| **12** | **Amaj7#11** | bVI | B (9th) |
-| **13** | **F#m11** | iv | A (3rd) |
-| **14** | **G#7alt** | V7 | F# (b7) |
-| **15** | **C#m11** | i | E (3rd) |
-| **16** | **G#7#9** | V7 (Turnaround) | B (#9) |
+| **A1** |  |  |  |
+| 1 | **C#Maj7** | I | B# (7th) |
+| 2 | **D#m9** | ii | F# (b3) |
+| 3 | **E#m7** | iii | G# (b3) |
+| 4 | **F#Maj7#11** | IV (Lydian) | E# (7th) |
+| 5 | **G#m7** | v | F# (b7) |
+| 6 | **A#m7** | vi | G# (b7) |
+| 7 | **B#°7** | vii° | A (bb7) |
+| **A2** |  |  |  |
+| 8-14 | (Repeat with variation) |  |  |
+| **B** |  |  |  |
+| 15 | **AMaj7#11** | bVI (Borrowed) | G# (7th) |
+| 16 | **G#m7b5** | v° | F# (b7) |
+| 17 | **F#m9** | iv (Borrowed) | E (b7) |
+| 18 | **F7#9** | bIV7 (Chromatic) | Ab (b3) |
+| 19 | **EMaj7** | bIII | D# (7th) |
+| 20 | **Eb7alt** | bIII7 | Db (b7) |
+| 21 | **D#m11** | ii | C# (b7) |
+| **A3** |  |  |  |
+| 22-28 | (Return to A, coda) |  |  |
 
 ---
 
 ## 2. SCALE PALETTE STUDY
 
-*   **Primary Universe (C#m11):** C# Dorian (7/8 grouping).
-*   **Lydian Sound (Amaj7):** A Lydian.
-*   **Fusion Vibe:** B Mixolydian / E Ionian.
-*   **Rhythm:** 3+2+2 grouping (Dotted Quarter, Quarter, Quarter).
+*   **Primary Universe (C#Maj7):** C# Ionian / C# Lydian.
+*   **Hexatonic Pair:** C# Major + D# Minor = C# Hexatonic.
+*   **Borrowed bVI (AMaj7#11):** A Lydian.
+*   **Altered (Eb7alt):** Eb Altered / E Melodic Minor.
+*   **Diminished (B#°7):** B# Octatonic (enharmonic C diminished).
 
-**Barry Harris Logic:**
-*   On **C#m11**, use **C# Minor 6 Diminished** to navigate the static minor chord.
+**Fusion/Odd Meter Logic:**
+*   **7/8 = 4+3 or 3+4** — this piece uses 4+3 (accent beats 1 and 5).
+*   **Triad pairs fit 7/8** — 6 notes of hexatonic over 7 beats creates tension.
+*   **Rapid-fire execution** — 8th notes are constant; no rests in A sections.
 
 ---
 
@@ -45,56 +52,64 @@
 
 | Chord | Stable Triad | Color/Tension Triad | Rationale |
 |:---|:---|:---|:---|
-| **C#m11** | **C# Minor** | **B Major** | Dorian sound (B triad gives b7-9-11). |
-| **Amaj7#11** | **A Major** | **B Major** | Lydian sound (B triad gives 9-#11-13). |
-| **F#m9** | **F# Minor** | **E Major** | Dorian sound. |
-| **G#7alt** | **C Diminished** | **D Minor** | Altered tension. |
+| **C#Maj7** | **C# Major** | **D# Minor** | Hexatonic pair. |
+| **F#Maj7#11** | **F# Major** | **G# Major** | Lydian pair. |
+| **AMaj7#11** | **A Major** | **B Major** | Borrowed Lydian. |
+| **F7#9** | **F Major** | **Ab Minor** | #9 tension. |
+| **Eb7alt** | **A Major** | **Bb Minor** | Tritone + altered. |
 
-**Melodic Cell Idea:** Rapid 16th-note arpeggios alternating between the triad pairs.
+**Melodic Cell Idea:** Hexatonic run (C#-E#-G#-D#-F#-A#) over 7 beats with accent displacement.
 
 ---
 
 ## 4. THREE ETUDE CHORUSES
 
-### **Chorus 1: Lyrical Melody (Rhythmic)**
-*   **Concept:** Syncopation.
-*   **Motif:** A repeating figure that displaces against the 7/8 pulse.
-*   **Goal:** Creating a "floating" feel over the odd meter.
+### **Chorus 1: 7/8 Groove Lock**
+*   **Concept:** Establish the 4+3 feel with accented triad pairs.
+*   **Motif:** C#-E#-G# (beats 1-2-3) + D#-F# (beats 4-5) + A#-C# (beats 6-7).
+*   **Bars 1-7:** Lock into the groove; accents on 1 and 5.
+*   **Bars 8-14:** Slight variation; accent beat 4 occasionally.
+*   **Bars 15-21 (B):** Shift to 3+4 feel for contrast.
 
-### **Chorus 2: Modern Triad-Pair Lines**
-*   **Concept:** "Solar Flare" bursts.
-*   **Pattern:** C#m -> B -> C#m ascending runs.
-*   **Technique:** Alternate picking or sweep picking.
+### **Chorus 2: Rapid Triad Arpeggios**
+*   **Concept:** Continuous 8th-note triad arpeggios, no breaks.
+*   **Bar 1 (C#Maj7):** C#-E#-G#-E#-C#-E#-G# (7 8ths).
+*   **Bar 4 (F#Maj7#11):** F#-A#-C#-B#-F#-A#-C# (with #11).
+*   **Bar 15 (AMaj7#11):** A-C#-E-G#-A-C#-E.
+*   **Goal:** Clean, even execution at 150 BPM.
 
-### **Chorus 3: Wyble Two-Voice Counterpoint**
-*   **Concept:** 7/8 Ostinato Bass.
+### **Chorus 3: Metric Superimposition**
+*   **Concept:** Play 4/4 phrases over the 7/8 meter.
 *   **Texture:**
-    *   *Bottom Voice:* C# - G# - C# ostinato (3+2+2).
-    *   *Top Voice:* Sustained chords and melody.
-*   **Challenge:** Locking the bass groove.
+    *   *Bars 1-7:* 8-note phrase (4/4) cycles against 7/8 = resolves every 56 beats.
+    *   *Bars 8-14:* 7-note phrase locks with meter.
+    *   *Bars 15-21:* Return to 8-note superimposition.
+*   **Key Moment (Bar 21 — D#m11):** Both meters align; resolution.
 
 ---
 
-## 5. OPTIONAL GUITAR VOICING SET (Fusion Stacks)
+## 5. OPTIONAL GUITAR VOICING SET (Fusion Shapes)
 
-*   **C#m11:** `9-x-9-9-7-x` (C#-B-E-F#).
-*   **Amaj7#11:** `5-x-6-6-4-x` (A-G#-C#-D#).
-*   **G#7alt:** `4-x-4-5-5-x` (G#-F#-B#-D... wait, D is b5).
+*   **C#Maj7:** `x-4-3-5-4-x` (Drop-2).
+*   **D#m9:** `x-6-4-6-6-x` (m9 shell).
+*   **F#Maj7#11:** `2-x-3-3-2-4` (Lydian voicing).
+*   **AMaj7#11:** `x-0-6-6-5-4` (Open A).
+*   **Eb7alt:** `x-6-5-6-7-x` (Altered cluster).
 
 ---
 
 ## 6. FINAL EVALUATION
 
-1.  **Clarity:** (5/5) 7/8 groove is distinct.
-2.  **MDH:** (5/5) Melody fits the fusion harmony.
-3.  **Voice-Leading:** (5/5) Smooth motion through the changes.
-4.  **Counterpoint:** (5/5) Ostinato bass is key.
-5.  **Triad Colour:** (5/5) B Major triad is the unifying color.
-6.  **Playability:** (4/5) Fast 7/8 is tricky.
-7.  **Structure:** (5/5) 16-bar form works well.
-8.  **Emotional Arc:** Energetic and intense.
-9.  **Originality:** (5/5) High-energy fusion.
-10. **Unifying Tech:** (5/5) 7/8 ostinato.
+1.  **Clarity:** (4/5) 7/8 requires listener adjustment.
+2.  **MDH:** (5/5) Triads drive the harmonic motion.
+3.  **Voice-Leading:** (5/5) Hexatonic scales provide smooth motion.
+4.  **Counterpoint:** (4/5) Implied in triad pair voicings.
+5.  **Triad Colour:** (5/5) Central to the entire composition.
+6.  **Playability:** (3/5) C# key and 7/8 at 150 BPM is demanding.
+7.  **Structure:** (5/5) AABA adapted to 7/8.
+8.  **Emotional Arc:** Explosive → Relentless → Triumphant.
+9.  **Originality:** (5/5) Fusion meets odd meter with hexatonic focus.
+10. **Unifying Tech:** (5/5) Triad pairs and 7/8 meter unify all choruses.
 
 **Status:** **APPROVED.** Ready for export.
 

@@ -1,38 +1,53 @@
 # TUNE #17: "BLUE MINOR"
 
-**Style:** Minor Blues (Coltrane/Bop) | **Key:** C Minor | **Tempo:** 120 BPM | **Time:** 4/4
-**Uniqueness Tagline:** Dark, moody minor blues with augmented tension.
-**Playing Tip:** Lean into the "Blue Note" (b5) on every chord.
+**Style:** Bebop (Minor Key) | **Key:** C Minor | **Tempo:** 180 BPM | **Time:** 4/4
+**Uniqueness Tagline:** Darker, melodic minor bebop vocabulary.
+**Playing Tip:** Emphasize the b5 and natural 7.
 
 ---
 
-## 1. COMPACT LEAD SHEET (Form: 12-Bar Minor Blues)
+## 1. COMPACT LEAD SHEET (Form: AABA — 32 Bars)
 
-| Bar | Harmony | Function | Melody Note |
+| Bar | Harmony | Function | Melody Note (Target) |
 |:---:|:---|:---|:---|
-| **1** | **Cm11** | i | Eb (3rd) |
-| **2** | **Fm7** | iv | Ab (3rd) |
-| **3** | **Cm11** | i | C (Root) |
-| **4** | **Gm7b5 - C7alt** | ii/iv - V/iv | Bb (b7 of C) |
-| **5** | **Fm7** | iv | Ab (3rd) |
-| **6** | **Fm7** | iv | Eb (b7) |
-| **7** | **Cm11** | i | G (5th) |
-| **8** | **Cm11** | i | F# (b5/Blue Note) |
-| **9** | **Ab7** | bVI7 | C (3rd) |
-| **10** | **G7alt** | V7 | B (3rd) |
-| **11** | **Cm11** | i | Eb (3rd) |
-| **12** | **Dm7b5 - G7alt** | ii - V | D (Root) |
+| **A1** |  |  |  |
+| 1 | **Cm(Maj7)** | i (Melodic Minor) | B (7th) |
+| 2 | **Cm6** | i | A (6th) |
+| 3 | **Fm9** | iv | Eb (b7) |
+| 4 | **Fm6** | iv | D (6th) |
+| 5 | **Dm7b5** | ii° | Ab (b5) |
+| 6 | **G7alt** | V7alt | Db (b5) |
+| 7 | **Cm(Maj7)** | i | G (5th) |
+| 8 | **Dm7b5 - G7** | ii° - V | F - B (b3 - 3) |
+| **A2** |  |  |  |
+| 9-16 | (Repeat with variation) |  |  |
+| **B** |  |  |  |
+| 17 | **EbMaj7** | III | D (7th) |
+| 18 | **Abmaj7** | VI | G (7th) |
+| 19 | **Dm7b5** | ii° | C (b7) |
+| 20 | **Db7#11** | bII7 (Tritone) | C (7th) |
+| 21 | **Cm9** | i | Bb (b7) |
+| 22 | **Bb7#9** | bVII7 | D (3rd) |
+| 23 | **AbMaj7** | VI | C (3rd) |
+| 24 | **G7alt** | V7alt | Ab (b9) |
+| **A3** |  |  |  |
+| 25-32 | (Return to A, minor blues coda) |  |  |
 
 ---
 
 ## 2. SCALE PALETTE STUDY
 
-*   **Primary Universe (Cm11):** C Minor Pentatonic + Blue Note (C-Eb-F-F#-G-Bb).
-*   **Turnaround (Ab7-G7):** Tritone movement. Ab Lydian Dominant -> G Altered.
-*   **Harmonic Minor:** C Harmonic Minor over the G7alt.
+*   **Primary Universe (Cm(Maj7)):** C Melodic Minor (C-D-Eb-F-G-A-B).
+*   **Minor 6 Chord (Cm6):** C Dorian / C Melodic Minor.
+*   **Half-Diminished (Dm7b5):** D Locrian ♮2 (from C Melodic Minor).
+*   **Altered Dominant (G7alt):** G Altered Scale (Ab Melodic Minor).
+*   **Tritone Sub (Db7#11):** Db Lydian Dominant.
 
-**Barry Harris Logic:**
-*   Use **C Minor 6 Diminished** over the i and iv chords for smooth chromatic voice leading.
+**Minor Key Bebop Logic:**
+*   **Melodic minor ascending** — the natural 6 and 7 are essential.
+*   **b5 is "blue"** — Gb over Cm creates the minor blues sound.
+*   **ii°-V-i** is the central cadence, not ii-V-I.
+*   **Barry Harris Minor 6 Diminished** scale applies to Cm6.
 
 ---
 
@@ -40,57 +55,65 @@
 
 | Chord | Stable Triad | Color/Tension Triad | Rationale |
 |:---|:---|:---|:---|
-| **Cm11** | **C Minor** | **Bb Major** | Dorian. |
-| **Fm7** | **F Minor** | **Eb Major** | Dorian. |
-| **Ab7** | **Ab Major** | **Gb Major** | Lydian Dominant. |
-| **G7alt** | **Db Major** | **Eb Minor** | Altered (Tritone sub pairs). |
+| **Cm(Maj7)** | **C Minor** | **Eb Augmented** | Melodic minor pair. |
+| **Fm9** | **F Minor** | **Ab Major** | iv Dorian. |
+| **Dm7b5** | **D Diminished** | **F Minor** | ii° color. |
+| **G7alt** | **Db Major** | **Ab Minor** | Altered tensions. |
+| **EbMaj7** | **Eb Major** | **F Minor** | III major pair. |
 
-**Melodic Cell Idea:** "Cry" motive - bending the b3 up to the major 3rd, or b5 to 5.
+**Melodic Cell Idea:** Melodic minor scale run emphasizing B natural (7th) and Ab (b5 relative to G7).
 
 ---
 
 ## 4. THREE ETUDE CHORUSES
 
-### **Chorus 1: Lyrical Melody (Soulful)**
-*   **Concept:** "The Thrill is Gone" vibe.
-*   **Motif:** Spacious phrases answering each other.
-*   **Dynamic:** Soft to Loud swells.
+### **Chorus 1: Melodic Minor Lines**
+*   **Concept:** Apply melodic minor scale throughout the A sections.
+*   **Motif:** C-D-Eb-F-G-A-B-C (ascending melodic minor).
+*   **Bars 1-4:** Establish the melodic minor sound; emphasize B and A.
+*   **Bars 5-8:** Over ii°-V, use G Altered Scale (Ab melodic minor).
+*   **Bars 17-24 (B):** Major mode contrast; brighter.
 
-### **Chorus 2: Modern Triad-Pair Lines**
-*   **Concept:** Double-Time Runs.
-*   **Pattern:** 16th note lines weaving through the changes.
-*   **Target:** Landing on chord tones on beat 1.
+### **Chorus 2: b5 Emphasis Study**
+*   **Concept:** Target the b5 (Gb/F#) on every minor chord.
+*   **Bar 1 (Cm):** C-Eb-Gb-G (b5 to 5 resolution).
+*   **Bar 3 (Fm9):** F-Ab-Cb-C (b5 to 5 on F).
+*   **Bar 5 (Dm7b5):** D-F-Ab-G (b5 Ab is chord tone here).
+*   **Goal:** Build comfort with the "blue" b5 sound.
 
-### **Chorus 3: Wyble Two-Voice Counterpoint**
-*   **Concept:** Inner Voice Movement.
+### **Chorus 3: Minor 6 Diminished Application**
+*   **Concept:** Apply Barry Harris Minor 6 Diminished scale to minor chords.
 *   **Texture:**
-    *   *Bottom Voice:* Root-5 bass pattern.
-    *   *Top Voice:* Descending chromatic guide tones (Bb-A-Ab-G).
-*   **Result:** A rich, pianistic texture.
+    *   *Cm6 Diminished Scale:* C-D-Eb-F-G-Ab-A-B.
+    *   *Bars 1-2:* Run the scale ascending/descending.
+    *   *Bars 3-4:* Apply to Fm6 (F-G-Ab-Bb-C-Db-D-E).
+    *   *Bars 5-8:* Transition to Locrian ♮2 for ii°.
+*   **Key Moment (Bar 6 — G7alt):** Land on Db (b5) with force.
 
 ---
 
-## 5. OPTIONAL GUITAR VOICING SET (Drop 2)**
+## 5. OPTIONAL GUITAR VOICING SET (Minor Key Shells)
 
-*   **Cm11:** `x-3-1-3-3-x` (C-Eb-Bb-D... wait, that's Cm9).
-*   **Fm7:** `1-x-1-1-1-x` (F-Eb-Ab-C).
-*   **Ab7:** `4-x-4-5-4-x` (Ab-Gb-C-Eb).
-*   **G7alt:** `3-x-3-4-4-x` (G-F-B-Eb... G7#5).
+*   **Cm(Maj7):** `x-3-5-4-4-x` (Minor Maj7 voicing).
+*   **Cm6:** `x-3-5-2-4-x` (Minor 6).
+*   **Dm7b5:** `x-5-6-5-6-x` (Half-dim).
+*   **G7alt:** `3-x-3-4-4-x` (Altered shell).
+*   **EbMaj7:** `x-6-5-7-6-x` (III voicing).
 
 ---
 
 ## 6. FINAL EVALUATION
 
-1.  **Clarity:** (5/5) Minor blues is universal.
-2.  **MDH:** (5/5) Blues scale works everywhere.
-3.  **Voice-Leading:** (5/5) The chromatic line in bars 9-10 is key.
-4.  **Counterpoint:** (5/5) Inner voice movement adds sophistication.
-5.  **Triad Colour:** (5/5) Standard minor pairs.
-6.  **Playability:** (5/5) Comfortable tempo and key.
-7.  **Structure:** (5/5) 12-bar.
-8.  **Emotional Arc:** Melancholy but grooving.
-9.  **Originality:** (4/5) A necessary repertoire piece.
-10. **Unifying Tech:** (5/5) Bending into chord tones.
+1.  **Clarity:** (4/5) Minor key bebop requires vocabulary familiarity.
+2.  **MDH:** (5/5) Melodic minor scale drives harmony.
+3.  **Voice-Leading:** (5/5) ii°-V-i voice-leading is central.
+4.  **Counterpoint:** (4/5) Single-line focus; implied bass.
+5.  **Triad Colour:** (5/5) Melodic minor + b5 colors.
+6.  **Playability:** (4/5) C minor is guitar-friendly.
+7.  **Structure:** (5/5) AABA with minor blues influence.
+8.  **Emotional Arc:** Dark → Searching → Resolved (minor).
+9.  **Originality:** (4/5) Classic minor bebop, melodic minor focus.
+10. **Unifying Tech:** (5/5) Melodic minor and b5 unify all choruses.
 
 **Status:** **APPROVED.** Ready for export.
 

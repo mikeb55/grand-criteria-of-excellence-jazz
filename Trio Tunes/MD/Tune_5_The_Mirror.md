@@ -6,38 +6,54 @@
 
 ---
 
-## 1. COMPACT LEAD SHEET (Form: AABA 32-Bar)
+## 1. COMPACT LEAD SHEET (Form: ABAC — 32 Bars)
 
-| Bar | Harmony | Function | Melody Note |
+| Bar | Harmony | Function | Melody Note (Target) |
 |:---:|:---|:---|:---|
-| **1** | **Abmaj7#11** | I (Lydian) | Bb (9th) |
-| **2** | **Gm7** | vii / iii | Bb (3rd) |
-| **3** | **Gbmaj7#11** | bVII (Lydian sub) | Bb (3rd) |
-| **4** | **Fm9** | vi | Ab (3rd) |
-| **5** | **Emaj7** | bVI | G# (3rd) |
-| **6** | **Eb7sus4** | V Sus | Bb (5th) |
-| **7** | **Abmaj7** | I | C (3rd) |
-| **8** | **D7alt** | V7/iii | F# (3rd) |
-| **9** | **Gm11** | iii | F (7th) |
-| **10** | **C7b9** | V7/vi | E (3rd) |
-| **11** | **Fm11** | vi | Eb (7th) |
-| **12** | **Bb7#11** | V7/V | E (Natural 11 - Lydian Dom) |
-| **13** | **Eb9sus4** | V | F (9th) |
-| **14** | **Edim7** | biii dim | G (3rd) |
-| **15** | **Abmaj7** | I | G (7th) |
-| **16** | **Eb7alt** | V7 (Turnaround) | B (b13) |
+| **A1** |  |  |  |
+| 1 | **AbMaj9** | I | G (7th) |
+| 2 | **—** | (Space) | — |
+| 3 | **Fm9** | vi | Eb (b7) |
+| 4 | **Db9#11** | IV9 (Lydian) | G (b5/#11) |
+| 5 | **Cm7** | iii | Bb (b7) |
+| 6 | **Bbm11** | ii | Ab (b7) |
+| 7 | **AbMaj9/G** | I/7 (1st Inv) | G (Bass = 7th) |
+| 8 | **Eb7sus** | V sus | Db (b7) |
+| **B** |  |  |  |
+| 9 | **DbMaj7#11** | IV | C (7th) |
+| 10 | **Cm7b5** | iii° | Gb (b5) |
+| 11 | **Fm(Maj7)** | vi (Melodic Minor) | E (7th) |
+| 12 | **Bb7alt** | V/V | Ab (b7) |
+| 13 | **EbMaj9** | V (Relative Major) | D (7th) |
+| 14 | **Am7b5** | #i° (Chromatic) | G (b7) |
+| 15 | **AbMaj9** | I | Eb (5th) |
+| 16 | **—** | (Fermata) | — |
+| **A2** |  |  |  |
+| 17-24 | (Repeat A1 with octave variation) |  |  |
+| **C** |  |  |  |
+| 25 | **Gb9** | bVII | Db (5th) |
+| 26 | **FMaj7#5** | VI+ | E (7th) |
+| 27 | **Bbm9** | ii | F (5th) |
+| 28 | **Eb13** | V13 | C (6/13) |
+| 29 | **AbMaj9** | I | G (7th) |
+| 30 | **DbMaj7** | IV | Ab (5th) |
+| 31 | **AbMaj9/Eb** | I/5 | C (3rd) |
+| 32 | **—** | (Decay to silence) | — |
 
 ---
 
 ## 2. SCALE PALETTE STUDY
 
-*   **Primary Universe (Abmaj7):** Ab Lydian (The #11 is crucial for the ballad mood).
-*   **Descending Major 7ths (Gbmaj7, Emaj7):** Planing Lydian sounds.
-*   **V7 Sus (Eb7sus4):** Eb Mixolydian / Eb Major Pentatonic.
-*   **Altered Doms:** Super Locrian.
+*   **Primary Universe (AbMaj9):** Ab Ionian / Ab Lydian for #11 color.
+*   **Minor vi (Fm9):** F Dorian / F Melodic Minor (for Maj7 variant).
+*   **Lydian IV (Db9#11):** Db Lydian.
+*   **Half-Diminished (Cm7b5):** C Locrian / C Locrian ♮2.
+*   **Altered V (Bb7alt):** Bb Altered Scale (B Melodic Minor).
 
-**Barry Harris Logic:**
-*   Use **Diminished connectors** to smooth out the non-diatonic root movement (e.g., Ab to Gb).
+**Scofield Ballad Logic:**
+*   **Wide intervals** in melody — 6ths, 7ths, octave + 2nds.
+*   **Space is compositional** — silence between phrases is intentional.
+*   **Dynamic swells** create the emotional arc, not just note choice.
 
 ---
 
@@ -45,56 +61,64 @@
 
 | Chord | Stable Triad | Color/Tension Triad | Rationale |
 |:---|:---|:---|:---|
-| **Abmaj7#11** | **Ab Major** | **Bb Major** | Lydian sound (Bb triad gives 9-#11-13). |
-| **Gbmaj7#11** | **Gb Major** | **Ab Major** | Lydian planing. |
-| **Eb7sus4** | **Eb Major** | **Db Major** | Mixolydian sus (1-4-b7). |
-| **D7alt** | **Ab Minor** | **Bb Major** | Tritone sub pairs. |
+| **AbMaj9** | **Ab Major** | **Bb Minor** | Creates Maj9 sound. |
+| **Fm9** | **F Minor** | **Ab Major** | Dorian relative major. |
+| **Db9#11** | **Db Major** | **Eb Major** | Lydian extension. |
+| **Bb7alt** | **E Major** | **F Minor** | Tritone + alt tensions. |
+| **Gb9** | **Gb Major** | **Ab Minor** | bVII Mixolydian color. |
 
-**Melodic Cell Idea:** Slow, lyrical arpeggios of the *Color Triad* resolving into the *Stable Triad* tones.
+**Melodic Cell Idea:** Sustained 7th of Stable Triad → descending 6th to Color Triad root.
 
 ---
 
 ## 4. THREE ETUDE CHORUSES
 
-### **Chorus 1: Lyrical Melody (Rubato)**
-*   **Concept:** Rubato phrasing.
-*   **Motif:** A single note (Bb) harmonized by changing chords underneath.
-*   **Expression:** Wide vibrato, volume pedal swells.
+### **Chorus 1: Spacious Melody (Minimal)**
+*   **Concept:** Fewer notes with maximum expression; Scofield's "singing" quality.
+*   **Motif:** Ascending minor 7th (Bb to Ab, C to Bb).
+*   **Bars 1-8:** One or two notes per bar; let each ring fully.
+*   **Bars 9-16:** Melody moves to higher register; increases intensity slightly.
+*   **Bars 25-32:** Return to low register; fade to nothing.
 
-### **Chorus 2: Modern Triad-Pair Lines**
-*   **Concept:** "Sheets of Sound" in slow motion.
-*   **Rhythm:** 32nd note flurries followed by long sustained notes.
-*   **Target:** Upper structures (9, 11, 13).
+### **Chorus 2: Wide Interval Study**
+*   **Concept:** Practice leaps of 7ths, 9ths, 10ths.
+*   **Bar 1 (AbMaj9):** Low Ab (6th string) → High G (1st string) — compound 7th.
+*   **Bar 9 (DbMaj7#11):** Db → C → Ab (descending 7ths).
+*   **Bar 25 (Gb9):** Low Gb → High F → Db (9th + 6th down).
+*   **Goal:** Build comfort with large interval jumps at slow tempo.
 
-### **Chorus 3: Wyble Two-Voice Counterpoint**
-*   **Concept:** Chorale style.
+### **Chorus 3: Volume Swell & Decay**
+*   **Concept:** Use volume pedal (or picking dynamics) to shape each note's attack.
 *   **Texture:**
-    *   *Voices:* 2 independent lines moving in slow oblique motion.
-    *   *Intervals:* Focus on 10ths and 6ths.
-*   **Challenge:** Legato connection between large position shifts.
+    *   *Bars 1-8:* Slow swell in, let decay naturally.
+    *   *Bars 9-16:* Faster attack, longer decay (more present).
+    *   *Bars 25-32:* Swells that never fully arrive — ghostly.
+*   **Key Moment (Bar 16 — Fermata):** Hold AbMaj9, swell in and out three times before silence.
 
 ---
 
-## 5. OPTIONAL GUITAR VOICING SET (Spread Triads)
+## 5. OPTIONAL GUITAR VOICING SET (Wide Spread)
 
-*   **Abmaj7#11:** `4-x-5-5-3-x` (Ab-G-C-D - wait, that's D7). Correct: `4-x-5-5-3-x` is `Ab-G-C-Eb` (Abmaj7). For #11: `4-x-5-5-3-x` -> `4-x-5-5-3-x` with high D `x-x-0-1-3-2` (Open D).
-*   **Better Voicing:** `4-x-5-5-3-x` (Ab-G-C-Eb). Add open B string for #11? No.
-*   **Spread:** `Ab (6th str) + G (4th str) + C (3rd str) + D (2nd str)`.
+*   **AbMaj9:** `4-x-5-5-4-x` (Shell + 9).
+*   **Fm9:** `x-8-6-8-8-x` (Spread m9).
+*   **Db9#11:** `x-4-4-4-4-6` (Cluster with #11 on top).
+*   **Bb7alt:** `6-x-6-7-6-9` (Wide altered voicing).
+*   **Gb9:** `2-x-2-3-2-4` (Compact 9 shape).
 
 ---
 
 ## 6. FINAL EVALUATION
 
-1.  **Clarity:** (5/5) Clear harmonic path.
-2.  **MDH:** (5/5) Melody is simple; harmony is complex.
-3.  **Voice-Leading:** (5/5) Descending bass line (Ab-G-Gb-F-E) drives the A section.
-4.  **Counterpoint:** (5/5) Chorale texture is perfect for ballad.
-5.  **Triad Colour:** (5/5) Bb Major over Ab is the "Mirror" sound.
-6.  **Playability:** (4/5) Slow tempo allows for big stretches.
-7.  **Structure:** (5/5) Classic ballad form.
-8.  **Emotional Arc:** Introspective and fragile.
-9.  **Originality:** (5/5) Scofield ballad vibe captured well.
-10. **Unifying Tech:** (5/5) Pedal point melody.
+1.  **Clarity:** (4/5) Sparse texture requires active listening.
+2.  **MDH:** (5/5) Melody dictates the harmonic rhythm.
+3.  **Voice-Leading:** (5/5) Smooth chromatic motion in inner voices.
+4.  **Counterpoint:** (3/5) Primarily single-line; implied counterpoint.
+5.  **Triad Colour:** (5/5) Maj9 and Lydian colors dominate.
+6.  **Playability:** (4/5) Wide stretches required; Ab key less natural.
+7.  **Structure:** (5/5) ABAC with contrasting C section.
+8.  **Emotional Arc:** Haunting → Yearning → Disappearing.
+9.  **Originality:** (5/5) Scofield ballad DNA with unique decay focus.
+10. **Unifying Tech:** (5/5) Volume swell technique unifies all choruses.
 
 **Status:** **APPROVED.** Ready for export.
 

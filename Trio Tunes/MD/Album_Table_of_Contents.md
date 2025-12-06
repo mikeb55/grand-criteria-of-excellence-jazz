@@ -21,10 +21,8 @@
 | **13** | **"The Void"** | Free | Free | Free | Experimental | Textural improvisation guide; no fixed chords. | Focus on timbre and dynamic swells. |
 | **14** | **"Solar Flare"** | C# | 150 | 7/8 | Fusion/Original | Rapid-fire triad pairs in a 7/8 ostinato. | Accent the first beat of the 3 and the 2 groups. |
 | **15** | **"Final Departure"** | Db | 70 | 4/4 | Closing Ballad | Lush, orchestral drop-2 voicings. | Play rubato; breathe with the phrases. |
-| **16** | **"Bop Burner"** | F | 240 | 4/4 | Bebop (Parker/Benson) | Relentless 8th-note chromaticism at high speed. | Use rest-stroke picking; keep the wrist loose. |
-| **17** | **"Blue Minor"** | Cm | 180 | 4/4 | Bebop (Minor Key) | Darker, melodic minor bebop vocabulary. | Emphasize the b5 and natural 7. |
-| **18** | **"Epistrophy 2"** | Db | 120 | 4/4 | Monk-Style | Angular, dissonant intervals and silence. | Play with a percussive, piano-like attack. |
 
 ---
 
-**Note:** This collection covers all required styles (Blues, Shorter, Scofield, Metheny, Bossa, Experimental, Originals, Bebop) and includes required odd meters (Tracks 2, 10, 14).
+**Note:** This collection covers all required styles (Blues, Shorter, Scofield, Metheny, Bossa, Experimental, Originals) and includes required odd meters (Tracks 2, 10, 14).
+

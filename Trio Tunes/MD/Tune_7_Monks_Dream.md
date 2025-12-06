@@ -1,43 +1,53 @@
 # TUNE #7: "MONK'S DREAM"
 
-**Style:** Experimental (Monk-ish) | **Key:** C Whole Tone / Chromatic | **Tempo:** 110 BPM | **Time:** 4/4
+**Style:** Experimental (Monk-Inspired) | **Key:** C Major | **Tempo:** 110 BPM | **Time:** 4/4
 **Uniqueness Tagline:** Whole-tone clusters and displaced rhythms.
 **Playing Tip:** Feel the space; don't rush the silence.
 
 ---
 
-## 1. COMPACT LEAD SHEET (Form: AABA 32-Bar)
+## 1. COMPACT LEAD SHEET (Form: AABA — 32 Bars)
 
-| Bar | Harmony | Function | Melody Note |
+| Bar | Harmony | Function | Melody Note (Target) |
 |:---:|:---|:---|:---|
-| **1** | **C7#5** | I7 (Whole Tone) | E (3rd) |
-| **2** | **D7#5** | II7 (Whole Tone) | F# (3rd) |
-| **3** | **E7#5** | III7 (Whole Tone) | G# (3rd) |
-| **4** | **Gb7#5** | bV7 (Whole Tone) | Bb (3rd) |
-| **5** | **Fmaj7** | IV (Release) | A (3rd) |
-| **6** | **F#dim7** | #IVdim | A (b3) |
-| **7** | **C7#5** | I7 | E (3rd) |
-| **8** | **A7alt** | VI7 | Bb (b9) |
-| **9** | **D9** | II7 | E (9th) |
-| **10** | **Db9** | bII7 (Tritone) | Eb (9th) |
-| **11** | **C7#5** | I7 | E (3rd) |
-| **12** | **Gb7#5** | bV7 | Bb (3rd) |
-| **13** | **Fmaj7** | IV | C (5th) |
-| **14** | **Bb7** | bVII | Ab (7th) |
-| **15** | **C6** | I | A (6th) |
-| **16** | **G7alt** | V7 (Turnaround) | F (7th) |
+| **A1** |  |  |  |
+| 1 | **CMaj7#11** | I (Lydian) | B (7th) |
+| 2 | **—** | (Rest) | — |
+| 3 | **D7#11** | V/V (Lydian Dom) | C (b7) |
+| 4 | **—** | (Rest) | — |
+| 5 | **Eb°7** | bIII° (Passing) | Db (b7) |
+| 6 | **Dm7** | ii | F (b3) |
+| 7 | **G7#5** | V (Augmented) | B (3rd) |
+| 8 | **CMaj7** | I | E (3rd) |
+| **A2** |  |  |  |
+| 9-16 | (Repeat with rhythmic displacement) |  |  |
+| **B** |  |  |  |
+| 17 | **Ab7#11** | bVI7 | Gb (b7) |
+| 18 | **—** | (Rest) | — |
+| 19 | **Gb7#11** | bV7 (Tritone) | E (b7) |
+| 20 | **FMaj7#5** | IV+ | E (7th) |
+| 21 | **Fm6** | iv | D (6th) |
+| 22 | **Em7b5** | iii° | Bb (b5) |
+| 23 | **Eb7** | bIII7 | Db (b7) |
+| 24 | **Dm7 - G7** | ii - V | C - B (b7-3) |
+| **A3** |  |  |  |
+| 25-32 | (Repeat A1 with angular coda) |  |  |
 
 ---
 
 ## 2. SCALE PALETTE STUDY
 
-*   **Primary Universe (C7#5):** C Whole Tone Scale (C-D-E-F#-G#-Bb).
-*   **Release (Fmaj7):** F Lydian (to keep it bright).
-*   **Dominant Chain:** Mixolydian or Whole Tone.
-*   **Diminished:** Half-Whole Diminished for angular turns.
+*   **Primary Universe (CMaj7#11):** C Lydian (F# provides the #11).
+*   **Whole-Tone Applications (G7#5, D7#11):** Whole-Tone Scale (C-D-E-F#-G#-A#).
+*   **Diminished (Eb°7):** Eb Octatonic (Whole-Half Diminished).
+*   **Lydian Dominant (Ab7#11, Gb7#11):** Respective Lydian Dominant scales.
+*   **Minor iv (Fm6):** F Dorian / F Melodic Minor.
 
-**Barry Harris Logic:**
-*   On **C7#5**, use **C Augmented** triad shapes connected by chromatic passing tones to simulate the "Monk" cluster sound.
+**Monk Logic:**
+*   **Rhythmic displacement** — place notes BEFORE or AFTER expected beats.
+*   **Silence is a note** — rests have melodic function.
+*   **Cluster voicings** — dissonance as color, not to be resolved immediately.
+*   **Whole-tone scale** creates the "floating" Monk quality.
 
 ---
 
@@ -45,56 +55,64 @@
 
 | Chord | Stable Triad | Color/Tension Triad | Rationale |
 |:---|:---|:---|:---|
-| **C7#5** | **C Augmented** | **D Augmented** | Defines the Whole Tone scale (2 augmented triads a whole step apart). |
-| **Fmaj7** | **F Major** | **G Major** | Lydian sound. |
-| **A7alt** | **C# Minor** | **Eb Minor** | Altered scale fragments. |
-| **D9** | **D Major** | **E Major** | Lydian Dominant. |
+| **CMaj7#11** | **C Major** | **D Major** | Lydian pair. |
+| **D7#11** | **D Major** | **E Major** | Lydian Dom extensions. |
+| **G7#5** | **G Augmented** | **E Augmented** | Whole-tone pair (same notes!). |
+| **Ab7#11** | **Ab Major** | **Bb Major** | bVI Lydian Dom. |
+| **Fm6** | **F Minor** | **D Diminished** | Creates the 6th color. |
 
-**Melodic Cell Idea:** Descending Whole Tone scale in major 3rd intervals (e.g., E-C, D-Bb, C-Ab).
+**Melodic Cell Idea:** Whole-tone tetrachord (C-D-E-F#) displaced by an 8th note.
 
 ---
 
 ## 4. THREE ETUDE CHORUSES
 
-### **Chorus 1: Lyrical Melody (Thematic)**
-*   **Concept:** Rhythmic Displacement.
-*   **Motif:** A simple 3-note cell (E-F#-E) played on beat 1, then beat 2, then the "and" of 3.
-*   **Sound:** Angular and unpredictable.
+### **Chorus 1: Angular Melody (Displaced)**
+*   **Concept:** Melody enters on unexpected beats — "and" of 2, "and" of 4.
+*   **Motif:** Tritone leap (C-F#, D-Ab).
+*   **Bars 1-4:** Single notes, heavily displaced; rests are as long as notes.
+*   **Bars 5-8:** Melody compresses; rests shorten.
+*   **Bars 17-24 (B):** Maximum displacement — melody anticipates by full beat.
 
-### **Chorus 2: Modern Triad-Pair Lines**
-*   **Concept:** Whole Tone saturation.
-*   **Pattern:** Alternating C+ and D+ triads.
-*   **Effect:** A "dream-like" blurring of the tonal center.
+### **Chorus 2: Whole-Tone Runs**
+*   **Concept:** Apply whole-tone scale in continuous 8ths with chromatic "breaks."
+*   **Bar 1 (CMaj7#11):** C-D-E-F#-G#-A#-C (whole-tone up).
+*   **Bar 5 (Eb°7):** Eb-F-Gb-Ab-A-B (diminished fragment breaking whole-tone).
+*   **Bar 7 (G7#5):** G-A-B-C#-D#-F-G (whole-tone built from G).
+*   **Goal:** Create the "dreamlike" Monk texture.
 
-### **Chorus 3: Wyble Two-Voice Counterpoint**
-*   **Concept:** Stride Piano on Guitar.
+### **Chorus 3: Cluster Voicing Study**
+*   **Concept:** Stack 2nds and tritones to create Monk-style "crunchy" voicings.
 *   **Texture:**
-    *   *Bottom Voice:* Shell voicings on beats 1 & 3.
-    *   *Top Voice:* Monk-style melody on beats 2 & 4 (and syncopations).
-*   **Challenge:** Keeping the "swing" feel deep while playing angular clusters.
+    *   *Bars 1-4:* Major 2nd clusters (C-D, E-F#) on strings 2-3.
+    *   *Bars 5-8:* Tritone dyads (C-F#, D-Ab) as stabs.
+    *   *Bars 17-24:* Three-note clusters (C-D-E, D-E-F#) with space.
+*   **Key Moment (Bar 2 — Rest):** Silence for full bar; let previous cluster decay.
 
 ---
 
-## 5. OPTIONAL GUITAR VOICING SET (Monk Clusters)
+## 5. OPTIONAL GUITAR VOICING SET (Clusters & Dissonance)
 
-*   **C7#5:** `x-3-2-3-5-x` (C-E-Bb-D... wait, D is 9. C7#5 requires G#).
-*   **Correct:** `x-3-6-3-5-x` (C-G#-Bb-D). Or `8-x-8-9-9-x`.
-*   **Cluster:** `x-x-8-9-9-8` (Bb-E-G#-C). Use with care.
+*   **CMaj7#11:** `x-3-2-4-5-x` (Cluster with #11).
+*   **D7#11:** `x-5-4-5-5-x` (Lydian Dom cluster).
+*   **G7#5:** `3-x-3-4-4-x` (Augmented voicing).
+*   **Ab7#11:** `4-x-4-5-6-x` (Wide Lydian Dom).
+*   **Fm6:** `1-x-0-1-1-x` (Minor 6 shell).
 
 ---
 
 ## 6. FINAL EVALUATION
 
-1.  **Clarity:** (5/5) Strong Whole Tone identity.
-2.  **MDH:** (5/5) Melody notes (3rds) anchor the weirdness.
-3.  **Voice-Leading:** (4/5) Angular by design, but functional.
-4.  **Counterpoint:** (5/5) Stride texture is a great challenge.
-5.  **Triad Colour:** (5/5) Augmented pairs are the key here.
-6.  **Playability:** (4/5) Clusters require finger independence.
-7.  **Structure:** (5/5) AABA form holds it together.
-8.  **Emotional Arc:** Quirky -> Humorous -> Logical.
-9.  **Originality:** (5/5) A distinct "Monk" tribute.
-10. **Unifying Tech:** (5/5) Rhythmic displacement.
+1.  **Clarity:** (3/5) Intentionally obscure; Monk aesthetic.
+2.  **MDH:** (5/5) Melody creates harmonic rhythm through displacement.
+3.  **Voice-Leading:** (4/5) Whole-tone voice-leading is non-traditional.
+4.  **Counterpoint:** (4/5) Clusters imply multiple voices.
+5.  **Triad Colour:** (5/5) Whole-tone and tritone colors dominate.
+6.  **Playability:** (4/5) Some awkward cluster fingerings.
+7.  **Structure:** (5/5) AABA with absurdist B section.
+8.  **Emotional Arc:** Mysterious → Tense → Sardonically resolved.
+9.  **Originality:** (5/5) Monk meets guitar in experimental way.
+10. **Unifying Tech:** (5/5) Rhythmic displacement and whole-tone scale unify.
 
 **Status:** **APPROVED.** Ready for export.
 

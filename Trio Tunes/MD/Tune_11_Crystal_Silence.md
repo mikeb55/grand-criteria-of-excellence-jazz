@@ -6,37 +6,55 @@
 
 ---
 
-## 1. COMPACT LEAD SHEET (Form: 16-Bar Ballad)
+## 1. COMPACT LEAD SHEET (Form: ABAC — 32 Bars)
 
-| Bar | Harmony | Function | Melody Note |
+| Bar | Harmony | Function | Melody Note (Target) |
 |:---:|:---|:---|:---|
-| **1** | **Amaj7** | I (Lydian) | G# (7th) |
-| **2** | **Bm11** | ii | A (7th) |
-| **3** | **C#m11** | iii | B (7th) |
-| **4** | **Dmaj7#11** | IV | C# (7th) |
-| **5** | **Emaj7** | V (Lydian Mix) | D# (7th) |
-| **6** | **F#m11** | vi | E (7th) |
-| **7** | **Gmaj7** | bVII (Mixolydian) | F# (7th) |
-| **8** | **Amaj7** | I | G# (7th) |
-| **9** | **Bbmaj7#11** | bII (Phrygian) | A (7th) |
-| **10** | **Am11** | i (Parallel Minor) | G (7th) |
-| **11** | **G#m11** | vii | F# (7th) |
-| **12** | **Gmaj7** | bVII | F# (7th) |
-| **13** | **F#m11** | vi | E (7th) |
-| **14** | **Fmaj7** | bVI | E (7th) |
-| **15** | **E7sus4** | V Sus | D (7th) |
-| **16** | **Amaj7** | I | C# (3rd) |
+| **A1** |  |  |  |
+| 1 | **AMaj9** | I | G# (7th) |
+| 2 | **AMaj9** | I | E (5th) |
+| 3 | **F#m11** | vi | E (b7) |
+| 4 | **DMaj7#11** | IV (Lydian) | C# (7th) |
+| 5 | **C#m9** | iii | B (b7) |
+| 6 | **Bm9** | ii | A (b7) |
+| 7 | **AMaj9/E** | I/5 | G# (7th) |
+| 8 | **E9sus** | V sus | D (b7) |
+| **B** |  |  |  |
+| 9 | **FMaj7#11** | bVI (Borrowed) | E (7th) |
+| 10 | **Em9** | v (Borrowed) | D (b7) |
+| 11 | **DMaj9** | IV | C# (7th) |
+| 12 | **DbMaj7** | bIV (Chromatic) | C (7th) |
+| 13 | **C#m7** | iii | E (b3) |
+| 14 | **CMaj7#11** | bIII (Borrowed) | B (7th) |
+| 15 | **Bm11** | ii | A (b7) |
+| 16 | **E7sus** | V sus | A (11th) |
+| **A2** |  |  |  |
+| 17-24 | (Repeat A1 with octave variation) |  |  |
+| **C** |  |  |  |
+| 25 | **GbMaj7** | bVII (Distant) | F (7th) |
+| 26 | **F#m9** | vi | E (b7) |
+| 27 | **EMaj7** | V (Major) | D# (7th) |
+| 28 | **Eb7#11** | bV7 (Chromatic) | Db (b7) |
+| 29 | **DMaj9** | IV | C# (7th) |
+| 30 | **C#m7** | iii | B (b7) |
+| 31 | **AMaj9** | I | E (5th) |
+| 32 | **—** | (Decay) | — |
 
 ---
 
 ## 2. SCALE PALETTE STUDY
 
-*   **Primary Universe (Amaj7):** A Ionian / Lydian.
-*   **Campanella Concept:** Playing scalar lines across multiple strings to let notes bleed together.
-*   **Parallel Motion:** Major 7ths moving stepwise.
+*   **Primary Universe (AMaj9):** A Ionian / A Lydian.
+*   **Relative Minor (F#m11):** F# Dorian / F# Aeolian.
+*   **Borrowed bVI (FMaj7#11):** F Lydian.
+*   **Borrowed bIII (CMaj7#11):** C Lydian.
+*   **Chromatic (DbMaj7, Eb7#11):** Respective Lydian/Lydian Dominant scales.
 
-**Barry Harris Logic:**
-*   Use **Diminished chords** as passing harmonies between the diatonic steps (e.g., A - A#dim - Bm).
+**ECM Logic:**
+*   **Space and sustain** — notes should ring and overlap.
+*   **Campanella technique** — use open strings while playing fretted notes higher up.
+*   **Lydian preference** — the #11 adds "air" to the voicings.
+*   **Avoid "jazzy" chromaticism** — aim for pure, bell-like tones.
 
 ---
 
@@ -44,56 +62,63 @@
 
 | Chord | Stable Triad | Color/Tension Triad | Rationale |
 |:---|:---|:---|:---|
-| **Amaj7** | **A Major** | **B Major** | Lydian sound (B triad = 9-#11-13). |
-| **Dmaj7#11** | **D Major** | **E Major** | Lydian sound. |
-| **Gmaj7** | **G Major** | **A Major** | Lydian sound. |
-| **Bbmaj7#11** | **Bb Major** | **C Major** | Lydian sound. |
+| **AMaj9** | **A Major** | **B Minor** | Creates Maj9 sound. |
+| **F#m11** | **F# Minor** | **A Major** | Dorian relative pair. |
+| **DMaj7#11** | **D Major** | **E Major** | Lydian pair. |
+| **FMaj7#11** | **F Major** | **G Major** | Borrowed Lydian. |
+| **CMaj7#11** | **C Major** | **D Major** | Borrowed Lydian. |
 
-**Melodic Cell Idea:** Arpeggiating the *Color Triad* with open B and E strings ringing as drones.
+**Melodic Cell Idea:** Arpeggiate Color Triad from high E string with open B and E ringing.
 
 ---
 
 ## 4. THREE ETUDE CHORUSES
 
-### **Chorus 1: Lyrical Melody (Harmonics)**
-*   **Concept:** Natural Harmonics.
-*   **Technique:** Incorporating natural harmonics (Frets 5, 7, 12) into the melody line.
-*   **Result:** Bell-like texture.
+### **Chorus 1: Campanella Melody**
+*   **Concept:** Use open strings as drones while melody moves on adjacent strings.
+*   **Motif:** High G# (1st string, 16th fret) with open E ringing.
+*   **Bars 1-4:** Melody on string 1, open strings 2 and 1 ring sympathetically.
+*   **Bars 5-8:** Add open A (5th string) as bass pedal.
+*   **Bars 9-16 (B):** Shift position; let new open strings ring.
 
-### **Chorus 2: Modern Triad-Pair Lines**
-*   **Concept:** Cross-String Triads.
-*   **Pattern:** Playing closed triads on non-adjacent string sets (e.g., Strings 6, 4, 3).
-*   **Goal:** Clean articulation with sustain.
+### **Chorus 2: High Position Open String Study**
+*   **Concept:** Exploit E-B-G-D open strings while playing above the 12th fret.
+*   **Bar 1 (AMaj9):** E at 12th fret (1st string) + open E (1st string harmonic) → unison.
+*   **Bar 9 (FMaj7#11):** High A (17th fret, 1st string) + open B (2nd string) ringing.
+*   **Goal:** Create the "glass-like" ECM texture.
 
-### **Chorus 3: Wyble Two-Voice Counterpoint**
-*   **Concept:** Waterfall effect.
+### **Chorus 3: Sustain & Overlap Study**
+*   **Concept:** Each note should ring into the next; no staccato.
 *   **Texture:**
-    *   *Bottom Voice:* Ascending bass line.
-    *   *Top Voice:* Descending melody harmonized in 10ths.
-*   **Challenge:** Maintaining the open strings while fretting the counterpoint.
+    *   *Bars 1-8:* Play slowly; wait for previous note to decay 50%.
+    *   *Bars 9-16:* Slightly closer attacks; notes overlap more.
+    *   *Bars 25-32:* Maximum overlap; near-constant wash of sound.
+*   **Key Moment (Bar 32 — Decay):** Final AMaj9 rings until complete silence.
 
 ---
 
-## 5. OPTIONAL GUITAR VOICING SET (Open String Campanella)
+## 5. OPTIONAL GUITAR VOICING SET (Open String Voicings)
 
-*   **Amaj7:** `x-0-6-6-0-0` (A-G#-C#-B-E).
-*   **Bm11:** `7-x-7-7-0-0` (B-A-D-B-E).
-*   **C#m11:** `9-x-9-9-0-0` (C#-B-E-B-E).
+*   **AMaj9:** `x-0-6-6-5-0` (Open A and E).
+*   **F#m11:** `x-x-4-6-5-0` (Open E on top).
+*   **DMaj7#11:** `x-x-0-6-7-9` (Open D bass).
+*   **FMaj7#11:** `1-x-2-2-1-0` (Open E on top).
+*   **E9sus:** `0-7-7-7-0-0` (Open E bass and strings 1-2).
 
 ---
 
 ## 6. FINAL EVALUATION
 
-1.  **Clarity:** (5/5) Diatonic stepwise motion is clear.
-2.  **MDH:** (5/5) Melody drives the Lydian shifts.
-3.  **Voice-Leading:** (5/5) Parallel planing works beautifully with open strings.
-4.  **Counterpoint:** (5/5) Waterfall effect creates independent lines.
-5.  **Triad Colour:** (5/5) Superimposed major triads create the "ECM" sound.
-6.  **Playability:** (5/5) Very idiomatic for guitar.
-7.  **Structure:** (5/5) 16-bar ballad.
-8.  **Emotional Arc:** Crystalline and pure.
-9.  **Originality:** (5/5) Distinctive textural approach.
-10. **Unifying Tech:** (5/5) Open string drones.
+1.  **Clarity:** (5/5) A major is guitar-friendly; open strings natural.
+2.  **MDH:** (5/5) Melody floats above sustaining harmony.
+3.  **Voice-Leading:** (5/5) Smooth Lydian motion throughout.
+4.  **Counterpoint:** (4/5) Open strings create implied polyphony.
+5.  **Triad Colour:** (5/5) Lydian and Maj9 colors throughout.
+6.  **Playability:** (5/5) Open strings make voicings achievable.
+7.  **Structure:** (5/5) ABAC with contrasting C section.
+8.  **Emotional Arc:** Crystalline → Expansive → Dissolving.
+9.  **Originality:** (5/5) ECM aesthetic translated to guitar.
+10. **Unifying Tech:** (5/5) Campanella and open strings unify all choruses.
 
 **Status:** **APPROVED.** Ready for export.
 

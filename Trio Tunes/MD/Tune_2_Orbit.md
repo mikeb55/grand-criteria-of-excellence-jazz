@@ -1,44 +1,59 @@
 # TUNE #2: "ORBIT"
 
-**Style:** Wayne Shorter (Avant) | **Key:** F Major (floating) | **Tempo:** 160 BPM | **Time:** 3/4
+**Style:** Wayne Shorter (Avant) | **Key:** F Major | **Tempo:** 160 BPM | **Time:** 3/4
 **Uniqueness Tagline:** Non-functional harmony over a floating pulse.
 **Playing Tip:** Let the intervals ring; prioritize sustain.
 
 ---
 
-## 1. COMPACT LEAD SHEET (Form: 16-Bar AB)
+## 1. COMPACT LEAD SHEET (Form: ABAC — 32 Bars)
 
-| Bar | Harmony | Function | Melody Note |
+| Bar | Harmony | Function | Melody Note (Target) |
 |:---:|:---|:---|:---|
-| **1** | **Fmaj7#11** | I (Lydian) | E (7th) |
-| **2** | **Gbmaj7#11** | bII (Planing) | F (7th) |
-| **3** | **Ebmaj7#5** | bVII (Lydian Aug) | G (3rd) |
-| **4** | **Am11** | iii | C (3rd) |
-| **5** | **Dbmaj7** | bVI | C (7th) |
-| **6** | **C7alt** | V7 (Altered) | Bb (b7) |
-| **7** | **Bmaj7#11** | #IV (Tritone sub area) | A# (7th) |
-| **8** | **Bb13** | IV Dominant | G (13th) |
-| **9** | **Abmaj7** | bIII | G (7th) |
-| **10** | **Gm11** | ii | F (7th) |
-| **11** | **Gbmaj7** | bII | F (7th) |
-| **12** | **Fm11** | i (Modal Interchange) | Eb (7th) |
-| **13** | **Em11** | vii (Phrygian) | D (7th) |
-| **14** | **Ebmaj7#11** | bVII | D (7th) |
-| **15** | **Db/Eb** | Sus (Slash Chord) | F (3rd of Db) |
-| **16** | **C7sus4** | V Sus | Bb (7th) |
+| **A1** |  |  |  |
+| 1 | **FMaj7#11** | I (Lydian) | E (7th) |
+| 2 | **DbMaj7** | bVI (Borrowed) | Ab (5th) |
+| 3 | **Bbm7** | iv (Modal Interchange) | Db (b3) |
+| 4 | **AMaj7** | III (Chromatic Median) | G# (7th) |
+| 5 | **FMaj7#11** | I | C (5th) |
+| 6 | **EbMaj7#5** | bVII (Augmented) | D (7th) |
+| 7 | **Dm9** | vi | A (5th) |
+| 8 | **E7alt** | VII7 (Dominant Approach) | F (b9) |
+| **B** |  |  |  |
+| 9 | **AbMaj7** | bIII | Eb (5th) |
+| 10 | **Gb13** | bII7 (Neapolitan Dom) | Bb (3rd) |
+| 11 | **EMaj7** | VII | D# (7th) |
+| 12 | **Cm7 - F7sus** | v - I sus | G (5th of Cm) |
+| 13 | **BbMaj7** | IV | D (3rd) |
+| 14 | **Am7b5** | iii° | Eb (b5) |
+| 15 | **Gm11** | ii | F (b7) |
+| 16 | **—** | (Rest / Space) | — |
+| **A2** |  |  |  |
+| 17-24 | (Repeat A1 with variations) |  |  |
+| **C** |  |  |  |
+| 25 | **Db/F** | bVI/I (Slash Voicing) | Ab (5th) |
+| 26 | **BMaj7#11** | #IV (Lydian) | A# (7th) |
+| 27 | **Bb7sus** | IV7sus | Ab (b7) |
+| 28 | **Am9** | iii | E (5th) |
+| 29 | **AbMaj7#5** | bIII+ | G (7th) |
+| 30 | **Gm7** | ii | D (5th) |
+| 31 | **FMaj9** | I | E (7th) |
+| 32 | **—** | (Fermata / Decay) | — |
 
 ---
 
 ## 2. SCALE PALETTE STUDY
 
-*   **Primary Universe (Fmaj7#11):** F Lydian.
-*   **Planing Colors (Gbmaj7, Bmaj7):** Lydian shifts (Side-slipping).
-*   **Lydian Augmented (Ebmaj7#5):** The 3rd mode of C Melodic Minor.
-*   **Slash Chord (Db/Eb):** Eb Mixolydian Sus / Eb Dorian Hybrid.
+*   **Primary Universe (FMaj7#11):** F Lydian (B natural provides the #11 color).
+*   **Chromatic Mediant (DbMaj7, AbMaj7):** Db Ionian / Ab Ionian — Use as "parallel universes."
+*   **Modal Interchange (Bbm7):** Bb Dorian from F minor parallel.
+*   **Augmented Approach (EbMaj7#5):** Eb Lydian Augmented (3rd mode of Melodic Minor).
+*   **Altered Dominant (E7alt):** E Altered Scale / F Melodic Minor.
 
-**Barry Harris Logic:**
-*   Use **Diminished** connectivity to glide between the major 7th planes.
-*   Example: Between **Gbmaj7** and **Fmaj7**, use **F Diminished** as a pivot.
+**Wayne Shorter Logic:**
+*   Avoid resolution — let each chord exist as its own "color center."
+*   Target **chord tones 7 and 9** rather than roots and 5ths for ambiguity.
+*   Use **wide intervals** (6ths, 7ths, 9ths) in the melody.
 
 ---
 
@@ -46,54 +61,65 @@
 
 | Chord | Stable Triad | Color/Tension Triad | Rationale |
 |:---|:---|:---|:---|
-| **Fmaj7#11** | **F Major** | **G Major** | Creates the Lydian sound (1-3-5 + 9-#11-6). |
-| **Gbmaj7#11** | **Gb Major** | **Ab Major** | Same Lydian structure, shifted up. |
-| **Ebmaj7#5** | **Eb Augmented** | **F Major** | Lydian Augmented tension. |
-| **C7alt** | **Gb Major** | **Ab Minor** | Tritone sub pairs. |
+| **FMaj7#11** | **F Major** | **G Major** | Lydian pair (1-3-5 + 9-#11-6). |
+| **DbMaj7** | **Db Major** | **Eb Major** | Ionian color extension. |
+| **EbMaj7#5** | **Eb Augmented** | **G Major** | Lydian Aug texture. |
+| **E7alt** | **Bb Major** | **F Major** | Tritone substitution implied. |
+| **AbMaj7** | **Ab Major** | **Bb Minor** | Creates the Maj7/9 sound. |
+| **Gb13** | **Gb Major** | **Db Major** | Defines the 13 extension. |
 
-**Melodic Cell Idea:** Wide intervallic skips (4ths and 5ths) using the *Color Triad*.
+**Melodic Cell Idea:** Descending 7th intervals from the Color Triad landing on 3rd of Stable Triad.
 
 ---
 
 ## 4. THREE ETUDE CHORUSES
 
-### **Chorus 1: Lyrical Melody (Shorter-esque)**
-*   **Concept:** Long notes, space, and motivic development of a single interval (Perfect 4th).
-*   **Motif:** C to F (Ascending 4th).
-*   **Development:** Transposing the 4th interval through the changing Lydian worlds.
+### **Chorus 1: Suspended Melody (Spatial)**
+*   **Concept:** Long tones with strategic space; 3/4 allows the waltz-like "breath."
+*   **Texture:** Half notes tied across bar lines, quarter note pickups.
+*   **Bars 1-8:** Melody hovers on 7ths (E over FMaj7, Ab over DbMaj7).
+*   **Bars 9-16:** Wider leaps — 9ths and 10ths — evoking "Nefertiti" atmosphere.
+*   **Bars 25-32:** Gradually descending line from high E down to middle C.
 
-### **Chorus 2: Modern Triad-Pair Lines**
-*   **Concept:** Hexatonic patterns (combining the two triads).
-*   **Rhythm:** Floating 3/4 polyrhythms (dotted quarters over the bar line).
-*   **Target:** Hitting the #11 on every Major 7 chord.
+### **Chorus 2: Intervallic Tension Lines**
+*   **Concept:** Continuous 8th notes built on tension intervals (b9, #11, 13).
+*   **Bar 1 (FMaj7#11):** G-B-E (G Major triad implying Lydian).
+*   **Bar 9 (AbMaj7):** Eb-G-C-Bb descending.
+*   **Bar 10 (Gb13):** Bb-Db-F-Ab (stacked 3rds from the 3rd).
+*   **Goal:** Avoid root-based thinking; float above the harmony.
 
-### **Chorus 3: Wyble Two-Voice Counterpoint**
-*   **Concept:** Oblique motion.
-*   **Texture:** Top voice sustains melody; bottom voice moves in counter-rhythm.
-*   **Key Moment:** Bar 7 (Bmaj7) to Bar 8 (Bb13) - contrary motion closing in (Outer voices move inward).
+### **Chorus 3: Sustain & Decay Study**
+*   **Concept:** Guitar as a "breathing" instrument — use of volume swells and natural decay.
+*   **Texture:**
+    *   *Bars 1-8:* Play dyads (6ths on strings 1-3), let ring into next chord.
+    *   *Bars 9-16:* Single notes with volume pedal swells.
+    *   *Bars 25-32:* Harmonics (natural and artificial) over the final chords.
+*   **Key Moment (Bar 16 — Rest):** Complete silence for one full bar.
 
 ---
 
-## 5. OPTIONAL GUITAR VOICING SET (Quartal & Open)
+## 5. OPTIONAL GUITAR VOICING SET (Open & Wide)
 
-*   **Fmaj7#11:** `1-x-2-2-0-0` (F-E-A-B-E).
-*   **Gbmaj7#11:** `2-x-3-3-1-1` (Gb-F-Bb-C-F).
-*   **Am11:** `5-x-5-5-3-x` (A-G-C-E).
+*   **FMaj7#11:** `x-x-3-4-5-4` (High voicing with #11 on top).
+*   **DbMaj7:** `x-4-3-5-4-x` (Spread Drop-3).
+*   **EbMaj7#5:** `x-6-5-7-7-x` (Augmented cluster).
+*   **AbMaj7:** `4-x-5-5-4-x` (Shell + 9).
+*   **E7alt:** `x-7-6-7-8-x` (Altered voicing with b9 on top).
 
 ---
 
 ## 6. FINAL EVALUATION
 
-1.  **Clarity:** (5/5) Clear A-B form.
-2.  **MDH:** (5/5) Melody notes define the specific Lydian colors.
-3.  **Voice-Leading:** (5/5) Planing major 7ths voice-led via common tones.
-4.  **Counterpoint:** (5/5) Wyble chorus creates independence.
-5.  **Triad Colour:** (5/5) F/G pair is the classic Lydian sound.
-6.  **Playability:** (4/5) Wide stretches in the open voicings; manageable.
-7.  **Structure:** (5/5) Floating feel maintained.
-8.  **Emotional Arc:** Mysterious -> Intense -> Unresolved.
-9.  **Originality:** (5/5) Strong Shorter vibe.
-10. **Unifying Tech:** (5/5) Hexatonic scales unify the improv.
+1.  **Clarity:** (4/5) Intentional ambiguity requires listener engagement.
+2.  **MDH:** (5/5) Melody generates harmonic implications throughout.
+3.  **Voice-Leading:** (5/5) Chromatic mediant motion is smooth and logical.
+4.  **Counterpoint:** (4/5) Primarily single-line focus; Chorus 3 adds dyads.
+5.  **Triad Colour:** (5/5) G/F Lydian pair is central to the sound.
+6.  **Playability:** (4/5) Wide stretches for some voicings; sustain technique required.
+7.  **Structure:** (5/5) ABAC form provides variation without repetition.
+8.  **Emotional Arc:** Mysterious -> Tense -> Resolving into space.
+9.  **Originality:** (5/5) Shorter-influenced but distinctly guitaristic.
+10. **Unifying Tech:** (5/5) Lydian and Lydian Augmented scales unify the piece.
 
 **Status:** **APPROVED.** Ready for export.
 
