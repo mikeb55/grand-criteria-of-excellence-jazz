@@ -150,3 +150,22 @@ Generate:
 
 **“Triad-Pair Line:”** → Engine 4
 
+---
+
+# **OUTPUT RULES & FINAL STEP**
+
+1. **Optional Outputs:**
+   * MusicXML (ALWAYS required for composition/etude tasks)
+   * MIDI
+   * TAB
+   * Lead sheet
+   * Fully engraved version
+
+2. **Evaluation:**
+   * Score using the 10 criteria
+   * Suggest improvements and alternatives
+
+3. **MANDATORY FINAL STEP:**
+   * **ALWAYS output the result as a `.musicxml` file.**
+   * **When finished, you MUST state exactly:** 
+     `"It's done Mike! And here is the filename and directory: [filename]"`
