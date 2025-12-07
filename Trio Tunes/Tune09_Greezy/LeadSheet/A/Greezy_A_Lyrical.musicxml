@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.1 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="3.1">
+  <work>
+    <work-title>Greezy - Version A (Lyrical)</work-title>
+  </work>
+  <identification>
+    <creator type="composer">GCE Jazz Project</creator>
+    <encoding>
+      <software>TTIMB v1.0</software>
+      <encoding-date>2025-12-07</encoding-date>
+    </encoding>
+  </identification>
+  <defaults>
+    <scaling>
+      <millimeters>7.0556</millimeters>
+      <tenths>40</tenths>
+    </scaling>
+  </defaults>
+  <part-list>
+    <score-part id="P1">
+      <part-name>Guitar</part-name>
+      <part-abbreviation>Gtr.</part-abbreviation>
+    </score-part>
+  </part-list>
+  <part id="P1">
+    <!-- Bar 1: G7 - Blues Cry Opening (M2) -->
+    <measure number="1">
+      <attributes>
+        <divisions>4</divisions>
+        <key>
+          <fifths>1</fifths>
+        </key>
+        <time symbol="common">
+          <beats>12</beats>
+          <beat-type>8</beat-type>
+        </time>
+        <clef>
+          <sign>G</sign>
+          <line>2</line>
+        </clef>
+      </attributes>
+      <direction placement="above">
+        <direction-type>
+          <metronome>
+            <beat-unit>dotted-quarter</beat-unit>
+            <per-minute>100</per-minute>
+          </metronome>
+        </direction-type>
+      </direction>
+      <direction placement="above">
+        <direction-type>
+          <words>Shuffle Blues - M2 Blues Cry dominant</words>
+        </direction-type>
+      </direction>
+      <harmony>
+        <root><root-step>G</root-step></root>
+        <kind text="7">dominant</kind>
+      </harmony>
+      <!-- Bb bend to B (blue 3rd to major 3rd) - M2 signature -->
+      <note>
+        <pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+        <notations>
+          <technical><bend><bend-alter>1</bend-alter></bend></technical>
+        </notations>
+      </note>
+      <note>
+        <pitch><step>B</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>D</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>G</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+    </measure>
+    <!-- Bar 2: G7 continued -->
+    <measure number="2">
+      <harmony>
+        <root><root-step>G</root-step></root>
+        <kind text="7">dominant</kind>
+      </harmony>
+      <note>
+        <pitch><step>F</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>D</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>B</step><octave>3</octave></pitch>
+        <duration>6</duration>
+        <type>quarter</type>
+        <dot/>
+      </note>
+    </measure>
+    <!-- Bar 3: C7 -->
+    <measure number="3">
+      <harmony>
+        <root><root-step>C</root-step></root>
+        <kind text="7">dominant</kind>
+      </harmony>
+      <note>
+        <pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+        <notations>
+          <technical><bend><bend-alter>1</bend-alter></bend></technical>
+        </notations>
+      </note>
+      <note>
+        <pitch><step>E</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>G</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>C</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+    </measure>
+    <!-- Bar 4: C7 continued -->
+    <measure number="4">
+      <harmony>
+        <root><root-step>C</root-step></root>
+        <kind text="7">dominant</kind>
+      </harmony>
+      <note>
+        <pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>G</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>E</step><octave>4</octave></pitch>
+        <duration>6</duration>
+        <type>quarter</type>
+        <dot/>
+      </note>
+    </measure>
+    <!-- Bar 5: G7 -->
+    <measure number="5">
+      <harmony>
+        <root><root-step>G</root-step></root>
+        <kind text="7">dominant</kind>
+      </harmony>
+      <note>
+        <pitch><step>D</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>G</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>B</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>D</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+    </measure>
+    <!-- Bar 6: G#dim7 - Passing diminished -->
+    <measure number="6">
+      <harmony>
+        <root><root-step>G</root-step><root-alter>1</root-alter></root>
+        <kind text="dim7">diminished-seventh</kind>
+      </harmony>
+      <note>
+        <pitch><step>G</step><alter>1</alter><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>B</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>D</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>F</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+    </measure>
+    <!-- Bar 7: G7/B -->
+    <measure number="7">
+      <harmony>
+        <root><root-step>G</root-step></root>
+        <kind text="7">dominant</kind>
+        <bass><bass-step>B</bass-step></bass>
+      </harmony>
+      <note>
+        <pitch><step>G</step><octave>5</octave></pitch>
+        <duration>6</duration>
+        <type>quarter</type>
+        <dot/>
+      </note>
+      <note>
+        <pitch><step>F</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>D</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+    </measure>
+    <!-- Bar 8: E7alt -->
+    <measure number="8">
+      <harmony>
+        <root><root-step>E</root-step></root>
+        <kind text="7alt">dominant</kind>
+      </harmony>
+      <note>
+        <pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>G</step><alter>1</alter><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>E</step><octave>4</octave></pitch>
+        <duration>6</duration>
+        <type>quarter</type>
+        <dot/>
+      </note>
+    </measure>
+    <!-- Bar 9: Am7 -->
+    <measure number="9">
+      <harmony>
+        <root><root-step>A</root-step></root>
+        <kind text="m7">minor-seventh</kind>
+      </harmony>
+      <note>
+        <pitch><step>A</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>C</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>E</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>G</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+    </measure>
+    <!-- Bar 10: D7 -->
+    <measure number="10">
+      <harmony>
+        <root><root-step>D</root-step></root>
+        <kind text="7">dominant</kind>
+      </harmony>
+      <note>
+        <pitch><step>F</step><alter>1</alter><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>D</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>A</step><octave>4</octave></pitch>
+        <duration>6</duration>
+        <type>quarter</type>
+        <dot/>
+      </note>
+    </measure>
+    <!-- Bar 11: G7 E7 -->
+    <measure number="11">
+      <harmony>
+        <root><root-step>G</root-step></root>
+        <kind text="7">dominant</kind>
+      </harmony>
+      <note>
+        <pitch><step>G</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>B</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <harmony>
+        <root><root-step>E</root-step></root>
+        <kind text="7">dominant</kind>
+      </harmony>
+      <note>
+        <pitch><step>E</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>G</step><alter>1</alter><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+    </measure>
+    <!-- Bar 12: Am7 D7 (turnaround) -->
+    <measure number="12">
+      <harmony>
+        <root><root-step>A</root-step></root>
+        <kind text="m7">minor-seventh</kind>
+      </harmony>
+      <note>
+        <pitch><step>A</step><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>C</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <harmony>
+        <root><root-step>D</root-step></root>
+        <kind text="7">dominant</kind>
+      </harmony>
+      <note>
+        <pitch><step>D</step><octave>5</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <note>
+        <pitch><step>F</step><alter>1</alter><octave>4</octave></pitch>
+        <duration>3</duration>
+        <type>eighth</type>
+      </note>
+      <barline location="right">
+        <bar-style>light-heavy</bar-style>
+        <repeat direction="backward"/>
+      </barline>
+    </measure>
+  </part>
+</score-partwise>
+
