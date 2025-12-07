@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIO TUNES IMPROVISATION METHOD - Print Version</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        @page { size: A4; margin: 2cm; }
+        
+        @media print {
+            .page-break { page-break-before: always; }
+            .chapter { page-break-before: always; }
+        }
+        
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            font-size: 12pt;
+            line-height: 1.5;
+            color: #000;
+            background: #fff;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .title-page {
+            text-align: center;
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 2px solid #000;
+            padding: 50px 30px;
+            margin-bottom: 40px;
+        }
+        
+        .title-main { font-size: 36pt; font-weight: 700; margin-bottom: 8px; }
+        .title-sub { font-size: 18pt; font-weight: 600; margin-bottom: 30px; }
+        .title-subtitle { font-size: 14pt; margin-bottom: 40px; font-style: italic; }
+        .title-features { font-size: 12pt; line-height: 2; margin-bottom: 40px; }
+        .title-footer { font-size: 12pt; margin-top: auto; }
+        .ornament { font-size: 14pt; margin: 15px 0; }
+        
+        h1 {
+            font-size: 20pt;
+            border-bottom: 2px solid #000;
+            padding-bottom: 8px;
+            margin: 30px 0 15px 0;
+        }
+        
+        h2 {
+            font-size: 14pt;
+            margin: 20px 0 10px 0;
+            border-left: 3px solid #000;
+            padding-left: 10px;
+        }
+        
+        h3 { font-size: 12pt; font-weight: 700; margin: 15px 0 8px 0; }
+        
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 10pt; }
+        th { background: #eee; padding: 8px 6px; text-align: left; font-weight: 700; border: 1px solid #000; }
+        td { padding: 6px; border: 1px solid #000; }
+        
+        pre, code { font-family: 'JetBrains Mono', 'Consolas', monospace; font-size: 9pt; }
+        pre {
+            background: #f5f5f5;
+            border: 1px solid #000;
+            padding: 12px;
+            margin: 12px 0;
+            overflow-x: auto;
+        }
+        code { background: #eee; padding: 1px 4px; }
+        
+        ul, ol { margin: 10px 0 10px 25px; }
+        li { margin: 5px 0; }
+        
+        .chapter-header {
+            border: 2px solid #000;
+            padding: 15px;
+            margin: 20px 0 15px 0;
+        }
+        .chapter-header h1 { border-bottom: 1px solid #000; margin: 0 0 8px 0; padding-bottom: 8px; }
+        .chapter-header .tagline { font-style: italic; font-size: 11pt; }
+        
+        .tune-overview {
+            border: 1px solid #000;
+            padding: 12px;
+            margin: 12px 0;
+            background: #f9f9f9;
+        }
+        
+        .key-takeaways {
+            border: 2px solid #000;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .key-takeaways h2 { border: none; padding: 0; margin: 0 0 10px 0; }
+        
+        hr { border: none; border-top: 1px solid #000; margin: 25px 0; }
+        strong { font-weight: 700; }
+        p { margin: 10px 0; }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 25px;
+            border: 2px solid #000;
+        }
+        .footer-main { font-size: 16pt; font-weight: 700; }
+        
+        .quick-ref {
+            border: 1px solid #000;
+            padding: 15px;
+            margin: 15px 0;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<!-- TITLE PAGE -->
+<div class="title-page">
+    <div class="title-main">TRIO TUNES</div>
+    <div class="title-sub">IMPROVISATION METHOD</div>
+    <div class="ornament">• • •</div>
+    <div class="title-subtitle">A Complete System for Jazz Guitar Mastery</div>
+    <div class="title-features">
+        15 Original Compositions<br>
+        MAMS Motif System<br>
+        Triad Pair Studies<br>
+        Counterpoint Techniques<br>
+        Phrase Packs & Etudes
+    </div>
+    <div class="ornament">———————</div>
+    <div class="title-footer">
+        <strong>COMPLETE EDITION</strong><br><br>
+        GCE Jazz Project<br>
+        December 2025
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- TABLE OF CONTENTS -->
+<h1>TABLE OF CONTENTS</h1>
+
+<h2>Introductions</h2>
+<ul>
+    <li>Introduction to MAMS</li>
+    <li>Melodic Style Engine Overview</li>
+    <li>How to Use This Method</li>
+</ul>
+
+<h2>The 15 Tunes</h2>
+<table>
+    <tr><th>Ch.</th><th>Tune</th><th>Key</th><th>Style</th><th>Focus</th></tr>
+    <tr><td>1</td><td>Blue Cycle</td><td>Bb</td><td>Blues</td><td>Counterpoint + Blues</td></tr>
+    <tr><td>2</td><td>Orbit</td><td>F</td><td>Wayne Shorter</td><td>Quartal Motion</td></tr>
+    <tr><td>3</td><td>Rust & Chrome</td><td>E</td><td>Scofield Funk</td><td>Angular + Drone</td></tr>
+    <tr><td>4</td><td>Sao Paulo Rain</td><td>D</td><td>Bossa Nova</td><td>Melodic Minor</td></tr>
+    <tr><td>5</td><td>The Mirror</td><td>Ab</td><td>Ballad</td><td>Space + Texture</td></tr>
+    <tr><td>6</td><td>Bright Size Life 2</td><td>D</td><td>Pat Metheny</td><td>Triad Pairs</td></tr>
+    <tr><td>7</td><td>Monk's Dream</td><td>C</td><td>Experimental</td><td>Whole-Tone</td></tr>
+    <tr><td>8</td><td>Nefertiti's Shadow</td><td>Eb</td><td>Post-Bop</td><td>Non-Functional</td></tr>
+    <tr><td>9</td><td>Greezy</td><td>G</td><td>Blues Shuffle</td><td>12/8 + Diminished</td></tr>
+    <tr><td>10</td><td>Hexagon</td><td>B</td><td>Odd Meter</td><td>5/4 + Hexatonic</td></tr>
+    <tr><td>11</td><td>Crystal Silence</td><td>A</td><td>ECM Ballad</td><td>Campanella</td></tr>
+    <tr><td>12</td><td>Angular Motion</td><td>Gb</td><td>Bebop/Etude</td><td>200 BPM</td></tr>
+    <tr><td>13</td><td>The Void</td><td>Free</td><td>Experimental</td><td>Texture</td></tr>
+    <tr><td>14</td><td>Solar Flare</td><td>C#</td><td>Fusion</td><td>7/8 + Triads</td></tr>
+    <tr><td>15</td><td>Final Departure</td><td>Db</td><td>Closing Ballad</td><td>Drop-2</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- INTRODUCTION TO MAMS -->
+<h1>INTRODUCTION TO MAMS</h1>
+
+<p>The <strong>Master Album Motif System (MAMS)</strong> ensures melodic coherence across all 15 Trio Tunes.</p>
+
+<h3>Core Motifs (M1–M7)</h3>
+<table>
+    <tr><th>ID</th><th>Name</th><th>Signature</th><th>Character</th></tr>
+    <tr><td><strong>M1</strong></td><td>The Question</td><td>P4↑ → M2↑ → m3↓</td><td>Opening</td></tr>
+    <tr><td><strong>M2</strong></td><td>Blues Cry</td><td>m3↑bend → P5↑ → m6↓</td><td>Emotional</td></tr>
+    <tr><td><strong>M3</strong></td><td>Angular Cell</td><td>M7↑ → m2↓ → P4↑</td><td>Modern</td></tr>
+    <tr><td><strong>M4</strong></td><td>Bebop Seed</td><td>1-2-3-5 + enclosure</td><td>Classic</td></tr>
+    <tr><td><strong>M5</strong></td><td>Floating Fourth</td><td>P4 → P4 → P4</td><td>Modal</td></tr>
+    <tr><td><strong>M6</strong></td><td>The Resolution</td><td>M7↓ → m3↑</td><td>Conclusive</td></tr>
+    <tr><td><strong>M7</strong></td><td>Textural Ghost</td><td>Wide + REST + Wide</td><td>Atmospheric</td></tr>
+</table>
+
+<h3>DNA Layers</h3>
+<ul>
+    <li><strong>Interval DNA:</strong> P4, M7, m6, #11, blues b3→3</li>
+    <li><strong>Rhythmic DNA:</strong> R-1 (Swing) through R-7 (Metric Modulation)</li>
+    <li><strong>Blues DNA:</strong> BL-1 to BL-6</li>
+    <li><strong>Bebop DNA:</strong> BB-1 to BB-7</li>
+    <li><strong>Triad-Pair DNA:</strong> TP-1 to TP-5</li>
+</ul>
+
+<hr>
+
+<h1>MELODIC STYLE ENGINE</h1>
+
+<h3>Lyrical Family</h3>
+<p><strong>Jim Hall</strong> (space) • <strong>Bill Frisell</strong> (ambient) • <strong>Pat Metheny</strong> (optimistic)</p>
+
+<h3>Modern Family</h3>
+<p><strong>Wayne Shorter</strong> (enigmatic) • <strong>Kurt Rosenwinkel</strong> (vocal) • <strong>Ant Law</strong> (intervallic)</p>
+
+<h3>Blues Family</h3>
+<p><strong>Grant Green</strong> (soulful) • <strong>George Benson</strong> (fluid) • <strong>John Scofield</strong> (gritty)</p>
+
+<h3>Bebop Family</h3>
+<p><strong>Charlie Parker</strong> (source) • <strong>Sonny Stitt</strong> (precision) • <strong>Barry Harris</strong> (harmonic)</p>
+
+<h3>Avant Family</h3>
+<p><strong>Mary Halvorson</strong> (angular) • <strong>Ben Monder</strong> (density) • <strong>Monk</strong> (rhythmic)</p>
+
+<hr>
+
+<h1>HOW TO USE THIS METHOD</h1>
+
+<h3>Beginner (Months 1-3)</h3>
+<ol>
+    <li><strong>Blue Cycle</strong> — Foundation</li>
+    <li><strong>Greezy</strong> — Deep blues</li>
+    <li><strong>Sao Paulo Rain</strong> — Bossa basics</li>
+</ol>
+
+<h3>Intermediate (Months 4-6)</h3>
+<ol start="4">
+    <li><strong>Bright Size Life 2</strong> — Triad pairs</li>
+    <li><strong>Orbit</strong> — Quartal concepts</li>
+    <li><strong>Nefertiti's Shadow</strong> — Modern vocabulary</li>
+</ol>
+
+<h3>Advanced (Months 7-12)</h3>
+<ol start="7">
+    <li><strong>Angular Motion</strong> — Technical</li>
+    <li><strong>Hexagon</strong> — Odd meter</li>
+    <li><strong>Solar Flare</strong> — 7/8 fusion</li>
+    <li>All remaining tunes</li>
+</ol>
+
+<div class="tune-overview">
+<h3>60-Minute Daily Session</h3>
+<ul>
+    <li>10 min — Warm-up (scales, motifs)</li>
+    <li>15 min — Current tune vocabulary</li>
+    <li>15 min — Etude or phrase pack</li>
+    <li>10 min — Counterpoint practice</li>
+    <li>10 min — Free improvisation</li>
+</ul>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 1 -->
+<div class="chapter-header">
+    <h1>CHAPTER 1: BLUE CYCLE</h1>
+    <div class="tagline">"Wyble counterpoint meets Coltrane changes"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> Bb</td><td><strong>Tempo:</strong> 120 BPM</td><td><strong>Time:</strong> 4/4</td></tr>
+    <tr><td><strong>Form:</strong> 12-Bar Blues</td><td><strong>Style:</strong> Blues (Cycle)</td><td></td></tr>
+</table>
+<p><strong>Playing Tip:</strong> Focus on hand separation; keep bass independent</p>
+</div>
+
+<h2>The Concept</h2>
+<p>Blue Cycle combines traditional 12-bar blues with <strong>Jimmy Wyble counterpoint</strong> and <strong>Coltrane cycle substitutions</strong>.</p>
+
+<h2>Chord Progression</h2>
+<pre>║: Bb7    | Eb7    | Bb7    | Fm7  Bb7  |
+   Eb7    | Edim7  | Bb7    | G7alt     |
+   Cm7    | F7alt  | Bb7 G7 | Cm7  F7  :║</pre>
+
+<h2>Lead Sheet Versions</h2>
+<p><strong>A (Lyrical):</strong> M1, M6 — Jim Hall, Grant Green DNA<br>
+<strong>B (Modern):</strong> M3, M5 — Rosenwinkel, Ant Law DNA<br>
+<strong>C (Counterpoint):</strong> Single staff, two voices — 58% contrary motion<br>
+<strong>D (Hybrid):</strong> Synthesis — GCE Score 50/50</p>
+
+<h2>Motif Density</h2>
+<pre>M2 (Blues Cry)    ████████████         45%  ★ DOMINANT
+M4 (Bebop)        ██████████           38%
+M6 (Resolution)   ██████████           35%</pre>
+
+<h2>Triad-Pair Map</h2>
+<table>
+    <tr><th>Chord</th><th>Identity</th><th>Colour</th></tr>
+    <tr><td>Bb7</td><td>Bb Major</td><td>Ab Major</td></tr>
+    <tr><td>Eb7</td><td>Eb Major</td><td>F Major</td></tr>
+    <tr><td>G7alt</td><td>Ab Major</td><td>Db Major</td></tr>
+</table>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>M2 (Blues Cry) is your friend</strong> — Use it liberally</li>
+    <li><strong>The ii-V passages need M4</strong> — Bebop DNA required</li>
+    <li><strong>Bar 6 is the peak</strong> — Exploit the Edim7</li>
+    <li><strong>Counterpoint = independence</strong> — Practice each voice alone</li>
+    <li><strong>55/45 blues/bebop</strong> — Maintain this balance</li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 2 -->
+<div class="chapter-header">
+    <h1>CHAPTER 2: ORBIT</h1>
+    <div class="tagline">"Non-functional harmony over a floating pulse"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> F</td><td><strong>Tempo:</strong> 160 BPM</td><td><strong>Time:</strong> 3/4</td></tr>
+    <tr><td><strong>Form:</strong> 16-Bar AABA</td><td><strong>Style:</strong> Wayne Shorter</td><td></td></tr>
+</table>
+</div>
+
+<h2>Chord Progression</h2>
+<pre>A:  | FMaj7#11 | AbMaj7  | DbMaj7  | EMaj7   |
+B:  | Cm9      | Ebm9    | Abm9    | Bm9     |</pre>
+
+<p><strong>Root movement:</strong> Major 3rds — "Giant Steps" cells. <strong>No V-I cadences</strong> anywhere.</p>
+
+<h2>Dominant DNA</h2>
+<ul>
+    <li><strong>M5 (Floating Fourth):</strong> 40% — Quartal motion defines Orbit</li>
+    <li><strong>M7 (Textural Ghost):</strong> 25% — Space is essential</li>
+    <li><strong>Lydian triad pairs</strong> — II over I everywhere</li>
+</ul>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>M5 is essential</strong> — Quartal motion defines the tune</li>
+    <li><strong>3/4 creates orbit</strong> — Feel the circular pulse</li>
+    <li><strong>Space is music</strong> — Use M7 liberally</li>
+    <li><strong>Lydian everywhere</strong> — II triad over every major chord</li>
+    <li><strong>No resolution</strong> — Embrace the floating quality</li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 3 -->
+<div class="chapter-header">
+    <h1>CHAPTER 3: RUST & CHROME</h1>
+    <div class="tagline">"Gritty angular lines with open string drones"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> E</td><td><strong>Tempo:</strong> 95 BPM</td><td><strong>Time:</strong> 4/4</td></tr>
+    <tr><td><strong>Form:</strong> 16-Bar Blues-Funk</td><td><strong>Style:</strong> Scofield Funk</td><td></td></tr>
+</table>
+</div>
+
+<h2>The Concept</h2>
+<p><strong>Open string drones</strong> (E, B) + <strong>chromatic slides</strong> + <strong>aggressive attack</strong>.</p>
+
+<h2>Dominant DNA</h2>
+<ul>
+    <li><strong>M2 (Blues Cry):</strong> 45% — Blues-funk foundation</li>
+    <li><strong>Chromatic motion:</strong> 35% — Scofield signature</li>
+    <li><strong>R-4 (3+3+2):</strong> Funk rhythm essential</li>
+</ul>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>Open E is your friend</strong> — Let it ring</li>
+    <li><strong>Chromatic slides define Scofield</strong></li>
+    <li><strong>R-4 (3+3+2) creates the groove</strong></li>
+    <li><strong>Dig in</strong> — Aggressive right-hand attack</li>
+    <li><strong>#9 tension</strong> — G natural over E7</li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 4 -->
+<div class="chapter-header">
+    <h1>CHAPTER 4: SAO PAULO RAIN</h1>
+    <div class="tagline">"Melodic minor shapes over static pedal points"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> D</td><td><strong>Tempo:</strong> 130 BPM</td><td><strong>Time:</strong> 4/4</td></tr>
+    <tr><td><strong>Form:</strong> 32-Bar AABA</td><td><strong>Style:</strong> Bossa Nova</td><td></td></tr>
+</table>
+</div>
+
+<h2>The Concept</h2>
+<p><strong>Bossa Nova rhythm</strong> + <strong>melodic minor colors</strong> + <strong>D pedal point</strong>.</p>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>Steady rhythm is everything</strong> — Don't rush</li>
+    <li><strong>Melodic minor = Brazilian jazz</strong></li>
+    <li><strong>Pedal point creates space</strong></li>
+    <li><strong>Sing the melody</strong> — Vocal-like phrasing</li>
+    <li><strong>M6 for resolution</strong> — Jobim endings</li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 5 -->
+<div class="chapter-header">
+    <h1>CHAPTER 5: THE MIRROR</h1>
+    <div class="tagline">"Sparse, haunting voicings with wide spreads"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> Ab</td><td><strong>Tempo:</strong> 60 BPM</td><td><strong>Time:</strong> 4/4 (Rubato)</td></tr>
+    <tr><td><strong>Form:</strong> 16-Bar Through-Composed</td><td><strong>Style:</strong> Scofield Ballad</td><td></td></tr>
+</table>
+</div>
+
+<h2>The Concept</h2>
+<p><strong>Maximum space</strong> + <strong>volume swells</strong> + <strong>wide voicings</strong> + <strong>rubato</strong>.</p>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>Space IS the music</strong> — Don't fill every beat</li>
+    <li><strong>Volume swells essential</strong></li>
+    <li><strong>Rubato throughout</strong></li>
+    <li><strong>Let notes decay naturally</strong></li>
+    <li><strong>M7 defines the tune</strong></li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 6 -->
+<div class="chapter-header">
+    <h1>CHAPTER 6: BRIGHT SIZE LIFE 2</h1>
+    <div class="tagline">"Triad pairs moving constantly over a pedal"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> D</td><td><strong>Tempo:</strong> 145 BPM</td><td><strong>Time:</strong> 4/4</td></tr>
+    <tr><td><strong>Form:</strong> 16-Bar AABA</td><td><strong>Style:</strong> Pat Metheny</td><td></td></tr>
+</table>
+</div>
+
+<h2>This Is THE Triad-Pair Study</h2>
+<table>
+    <tr><th>Chord</th><th>Identity</th><th>Colour</th></tr>
+    <tr><td>DMaj7</td><td>D Major</td><td>E Major</td></tr>
+    <tr><td>EMaj7</td><td>E Major</td><td>F# Major</td></tr>
+    <tr><td>F#m7</td><td>A Major</td><td>B Major</td></tr>
+</table>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>Triad pairs never stop</strong> — Constant flow</li>
+    <li><strong>Light touch</strong> — Even articulation</li>
+    <li><strong>D pedal is home</strong></li>
+    <li><strong>Optimism</strong> — Rising melodic arcs</li>
+    <li><strong>Master triad pairs here</strong></li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 7 -->
+<div class="chapter-header">
+    <h1>CHAPTER 7: MONK'S DREAM</h1>
+    <div class="tagline">"Whole-tone clusters and displaced rhythms"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> C</td><td><strong>Tempo:</strong> 110 BPM</td><td><strong>Time:</strong> 4/4</td></tr>
+    <tr><td><strong>Form:</strong> 12-Bar AABA</td><td><strong>Style:</strong> Experimental (Monk)</td><td></td></tr>
+</table>
+</div>
+
+<h2>Whole-Tone Scale</h2>
+<pre>C - D - E - F# - G# - A# - C</pre>
+<p>All intervals are whole steps. Creates floating, unresolved quality.</p>
+
+<h2>Monk Rhythmic Displacement</h2>
+<pre>Normal:  | 1 . 2 . 3 . 4 . |
+Monk:    | . 1 . . 2 . . 3 |</pre>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>Whole-tone creates floating quality</strong></li>
+    <li><strong>Displacement is Monk's signature</strong></li>
+    <li><strong>Space is as important as notes</strong></li>
+    <li><strong>Geometric thinking</strong></li>
+    <li><strong>Don't rush the silence</strong></li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 8 -->
+<div class="chapter-header">
+    <h1>CHAPTER 8: NEFERTITI'S SHADOW</h1>
+    <div class="tagline">"Melody dictates harmony; no recurring V7s"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> Eb</td><td><strong>Tempo:</strong> 180 BPM</td><td><strong>Time:</strong> 4/4</td></tr>
+    <tr><td><strong>Form:</strong> 16-Bar Through-Composed</td><td><strong>Style:</strong> Wayne Shorter (Post-Bop)</td><td></td></tr>
+</table>
+</div>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>Melody leads, harmony follows</strong></li>
+    <li><strong>No V-I anywhere</strong></li>
+    <li><strong>180 BPM requires bebop chops</strong></li>
+    <li><strong>Lydian everywhere</strong></li>
+    <li><strong>Listen to the top note</strong></li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 9 -->
+<div class="chapter-header">
+    <h1>CHAPTER 9: GREEZY</h1>
+    <div class="tagline">"Traditional shuffle with modern diminished subs"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> G</td><td><strong>Tempo:</strong> 100 BPM</td><td><strong>Time:</strong> 12/8</td></tr>
+    <tr><td><strong>Form:</strong> 12-Bar Blues</td><td><strong>Style:</strong> Blues (Shuffle)</td><td></td></tr>
+</table>
+</div>
+
+<h2>12/8 Shuffle Feel</h2>
+<pre>| 1  2  3  4  5  6  7  8  9  10 11 12 |
+| 1     .  2     .  3     .  4     .  |
+  tri - pl-et  tri - pl-et</pre>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>Triplet feel is everything</strong></li>
+    <li><strong>M2 dominates</strong> — Blues cry signature</li>
+    <li><strong>G#dim7 adds color</strong></li>
+    <li><strong>Grant Green influence</strong></li>
+    <li><strong>Lock with the groove</strong></li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 10 -->
+<div class="chapter-header">
+    <h1>CHAPTER 10: HEXAGON</h1>
+    <div class="tagline">"A 5/4 groove built on hexatonic scales"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> B</td><td><strong>Tempo:</strong> 135 BPM</td><td><strong>Time:</strong> 5/4</td></tr>
+    <tr><td><strong>Form:</strong> 20-Bar (4x5)</td><td><strong>Style:</strong> Original (Odd Meter)</td><td></td></tr>
+</table>
+</div>
+
+<h2>5/4 Subdivision</h2>
+<pre>3+2:  | 1  2  3  |  1  2  |
+Count: ONE two three ONE two</pre>
+
+<h2>Hexatonic Scale</h2>
+<pre>B - D - D# - F# - G - A# - B
+  m3   m2   M3   m2   M3   m2</pre>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>5/4 = 3+2</strong> — Internalize the grouping</li>
+    <li><strong>Hexatonic = augmented flavor</strong></li>
+    <li><strong>It should groove</strong></li>
+    <li><strong>M3 angular vocabulary</strong></li>
+    <li><strong>Count until it's natural</strong></li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 11 -->
+<div class="chapter-header">
+    <h1>CHAPTER 11: CRYSTAL SILENCE</h1>
+    <div class="tagline">"Open string voicings high up the neck"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> A</td><td><strong>Tempo:</strong> 80 BPM</td><td><strong>Time:</strong> 4/4</td></tr>
+    <tr><td><strong>Form:</strong> 16-Bar Through-Composed</td><td><strong>Style:</strong> ECM Ballad</td><td></td></tr>
+</table>
+</div>
+
+<h2>Campanella Technique</h2>
+<pre>Position XII with open strings:
+e|--0---12---0---14---|
+B|----12---0-----12---|
+  Let all notes ring together</pre>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>Campanella is the technique</strong></li>
+    <li><strong>High positions + open strings</strong></li>
+    <li><strong>Space and reverb</strong></li>
+    <li><strong>M7 textural approach</strong></li>
+    <li><strong>Crystal clarity</strong></li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 12 -->
+<div class="chapter-header">
+    <h1>CHAPTER 12: ANGULAR MOTION</h1>
+    <div class="tagline">"Wide interval skips at fast tempos"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> Gb</td><td><strong>Tempo:</strong> 200 BPM</td><td><strong>Time:</strong> 4/4</td></tr>
+    <tr><td><strong>Form:</strong> 32-Bar AABA</td><td><strong>Style:</strong> Bebop/Etude</td><td></td></tr>
+</table>
+</div>
+
+<h2>Technical Requirements</h2>
+<p><strong>Economy picking:</strong> Down-Up-Down with sweep connections. <strong>M7 leaps</strong> at speed. <strong>Bebop scales</strong> essential.</p>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>200 BPM requires bebop chops</strong></li>
+    <li><strong>Economy picking is essential</strong></li>
+    <li><strong>M4 dominates</strong></li>
+    <li><strong>Practice slowly, build speed</strong></li>
+    <li><strong>This is the technical showpiece</strong></li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 13 -->
+<div class="chapter-header">
+    <h1>CHAPTER 13: THE VOID</h1>
+    <div class="tagline">"Textural improvisation guide; no fixed chords"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> Free</td><td><strong>Tempo:</strong> Free</td><td><strong>Time:</strong> Free</td></tr>
+    <tr><td><strong>Form:</strong> Open</td><td><strong>Style:</strong> Experimental</td><td></td></tr>
+</table>
+</div>
+
+<h2>Performance Framework</h2>
+<pre>Section 1: EMERGENCE (2-3 min) — From silence
+Section 2: DEVELOPMENT (3-5 min) — Build density
+Section 3: CLIMAX (1-2 min) — Maximum intensity
+Section 4: DISSOLUTION (2-3 min) — Return to silence</pre>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>Freedom requires structure</strong></li>
+    <li><strong>M7 is your guide</strong></li>
+    <li><strong>Extended techniques welcome</strong></li>
+    <li><strong>Dynamic swells essential</strong></li>
+    <li><strong>Silence is part of it</strong></li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 14 -->
+<div class="chapter-header">
+    <h1>CHAPTER 14: SOLAR FLARE</h1>
+    <div class="tagline">"Rapid-fire triad pairs in a 7/8 ostinato"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> C#</td><td><strong>Tempo:</strong> 150 BPM</td><td><strong>Time:</strong> 7/8</td></tr>
+    <tr><td><strong>Form:</strong> 16-Bar Ostinato</td><td><strong>Style:</strong> Fusion</td><td></td></tr>
+</table>
+</div>
+
+<h2>7/8 Subdivision</h2>
+<pre>4+3:  | 1  2  3  4  |  1  2  3  |
+Count: ONE two three four ONE two three</pre>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>7/8 = 4+3</strong></li>
+    <li><strong>Ostinato grounds everything</strong></li>
+    <li><strong>Rapid triad pairs</strong></li>
+    <li><strong>Fusion energy</strong></li>
+    <li><strong>Accent the downbeats</strong></li>
+</ol>
+</div>
+
+<div class="chapter page-break"></div>
+
+<!-- CHAPTER 15 -->
+<div class="chapter-header">
+    <h1>CHAPTER 15: FINAL DEPARTURE</h1>
+    <div class="tagline">"Lush, orchestral drop-2 voicings"</div>
+</div>
+
+<div class="tune-overview">
+<table>
+    <tr><td><strong>Key:</strong> Db</td><td><strong>Tempo:</strong> 70 BPM</td><td><strong>Time:</strong> 4/4 (Rubato)</td></tr>
+    <tr><td><strong>Form:</strong> 32-Bar Ballad</td><td><strong>Style:</strong> Closing Ballad</td><td></td></tr>
+</table>
+</div>
+
+<h2>Drop-2 Voicings</h2>
+<pre>Close:  | E  G  Bb Db |  (Dbmaj7)
+Drop-2: | Bb E  G  Db |  (2nd voice dropped)</pre>
+
+<h2>Album Closure</h2>
+<p>Resolution of all MAMS motifs. Synthesis of the journey. <strong>Play it as a farewell.</strong></p>
+
+<div class="key-takeaways">
+<h2>Key Takeaways</h2>
+<ol>
+    <li><strong>Drop-2 voicings are the sound</strong></li>
+    <li><strong>Voice leading is paramount</strong></li>
+    <li><strong>Rubato throughout</strong></li>
+    <li><strong>M6 brings closure</strong></li>
+    <li><strong>This is the ending — make it count</strong></li>
+</ol>
+</div>
+
+<div class="page-break"></div>
+
+<!-- STUDY STRATEGIES -->
+<h1>STUDY STRATEGIES</h1>
+
+<h2>Strategy 1: Motif Mastery</h2>
+<p>Focus on one motif (M1–M7) across multiple tunes.</p>
+
+<h2>Strategy 2: Style Immersion</h2>
+<ul>
+    <li><strong>Month 1:</strong> Blues (1, 9)</li>
+    <li><strong>Month 2:</strong> Ballads (4, 5, 11, 15)</li>
+    <li><strong>Month 3:</strong> Modern (2, 7, 8)</li>
+    <li><strong>Month 4:</strong> Technical (6, 10, 12, 14)</li>
+</ul>
+
+<h2>Strategy 3: Technique Focus</h2>
+<ul>
+    <li><strong>Counterpoint:</strong> Blue Cycle, The Mirror</li>
+    <li><strong>Triad Pairs:</strong> Bright Size Life 2, Solar Flare</li>
+    <li><strong>Odd Meter:</strong> Orbit, Hexagon, Solar Flare</li>
+</ul>
+
+<hr>
+
+<!-- APPENDIX -->
+<h1>APPENDIX: MAMS QUICK REFERENCE</h1>
+
+<div class="quick-ref">
+<h3>Motifs at a Glance</h3>
+<pre>M1 (Question):    P4↑ → M2↑ → m3↓     [Opening]
+M2 (Blues Cry):   m3↑bend → P5↑ → m6↓ [Climax]
+M3 (Angular):     M7↑ → m2↓ → P4↑     [Tension]
+M4 (Bebop):       1-2-3-5 + enclosure [ii-V-I]
+M5 (Fourth):      P4 → P4 → P4        [Modal]
+M6 (Resolution):  M7↓ → m3↑           [Ending]
+M7 (Ghost):       Wide + REST + Wide  [Texture]</pre>
+</div>
+
+<div class="quick-ref">
+<h3>Rhythmic Codes</h3>
+<pre>R-1 = Swing 8ths       R-5 = Polyrhythm 3:2
+R-2 = Straight 16ths   R-6 = Space & Breath
+R-3 = Displacement     R-7 = Metric Modulation
+R-4 = 3+3+2 Grouping</pre>
+</div>
+
+<div class="quick-ref">
+<h3>Triad-Pair Types</h3>
+<pre>TP-1 = Major + Major (whole step)
+TP-2 = Major + Minor (minor 3rd)
+TP-3 = Major + Augmented
+TP-4 = Minor + Minor (whole step)
+TP-5 = Tritone pairs</pre>
+</div>
+
+<div class="page-break"></div>
+
+<!-- CLOSING -->
+<h1>CLOSING NOTES</h1>
+
+<p>The Trio Tunes Improvisation Method represents a complete system for developing jazz guitar vocabulary. By working through all 15 tunes, you will:</p>
+
+<ol>
+    <li><strong>Master MAMS motifs</strong> — A unified melodic vocabulary</li>
+    <li><strong>Internalize triad pairs</strong> — Modern harmonic approach</li>
+    <li><strong>Develop counterpoint skills</strong> — Two-voice independence</li>
+    <li><strong>Build style versatility</strong> — Blues to experimental</li>
+    <li><strong>Achieve technical command</strong> — From 60 BPM to 200 BPM</li>
+</ol>
+
+<p><em>The journey is the destination.</em> Each tune offers unique challenges and rewards. Take your time, practice daily, and let the music emerge.</p>
+
+<div class="footer">
+    <div class="ornament">• • •</div>
+    <div class="footer-main">TTIMB COMPLETE</div>
+    <p>Full Trio Tunes Improvisation Method Book</p>
+    <div class="ornament">———————</div>
+    <p>GCE Jazz Project • December 2025</p>
+    <div class="ornament">• • •</div>
+    <p style="font-size: 10pt; margin-top: 15px;"><em>Generated by TTIMB v1.0</em></p>
+</div>
+
+</body>
+</html>
+
