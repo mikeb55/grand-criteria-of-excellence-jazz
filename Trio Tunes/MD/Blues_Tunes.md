@@ -46,5 +46,28 @@ This approach adds modern harmonic color while maintaining the essential blues v
 
 ---
 
+## Barry Harris Etudes
+
+Two dedicated etudes have been created to practice these concepts:
+
+### Blue Cycle - 6th Diminished Scale Study
+**File:** `Tune01_Blue_Cycle/Etudes/Blue_Cycle_BH_6thDim_Scale_Study.pdf`
+
+- Practices the **Ab Major 6 Diminished Scale** (Ab-Bb-C-Db-D-Eb-F-G) over ii-V
+- Bar 4: Demonstrates the scale over Fm7-Bb7
+- Bar 6: Uses Edim7 arpeggio as passing dominant
+- Continuous 8th note lines through the 12-bar form
+
+### Greezy - Chromatic Connector Study
+**File:** `Tune09_Greezy/Etudes/Greezy_BH_Chromatic_Connector_Study.pdf`
+
+- Practices **diminished chords as chromatic connectors**
+- Bar 4: G#dim7 arpeggio (= E7b9) connecting to C7
+- Bar 6: C#dim7 arpeggio (= A7b9) connecting to D7
+- Bar 10: D7#9 with Half-Whole Diminished scale
+- 12/8 shuffle feel throughout
+
+---
+
 *Part of the Trio Tunes Jazz Guitar Etude Album*
 
