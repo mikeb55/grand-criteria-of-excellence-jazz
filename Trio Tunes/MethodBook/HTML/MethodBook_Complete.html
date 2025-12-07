@@ -1,0 +1,4960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trio Tunes Method Book - Complete</title>
+    
+<style>
+@page {
+    size: letter;
+    margin: 0.75in 0.75in 1in 0.75in;
+}
+
+@media print {
+    body { font-size: 11pt; }
+    .page-break { page-break-before: always; }
+    pre, table { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    .no-print { display: none; }
+    .back-to-toc { display: none; }
+    a { text-decoration: none; color: #222; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+/* TABLE OF CONTENTS STYLES */
+.toc-container {
+    border: 2px solid #333;
+    padding: 30px 40px;
+    margin: 30px 0 50px 0;
+    background: #fafafa;
+}
+
+.toc-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 22pt;
+}
+
+.toc-chapter {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.toc-chapter:last-child {
+    border-bottom: none;
+}
+
+.toc-chapter-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.toc-chapter-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.toc-chapter-title a:hover {
+    text-decoration: underline;
+}
+
+.toc-chapter-num {
+    color: #666;
+    font-weight: normal;
+}
+
+.toc-subheadings {
+    margin-left: 25px;
+    font-size: 11pt;
+    color: #444;
+}
+
+.toc-subheadings a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toc-subheadings a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO TOC LINK */
+.back-to-toc {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-toc:hover {
+    background: #e0e0e0;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26pt;
+    color: #1a1a2e;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16pt;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13pt;
+    color: #333;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+p { margin-bottom: 12px; text-align: justify; }
+
+ul, ol { margin-left: 25px; margin-bottom: 12px; }
+
+li { margin-bottom: 6px; }
+
+/* TABLES - Printer friendly */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+
+/* CODE - Printer friendly */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    border: 1px solid #ddd;
+}
+
+pre {
+    background-color: #f8f8f8;
+    color: #222;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #222;
+}
+
+blockquote {
+    border-left: 3px solid #666;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 35px 0;
+}
+
+strong { color: #111; }
+em { color: #333; }
+a { color: #333; }
+
+/* Header banner */
+.header-banner {
+    border: 2px solid #333;
+    padding: 25px 30px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.header-banner h1 {
+    color: #111;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 28pt;
+}
+
+.header-banner p {
+    color: #444;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+}
+
+.chapter-divider {
+    border-top: 3px double #333;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+}
+
+.print-instructions {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-instructions { display: none; }
+    .header-banner { margin-top: 0; }
+}
+</style>
+
+</head>
+<body>
+    <div class="print-instructions no-print">
+        <strong>📄 PRINTER-FRIENDLY with NAVIGATION</strong><br>
+        • Click any chapter or section in the Table of Contents to jump there<br>
+        • Click "Back to Table of Contents" to return<br>
+        • To save as PDF: Press <strong>Ctrl+P</strong> → Select <strong>"Save as PDF"</strong> → Click <strong>Save</strong>
+    </div>
+    
+    <div class="header-banner">
+        <h1>TRIO TUNES METHOD BOOK</h1>
+        <p><strong>A Comprehensive Guide to Jazz Guitar Etudes</strong></p>
+        <p>Grand Criteria of Excellence (GCE) Jazz Collection</p>
+        <p><em>15 Original Tunes • 17 Chapters • Complete Practice Guide</em></p>
+    </div>
+    
+    
+<div class="toc-container" id="table-of-contents">
+    <h2>📖 TABLE OF CONTENTS</h2>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">00.</span>
+            <a href="#00-introduction">Introduction</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#00-introduction-how-to-use-this-book">• How to Use This Book</a>
+            <a href="#00-introduction-core-concepts">• Core Concepts</a>
+            <a href="#00-introduction-the-15-tunes-at-a-glance">• The 15 Tunes at a Glance</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">01.</span>
+            <a href="#01-blue-cycle">Blue Cycle</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#01-blue-cycle-the-form">• The Form</a>
+            <a href="#01-blue-cycle-scale-palette">• Scale Palette</a>
+            <a href="#01-blue-cycle-triad-pairs">• Triad Pairs</a>
+            <a href="#01-blue-cycle-the-three-choruses">• The Three Choruses</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">02.</span>
+            <a href="#02-orbit">Orbit</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#02-orbit-the-form">• The Form</a>
+            <a href="#02-orbit-scale-palette">• Scale Palette</a>
+            <a href="#02-orbit-the-three-choruses">• The Three Choruses</a>
+            <a href="#02-orbit-the-34-feel">• The 3/4 Feel</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">03.</span>
+            <a href="#03-rust-and-chrome">Rust & Chrome</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#03-rust-and-chrome-the-form">• The Form</a>
+            <a href="#03-rust-and-chrome-scale-palette">• Scale Palette</a>
+            <a href="#03-rust-and-chrome-the-three-choruses">• The Three Choruses</a>
+            <a href="#03-rust-and-chrome-legato-slides">• Legato Slides</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">04.</span>
+            <a href="#04-sao-paulo-rain">Sao Paulo Rain</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#04-sao-paulo-rain-the-form">• The Form</a>
+            <a href="#04-sao-paulo-rain-the-bossa-rhythm">• The Bossa Rhythm</a>
+            <a href="#04-sao-paulo-rain-the-three-choruses">• The Three Choruses</a>
+            <a href="#04-sao-paulo-rain-the-bossa-touch">• The Bossa Touch</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">05.</span>
+            <a href="#05-the-mirror">The Mirror</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#05-the-mirror-the-form">• The Form</a>
+            <a href="#05-the-mirror-wide-intervals">• Wide Intervals</a>
+            <a href="#05-the-mirror-the-three-choruses">• The Three Choruses</a>
+            <a href="#05-the-mirror-volume-swells">• Volume Swells</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">06.</span>
+            <a href="#06-bright-size-life-2">Bright Size Life 2</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#06-bright-size-life-2-the-form">• The Form</a>
+            <a href="#06-bright-size-life-2-scale-palette">• Scale Palette</a>
+            <a href="#06-bright-size-life-2-the-three-choruses">• The Three Choruses</a>
+            <a href="#06-bright-size-life-2-the-metheny-touch">• The Metheny Touch</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">07.</span>
+            <a href="#07-monks-dream">Monk's Dream</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#07-monks-dream-the-form">• The Form</a>
+            <a href="#07-monks-dream-whole-tone-scale">• Whole-Tone Scale</a>
+            <a href="#07-monks-dream-the-three-choruses">• The Three Choruses</a>
+            <a href="#07-monks-dream-rhythmic-displacement">• Rhythmic Displacement</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">08.</span>
+            <a href="#08-nefertitis-shadow">Nefertiti's Shadow</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#08-nefertitis-shadow-the-form">• The Form</a>
+            <a href="#08-nefertitis-shadow-lydian-as-default">• Lydian as Default</a>
+            <a href="#08-nefertitis-shadow-the-three-choruses">• The Three Choruses</a>
+            <a href="#08-nefertitis-shadow-playing-at-180-bpm">• Playing at 180 BPM</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">09.</span>
+            <a href="#09-greezy">Greezy</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#09-greezy-the-form">• The Form</a>
+            <a href="#09-greezy-the-128-feel">• The 12/8 Feel</a>
+            <a href="#09-greezy-the-three-choruses">• The Three Choruses</a>
+            <a href="#09-greezy-the-shuffle-feel">• The Shuffle Feel</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">10.</span>
+            <a href="#10-hexagon">Hexagon</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#10-hexagon-understanding-54">• Understanding 5/4</a>
+            <a href="#10-hexagon-hexatonic-scales">• Hexatonic Scales</a>
+            <a href="#10-hexagon-the-three-choruses">• The Three Choruses</a>
+            <a href="#10-hexagon-odd-meter-tips">• Odd Meter Tips</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">11.</span>
+            <a href="#11-crystal-silence">Crystal Silence</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#11-crystal-silence-the-form">• The Form</a>
+            <a href="#11-crystal-silence-campanella-technique">• Campanella Technique</a>
+            <a href="#11-crystal-silence-the-three-choruses">• The Three Choruses</a>
+            <a href="#11-crystal-silence-ecm-sound">• ECM Sound</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">12.</span>
+            <a href="#12-angular-motion">Angular Motion</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#12-angular-motion-the-form">• The Form</a>
+            <a href="#12-angular-motion-bebop-scales">• Bebop Scales</a>
+            <a href="#12-angular-motion-the-three-choruses">• The Three Choruses</a>
+            <a href="#12-angular-motion-economy-picking">• Economy Picking</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">13.</span>
+            <a href="#13-the-void">The Void</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#13-the-void-the-concept">• The Concept</a>
+            <a href="#13-the-void-extended-techniques">• Extended Techniques</a>
+            <a href="#13-the-void-the-framework">• The Framework</a>
+            <a href="#13-the-void-listening-strategies">• Listening Strategies</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">14.</span>
+            <a href="#14-solar-flare">Solar Flare</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#14-solar-flare-understanding-78">• Understanding 7/8</a>
+            <a href="#14-solar-flare-scale-palette">• Scale Palette</a>
+            <a href="#14-solar-flare-the-three-choruses">• The Three Choruses</a>
+            <a href="#14-solar-flare-speed-building">• Speed Building</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">15.</span>
+            <a href="#15-final-departure">Final Departure</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#15-final-departure-the-form">• The Form</a>
+            <a href="#15-final-departure-drop-2-voicings">• Drop-2 Voicings</a>
+            <a href="#15-final-departure-the-three-choruses">• The Three Choruses</a>
+            <a href="#15-final-departure-rubato-playing">• Rubato Playing</a>
+        </div>
+    </div>
+
+    <div class="toc-chapter">
+        <div class="toc-chapter-title">
+            <span class="toc-chapter-num">16.</span>
+            <a href="#16-conclusion">Conclusion</a>
+        </div>
+        <div class="toc-subheadings">
+            <a href="#16-conclusion-what-youve-learned">• What You've Learned</a>
+            <a href="#16-conclusion-where-to-go-from-here">• Where to Go From Here</a>
+            <a href="#16-conclusion-core-principles">• Core Principles</a>
+        </div>
+    </div>
+</div>
+
+    
+    <div id="00-introduction">
+<h1 id="the-trio-tunes-method-book">THE TRIO TUNES METHOD BOOK</h1>
+<h2 id="a-comprehensive-guide-to-jazz-guitar-etudes">A Comprehensive Guide to Jazz Guitar Etudes</h2>
+<h3 id="grand-criteria-of-excellence-gce-jazz-collection">Grand Criteria of Excellence (GCE) Jazz Collection</h3>
+<hr />
+<h2 id="welcome">WELCOME</h2>
+<p>This method book accompanies the <strong>Trio Tunes</strong> collection—15 original jazz guitar etudes designed to develop your technique, harmonic vocabulary, and musical expression. Each tune explores a different style, from traditional blues to avant-garde experimentation.</p>
+<hr />
+<h2 id="how-to-use-this-book">HOW TO USE THIS BOOK</h2>
+<h3 id="the-four-lead-sheet-variations">The Four Lead Sheet Variations</h3>
+<p>Each tune in this collection comes with <strong>four distinct lead sheet versions</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Version</th>
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>A</strong></td>
+<td style="text-align: left;">Lyrical</td>
+<td style="text-align: left;">Melodic, singable lines with clear phrase structures</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>B</strong></td>
+<td style="text-align: left;">Modern</td>
+<td style="text-align: left;">Triad pairs, wide intervals, contemporary harmony</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>C</strong></td>
+<td style="text-align: left;">Counterpoint</td>
+<td style="text-align: left;">Two-voice writing (Wyble-inspired independence)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: left;">Hybrid</td>
+<td style="text-align: left;">Combines elements from A, B, and C</td>
+</tr>
+</tbody>
+</table>
+<h3 id="practice-flow">Practice Flow</h3>
+<ol>
+<li><strong>Learn the Melody</strong> (Version A) — Internalize the form and phrasing</li>
+<li><strong>Study the Harmony</strong> — Work through chord voicings and scale palettes</li>
+<li><strong>Apply Triad Pairs</strong> (Version B) — Modern melodic language</li>
+<li><strong>Develop Independence</strong> (Version C) — Two-voice counterpoint</li>
+<li><strong>Integrate</strong> (Version D) — Combine all approaches organically</li>
+</ol>
+<h3 id="companion-materials">Companion Materials</h3>
+<p>Each tune folder contains:
+- <strong>LeadSheet/</strong> — The four versions (A, B, C, D) as PDF and MusicXML
+- <strong>Practice/</strong> — Supplementary exercises:
+  - <code>Etudes/</code> — Written-out etude choruses
+  - <code>Phrases/</code> — Vocabulary licks over the changes
+  - <code>TriadPairs/</code> — Specific triad pair patterns
+  - <code>Counterpoint/</code> — Two-voice exercises
+- <strong>Analysis/</strong> — Harmonic breakdowns and annotations
+- <strong>Source/</strong> — Original composition files</p>
+<hr />
+<h2 id="core-concepts">CORE CONCEPTS</h2>
+<h3 id="1-melody-derived-harmony-mdh">1. Melody-Derived Harmony (MDH)</h3>
+<p>Every chord in these etudes exists to <strong>support the melody</strong>. The harmony isn't arbitrary—it's generated from the melodic content. When practicing, always sing or hear the melody in your head, even when working through voicings.</p>
+<h3 id="2-triad-pair-system">2. Triad Pair System</h3>
+<p>We use a consistent <strong>Stable + Color Triad</strong> approach:
+- <strong>Stable Triad</strong>: Contains chord tones (1, 3, 5)
+- <strong>Color Triad</strong>: Adds tensions (7, 9, 11, 13, alterations)</p>
+<p>Example over Cmaj7:
+- Stable: C Major (C-E-G)
+- Color: D Major (D-F#-A) — provides 9, #11, 13</p>
+<h3 id="3-jimmy-wyble-counterpoint">3. Jimmy Wyble Counterpoint</h3>
+<p>Inspired by the legendary Jimmy Wyble, these etudes feature <strong>independent two-voice writing</strong>:
+- Top voice: Melody (often sustained)
+- Bottom voice: Counter-melody or walking line
+- Goal: Each voice should be singable independently</p>
+<h3 id="4-barry-harris-harmonic-approach">4. Barry Harris Harmonic Approach</h3>
+<p>Several tunes incorporate Barry Harris's <strong>6th Diminished Scale</strong> logic:
+- Major 6 Diminished: 1-2-3-4-5-b6-6-7
+- Minor 6 Diminished: 1-2-b3-3-4-5-6-b7
+- Creates smooth, bebop-style voice leading</p>
+<hr />
+<h2 id="the-15-tunes-at-a-glance">THE 15 TUNES AT A GLANCE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">#</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: center;">Key</th>
+<th style="text-align: center;">BPM</th>
+<th style="text-align: center;">Time</th>
+<th style="text-align: left;">Style</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Blue Cycle</td>
+<td style="text-align: center;">Bb</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;">4/4</td>
+<td style="text-align: left;">Blues (Cycle)</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Orbit</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">160</td>
+<td style="text-align: center;">3/4</td>
+<td style="text-align: left;">Wayne Shorter</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Rust &amp; Chrome</td>
+<td style="text-align: center;">E</td>
+<td style="text-align: center;">95</td>
+<td style="text-align: center;">4/4</td>
+<td style="text-align: left;">Scofield Funk</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Sao Paulo Rain</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">130</td>
+<td style="text-align: center;">4/4</td>
+<td style="text-align: left;">Bossa Nova</td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">The Mirror</td>
+<td style="text-align: center;">Ab</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">4/4</td>
+<td style="text-align: left;">Scofield Ballad</td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">Bright Size Life 2</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">145</td>
+<td style="text-align: center;">4/4</td>
+<td style="text-align: left;">Pat Metheny</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">Monk's Dream</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">110</td>
+<td style="text-align: center;">4/4</td>
+<td style="text-align: left;">Experimental</td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;">Nefertiti's Shadow</td>
+<td style="text-align: center;">Eb</td>
+<td style="text-align: center;">180</td>
+<td style="text-align: center;">4/4</td>
+<td style="text-align: left;">Wayne Shorter</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;">Greezy</td>
+<td style="text-align: center;">G</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: center;">12/8</td>
+<td style="text-align: left;">Blues Shuffle</td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;">Hexagon</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">135</td>
+<td style="text-align: center;">5/4</td>
+<td style="text-align: left;">Odd Meter</td>
+</tr>
+<tr>
+<td style="text-align: center;">11</td>
+<td style="text-align: left;">Crystal Silence</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">80</td>
+<td style="text-align: center;">4/4</td>
+<td style="text-align: left;">ECM Ballad</td>
+</tr>
+<tr>
+<td style="text-align: center;">12</td>
+<td style="text-align: left;">Angular Motion</td>
+<td style="text-align: center;">Gb</td>
+<td style="text-align: center;">200</td>
+<td style="text-align: center;">4/4</td>
+<td style="text-align: left;">Bebop</td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td style="text-align: left;">The Void</td>
+<td style="text-align: center;">Free</td>
+<td style="text-align: center;">Free</td>
+<td style="text-align: center;">Free</td>
+<td style="text-align: left;">Experimental</td>
+</tr>
+<tr>
+<td style="text-align: center;">14</td>
+<td style="text-align: left;">Solar Flare</td>
+<td style="text-align: center;">C#</td>
+<td style="text-align: center;">150</td>
+<td style="text-align: center;">7/8</td>
+<td style="text-align: left;">Fusion</td>
+</tr>
+<tr>
+<td style="text-align: center;">15</td>
+<td style="text-align: left;">Final Departure</td>
+<td style="text-align: center;">Db</td>
+<td style="text-align: center;">70</td>
+<td style="text-align: center;">4/4</td>
+<td style="text-align: left;">Closing Ballad</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="equipment-recommendations">EQUIPMENT RECOMMENDATIONS</h2>
+<h3 id="guitar-setup">Guitar Setup</h3>
+<ul>
+<li><strong>Action</strong>: Medium-low for clean articulation</li>
+<li><strong>Strings</strong>: .011-.050 flatwound or semi-flatwound for warm tone</li>
+<li><strong>Pickup Selection</strong>: Neck or middle position for most tunes</li>
+</ul>
+<h3 id="amplification">Amplification</h3>
+<ul>
+<li>Clean, uncompressed tone as baseline</li>
+<li>Light reverb (spring or plate) for ballads</li>
+<li>Edge-of-breakup for Scofield-style tunes (#3, #5)</li>
+</ul>
+<h3 id="optional">Optional</h3>
+<ul>
+<li><strong>Volume pedal</strong>: Essential for ballads (#5, #11, #15)</li>
+<li><strong>Delay</strong>: Dotted-eighth for Metheny style (#6)</li>
+<li><strong>Octave pedal</strong>: For bass line reinforcement in counterpoint sections</li>
+</ul>
+<hr />
+<h2 id="lets-begin">LET'S BEGIN</h2>
+<p>Turn to <strong>Chapter 1: Blue Cycle</strong> to start your journey through the Trio Tunes collection. Take your time with each tune—the goal is mastery, not speed.</p>
+<p><em>"The beautiful thing about learning is that no one can take it away from you."</em><br />
+— B.B. King</p>
+<hr />
+<p><strong>Next Chapter: <a href="01_Blue_Cycle.md">Tune 1 - Blue Cycle →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="01-blue-cycle">
+<h1 id="chapter-1-blue-cycle">CHAPTER 1: BLUE CYCLE</h1>
+<p><strong>Style:</strong> Blues (Cycle) | <strong>Key:</strong> Bb Major | <strong>Tempo:</strong> 120 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Wyble counterpoint meets Coltrane changes."</em></p>
+<p>Blue Cycle is your entry point into the Trio Tunes collection. It's built on the most fundamental form in jazz—the 12-bar blues—but with a twist: we're incorporating cycle-of-fourths movements and two-voice counterpoint inspired by Jimmy Wyble.</p>
+<p><strong>Playing Tip:</strong> Focus on hand separation; keep the bass line independent from the melody.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>The 12-bar blues in Bb, with modern substitutions:</p>
+<pre><code>| Bb7    | Eb7    | Bb7    | Fm7 Bb7 |
+| Eb7    | Edim7  | Bb7    | G7alt   |
+| Cm7    | F7alt  | Bb7 G7 | Cm7 F7  |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Bar 6 (Edim7)</strong>: Barry Harris-style connector between IV and I</li>
+<li><strong>Bar 8 (G7alt)</strong>: Tritone substitution creates forward motion</li>
+<li><strong>Bars 9-12</strong>: Classic ii-V turnaround with alterations</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Alternate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Bb7</td>
+<td style="text-align: left;">Bb Mixolydian</td>
+<td style="text-align: left;">Bb Lydian Dominant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eb7</td>
+<td style="text-align: left;">Eb Mixolydian</td>
+<td style="text-align: left;">Eb Lydian Dominant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Edim7</td>
+<td style="text-align: left;">E Whole-Half Diminished</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7alt</td>
+<td style="text-align: left;">G Altered (Super Locrian)</td>
+<td style="text-align: left;">G Half-Whole Dim</td>
+</tr>
+<tr>
+<td style="text-align: left;">F7alt</td>
+<td style="text-align: left;">F Altered</td>
+<td style="text-align: left;">F Half-Whole Dim</td>
+</tr>
+</tbody>
+</table>
+<h3 id="barry-harris-logic">Barry Harris Logic</h3>
+<p>On the <strong>Fm7-Bb7</strong> in bar 4, use the <strong>Ab Major 6 Diminished Scale</strong>:
+- Ab - Bb - C - Db - Eb - E - F - G</p>
+<p>This single scale smoothly outlines the entire ii-V.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Bb7</td>
+<td style="text-align: left;">Bb Major</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Mixolydian (b7, 9, 11)</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7alt</td>
+<td style="text-align: left;">G Augmented</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Tritone tension</td>
+</tr>
+<tr>
+<td style="text-align: left;">F7alt</td>
+<td style="text-align: left;">A Diminished</td>
+<td style="text-align: left;">Eb Minor</td>
+<td style="text-align: left;">7b9 + altered color</td>
+</tr>
+</tbody>
+</table>
+<h3 id="exercise-triad-pair-cells">Exercise: Triad Pair Cells</h3>
+<p>Practice this pattern over Bb7:</p>
+<pre><code>Bb-D-F (up) → Ab-C-Eb (down) → Bb-D-F (up)...
+</code></pre>
+<p>Then apply rhythmic variations:
+- Straight eighths
+- Swing eighths
+- Triplet groupings
+- Displaced accents</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-version-a">Chorus 1: Lyrical (Version A)</h3>
+<p><strong>Concept:</strong> Call and response between registers</p>
+<ul>
+<li><strong>Bars 1-4</strong>: "Question" phrase using motif F-D-C-Bb</li>
+<li><strong>Bars 5-8</strong>: "Answer" flattening the 3rd (F-Db-C-Bb)</li>
+<li><strong>Bars 9-12</strong>: Rhythmic displacement over the turnaround</li>
+</ul>
+<p><strong>Practice Focus:</strong> Sing each phrase before playing it. The melody should breathe naturally.</p>
+<h3 id="chorus-2-modern-triad-pairs-version-b">Chorus 2: Modern Triad Pairs (Version B)</h3>
+<p><strong>Concept:</strong> Continuous eighth notes, angular lines</p>
+<ul>
+<li><strong>Bar 1</strong>: Bb triad descending, Ab triad ascending</li>
+<li><strong>Bar 4 (ii-V)</strong>: Ab Major → E Diminished for Bb7b9 tension</li>
+<li><strong>Bar 8</strong>: G Augmented arpeggio into Db Major arpeggio</li>
+</ul>
+<p><strong>Practice Focus:</strong> Keep the time steady. The lines should flow despite the angularity.</p>
+<h3 id="chorus-3-wyble-counterpoint-version-c">Chorus 3: Wyble Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Independent bass against melody</p>
+<p><strong>Texture Map:</strong>
+| Voice | Rhythm | Range |
+|:---|:---|:---|
+| Top | Dotted quarters, sustained | Strings 1-2 |
+| Bottom | Walking quarters or 8ths | Strings 4-6 |</p>
+<p><strong>Key Moment (Bar 6 - Edim7):</strong>
+- Top voice: Hold high Bb
+- Bottom voice: Chromatic walk E-G-G#-A</p>
+<p><strong>Ending:</strong> Contrary motion expansion into Bb13 chord</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="shell-voicings">Shell Voicings</h3>
+<pre><code>Bb7:    6-x-6-7-x-x (Root position)
+        x-5-6-5-6-x (Eb9/Bb - 2nd inversion flavor)
+
+G7alt:  3-x-3-4-4-x (G7#5)
+        x-4-3-4-4-x (Db9 - tritone sub voicing)
+
+F7alt:  1-x-1-2-4-x (F7#9)
+</code></pre>
+<h3 id="counterpoint-voicings">Counterpoint Voicings</h3>
+<p>For the Wyble sections, use these "split" voicings:</p>
+<pre><code>Bb7 split: 6-x-x-x-6-x (Root + 5th, wide)
+Eb7 split: x-6-x-x-8-x (Root + 5th)
+</code></pre>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-foundation">Week 1: Foundation</h3>
+<ul>
+<li>[ ] Learn the melody (Version A) by heart</li>
+<li>[ ] Practice chord voicings through the form</li>
+<li>[ ] Memorize the scale palette</li>
+</ul>
+<h3 id="week-2-triad-pairs">Week 2: Triad Pairs</h3>
+<ul>
+<li>[ ] Drill Bb/Ab triad pair over Bb7</li>
+<li>[ ] Apply to the full blues form</li>
+<li>[ ] Work on Version B at slow tempo (60 BPM)</li>
+</ul>
+<h3 id="week-3-counterpoint">Week 3: Counterpoint</h3>
+<ul>
+<li>[ ] Isolate bass line only</li>
+<li>[ ] Isolate melody only</li>
+<li>[ ] Combine at very slow tempo (50 BPM)</li>
+<li>[ ] Gradually increase to 120 BPM</li>
+</ul>
+<h3 id="week-4-integration">Week 4: Integration</h3>
+<ul>
+<li>[ ] Play all three choruses consecutively</li>
+<li>[ ] Record yourself and analyze</li>
+<li>[ ] Work on the Version D hybrid</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<p>To internalize this style, listen to:</p>
+<ol>
+<li><strong>John Coltrane</strong> — <em>Blue Train</em> (cycle movement inspiration)</li>
+<li><strong>Jimmy Wyble</strong> — <em>The Jimmy Wyble Etudes</em> (counterpoint concepts)</li>
+<li><strong>Barry Harris</strong> — Any live recording (6th diminished concepts)</li>
+<li><strong>Pat Martino</strong> — <em>El Hombre</em> (blues with modern harmony)</li>
+</ol>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Rushing the turnaround</strong>: Bars 9-12 often speed up. Use a metronome.</li>
+<li><strong>Losing the bass independence</strong>: The bottom voice should be singable alone.</li>
+<li><strong>Overplaying altered tensions</strong>: On G7alt and F7alt, let the alterations speak—don't stack them.</li>
+</ol>
+<hr />
+<h2 id="self-evaluation-checklist">SELF-EVALUATION CHECKLIST</h2>
+<p>After learning this tune, ask yourself:</p>
+<ul>
+<li>[ ] Can I sing the melody without the guitar?</li>
+<li>[ ] Can I sing the bass line independently?</li>
+<li>[ ] Can I hear the triad pairs resolving?</li>
+<li>[ ] Does my counterpoint have clear voice separation?</li>
+<li>[ ] Does the whole thing <em>swing</em>?</li>
+</ul>
+<hr />
+<p><strong>← <a href="00_Introduction.md">Introduction</a> | <a href="02_Orbit.md">Next: Orbit →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="02-orbit">
+<h1 id="chapter-2-orbit">CHAPTER 2: ORBIT</h1>
+<p><strong>Style:</strong> Wayne Shorter (Avant) | <strong>Key:</strong> F Major | <strong>Tempo:</strong> 160 BPM | <strong>Time:</strong> 3/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Non-functional harmony over a floating pulse."</em></p>
+<p>Orbit channels the mysterious, spacious quality of Wayne Shorter's compositions. The waltz time signature (3/4) creates a lilting, orbital motion while the harmony deliberately avoids traditional V-I resolutions.</p>
+<p><strong>Playing Tip:</strong> Let the intervals ring; prioritize sustain over speed.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar form with through-composed feel:</p>
+<pre><code>| Fmaj7#11 | Ebmaj7#5 | Dbmaj7   | Bmaj7    |
+| Bbm9     | Abmaj7   | Gbmaj7   | Emaj7    |
+| Fmaj7#11 | Dbmaj7   | Amaj7    | Gmaj7    |
+| Fmaj7#11 | Ebm9     | Dbmaj7   | Fmaj7    |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Non-functional movement</strong>: Chords relate by interval, not by resolution</li>
+<li><strong>Major 7th dominance</strong>: Almost every chord is a major 7th variant</li>
+<li><strong>Chromatic root motion</strong>: F → Eb → Db → B (descending chromatic)</li>
+<li><strong>Symmetry</strong>: Bar 1 material returns in bars 9 and 13</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Color Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Fmaj7#11</td>
+<td style="text-align: left;">F Lydian</td>
+<td style="text-align: left;">B natural (#11)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebmaj7#5</td>
+<td style="text-align: left;">Eb Lydian Augmented</td>
+<td style="text-align: left;">B natural + G#</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7</td>
+<td style="text-align: left;">Db Lydian</td>
+<td style="text-align: left;">G natural (#11)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bmaj7</td>
+<td style="text-align: left;">B Lydian</td>
+<td style="text-align: left;">E# (#11)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbm9</td>
+<td style="text-align: left;">Bb Dorian</td>
+<td style="text-align: left;">G natural (6th)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Emaj7</td>
+<td style="text-align: left;">E Lydian</td>
+<td style="text-align: left;">A# (#11)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="shorters-approach">Shorter's Approach</h3>
+<p>Wayne Shorter often uses <strong>Lydian as default</strong> for major 7th chords. The #11 creates a floating, unresolved quality that defines this style.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Creates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Fmaj7#11</td>
+<td style="text-align: left;">F Major</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">Lydian color (9, #11, 6)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebmaj7#5</td>
+<td style="text-align: left;">Eb Augmented</td>
+<td style="text-align: left;">Bb Major</td>
+<td style="text-align: left;">Augmented + Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">9, #11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbm9</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Minor 9 sound</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pattern-lydian-triad-pair">Pattern: Lydian Triad Pair</h3>
+<p>Over Fmaj7#11:</p>
+<pre><code>F-A-C (Imaj) → G-B-D (IImaj) → F-A-C...
+</code></pre>
+<p>The G Major triad provides B natural (the #11) and D (the 6th).</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-version-a">Chorus 1: Lyrical (Version A)</h3>
+<p><strong>Concept:</strong> Floating, long-tone melody</p>
+<ul>
+<li>Emphasize the 3/4 pulse gently—avoid heavy downbeats</li>
+<li>Use half notes and dotted half notes</li>
+<li>Let phrases span across bar lines</li>
+<li>Target chord tones on beats 1 and 3</li>
+</ul>
+<p><strong>Motif:</strong> Ascending perfect 4th (like planets in orbit)</p>
+<h3 id="chorus-2-modern-interval-lines-version-b">Chorus 2: Modern Interval Lines (Version B)</h3>
+<p><strong>Concept:</strong> Wide intervals, Shorter-style angularity</p>
+<ul>
+<li>Major 7ths and minor 9ths between successive notes</li>
+<li>Avoid stepwise motion</li>
+<li>Create tension through silence—use rests strategically</li>
+</ul>
+<p><strong>Example over Fmaj7#11:</strong></p>
+<pre><code>E (maj7) → F (8va up) → B (#11) → C (5th, 8vb)
+</code></pre>
+<h3 id="chorus-3-parallel-motion-counterpoint-version-c">Chorus 3: Parallel Motion Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Two voices moving in parallel motion (unusual!)</p>
+<p>Unlike Blue Cycle's contrary motion, Orbit uses <strong>parallel 4ths and 5ths</strong>:
+- Top voice: Melody
+- Bottom voice: Perfect 4th or 5th below</p>
+<p>This creates a medieval, modal quality appropriate to Shorter's cosmic aesthetic.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="quartal-voicings-shorter-style">Quartal Voicings (Shorter-style)</h3>
+<pre><code>Fmaj7#11: x-x-3-4-5-5 (stacked 4ths: C-F-B-E)
+Ebmaj7#5: x-6-5-4-4-x (Eb with G# tension)
+Dbmaj7:   x-4-5-5-6-x (with Lydian #11)
+</code></pre>
+<h3 id="wide-drop-2-voicings">Wide Drop-2 Voicings</h3>
+<pre><code>Fmaj7:  1-x-2-2-1-x (root position)
+Bmaj7:  7-x-8-8-7-x (root position)
+</code></pre>
+<hr />
+<h2 id="the-34-feel">THE 3/4 FEEL</h2>
+<h3 id="counting-the-waltz">Counting the Waltz</h3>
+<p>Internalize the pulse as:
+- <strong>ONE</strong>-two-three, <strong>ONE</strong>-two-three
+- Not: one-TWO-three (avoid polka feel)</p>
+<h3 id="phrase-lengths">Phrase Lengths</h3>
+<p>In 3/4, natural phrase lengths are:
+- 2 bars = 6 beats (short phrase)
+- 4 bars = 12 beats (standard phrase)
+- 8 bars = 24 beats (extended phrase)</p>
+<p>Let your lines follow these natural groupings.</p>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-float">Week 1: The Float</h3>
+<ul>
+<li>[ ] Learn Version A melody with extreme sustain</li>
+<li>[ ] Practice letting notes ring into each other</li>
+<li>[ ] Use volume swells for dynamics</li>
+</ul>
+<h3 id="week-2-intervals">Week 2: Intervals</h3>
+<ul>
+<li>[ ] Drill major 7th intervals in all positions</li>
+<li>[ ] Practice minor 9th jumps</li>
+<li>[ ] Work on Version B slowly (80 BPM)</li>
+</ul>
+<h3 id="week-3-parallel-motion">Week 3: Parallel Motion</h3>
+<ul>
+<li>[ ] Practice parallel 4ths ascending and descending</li>
+<li>[ ] Add the melody as top voice</li>
+<li>[ ] Work on Version C</li>
+</ul>
+<h3 id="week-4-synthesis">Week 4: Synthesis</h3>
+<ul>
+<li>[ ] Connect all three choruses</li>
+<li>[ ] Develop your own phrasing within the form</li>
+<li>[ ] Record with a 3/4 drum loop</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Wayne Shorter</strong> — <em>Speak No Evil</em> (the blueprint)</li>
+<li><strong>Wayne Shorter</strong> — <em>JuJu</em> (more floating harmony)</li>
+<li><strong>Herbie Hancock</strong> — <em>Maiden Voyage</em> (related aesthetic)</li>
+<li><strong>Kenny Wheeler</strong> — <em>Gnu High</em> (ECM-style space)</li>
+</ol>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Forcing resolution</strong>: Don't try to make the chords "go somewhere"</li>
+<li><strong>Heavy accents</strong>: Keep the 3/4 light and floating</li>
+<li><strong>Too many notes</strong>: Space is essential in this style</li>
+<li><strong>Ignoring sustain</strong>: Shorter's melodies sing—don't chop notes short</li>
+</ol>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Does my playing have a floating quality?</li>
+<li>[ ] Can I hear the major 7th chords as "home" (not needing resolution)?</li>
+<li>[ ] Are my phrases breathing naturally in 3/4?</li>
+<li>[ ] Is there enough space between ideas?</li>
+</ul>
+<hr />
+<p><strong>← <a href="01_Blue_Cycle.md">Blue Cycle</a> | <a href="03_Rust_And_Chrome.md">Next: Rust &amp; Chrome →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="03-rust-and-chrome">
+<h1 id="chapter-3-rust-chrome">CHAPTER 3: RUST &amp; CHROME</h1>
+<p><strong>Style:</strong> Scofield Funk | <strong>Key:</strong> E Major | <strong>Tempo:</strong> 95 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Gritty, angular lines with open string drones."</em></p>
+<p>Rust &amp; Chrome channels John Scofield's funky, blues-inflected style. The key of E allows for extensive use of open strings as drones, creating a gritty, resonant texture. The slower tempo (95 BPM) gives room for rhythmic push-and-pull.</p>
+<p><strong>Playing Tip:</strong> Dig in with the right hand; use legato slides for the left.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar vamp-based form:</p>
+<pre><code>| E7#9    | E7#9    | A7      | A7      |
+| E7#9    | E7#9    | B7#9    | A7      |
+| E7#9    | E7#9    | F#7     | A7 B7   |
+| E7#9    | E7#9    | E7#9    | E7#9    |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Dominant 7#9 (Hendrix chord)</strong>: The characteristic Scofield funk sound</li>
+<li><strong>Open E pedal</strong>: The low E string drones throughout</li>
+<li><strong>Blues form variant</strong>: Based on blues but with extended vamp sections</li>
+<li><strong>Chromatic approach</strong>: F#7 in bar 11 creates tension before resolution</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Alternate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">E7#9</td>
+<td style="text-align: left;">E Blues</td>
+<td style="text-align: left;">E Mixolydian b6</td>
+</tr>
+<tr>
+<td style="text-align: left;">A7</td>
+<td style="text-align: left;">A Mixolydian</td>
+<td style="text-align: left;">A Blues</td>
+</tr>
+<tr>
+<td style="text-align: left;">B7#9</td>
+<td style="text-align: left;">B Blues</td>
+<td style="text-align: left;">B Phrygian Dominant</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#7</td>
+<td style="text-align: left;">F# Mixolydian</td>
+<td style="text-align: left;">F# Lydian Dominant</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-scofield-sound">The Scofield Sound</h3>
+<p>Scofield often combines:
+- <strong>Blues scale</strong> for the core vocabulary
+- <strong>Chromatic approach notes</strong> for tension
+- <strong>Mixolydian</strong> for cleaner passages
+- <strong>Minor pentatonic a half-step up</strong> for "outside" moments</p>
+<p>Over E7#9, try E minor pentatonic AND F minor pentatonic.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">E7#9</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">Creates 7, 9, #11</td>
+</tr>
+<tr>
+<td style="text-align: left;">E7#9</td>
+<td style="text-align: left;">G Minor</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">Blues minor-over-major</td>
+</tr>
+<tr>
+<td style="text-align: left;">A7</td>
+<td style="text-align: left;">A Major</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">Mixolydian color</td>
+</tr>
+<tr>
+<td style="text-align: left;">B7#9</td>
+<td style="text-align: left;">D Minor</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">Dark, angular</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-blues-triad-trick">The "Blues Triad" Trick</h3>
+<p>Over E7#9, alternate between:
+- <strong>E Major triad</strong> (E-G#-B) = the "bright" side
+- <strong>G Minor triad</strong> (G-Bb-D) = the "dark" side (b3, b5, b7)</p>
+<p>This major/minor ambiguity is the heart of blues.</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-blues-version-a">Chorus 1: Lyrical Blues (Version A)</h3>
+<p><strong>Concept:</strong> Singing, BB King-style phrases with Scofield edge</p>
+<ul>
+<li>Start phrases behind the beat</li>
+<li>Use bends and slides liberally</li>
+<li>Target the #9 (G natural) as a key tension note</li>
+<li>Leave space—let the E7 ring</li>
+</ul>
+<p><strong>Phrase Structure:</strong> Call (2 bars) → Response (2 bars) → Rest (1 bar)</p>
+<h3 id="chorus-2-angular-funk-version-b">Chorus 2: Angular Funk (Version B)</h3>
+<p><strong>Concept:</strong> Jagged, syncopated lines with triad pair angularity</p>
+<ul>
+<li>Heavy use of 16th-note syncopation</li>
+<li>Unpredictable accents</li>
+<li>Wide intervals (7ths, 9ths)</li>
+<li>Open strings as pedal points</li>
+</ul>
+<p><strong>Rhythmic Pattern:</strong></p>
+<pre><code>| 1 e + a 2 e + a 3 e + a 4 e + a |
+| X . X . . X . X . . X . X . . X |
+</code></pre>
+<h3 id="chorus-3-drone-counterpoint-version-c">Chorus 3: Drone Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Two voices—melody over sustained open string drone</p>
+<p><strong>Texture:</strong>
+- <strong>Bottom</strong>: Open E string (continuous drone)
+- <strong>Top</strong>: Melodic line on strings 1-3</p>
+<p>The drone creates a "tanpura" effect, grounding the harmony while the melody floats above.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="the-hendrix-chord-e79">The Hendrix Chord (E7#9)</h3>
+<pre><code>E7#9:   0-7-6-7-8-x (open low E)
+        x-7-6-7-8-x (no open string)
+        0-7-6-7-5-x (with D on top)
+</code></pre>
+<h3 id="funk-voicings">Funk Voicings</h3>
+<pre><code>A7:     5-x-5-6-5-x (shell)
+B7#9:   7-x-7-8-9-x 
+F#7:    2-x-2-3-2-x
+</code></pre>
+<h3 id="drone-voicings">Drone Voicings</h3>
+<pre><code>E7 drone:  0-x-x-9-8-7 (melody in harmonics)
+           0-x-x-4-5-4 (melody lower)
+</code></pre>
+<hr />
+<h2 id="technique-focus-legato-slides">TECHNIQUE FOCUS: LEGATO SLIDES</h2>
+<p>Scofield's lines often use <strong>hammer-ons, pull-offs, and slides</strong> to create a slippery, vocal quality.</p>
+<h3 id="slide-exercise">Slide Exercise</h3>
+<pre><code>e|--7-/9--7-\5--7-/9-|
+B|-------------------|
+</code></pre>
+<p>Keep the slide smooth—no audible fret clicks.</p>
+<h3 id="hammer-pull-cells">Hammer-Pull Cells</h3>
+<pre><code>e|--7-h-9-p-7--5-h-7-p-5--|
+</code></pre>
+<p>Practice these over the E7#9 vamp.</p>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-groove">Week 1: The Groove</h3>
+<ul>
+<li>[ ] Loop E7#9 and practice sitting in the pocket</li>
+<li>[ ] Work on playing behind the beat</li>
+<li>[ ] Practice bends: half-step, whole-step, 1.5 steps</li>
+</ul>
+<h3 id="week-2-angular-lines">Week 2: Angular Lines</h3>
+<ul>
+<li>[ ] Drill the E/D triad pair</li>
+<li>[ ] Practice G minor over E7 (the "dark" sound)</li>
+<li>[ ] Work on syncopated rhythmic patterns</li>
+</ul>
+<h3 id="week-3-drone-technique">Week 3: Drone Technique</h3>
+<ul>
+<li>[ ] Practice muting unwanted strings while droning E</li>
+<li>[ ] Develop independence: melody moves, drone sustains</li>
+<li>[ ] Work on Version C slowly</li>
+</ul>
+<h3 id="week-4-scofield-vibe">Week 4: Scofield Vibe</h3>
+<ul>
+<li>[ ] Combine all elements</li>
+<li>[ ] Play with a funk drum loop</li>
+<li>[ ] Record and analyze your time feel</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>John Scofield</strong> — <em>A Go Go</em> (the funk blueprint)</li>
+<li><strong>John Scofield</strong> — <em>Uberjam</em> (more groove)</li>
+<li><strong>John Scofield</strong> — <em>Pick Hits Live</em> (raw energy)</li>
+<li><strong>Medeski Martin &amp; Wood</strong> — <em>Uninvisible</em> (similar vibe)</li>
+</ol>
+<hr />
+<h2 id="tone-tips">TONE TIPS</h2>
+<p>For the authentic Scofield sound:
+- <strong>Guitar</strong>: Semi-hollow (ES-335, Ibanez AS200)
+- <strong>Amp</strong>: Overdriven tube amp (just breaking up)
+- <strong>No effects</strong>: Or minimal—slight compression, touch of reverb
+- <strong>Attack</strong>: Dig in with the pick for grit</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Too clean</strong>: This tune needs grit—don't sanitize it</li>
+<li><strong>Ignoring the drone</strong>: The open E is a feature, not a bug</li>
+<li><strong>Rushing 16ths</strong>: Stay in the pocket, especially on syncopation</li>
+<li><strong>Over-bending</strong>: Bends should be in tune, not random</li>
+</ol>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Does my E7#9 have the right amount of grit?</li>
+<li>[ ] Can I hear the minor/major blues ambiguity?</li>
+<li>[ ] Am I sitting behind the beat naturally?</li>
+<li>[ ] Does my drone counterpoint have independence?</li>
+</ul>
+<hr />
+<p><strong>← <a href="02_Orbit.md">Orbit</a> | <a href="04_Sao_Paulo_Rain.md">Next: Sao Paulo Rain →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="04-sao-paulo-rain">
+<h1 id="chapter-4-sao-paulo-rain">CHAPTER 4: SAO PAULO RAIN</h1>
+<p><strong>Style:</strong> Bossa Nova | <strong>Key:</strong> D Major | <strong>Tempo:</strong> 130 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Melodic minor shapes over static pedal points."</em></p>
+<p>Sao Paulo Rain captures the sophisticated melancholy of Brazilian music. The bossa nova rhythm provides a gentle propulsion while the melody floats above static pedal tones. The key of D major allows for rich open-string voicings.</p>
+<p><strong>Playing Tip:</strong> Keep the rhythm steady; let the melody float above it.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>32-bar AABA form:</p>
+<pre><code>A Section (8 bars):
+| Dmaj9   | Dmaj9   | Em9     | Em9     |
+| F#m7    | Bm7     | Em9     | A7sus4  |
+
+B Section (8 bars):
+| Ebmaj7  | Ebmaj7  | Abmaj7  | Abmaj7  |
+| Dm7     | G7      | Cmaj7   | A7alt   |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Pedal point</strong>: D in the bass anchors the A sections</li>
+<li><strong>Modal interchange</strong>: Ebmaj7 (bII) creates characteristic bossa color</li>
+<li><strong>Melodic minor</strong>: F#m7 suggests D melodic minor flavor</li>
+<li><strong>Chromatic approach</strong>: Ebmaj7 → Abmaj7 → return to D</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Bossa Flavor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dmaj9</td>
+<td style="text-align: left;">D Lydian</td>
+<td style="text-align: left;">Natural 7, #11 brightness</td>
+</tr>
+<tr>
+<td style="text-align: left;">Em9</td>
+<td style="text-align: left;">E Dorian</td>
+<td style="text-align: left;">Characteristic bossa ii chord</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#m7</td>
+<td style="text-align: left;">F# Phrygian</td>
+<td style="text-align: left;">Dark, Spanish tinge</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebmaj7</td>
+<td style="text-align: left;">Eb Lydian</td>
+<td style="text-align: left;">Floating bII color</td>
+</tr>
+<tr>
+<td style="text-align: left;">Abmaj7</td>
+<td style="text-align: left;">Ab Lydian</td>
+<td style="text-align: left;">Distant relation</td>
+</tr>
+<tr>
+<td style="text-align: left;">A7alt</td>
+<td style="text-align: left;">A Altered</td>
+<td style="text-align: left;">Tension before resolution</td>
+</tr>
+</tbody>
+</table>
+<h3 id="melodic-minor-connection">Melodic Minor Connection</h3>
+<p>Over the A section with D pedal:
+- Use <strong>D melodic minor</strong> (D-E-F-F#-G-A-B-C#)
+- The F natural creates subtle tension against Dmaj9
+- Resolves beautifully to F# on the F#m7</p>
+<hr />
+<h2 id="the-bossa-rhythm">THE BOSSA RHYTHM</h2>
+<h3 id="the-fundamental-pattern">The Fundamental Pattern</h3>
+<pre><code>    1 + 2 + 3 + 4 +
+LH: X . . X . . X .  (bass notes)
+RH: . X . . X . X .  (chord stabs)
+</code></pre>
+<h3 id="guitar-adaptation">Guitar Adaptation</h3>
+<pre><code>    1 + 2 + 3 + 4 +
+B:  X . . X . . X .  (thumb on bass)
+T:  . X . . X . X .  (fingers on treble)
+</code></pre>
+<p>Practice this pattern slowly until it becomes second nature.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Brazilian Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dmaj9</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">9, #11, 6 = Lydian bossa</td>
+</tr>
+<tr>
+<td style="text-align: left;">Em9</td>
+<td style="text-align: left;">E Minor</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">Natural Dorian</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#m7</td>
+<td style="text-align: left;">F# Minor</td>
+<td style="text-align: left;">A Major</td>
+<td style="text-align: left;">Minor with 6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebmaj7</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">F Major</td>
+<td style="text-align: left;">Lydian color</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pattern-the-jobim-cell">Pattern: The "Jobim Cell"</h3>
+<p>This melodic pattern captures the bossa essence:</p>
+<pre><code>Scale degree: 1 - 2 - 3 - 5 | 6 - 5 - 3 - 2 |
+Over Dmaj9:   D - E - F# - A | B - A - F# - E |
+</code></pre>
+<p>Simple, elegant, and endlessly variable.</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-melody-version-a">Chorus 1: Lyrical Melody (Version A)</h3>
+<p><strong>Concept:</strong> Singing, Jobim-inspired melody</p>
+<ul>
+<li>Long tones on chord tones (1, 3, 5)</li>
+<li>Chromatic approach notes into target notes</li>
+<li>Phrases that breathe with the bossa rhythm</li>
+<li>The melody should sound like it has Portuguese lyrics</li>
+</ul>
+<p><strong>Shape:</strong> Arch-like phrases—rise in the first half, fall in the second.</p>
+<h3 id="chorus-2-melodic-minor-colors-version-b">Chorus 2: Melodic Minor Colors (Version B)</h3>
+<p><strong>Concept:</strong> Modern harmonies using melodic minor modes</p>
+<ul>
+<li>Over Dmaj9: Use D melodic minor (F natural creates tension)</li>
+<li>Over Em9: Use E Dorian</li>
+<li>Over the B section: Lydian augmented colors on Ebmaj7</li>
+</ul>
+<p><strong>Intervallic Focus:</strong> Major and minor 6ths—the most "Brazilian" intervals.</p>
+<h3 id="chorus-3-melody-bass-counterpoint-version-c">Chorus 3: Melody + Bass Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Simultaneous melody and walking bass</p>
+<p><strong>Texture:</strong>
+- <strong>Bass</strong>: Root motion on beats 1 and 3
+- <strong>Melody</strong>: Rhythmically independent on strings 1-2</p>
+<p>This is challenging—start very slowly (60 BPM).</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="bossa-voicings-thumb-fingers">Bossa Voicings (Thumb + Fingers)</h3>
+<pre><code>Dmaj9:   x-5-4-6-5-x (classic bossa shape)
+Em9:     x-7-5-7-7-x 
+F#m7:    x-9-9-9-10-x
+Bm7:     x-2-4-2-3-x
+A7sus4:  x-0-2-0-3-x (open strings)
+</code></pre>
+<h3 id="b-section-voicings">B Section Voicings</h3>
+<pre><code>Ebmaj7:  x-6-5-7-8-x
+Abmaj7:  4-x-5-5-4-x
+Cmaj7:   x-3-2-4-5-x
+A7alt:   5-x-5-6-5-4
+</code></pre>
+<hr />
+<h2 id="technique-the-bossa-touch">TECHNIQUE: THE BOSSA TOUCH</h2>
+<h3 id="right-hand-position">Right Hand Position</h3>
+<ul>
+<li>Thumb handles strings 4-6 (bass)</li>
+<li>Index, middle, ring handle strings 1-3 (chords/melody)</li>
+<li>Keep the wrist relaxed—no tension</li>
+</ul>
+<h3 id="the-attack">The Attack</h3>
+<ul>
+<li>Soft, rounded tone—not too bright</li>
+<li>Let bass notes sustain while treble notes are shorter</li>
+<li>No hard accents except on beat 2</li>
+</ul>
+<h3 id="pedal-tone-technique">Pedal Tone Technique</h3>
+<p>On the A section, keep D droning in the bass while the chords change:</p>
+<pre><code>Dmaj9:  x-5-4-6-5-x (D on 5th fret, 5th string)
+Em9:    x-5-5-4-0-0 (D still in bass!)
+</code></pre>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-rhythm">Week 1: The Rhythm</h3>
+<ul>
+<li>[ ] Master the basic bossa pattern (hands separate)</li>
+<li>[ ] Combine hands at slow tempo</li>
+<li>[ ] Practice with a metronome clicking on 2 and 4</li>
+</ul>
+<h3 id="week-2-the-melody">Week 2: The Melody</h3>
+<ul>
+<li>[ ] Learn Version A melody</li>
+<li>[ ] Practice singing while playing the bossa pattern</li>
+<li>[ ] Work on phrase breathing</li>
+</ul>
+<h3 id="week-3-melodic-minor">Week 3: Melodic Minor</h3>
+<ul>
+<li>[ ] Drill D melodic minor over the A section</li>
+<li>[ ] Practice 6th intervals (major and minor)</li>
+<li>[ ] Work on Version B</li>
+</ul>
+<h3 id="week-4-counterpoint">Week 4: Counterpoint</h3>
+<ul>
+<li>[ ] Isolate the bass line</li>
+<li>[ ] Add melody one note at a time</li>
+<li>[ ] Very slowly combine (start at 50 BPM)</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>João Gilberto</strong> — <em>Getz/Gilberto</em> (the definitive bossa guitar)</li>
+<li><strong>Antonio Carlos Jobim</strong> — <em>Wave</em> (compositional models)</li>
+<li><strong>Baden Powell</strong> — <em>Os Afro Sambas</em> (guitar virtuosity)</li>
+<li><strong>Pat Metheny</strong> — <em>Letter from Home</em> (modern interpretation)</li>
+</ol>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Rushing beat 4</strong>: The "+4" should feel relaxed, not anticipatory</li>
+<li><strong>Heavy bass</strong>: The thumb should be gentle, not thumping</li>
+<li><strong>Ignoring the pedal</strong>: The D drone is essential to the A section</li>
+<li><strong>Too loud</strong>: Bossa is intimate—play at conversation volume</li>
+</ol>
+<hr />
+<h2 id="cultural-note">CULTURAL NOTE</h2>
+<p>Bossa Nova emerged in late-1950s Rio de Janeiro, blending samba rhythms with jazz harmony. The word "bossa" means "flair" or "style." </p>
+<p>The music reflects a sophisticated urbanity—the sound of beachside cafes, not concert halls. Keep this intimacy in mind when playing Sao Paulo Rain.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Is my bossa rhythm consistent and relaxed?</li>
+<li>[ ] Can I sing the melody while comping?</li>
+<li>[ ] Does the D pedal sustain through the A section?</li>
+<li>[ ] Is my touch soft and rounded?</li>
+</ul>
+<hr />
+<p><strong>← <a href="03_Rust_And_Chrome.md">Rust &amp; Chrome</a> | <a href="05_The_Mirror.md">Next: The Mirror →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="05-the-mirror">
+<h1 id="chapter-5-the-mirror">CHAPTER 5: THE MIRROR</h1>
+<p><strong>Style:</strong> Scofield Ballad | <strong>Key:</strong> Ab Major | <strong>Tempo:</strong> 60 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Sparse, haunting voicings with wide spreads."</em></p>
+<p>The Mirror is the emotional center of the Trio Tunes collection. At 60 BPM, every note matters. The "mirror" concept refers to the contrary motion counterpoint in Chorus 3—when one voice ascends, the other descends, creating a reflective, palindromic effect.</p>
+<p><strong>Playing Tip:</strong> Use volume swells; control the decay. Let each note breathe.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar AABA form:</p>
+<pre><code>A Section (Bars 1-8):
+| Abmaj9    | Fm9       | Dbmaj7#11 | Ebsus Eb7 |
+| Abmaj9    | Bbm9      | Gbmaj7    | Cm7  Fm7  |
+
+B Section (Bars 9-12):
+| Bmaj7#11  | Emaj7     | Bbm7      | Eb7alt    |
+
+A' Section (Bars 13-16):
+| Abmaj9    | Fm11      | Dbmaj9 Dbm| Abmaj7/Eb |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Wide voicings</strong>: Intervals of 9ths, 10ths, and 11ths</li>
+<li><strong>Distant relations</strong>: Bmaj7#11 and Emaj7 in the bridge (tritone away from home)</li>
+<li><strong>Modal interchange</strong>: Gbmaj7 borrowed from Ab Dorian</li>
+<li><strong>Melancholy turn</strong>: Dbmaj9 → Dbm(maj7) in bar 15</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Emotional Quality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Abmaj9</td>
+<td style="text-align: left;">Ab Lydian</td>
+<td style="text-align: left;">Open, spacious</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fm9</td>
+<td style="text-align: left;">F Dorian</td>
+<td style="text-align: left;">Melancholy but not dark</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7#11</td>
+<td style="text-align: left;">Db Lydian</td>
+<td style="text-align: left;">Floating, dreamlike</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gbmaj7</td>
+<td style="text-align: left;">Gb Lydian</td>
+<td style="text-align: left;">Distant, introspective</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bmaj7#11</td>
+<td style="text-align: left;">B Lydian</td>
+<td style="text-align: left;">Ethereal, otherworldly</td>
+</tr>
+<tr>
+<td style="text-align: left;">Emaj7</td>
+<td style="text-align: left;">E Lydian</td>
+<td style="text-align: left;">Bright but distant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eb7alt</td>
+<td style="text-align: left;">Eb Altered</td>
+<td style="text-align: left;">Tension seeking resolution</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbm(maj7)</td>
+<td style="text-align: left;">Db Melodic Minor</td>
+<td style="text-align: left;">The melancholy turn</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-scofield-ballad-sound">The Scofield Ballad Sound</h3>
+<p>Scofield's ballads feature:
+- <strong>Wide intervals</strong> that create space
+- <strong>Sustained notes</strong> with volume swells
+- <strong>Chromatic voice leading</strong> within slow-moving harmony
+- <strong>Silence</strong> as an equal partner to sound</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Spread Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Abmaj9</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">5-7-9 upper structure</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fm9</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">Relative major color</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7#11</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">G Diminished</td>
+<td style="text-align: left;">#11 tension</td>
+</tr>
+<tr>
+<td style="text-align: left;">Emaj7</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">Pure Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eb7alt</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">A Major</td>
+<td style="text-align: left;">Tritone pair</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wide-interval-cells">Wide Interval Cells</h3>
+<p>Over Abmaj9, practice these wide cells:</p>
+<pre><code>Eb (5) up to C (3, octave up) = minor 6th
+C (3) down to Eb (5, octave down) = major 10th
+G (7) up to Bb (9) = minor 3rd, but voiced wide
+</code></pre>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-atmosphere-version-a">Chorus 1: Lyrical Atmosphere (Version A)</h3>
+<p><strong>Concept:</strong> Sparse, breathing phrases with maximum sustain</p>
+<ul>
+<li><strong>Bars 1-4</strong>: Whole notes and half notes, minimal movement</li>
+<li><strong>Volume swells</strong>: Fade in each phrase, decay naturally</li>
+<li><strong>Motif</strong>: Descending perfect 5th (Eb → Ab) answered by ascending minor 6th</li>
+<li><strong>Bridge</strong>: Ascending major 7th leap (G# → G) creates ethereal tension</li>
+<li><strong>Bars 13-16</strong>: Return to opening material; fade on final Ab pedal</li>
+</ul>
+<p><strong>Dynamic Curve:</strong></p>
+<pre><code>pp ────── mp ── mf ──── mp ────── pp
+Bar 1      Bar 9        Bar 13    Bar 16
+</code></pre>
+<h3 id="chorus-2-wide-interval-lines-version-b">Chorus 2: Wide Interval Lines (Version B)</h3>
+<p><strong>Concept:</strong> Scofield-style intervallic playing</p>
+<ul>
+<li><strong>Major 7ths</strong>: Eb up to D (over Abmaj9)</li>
+<li><strong>Minor 9ths</strong>: Ab up to A (chromatic tension)</li>
+<li><strong>Tritones</strong>: G to Db (over Dbmaj7#11)</li>
+</ul>
+<p><strong>Bar-by-bar targets:</strong>
+| Bar | Chord | Wide Interval |
+|:---:|:---|:---|
+| 1 | Abmaj9 | Eb → D (major 7th) |
+| 3 | Dbmaj7#11 | G → Db (tritone) |
+| 9 | Bmaj7#11 | D# → D (octave drop) |
+| 12 | Eb7alt | Gb → F → Eb (chromatic descent) |</p>
+<h3 id="chorus-3-mirror-counterpoint-version-c">Chorus 3: Mirror Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Contrary motion—true "mirror" reflection</p>
+<p><strong>The Mirror Technique:</strong>
+- When the <strong>top voice ascends</strong>, the <strong>bottom voice descends</strong>
+- When the <strong>top voice descends</strong>, the <strong>bottom voice ascends</strong>
+- Voices cross at key moments (Bar 9)
+- Voices converge on unison, then spread to octave (ending)</p>
+<p><strong>Texture Map:</strong>
+| Section | Top Voice | Bottom Voice |
+|:---|:---|:---|
+| Bars 1-4 | Sustained whole notes | Contrary quarter notes |
+| Bar 9 | Descends below bottom | Ascends above top |
+| Bar 15 | C → Cb (chromatic) | Ab → A (chromatic, contrary) |
+| Bar 16 | Converge on Eb | Spread to Ab octave |</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="wide-spread-voicings">Wide Spread Voicings</h3>
+<pre><code>Abmaj9:    4-x-5-5-4-3 (open G string rings)
+Fm9:       x-8-8-8-9-8 (standard shape)
+Dbmaj7#11: x-4-3-5-6-x (G natural in melody)
+Gbmaj7:    2-x-3-3-2-x (root position)
+</code></pre>
+<h3 id="bridge-voicings-distant-keys">Bridge Voicings (Distant Keys)</h3>
+<pre><code>Bmaj7#11:  x-2-1-3-4-x (B Lydian voicing)
+Emaj7:     x-7-6-8-9-x (wide E Lydian)
+Bbm7:      x-1-3-1-2-x (shell)
+Eb7alt:    x-6-5-6-7-x (cluster)
+</code></pre>
+<h3 id="ending-voicing">Ending Voicing</h3>
+<pre><code>Abmaj7/Eb: x-6-5-5-4-4 (Ab over Eb pedal)
+           0-6-5-5-4-x (with open E as enharmonic Fb!)
+</code></pre>
+<hr />
+<h2 id="technique-volume-swells">TECHNIQUE: VOLUME SWELLS</h2>
+<h3 id="the-basic-swell">The Basic Swell</h3>
+<ol>
+<li>Pick the note with volume at <strong>0</strong></li>
+<li>Slowly roll volume up to <strong>7-8</strong> (not full)</li>
+<li>Let the note decay naturally</li>
+<li>Next note: repeat</li>
+</ol>
+<h3 id="volume-control-options">Volume Control Options</h3>
+<ul>
+<li><strong>Volume knob</strong>: Most expressive, requires practice</li>
+<li><strong>Volume pedal</strong>: Easier, less guitar-like</li>
+<li><strong>Picking dynamics</strong>: Softest possible attack, let amp do the work</li>
+</ul>
+<h3 id="practice-exercise">Practice Exercise</h3>
+<pre><code>| Abmaj9 chord (whole note) |
+Volume: 0 → 5 → 3 → 0 (over 4 beats)
+</code></pre>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-breathing">Week 1: Breathing</h3>
+<ul>
+<li>[ ] Practice breathing with each phrase (literally breathe)</li>
+<li>[ ] Master volume swell technique</li>
+<li>[ ] Learn Version A at even slower tempo (40 BPM)</li>
+</ul>
+<h3 id="week-2-wide-intervals">Week 2: Wide Intervals</h3>
+<ul>
+<li>[ ] Drill major 7th intervals across the neck</li>
+<li>[ ] Practice tritone intervals</li>
+<li>[ ] Work on Version B targeting the wide leaps</li>
+</ul>
+<h3 id="week-3-the-mirror">Week 3: The Mirror</h3>
+<ul>
+<li>[ ] Practice contrary motion scales (one hand up, one down)</li>
+<li>[ ] Isolate top voice of Version C</li>
+<li>[ ] Isolate bottom voice of Version C</li>
+<li>[ ] Combine at 40 BPM</li>
+</ul>
+<h3 id="week-4-emotional-expression">Week 4: Emotional Expression</h3>
+<ul>
+<li>[ ] Play through all three choruses</li>
+<li>[ ] Record with reverb and evaluate</li>
+<li>[ ] Develop your own rubato feel</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>John Scofield</strong> — <em>Meant to Be</em> (his ballad playing)</li>
+<li><strong>Bill Frisell</strong> — <em>Good Dog, Happy Man</em> (spacious, ambient)</li>
+<li><strong>Pat Metheny</strong> — <em>One Quiet Night</em> (solo ballads)</li>
+<li><strong>Jim Hall</strong> — <em>Concierto</em> (the master of ballad guitar)</li>
+<li><strong>Kenny Burrell</strong> — <em>Midnight Blue</em> (warm, intimate)</li>
+</ol>
+<hr />
+<h2 id="tone-tips">TONE TIPS</h2>
+<p>For The Mirror:
+- <strong>Clean to edge-of-breakup</strong>: Not distorted, but not sterile
+- <strong>Reverb</strong>: Plate or hall, medium decay
+- <strong>Delay</strong>: Optional, dotted-eighth for Metheny flavor
+- <strong>EQ</strong>: Roll off highs slightly, boost mids for warmth</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Too many notes</strong>: Silence is essential—don't fill every space</li>
+<li><strong>Rushing</strong>: At 60 BPM, subdivisions feel eternal—be patient</li>
+<li><strong>Ignoring dynamics</strong>: The loudest note should be mp at most</li>
+<li><strong>Stiff rhythm</strong>: Play rubato, breathe with the music</li>
+<li><strong>Forgetting the mirror</strong>: In Chorus 3, the contrary motion must be audible</li>
+</ol>
+<hr />
+<h2 id="the-mirror-concept">THE MIRROR CONCEPT</h2>
+<p>The title refers to multiple reflections:
+1. <strong>Harmonic</strong>: The B section "reflects" the A section from a distant key
+2. <strong>Melodic</strong>: Phrases often mirror themselves (up then down)
+3. <strong>Contrapuntal</strong>: Chorus 3's contrary motion is a literal mirror
+4. <strong>Emotional</strong>: The introspective quality invites self-reflection</p>
+<p>When playing this piece, imagine looking into still water—calm, deep, revealing.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Does every note have purpose?</li>
+<li>[ ] Can I hear the mirror counterpoint clearly?</li>
+<li>[ ] Am I using volume swells effectively?</li>
+<li>[ ] Does the bridge feel "distant" harmonically?</li>
+<li>[ ] Is there enough silence?</li>
+<li>[ ] Does the music breathe?</li>
+</ul>
+<hr />
+<p><strong>← <a href="04_Sao_Paulo_Rain.md">Sao Paulo Rain</a> | <a href="06_Bright_Size_Life_2.md">Next: Bright Size Life 2 →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="06-bright-size-life-2">
+<h1 id="chapter-6-bright-size-life-2">CHAPTER 6: BRIGHT SIZE LIFE 2</h1>
+<p><strong>Style:</strong> Pat Metheny | <strong>Key:</strong> D Major | <strong>Tempo:</strong> 145 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Triad pairs moving constantly over a pedal."</em></p>
+<p>Named in tribute to Pat Metheny's landmark album, this tune captures his signature sound: bright, flowing lines over pedal tones with constant harmonic motion. The key of D allows extensive use of open strings, creating the characteristic "ringing" Metheny texture.</p>
+<p><strong>Playing Tip:</strong> Play with a light, fluid touch; no hard accents.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>32-bar form with pedal-point A sections:</p>
+<pre><code>A Section (8 bars) - D Pedal:
+| Dmaj7   | Em7/D   | F#m7/D  | Gmaj7/D |
+| Dmaj7   | A/D     | Bm7/D   | Asus4   |
+
+B Section (8 bars) - Moving Bass:
+| Bbmaj7  | Cmaj7   | Ebmaj7  | Fmaj7   |
+| Abmaj7  | Bbmaj7  | Dbmaj7  | A7sus4  |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>D pedal</strong>: Entire A section has D in the bass</li>
+<li><strong>Major 7th cycle</strong>: B section moves through distant major 7ths</li>
+<li><strong>Pentatonic melodies</strong>: Strong emphasis on D major pentatonic</li>
+<li><strong>Lydian colors</strong>: Many chords suggest Lydian (#11) sonority</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Metheny Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dmaj7</td>
+<td style="text-align: left;">D Lydian</td>
+<td style="text-align: left;">#11 (G#) for brightness</td>
+</tr>
+<tr>
+<td style="text-align: left;">Em7/D</td>
+<td style="text-align: left;">E Dorian</td>
+<td style="text-align: left;">Natural 6 (C#)</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#m7/D</td>
+<td style="text-align: left;">F# Phrygian</td>
+<td style="text-align: left;">Dark but over bright D</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbmaj7</td>
+<td style="text-align: left;">Bb Lydian</td>
+<td style="text-align: left;">E natural (#11)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebmaj7</td>
+<td style="text-align: left;">Eb Lydian</td>
+<td style="text-align: left;">A natural (#11)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7</td>
+<td style="text-align: left;">Db Lydian</td>
+<td style="text-align: left;">G natural (#11)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-metheny-sound">The Metheny Sound</h3>
+<p>Pat Metheny builds lines from:
+- <strong>Pentatonic scales</strong> as the core
+- <strong>Lydian extensions</strong> for color
+- <strong>Arpeggiated triads</strong> in constant motion
+- <strong>Open strings</strong> for sustain and resonance</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Metheny Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dmaj7</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">9, #11, 6 = Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Em7/D</td>
+<td style="text-align: left;">E Minor</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">Dorian color</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbmaj7</td>
+<td style="text-align: left;">Bb Major</td>
+<td style="text-align: left;">C Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebmaj7</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">F Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-metheny-pattern">The "Metheny Pattern"</h3>
+<p>Over Dmaj7, this pattern captures the sound:</p>
+<pre><code>D - F# - A - E - G# - B - D - E
+(D maj)     (E maj)     (return)
+</code></pre>
+<p>Continuous eighth notes, light articulation, ringing sustain.</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-pentatonic-version-a">Chorus 1: Lyrical Pentatonic (Version A)</h3>
+<p><strong>Concept:</strong> Singing melodies using major pentatonic</p>
+<ul>
+<li>Core notes: D - E - F# - A - B (D major pentatonic)</li>
+<li>Add C# for Lydian moments</li>
+<li>Phrases should arc naturally—up then down</li>
+<li>Target chord tones on downbeats</li>
+</ul>
+<p><strong>Phrase Shape:</strong></p>
+<pre><code>Bars 1-2: Ascending (question)
+Bars 3-4: Descending (answer)
+Bars 5-8: Development and resolution
+</code></pre>
+<h3 id="chorus-2-constant-triad-motion-version-b">Chorus 2: Constant Triad Motion (Version B)</h3>
+<p><strong>Concept:</strong> Non-stop triad arpeggiation</p>
+<ul>
+<li>Use the D/E triad pair over the A section</li>
+<li>B section: New triad pair for each chord</li>
+<li>Continuous eighth notes—never stop moving</li>
+<li>Slight accents on chord changes only</li>
+</ul>
+<p><strong>Pattern:</strong></p>
+<pre><code>| D triad up | E triad down | D triad up | E triad down |
+</code></pre>
+<h3 id="chorus-3-pedal-point-counterpoint-version-c">Chorus 3: Pedal Point Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Open D drone with independent melody</p>
+<p><strong>Texture:</strong>
+- <strong>Bass</strong>: Open D string (continuous)
+- <strong>Melody</strong>: Arpeggiated lines on upper strings</p>
+<p>This creates a "harp-like" effect characteristic of Metheny's acoustic work.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="pedal-point-voicings">Pedal Point Voicings</h3>
+<pre><code>Dmaj7:    x-5-4-6-5-x or 0-5-4-6-5-x (open D)
+Em7/D:    0-5-4-5-5-x (D in bass)
+F#m7/D:   0-x-4-6-5-x (D in bass)
+Gmaj7/D:  0-5-4-4-3-x (D in bass)
+A/D:      0-5-4-6-5-x (A triad over D)
+</code></pre>
+<h3 id="b-section-voicings">B Section Voicings</h3>
+<pre><code>Bbmaj7:   x-1-0-2-3-x (first position)
+Cmaj7:    x-3-2-4-5-x 
+Ebmaj7:   x-6-5-7-8-x
+Dbmaj7:   x-4-3-5-6-x
+Abmaj7:   4-x-5-5-4-x
+</code></pre>
+<hr />
+<h2 id="technique-the-metheny-touch">TECHNIQUE: THE METHENY TOUCH</h2>
+<h3 id="right-hand">Right Hand</h3>
+<ul>
+<li><strong>Light attack</strong>: The pick barely touches the string</li>
+<li><strong>Follow-through</strong>: Let the pick glide through, not chop</li>
+<li><strong>Consistent dynamics</strong>: Every note at the same level</li>
+<li><strong>Slight palm muting</strong>: For the characteristic "thump"</li>
+</ul>
+<h3 id="left-hand">Left Hand</h3>
+<ul>
+<li><strong>Legato</strong>: Use hammer-ons and pull-offs liberally</li>
+<li><strong>Let ring</strong>: Don't dampen notes prematurely</li>
+<li><strong>Finger independence</strong>: Melody moves while drone sustains</li>
+</ul>
+<h3 id="the-ringing-effect">The "Ringing" Effect</h3>
+<p>Use open strings whenever possible:</p>
+<pre><code>Over Dmaj7:  D (open) - F# (string 1, fret 2) - A (open) - E (open)
+</code></pre>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-pentatonic-foundation">Week 1: Pentatonic Foundation</h3>
+<ul>
+<li>[ ] Master D major pentatonic in all positions</li>
+<li>[ ] Add C# for Lydian extension</li>
+<li>[ ] Practice Version A melody</li>
+</ul>
+<h3 id="week-2-triad-pairs">Week 2: Triad Pairs</h3>
+<ul>
+<li>[ ] Drill D/E major triad pair</li>
+<li>[ ] Apply to the entire A section</li>
+<li>[ ] Work on Version B at slow tempo (80 BPM)</li>
+</ul>
+<h3 id="week-3-pedal-technique">Week 3: Pedal Technique</h3>
+<ul>
+<li>[ ] Practice maintaining open D while playing melody</li>
+<li>[ ] Work on independence between bass and treble</li>
+<li>[ ] Develop Version C</li>
+</ul>
+<h3 id="week-4-the-flow">Week 4: The Flow</h3>
+<ul>
+<li>[ ] Play all three choruses consecutively</li>
+<li>[ ] Work on consistent dynamics (no accents)</li>
+<li>[ ] Practice with a delay pedal (dotted eighth)</li>
+</ul>
+<hr />
+<h2 id="delay-settings">DELAY SETTINGS</h2>
+<p>The "Metheny delay" is essential for this sound:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Time</td>
+<td style="text-align: left;">Dotted eighth (562ms at 145 BPM)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Feedback</td>
+<td style="text-align: left;">2-3 repeats</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mix</td>
+<td style="text-align: left;">30-40% wet</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">Analog or tape emulation</td>
+</tr>
+</tbody>
+</table>
+<p>The delay creates rhythmic complexity from simple lines.</p>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Pat Metheny</strong> — <em>Bright Size Life</em> (the original)</li>
+<li><strong>Pat Metheny Group</strong> — <em>Offramp</em> (group sound)</li>
+<li><strong>Pat Metheny</strong> — <em>One Quiet Night</em> (solo acoustic)</li>
+<li><strong>Pat Metheny &amp; Charlie Haden</strong> — <em>Beyond the Missouri Sky</em></li>
+<li><strong>Lyle Mays</strong> — <em>Lyle Mays</em> (Metheny's keyboard partner)</li>
+</ol>
+<hr />
+<h2 id="tone-tips">TONE TIPS</h2>
+<p>For the Metheny sound:
+- <strong>Guitar</strong>: Hollowbody or semi-hollow (Gibson ES-175, Ibanez PM)
+- <strong>Amp</strong>: Roland JC-120 or similar clean solid-state
+- <strong>Delay</strong>: Essential—dotted eighth
+- <strong>Chorus</strong>: Optional, light modulation
+- <strong>Compression</strong>: Light, for sustain</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Accenting notes</strong>: Keep dynamics absolutely even</li>
+<li><strong>Losing the pedal</strong>: The D should ring throughout</li>
+<li><strong>Too stiff</strong>: The lines should flow like water</li>
+<li><strong>Overusing delay</strong>: The delay enhances, but the playing must be clean</li>
+<li><strong>Wrong triad pair</strong>: D/E for A section, new pair each chord in B</li>
+</ol>
+<hr />
+<h2 id="the-bright-size-concept">THE "BRIGHT SIZE" CONCEPT</h2>
+<p>The title refers to the expansive, optimistic quality of the music:
+- <strong>Bright</strong>: Major tonality, open strings, ringing sustain
+- <strong>Size</strong>: Wide intervallic range, sense of space
+- <strong>Life</strong>: Forward motion, continuous flow</p>
+<p>Think of sunlight on water—constant movement, unchanging brightness.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Are my dynamics completely even?</li>
+<li>[ ] Does the D pedal sustain throughout the A section?</li>
+<li>[ ] Can I play continuous eighth notes without tension?</li>
+<li>[ ] Does my delay sound musical (not cluttered)?</li>
+<li>[ ] Is there a sense of flow and forward motion?</li>
+</ul>
+<hr />
+<p><strong>← <a href="05_The_Mirror.md">The Mirror</a> | <a href="07_Monks_Dream.md">Next: Monk's Dream →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="07-monks-dream">
+<h1 id="chapter-7-monks-dream">CHAPTER 7: MONK'S DREAM</h1>
+<p><strong>Style:</strong> Experimental (Thelonious Monk tribute) | <strong>Key:</strong> C Major | <strong>Tempo:</strong> 110 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Whole-tone clusters and displaced rhythms."</em></p>
+<p>Monk's Dream channels the angular, unpredictable genius of Thelonious Monk. The tune uses whole-tone scales, dissonant clusters, and deliberately "wrong" notes that become right through conviction. The key of C provides clarity for these adventures.</p>
+<p><strong>Playing Tip:</strong> Feel the space; don't rush the silence.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar form with Monk-style asymmetry:</p>
+<pre><code>| Cmaj7#11  | Cmaj7#11  | Db7#11    | Db7#11   |
+| Dm7       | G7#5      | Cmaj7     | Eb7      |
+| Ab7       | Db7       | Gb7       | B7       |
+| Em7       | A7#11     | Dm7       | G7#9     |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Whole-tone movement</strong>: C → Db → Eb → etc. (bar 1-2, 7-8)</li>
+<li><strong>Tritone substitutions</strong>: Ab7, Db7, Gb7, B7 create chromatic bass line</li>
+<li><strong>Cluster voicings</strong>: Close-voiced dissonances</li>
+<li><strong>Rhythmic displacement</strong>: Phrases start in unexpected places</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Monk Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Cmaj7#11</td>
+<td style="text-align: left;">C Lydian</td>
+<td style="text-align: left;">Whole-tone moments</td>
+</tr>
+<tr>
+<td style="text-align: left;">Db7#11</td>
+<td style="text-align: left;">Db Lydian Dominant</td>
+<td style="text-align: left;">Same whole-tone as C</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7#5</td>
+<td style="text-align: left;">G Whole-Tone</td>
+<td style="text-align: left;">Perfect for the harmony</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ab7</td>
+<td style="text-align: left;">Ab Mixolydian</td>
+<td style="text-align: left;">Blues tinge</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dm7</td>
+<td style="text-align: left;">D Dorian</td>
+<td style="text-align: left;">Standard bebop</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7#9</td>
+<td style="text-align: left;">G Half-Whole Dim</td>
+<td style="text-align: left;">The Monk "crunch"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-whole-tone-scale">The Whole-Tone Scale</h3>
+<p>Both C and Db belong to the <strong>same whole-tone scale</strong>:</p>
+<pre><code>C - D - E - F# - G# - A# (- C)
+</code></pre>
+<p>This creates the floating, ambiguous quality Monk loved.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Monk Flavor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Cmaj7#11</td>
+<td style="text-align: left;">C Major</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7#5</td>
+<td style="text-align: left;">G Augmented</td>
+<td style="text-align: left;">Db Augmented</td>
+<td style="text-align: left;">Whole-tone</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ab7</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Gb Major</td>
+<td style="text-align: left;">Tritone approach</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7#9</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">The "crunch"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-monk-pair">The "Monk Pair"</h3>
+<p>Over G7#9, alternate between:
+- G Major (G-B-D) = the resolution sound
+- Ab Major (Ab-C-Eb) = the "wrong" note (#9, b5, b7)</p>
+<p>The Ab Major triad is "wrong" but sounds inevitably right.</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-angular-melody-version-a">Chorus 1: Angular Melody (Version A)</h3>
+<p><strong>Concept:</strong> Jagged, speech-like phrases with unexpected accents</p>
+<ul>
+<li>Phrases start on weak beats (beat 2, the "and" of 3)</li>
+<li>Wide leaps followed by steps</li>
+<li>Repeat notes with varying accents</li>
+<li>Long silences mid-phrase</li>
+</ul>
+<p><strong>Monk Rhythmic Cells:</strong></p>
+<pre><code>| . . X . | X . . X | . X . . | X . X . |
+(rest-rest-note-rest | note-rest-rest-note | etc.)
+</code></pre>
+<h3 id="chorus-2-whole-tone-clusters-version-b">Chorus 2: Whole-Tone Clusters (Version B)</h3>
+<p><strong>Concept:</strong> Dissonant chord-melody using cluster voicings</p>
+<ul>
+<li>Voice chords in close position (2nds)</li>
+<li>Use the whole-tone scale for melodic connections</li>
+<li>"Smear" between chords chromatically</li>
+<li>Emphasize tritones and augmented 5ths</li>
+</ul>
+<p><strong>Cluster Technique:</strong></p>
+<pre><code>Over Cmaj7#11: Play C-D-E-F# simultaneously (whole-tone cluster)
+Over G7#5:     Play G-B-D# simultaneously (augmented chord)
+</code></pre>
+<h3 id="chorus-3-space-and-silence-version-c">Chorus 3: Space and Silence (Version C)</h3>
+<p><strong>Concept:</strong> Extreme use of silence as a compositional element</p>
+<p><strong>Texture Map:</strong>
+| Bars | Activity | Silence |
+|:---|:---|:---|
+| 1-2 | 3 notes | 6 beats rest |
+| 3-4 | 2 notes | 7 beats rest |
+| 5-8 | Burst of activity | Then 2 full bars rest |</p>
+<p>Monk was famous for this—silence is as important as sound.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="cluster-voicings-monk-style">Cluster Voicings (Monk-style)</h3>
+<pre><code>Cmaj7#11:  x-3-2-4-3-x (close position)
+           x-3-4-4-5-x (cluster: E-F#-G-B)
+
+Db7#11:    x-4-3-4-4-x (tritone from C)
+           x-4-5-5-6-x (cluster)
+
+G7#5:      3-x-3-4-4-x (augmented)
+G7#9:      3-x-3-4-4-4 (the crunch chord)
+</code></pre>
+<h3 id="tritone-substitution-voicings">Tritone Substitution Voicings</h3>
+<pre><code>Ab7:       4-x-4-5-4-x
+Db7:       x-4-3-4-4-x
+Gb7:       2-x-2-3-2-x
+B7:        x-2-1-2-2-x
+</code></pre>
+<hr />
+<h2 id="technique-rhythmic-displacement">TECHNIQUE: RHYTHMIC DISPLACEMENT</h2>
+<h3 id="what-is-displacement">What Is Displacement?</h3>
+<p>Taking a phrase and starting it on a different beat:</p>
+<p><strong>Original (on beat 1):</strong></p>
+<pre><code>| X X X X | . . . . |
+</code></pre>
+<p><strong>Displaced (on beat 2):</strong></p>
+<pre><code>| . X X X | X . . . |
+</code></pre>
+<p><strong>Displaced (on "and" of 3):</strong></p>
+<pre><code>| . . . X | X X X . |
+</code></pre>
+<h3 id="practice-method">Practice Method</h3>
+<ol>
+<li>Write out a simple phrase</li>
+<li>Play it starting on beat 1</li>
+<li>Play it starting on beat 2</li>
+<li>Play it starting on each 8th note position</li>
+<li>Notice how the feel changes completely</li>
+</ol>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-whole-tone-world">Week 1: The Whole-Tone World</h3>
+<ul>
+<li>[ ] Master the C whole-tone scale in all positions</li>
+<li>[ ] Practice whole-tone triads (augmented)</li>
+<li>[ ] Work on Version A melody with displaced rhythms</li>
+</ul>
+<h3 id="week-2-clusters">Week 2: Clusters</h3>
+<ul>
+<li>[ ] Practice close-voiced chords</li>
+<li>[ ] Work on "smearing" between chords</li>
+<li>[ ] Develop Version B chord-melody</li>
+</ul>
+<h3 id="week-3-the-silence">Week 3: The Silence</h3>
+<ul>
+<li>[ ] Practice long rests with conviction</li>
+<li>[ ] Work on starting phrases on weak beats</li>
+<li>[ ] Develop Version C with extreme space</li>
+</ul>
+<h3 id="week-4-monk-mind">Week 4: Monk Mind</h3>
+<ul>
+<li>[ ] Listen to Monk recordings daily</li>
+<li>[ ] Absorb his sense of timing</li>
+<li>[ ] Play all three choruses with Monk-like conviction</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Thelonious Monk</strong> — <em>Monk's Dream</em> (the original inspiration)</li>
+<li><strong>Thelonious Monk</strong> — <em>Brilliant Corners</em> (angular genius)</li>
+<li><strong>Thelonious Monk</strong> — <em>Solo Monk</em> (pure piano, essential)</li>
+<li><strong>Monk with John Coltrane</strong> — <em>Thelonious Monk with John Coltrane</em></li>
+<li><strong>Steve Lacy</strong> — <em>Reflections</em> (Monk repertoire on soprano)</li>
+</ol>
+<hr />
+<h2 id="the-monk-approach">THE MONK APPROACH</h2>
+<h3 id="wrong-notes">"Wrong" Notes</h3>
+<p>Monk's "wrong" notes aren't mistakes—they're choices:
+- The b9 against a major chord
+- The #11 emphasized as a melody note
+- The major 7th against a dominant 7th</p>
+<p>Play these notes with <strong>conviction</strong>, not apology.</p>
+<h3 id="space">Space</h3>
+<p>Monk's rests are composed, not accidental:
+- A rest can be 2 beats, 4 beats, even 8 beats
+- The silence creates tension
+- The next note releases it</p>
+<h3 id="rhythm">Rhythm</h3>
+<p>Monk's time feel is unique:
+- Slightly behind the beat
+- Accents on unexpected places
+- Phrases that don't line up with bar lines</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Playing too many notes</strong>: Monk's genius is in what he leaves out</li>
+<li><strong>Avoiding dissonance</strong>: Embrace the clusters and "wrong" notes</li>
+<li><strong>Rushing silences</strong>: A 2-beat rest should feel like 2 beats, not 1.5</li>
+<li><strong>Being too "correct"</strong>: This tune requires controlled chaos</li>
+<li><strong>Losing the pulse</strong>: The time should be solid even when phrases float</li>
+</ol>
+<hr />
+<h2 id="the-monks-dream-concept">THE "MONK'S DREAM" CONCEPT</h2>
+<p>The title refers to Monk's unique musical vision:
+- <strong>Dream</strong>: Non-linear logic, like dream sequence
+- <strong>Monk</strong>: Angular, unexpected, but inevitable
+- <strong>The journey</strong>: From C Lydian to chromatic abstraction and back</p>
+<p>When playing this tune, think in curves, not straight lines.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Do my "wrong" notes sound intentional?</li>
+<li>[ ] Am I using silence effectively?</li>
+<li>[ ] Are my clusters voiced correctly (close position)?</li>
+<li>[ ] Do my phrases start on unexpected beats?</li>
+<li>[ ] Does the whole thing swing (despite the oddness)?</li>
+</ul>
+<hr />
+<p><strong>← <a href="06_Bright_Size_Life_2.md">Bright Size Life 2</a> | <a href="08_Nefertitis_Shadow.md">Next: Nefertiti's Shadow →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="08-nefertitis-shadow">
+<h1 id="chapter-8-nefertitis-shadow">CHAPTER 8: NEFERTITI'S SHADOW</h1>
+<p><strong>Style:</strong> Wayne Shorter (Post-Bop) | <strong>Key:</strong> Eb Major | <strong>Tempo:</strong> 180 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Melody dictates harmony; no recurring V7s."</em></p>
+<p>Named after Shorter's famous composition "Nefertiti," this tune reverses traditional jazz hierarchy: the melody is paramount, and the harmony exists to serve it. There are no traditional ii-V-I progressions—the chords flow from the melodic contour.</p>
+<p><strong>Playing Tip:</strong> Listen to the top note; harmonization flows down from there.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar through-composed form:</p>
+<pre><code>| Ebmaj7#11 | Dbmaj7    | Bmaj7     | Amaj7     |
+| Abmaj7    | Gbmaj7    | Emaj7     | Dmaj7     |
+| Cmaj7     | Bbmaj7    | Abmaj7    | Gbmaj7    |
+| Fmaj7     | Ebmaj7    | Dbmaj7    | Ebmaj7    |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Descending major 7ths</strong>: Root movement by major 2nds and minor 3rds</li>
+<li><strong>No dominants</strong>: Every chord is major 7th—no V7 resolutions</li>
+<li><strong>Melody-derived</strong>: Each chord supports a specific melody note</li>
+<li><strong>Cycling</strong>: Returns to Eb through unexpected routes</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<p>Every chord uses <strong>Lydian</strong> as the default:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Scale</th>
+<th style="text-align: left;">#11 Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Ebmaj7</td>
+<td style="text-align: left;">Eb Lydian</td>
+<td style="text-align: left;">A natural</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7</td>
+<td style="text-align: left;">Db Lydian</td>
+<td style="text-align: left;">G natural</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bmaj7</td>
+<td style="text-align: left;">B Lydian</td>
+<td style="text-align: left;">E# (F)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Amaj7</td>
+<td style="text-align: left;">A Lydian</td>
+<td style="text-align: left;">D#</td>
+</tr>
+<tr>
+<td style="text-align: left;">Emaj7</td>
+<td style="text-align: left;">E Lydian</td>
+<td style="text-align: left;">A#</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cmaj7</td>
+<td style="text-align: left;">C Lydian</td>
+<td style="text-align: left;">F#</td>
+</tr>
+</tbody>
+</table>
+<h3 id="shorters-harmonic-world">Shorter's Harmonic World</h3>
+<p>Wayne Shorter's post-bop harmony features:
+- <strong>Major 7ths as stable sounds</strong> (not requiring resolution)
+- <strong>Root movement by step</strong> (not by 5th)
+- <strong>Lydian as default</strong> (not Ionian)
+- <strong>Melody as generator</strong> (harmony serves melody)</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Lydian Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Ebmaj7</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">F Major</td>
+<td style="text-align: left;">9, #11, 6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">9, #11, 6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bmaj7</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">C# Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Amaj7</td>
+<td style="text-align: left;">A Major</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+</tbody>
+</table>
+<h3 id="universal-pattern">Universal Pattern</h3>
+<p>For any maj7 chord, use:
+- <strong>Root triad</strong> (1-3-5)
+- <strong>II triad</strong> (9-#11-6)</p>
+<p>Example over Ebmaj7:</p>
+<pre><code>Eb-G-Bb (Eb major) + F-A-C (F major) = Eb Lydian sound
+</code></pre>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-the-singing-melody-version-a">Chorus 1: The Singing Melody (Version A)</h3>
+<p><strong>Concept:</strong> Long, arching phrases that generate the harmony</p>
+<ul>
+<li>The melody should be singable, like a vocal line</li>
+<li>Each phrase targets a specific chord tone</li>
+<li>Phrases cross bar lines freely</li>
+<li>The tempo is fast (180), but the feel is floating</li>
+</ul>
+<p><strong>Melodic Contour:</strong></p>
+<pre><code>Bars 1-4:   Descending arc
+Bars 5-8:   Ascending response
+Bars 9-12:  Development (wider intervals)
+Bars 13-16: Return and resolution
+</code></pre>
+<h3 id="chorus-2-lydian-triad-pairs-version-b">Chorus 2: Lydian Triad Pairs (Version B)</h3>
+<p><strong>Concept:</strong> Continuous eighth notes using I/II triad pairs</p>
+<ul>
+<li>At 180 BPM, eighth notes are fast but manageable</li>
+<li>Alternate between root triad and II triad</li>
+<li>Maintain the melodic contour while using pairs</li>
+<li>Accents only on chord changes</li>
+</ul>
+<p><strong>Pattern Application:</strong></p>
+<pre><code>Bar 1 (Ebmaj7): Eb-G-Bb (down) - F-A-C (up) - repeat
+Bar 2 (Dbmaj7): Db-F-Ab (down) - Eb-G-Bb (up) - repeat
+</code></pre>
+<h3 id="chorus-3-parallel-voice-leading-version-c">Chorus 3: Parallel Voice-Leading (Version C)</h3>
+<p><strong>Concept:</strong> Two voices moving in parallel major 3rds or 6ths</p>
+<p><strong>Texture:</strong>
+- <strong>Top voice</strong>: Melody
+- <strong>Bottom voice</strong>: Major 3rd or 6th below (parallel motion)</p>
+<p>This creates a sweet, consonant quality appropriate to the major 7th harmony.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="major-7th-shapes-moveable">Major 7th Shapes (moveable)</h3>
+<pre><code>Type A:  x-X-X-X-X-x  (Root on 5th string)
+Ebmaj7:  x-6-5-7-8-x
+Dbmaj7:  x-4-3-5-6-x
+Bmaj7:   x-2-1-3-4-x
+
+Type B:  X-x-X-X-X-x  (Root on 6th string)
+Amaj7:   5-x-6-6-5-x
+Gmaj7:   3-x-4-4-3-x
+Emaj7:   0-x-1-1-0-x (open position)
+</code></pre>
+<h3 id="parallel-3rds6ths-voicings">Parallel 3rds/6ths Voicings</h3>
+<pre><code>Eb + G:   x-x-8-8-x-x (parallel 3rds)
+Db + F:   x-x-6-6-x-x
+B + D#:   x-x-4-4-x-x
+</code></pre>
+<hr />
+<h2 id="technique-playing-at-180-bpm">TECHNIQUE: PLAYING AT 180 BPM</h2>
+<h3 id="time-feel">Time Feel</h3>
+<p>At 180 BPM:
+- Quarter note = 333ms
+- Eighth note = 167ms
+- Sixteenth = 83ms</p>
+<p>Focus on <strong>steady eighth notes</strong> as your primary rhythmic unit.</p>
+<h3 id="subdivision-practice">Subdivision Practice</h3>
+<ol>
+<li>Set metronome to 90 BPM (half-time)</li>
+<li>Play eighth notes (which feel like 180)</li>
+<li>Gradually move click to 180 (one click per beat)</li>
+<li>Eventually, click on 1 and 3 only (half-time feel at fast tempo)</li>
+</ol>
+<h3 id="relaxation">Relaxation</h3>
+<p>At fast tempos, tension is the enemy:
+- Relax shoulders
+- Minimal finger movement
+- Let the momentum carry you
+- Don't "work hard"—let it flow</p>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-melody">Week 1: The Melody</h3>
+<ul>
+<li>[ ] Learn Version A melody by heart</li>
+<li>[ ] Practice singing the melody</li>
+<li>[ ] Work at half tempo (90 BPM)</li>
+</ul>
+<h3 id="week-2-lydian-pairs">Week 2: Lydian Pairs</h3>
+<ul>
+<li>[ ] Master the I/II triad pair for each chord</li>
+<li>[ ] Practice transitions between pairs</li>
+<li>[ ] Work on Version B at 120 BPM</li>
+</ul>
+<h3 id="week-3-parallel-motion">Week 3: Parallel Motion</h3>
+<ul>
+<li>[ ] Practice parallel 3rds through the changes</li>
+<li>[ ] Practice parallel 6ths through the changes</li>
+<li>[ ] Develop Version C</li>
+</ul>
+<h3 id="week-4-full-speed">Week 4: Full Speed</h3>
+<ul>
+<li>[ ] Bring everything up to 180 BPM</li>
+<li>[ ] Focus on relaxation and flow</li>
+<li>[ ] Record and evaluate</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Wayne Shorter</strong> — <em>Speak No Evil</em> ("Nefertiti" is on this album)</li>
+<li><strong>Wayne Shorter</strong> — <em>Adam's Apple</em></li>
+<li><strong>Miles Davis</strong> — <em>Nefertiti</em> (the album featuring Shorter's tune)</li>
+<li><strong>Herbie Hancock</strong> — <em>Maiden Voyage</em> (similar aesthetic)</li>
+<li><strong>Wayne Shorter Quartet</strong> — <em>Without a Net</em> (modern Shorter)</li>
+</ol>
+<hr />
+<h2 id="the-nefertiti-approach">THE "NEFERTITI" APPROACH</h2>
+<p>Wayne Shorter's "Nefertiti" (1967) revolutionized jazz composition:
+- The <strong>melody repeats</strong> while the rhythm section improvises
+- The <strong>form is secondary</strong> to the melodic statement
+- <strong>Harmony serves melody</strong>, not the other way around</p>
+<p>This tune applies those principles to guitar:
+- The melody is primary
+- The chords are chosen to harmonize specific melody notes
+- No functional progressions—just beautiful sounds</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Thinking harmonically first</strong>: Start with the melody, always</li>
+<li><strong>Adding dominants</strong>: There are no V7 chords—respect the maj7 world</li>
+<li><strong>Rushing at 180</strong>: Stay relaxed; let the tempo carry you</li>
+<li><strong>Ignoring the contour</strong>: The descending-ascending shape is essential</li>
+<li><strong>Over-complicating</strong>: Lydian is enough—don't add more colors</li>
+</ol>
+<hr />
+<h2 id="the-shadow-concept">THE SHADOW CONCEPT</h2>
+<p>The title "Nefertiti's Shadow" suggests:
+- <strong>Mystery</strong>: Egyptian queen, ancient beauty
+- <strong>Silhouette</strong>: The melody is the outline; harmony is the shadow
+- <strong>Following</strong>: The chords follow the melody, like a shadow follows the body</p>
+<p>When playing, imagine the melody as a figure walking, and the harmony as its shadow on the wall.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Can I sing the melody without the guitar?</li>
+<li>[ ] Does every chord support its specific melody note?</li>
+<li>[ ] Am I relaxed at 180 BPM?</li>
+<li>[ ] Does the Lydian color come through clearly?</li>
+<li>[ ] Is the parallel motion smooth and sweet?</li>
+</ul>
+<hr />
+<p><strong>← <a href="07_Monks_Dream.md">Monk's Dream</a> | <a href="09_Greezy.md">Next: Greezy →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="09-greezy">
+<h1 id="chapter-9-greezy">CHAPTER 9: GREEZY</h1>
+<p><strong>Style:</strong> Blues Shuffle | <strong>Key:</strong> G Major | <strong>Tempo:</strong> 100 BPM | <strong>Time:</strong> 12/8</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Traditional shuffle with modern diminished substitutions."</em></p>
+<p>Greezy is the greasiest tune in the collection—a down-home blues shuffle in 12/8 with modern harmonic twists. The diminished substitutions add unexpected color while keeping the deep blues feel intact.</p>
+<p><strong>Playing Tip:</strong> Lock with the imaginary drummer's triplet feel. Feel the grease.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>12-bar blues with diminished substitutions:</p>
+<pre><code>| G7       | C7       | G7       | G7  G#dim7 |
+| C7       | C#dim7   | G7       | E7         |
+| Am7      | D7#9     | G7  E7   | Am7  D7    |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>12/8 shuffle</strong>: Triplet subdivision throughout</li>
+<li><strong>Diminished connectors</strong>: G#dim7 and C#dim7 as chromatic passing chords</li>
+<li><strong>#9 dominants</strong>: D7#9 for the classic blues "crunch"</li>
+<li><strong>Quick changes</strong>: Bars 4, 11, 12 have two chords each</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Blues Option</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">G7</td>
+<td style="text-align: left;">G Mixolydian</td>
+<td style="text-align: left;">G Blues</td>
+</tr>
+<tr>
+<td style="text-align: left;">C7</td>
+<td style="text-align: left;">C Mixolydian</td>
+<td style="text-align: left;">C Blues</td>
+</tr>
+<tr>
+<td style="text-align: left;">G#dim7</td>
+<td style="text-align: left;">G# Half-Whole Diminished</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;">C#dim7</td>
+<td style="text-align: left;">C# Half-Whole Diminished</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;">E7</td>
+<td style="text-align: left;">E Mixolydian</td>
+<td style="text-align: left;">E Blues</td>
+</tr>
+<tr>
+<td style="text-align: left;">D7#9</td>
+<td style="text-align: left;">D Half-Whole Diminished</td>
+<td style="text-align: left;">D Blues</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-blues-scale-kingdom">The Blues Scale Kingdom</h3>
+<p>Over the whole form, you can use <strong>G Blues</strong> (G-Bb-C-Db-D-F) as a "master scale":
+- Works over G7, C7, D7
+- Creates delicious tension over E7
+- Even works over diminished chords (with adjustment)</p>
+<hr />
+<h2 id="the-128-feel">THE 12/8 FEEL</h2>
+<h3 id="understanding-128">Understanding 12/8</h3>
+<p>12/8 means <strong>12 eighth notes per bar</strong>, grouped in <strong>four groups of three</strong>:</p>
+<pre><code>| 1 2 3 | 4 5 6 | 7 8 9 | 10 11 12 |
+| 1 . . | 2 . . | 3 . . | 4  .  .  |
+</code></pre>
+<p>Each beat has a triplet subdivision built in.</p>
+<h3 id="the-shuffle-vs-128">The Shuffle vs. 12/8</h3>
+<ul>
+<li><strong>Shuffle</strong>: 4/4 with swung eighths (triplet interpretation)</li>
+<li><strong>12/8</strong>: Triplets are explicitly written</li>
+</ul>
+<p>They sound similar, but 12/8 is more "greasy"—the triplets are heavier.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Blues Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">G7</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">F Major</td>
+<td style="text-align: left;">Mixolydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7</td>
+<td style="text-align: left;">Bb Minor</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">Blues minor/major</td>
+</tr>
+<tr>
+<td style="text-align: left;">C7</td>
+<td style="text-align: left;">C Major</td>
+<td style="text-align: left;">Bb Major</td>
+<td style="text-align: left;">Mixolydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">D7#9</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">The crunch</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-greezy-pair">The "Greezy Pair"</h3>
+<p>Over G7, alternate:
+- <strong>G Major</strong> (G-B-D) = bright
+- <strong>Bb Minor</strong> (Bb-Db-F) = dark, bluesy (contains b3, b5, b7 of G)</p>
+<p>This major/minor ambiguity is the essence of blues.</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-classic-blues-version-a">Chorus 1: Classic Blues (Version A)</h3>
+<p><strong>Concept:</strong> Traditional blues vocabulary with triplet phrasing</p>
+<ul>
+<li>Start phrases on beat 2 or 4</li>
+<li>Bends on the b3, 4, and b7</li>
+<li>Call and response structure</li>
+<li>Leave space for the "church"</li>
+</ul>
+<p><strong>Classic Licks:</strong></p>
+<pre><code>(in G Blues)
+e|----------------3-3-|
+B|----3-5-3-------3---|
+G|---------5-3-5------|
+D|--5-----------------|
+</code></pre>
+<h3 id="chorus-2-diminished-connections-version-b">Chorus 2: Diminished Connections (Version B)</h3>
+<p><strong>Concept:</strong> Use diminished arpeggios as chromatic connectors</p>
+<ul>
+<li>Over G#dim7: G#-B-D-F arpeggio (connects G7 to Am7 sound)</li>
+<li>Over C#dim7: C#-E-G-Bb arpeggio (connects C7 to D7 sound)</li>
+<li>Diminished arpeggios resolve by half-step</li>
+</ul>
+<p><strong>Diminished Pattern:</strong></p>
+<pre><code>G#dim7: G#-B-D-F (down) resolving to G or A
+C#dim7: C#-E-G-Bb (down) resolving to D
+</code></pre>
+<h3 id="chorus-3-two-voice-blues-version-c">Chorus 3: Two-Voice Blues (Version C)</h3>
+<p><strong>Concept:</strong> Bass line against melody, blues style</p>
+<p><strong>Texture:</strong>
+- <strong>Bass</strong>: Root notes on beats 1 and 3 (in triplet grouping)
+- <strong>Melody</strong>: Blues licks on the off-beats</p>
+<p>This creates a "one-man-band" effect, common in solo blues guitar.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="blues-voicings">Blues Voicings</h3>
+<pre><code>G7:      3-x-3-4-3-x (shell)
+         3-5-3-4-3-3 (full barre)
+C7:      x-3-2-3-1-x
+         8-x-8-9-8-x (same shape as G7)
+D7#9:    x-5-4-5-4-x (the Hendrix chord)
+E7:      0-2-0-1-0-0 (open position)
+</code></pre>
+<h3 id="diminished-voicings">Diminished Voicings</h3>
+<pre><code>G#dim7:  4-x-3-4-3-x
+C#dim7:  x-4-5-3-5-x
+</code></pre>
+<h3 id="blues-shuffle-comping-pattern">Blues Shuffle Comping Pattern</h3>
+<pre><code>| G7            | G7            |
+| 3-x-x-4-3-x   | 3-x-x-5-3-x   | (alternating 5th and 6th)
+</code></pre>
+<hr />
+<h2 id="technique-the-shuffle-feel">TECHNIQUE: THE SHUFFLE FEEL</h2>
+<h3 id="right-hand">Right Hand</h3>
+<ul>
+<li><strong>Downstrokes on beats 1, 2, 3, 4</strong> (the big beats)</li>
+<li><strong>Upstrokes on the triplet "3"</strong> (the swing)</li>
+<li>Think: <strong>DOWN-down-UP, DOWN-down-UP</strong></li>
+</ul>
+<h3 id="left-hand">Left Hand</h3>
+<ul>
+<li><strong>Muting</strong>: Control unwanted strings</li>
+<li><strong>Grace notes</strong>: Quick hammer-ons/pull-offs for grease</li>
+<li><strong>Bends</strong>: Slow, vocal bends are essential</li>
+</ul>
+<h3 id="the-pocket">The "Pocket"</h3>
+<p>Play slightly <strong>behind</strong> the beat:
+- Don't rush
+- Let the groove breathe
+- The bass player and drummer are your reference</p>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-feel">Week 1: The Feel</h3>
+<ul>
+<li>[ ] Practice the 12/8 pattern with a metronome</li>
+<li>[ ] Work on the shuffle comping pattern</li>
+<li>[ ] Feel the triplets in your body (tap foot, nod head)</li>
+</ul>
+<h3 id="week-2-blues-vocabulary">Week 2: Blues Vocabulary</h3>
+<ul>
+<li>[ ] Transcribe classic blues licks (BB King, Freddie King)</li>
+<li>[ ] Apply to the Greezy changes</li>
+<li>[ ] Work on Version A</li>
+</ul>
+<h3 id="week-3-diminished">Week 3: Diminished</h3>
+<ul>
+<li>[ ] Master diminished arpeggios from any root</li>
+<li>[ ] Practice using them as chromatic connectors</li>
+<li>[ ] Develop Version B</li>
+</ul>
+<h3 id="week-4-two-voice">Week 4: Two-Voice</h3>
+<ul>
+<li>[ ] Isolate bass line</li>
+<li>[ ] Isolate melody</li>
+<li>[ ] Combine slowly</li>
+<li>[ ] Work on Version C</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>BB King</strong> — <em>Live at the Regal</em> (the master)</li>
+<li><strong>Freddie King</strong> — <em>Getting Ready</em> (Texas shuffle)</li>
+<li><strong>Albert King</strong> — <em>Born Under a Bad Sign</em> (slow grease)</li>
+<li><strong>Stevie Ray Vaughan</strong> — <em>Texas Flood</em> (modern blues)</li>
+<li><strong>Robben Ford</strong> — <em>Talk to Your Daughter</em> (jazz-blues)</li>
+</ol>
+<hr />
+<h2 id="tone-tips">TONE TIPS</h2>
+<p>For the blues shuffle sound:
+- <strong>Guitar</strong>: Anything with humbuckers (or single-coils with attitude)
+- <strong>Amp</strong>: Just breaking up, but not fully distorted
+- <strong>No effects</strong>: Maybe a touch of reverb
+- <strong>Fingers</strong>: Dig in with the pick; don't be polite</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Rushing the shuffle</strong>: Stay behind the beat</li>
+<li><strong>Ignoring the diminished</strong>: These are the "modern" touches—use them</li>
+<li><strong>Too many notes</strong>: Blues is about feel, not quantity</li>
+<li><strong>Stiff bends</strong>: Bends should be slow, vocal, expressive</li>
+<li><strong>Losing the triplet</strong>: Every beat is divided in three—feel it</li>
+</ol>
+<hr />
+<h2 id="the-greezy-concept">THE "GREEZY" CONCEPT</h2>
+<p>The title is intentional slang:
+- <strong>Greasy</strong>: Smooth, slippery, funky
+- <strong>Easy</strong>: Relaxed, in the pocket
+- <strong>Greezy</strong>: The combination—effortless funk</p>
+<p>When playing this tune, imagine you're cooking:
+- Low heat (don't rush)
+- Good ingredients (strong vocabulary)
+- Let it simmer (space between phrases)</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Is my shuffle feel solid and relaxed?</li>
+<li>[ ] Do I use the diminished chords as connectors?</li>
+<li>[ ] Are my bends in tune and expressive?</li>
+<li>[ ] Can I play bass and melody simultaneously?</li>
+<li>[ ] Does it feel "greezy"?</li>
+</ul>
+<hr />
+<p><strong>← <a href="08_Nefertitis_Shadow.md">Nefertiti's Shadow</a> | <a href="10_Hexagon.md">Next: Hexagon →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="10-hexagon">
+<h1 id="chapter-10-hexagon">CHAPTER 10: HEXAGON</h1>
+<p><strong>Style:</strong> Odd Meter (5/4) | <strong>Key:</strong> B Major | <strong>Tempo:</strong> 135 BPM | <strong>Time:</strong> 5/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"A 5/4 groove built on hexatonic scales."</em></p>
+<p>Hexagon combines two challenging elements: the asymmetric 5/4 meter and the six-note hexatonic scales. The key of B provides a bright, cutting sound, and the tempo pushes you to internalize the odd meter.</p>
+<p><strong>Playing Tip:</strong> Count "1-2-3, 1-2" internally until it becomes natural.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar form in 5/4:</p>
+<pre><code>| Bmaj7#11  | F#7sus4   | Emaj7     | C#m9      |
+| Bmaj7#11  | Abm7b5    | G#m7      | F#sus4    |
+| Amaj7     | Emaj7     | Bmaj7     | F#7       |
+| D#m7      | G#7alt    | C#m7      | F#7sus4   |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>5/4 meter</strong>: Grouped as 3+2 or 2+3</li>
+<li><strong>Hexatonic scales</strong>: Six-note scales combining two triads</li>
+<li><strong>Lydian dominance</strong>: Most major chords use Lydian (#11)</li>
+<li><strong>Suspended tensions</strong>: F#7sus4 creates ambiguity</li>
+</ol>
+<hr />
+<h2 id="understanding-54">UNDERSTANDING 5/4</h2>
+<h3 id="the-two-groupings">The Two Groupings</h3>
+<p><strong>3+2 (ONE-two-three-FOUR-five):</strong></p>
+<pre><code>| X . . X . |
+  1 2 3 4 5
+</code></pre>
+<p><strong>2+3 (ONE-two-THREE-four-five):</strong></p>
+<pre><code>| X . X . . |
+  1 2 3 4 5
+</code></pre>
+<p>Hexagon primarily uses <strong>3+2</strong>, but switches to <strong>2+3</strong> at phrase endings.</p>
+<h3 id="physical-practice">Physical Practice</h3>
+<p>Before playing:
+1. Walk in 5/4 (step on 1 and 4)
+2. Clap on 1 and 4 while counting
+3. Add a foot tap on every beat
+4. Feel it in your body first</p>
+<hr />
+<h2 id="hexatonic-scales">HEXATONIC SCALES</h2>
+<h3 id="what-is-a-hexatonic-scale">What Is a Hexatonic Scale?</h3>
+<p>A <strong>hexatonic scale</strong> has six notes, typically formed by combining two triads:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Scale</th>
+<th style="text-align: left;">Triads</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">B Major Hexatonic</td>
+<td style="text-align: left;">B + C#</td>
+<td style="text-align: left;">B-C#-D#-E#-F#-G#</td>
+</tr>
+<tr>
+<td style="text-align: left;">B Minor Hexatonic</td>
+<td style="text-align: left;">B + C#m</td>
+<td style="text-align: left;">B-C#-D-E-F#-G#</td>
+</tr>
+<tr>
+<td style="text-align: left;">B Augmented Hex</td>
+<td style="text-align: left;">B+ + C+</td>
+<td style="text-align: left;">B-C-D#-E-G-G#</td>
+</tr>
+</tbody>
+</table>
+<h3 id="why-hexatonic">Why Hexatonic?</h3>
+<ul>
+<li><strong>Six notes</strong> fit naturally into 3+2 groupings</li>
+<li>Creates <strong>modern, angular</strong> sound</li>
+<li>Avoids the "scalar" quality of 7-note scales</li>
+<li>Strong <strong>triad pair</strong> connection</li>
+</ul>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Hexatonic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Bmaj7#11</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">C# Major</td>
+<td style="text-align: left;">B-C#-D#-E#-F#-G#</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#7sus4</td>
+<td style="text-align: left;">F# Major</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">E-F#-G#-A#-B-C#</td>
+</tr>
+<tr>
+<td style="text-align: left;">Emaj7</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">F# Major</td>
+<td style="text-align: left;">E-F#-G#-A#-B-C#</td>
+</tr>
+<tr>
+<td style="text-align: left;">G#m7</td>
+<td style="text-align: left;">G# Minor</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">G#-A#-B-C#-D#-F#</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-hexagon-pattern">The "Hexagon Pattern"</h3>
+<p>Over Bmaj7#11, play:</p>
+<pre><code>B-D#-F# (B major) - C#-E#-G# (C# major) = 6 notes
+</code></pre>
+<p>Group in 3+2:</p>
+<pre><code>| B-D#-F# | C#-E# | (rest) |
+</code></pre>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-melodic-54-version-a">Chorus 1: Melodic 5/4 (Version A)</h3>
+<p><strong>Concept:</strong> Lyrical melody that breathes with the 5/4</p>
+<ul>
+<li>Phrases naturally end on beat 4 or 5</li>
+<li>Use the 3+2 grouping for forward motion</li>
+<li>Use 2+3 for phrase endings (more conclusive)</li>
+<li>Let the meter become the melody's shape</li>
+</ul>
+<p><strong>Phrase Lengths:</strong>
+| Bars | Beats | Feel |
+|:---|:---|:---|
+| 1 bar | 5 | Short idea |
+| 2 bars | 10 | Standard phrase |
+| 4 bars | 20 | Extended phrase |</p>
+<h3 id="chorus-2-hexatonic-lines-version-b">Chorus 2: Hexatonic Lines (Version B)</h3>
+<p><strong>Concept:</strong> Continuous eighth notes using hexatonic scales</p>
+<ul>
+<li>Six-note patterns fit perfectly into 3+2</li>
+<li>Alternate between stable and color triads</li>
+<li>Create rhythmic variety through accent placement</li>
+</ul>
+<p><strong>Pattern:</strong></p>
+<pre><code>| B-D#-F# C#-E# | G#-C#-E# B-D# | etc.
+    (3)    (2)       (3)    (2)
+</code></pre>
+<h3 id="chorus-3-polymetric-counterpoint-version-c">Chorus 3: Polymetric Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> One voice in 5/4, another implying 4/4</p>
+<p><strong>Texture:</strong>
+- <strong>Top voice</strong>: Clear 5/4 melody
+- <strong>Bottom voice</strong>: Pattern that suggests 4/4 (creates tension)</p>
+<p>The 4-against-5 polyrhythm resolves every 20 beats (4 bars of 5/4).</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="suspended-voicings">Suspended Voicings</h3>
+<pre><code>Bmaj7#11:  x-2-1-3-4-x
+F#7sus4:   x-9-9-9-9-x (barre)
+           2-x-2-4-2-x (open shape)
+F#sus4:    2-x-4-4-2-x
+</code></pre>
+<h3 id="hexatonic-voicings-stacked-triads">Hexatonic Voicings (stacked triads)</h3>
+<pre><code>B/C#:      x-4-4-4-4-x (B triad + C# bass)
+E/F#:      x-9-9-9-9-x (E triad + F# bass)
+</code></pre>
+<hr />
+<h2 id="technique-odd-meter-internalization">TECHNIQUE: ODD METER INTERNALIZATION</h2>
+<h3 id="the-word-method">The "Word Method"</h3>
+<p>Assign words to the meter:</p>
+<p><strong>3+2:</strong></p>
+<pre><code>| ELE-phant | ZE-bra |
+  1  2  3     4  5
+</code></pre>
+<p><strong>2+3:</strong></p>
+<pre><code>| TI-ger | AL-li-GA |
+  1  2    3  4  5
+</code></pre>
+<h3 id="the-conducting-method">The "Conducting Method"</h3>
+<p>Conduct the meter with your fretting hand:
+- Beat 1: Down
+- Beat 2: Right
+- Beat 3: Up (completing first group)
+- Beat 4: Left
+- Beat 5: Center (completing second group)</p>
+<h3 id="practice-with-recordings">Practice with Recordings</h3>
+<p>Listen to music in 5/4:
+- Dave Brubeck — "Take Five" (the classic)
+- Radiohead — "15 Step" (rock version)
+- Sting — "Seven Days" (pop version)</p>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-meter">Week 1: The Meter</h3>
+<ul>
+<li>[ ] Practice counting and clapping 5/4</li>
+<li>[ ] Walk in 5/4 (step on 1 and 4)</li>
+<li>[ ] Play simple quarter notes through the changes</li>
+</ul>
+<h3 id="week-2-hexatonic">Week 2: Hexatonic</h3>
+<ul>
+<li>[ ] Master B hexatonic scale (B + C# triads)</li>
+<li>[ ] Apply to Bmaj7#11 bars</li>
+<li>[ ] Extend to all chords in the form</li>
+</ul>
+<h3 id="week-3-phrasing">Week 3: Phrasing</h3>
+<ul>
+<li>[ ] Work on Version A melody</li>
+<li>[ ] Practice phrases that end on beat 4 and 5</li>
+<li>[ ] Develop natural breathing in 5/4</li>
+</ul>
+<h3 id="week-4-polymetric">Week 4: Polymetric</h3>
+<ul>
+<li>[ ] Practice 4-against-5 polyrhythm</li>
+<li>[ ] Develop Version C counterpoint</li>
+<li>[ ] Integrate all three choruses</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Dave Brubeck Quartet</strong> — <em>Time Out</em> ("Take Five")</li>
+<li><strong>Radiohead</strong> — <em>In Rainbows</em> ("15 Step")</li>
+<li><strong>Pat Metheny Group</strong> — <em>The Way Up</em> (complex meters)</li>
+<li><strong>Tigran Hamasyan</strong> — <em>Mockroot</em> (Armenian jazz in odd meters)</li>
+<li><strong>Avishai Cohen</strong> — <em>Gently Disturbed</em> (odd meter jazz)</li>
+</ol>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Counting in 4</strong>: The brain wants 4/4—resist it</li>
+<li><strong>Rushing beat 5</strong>: The final beat often gets short-changed</li>
+<li><strong>Ignoring groupings</strong>: 3+2 and 2+3 feel different—use both</li>
+<li><strong>Too many notes</strong>: In odd meter, less is clearer</li>
+<li><strong>Losing the pulse</strong>: The groove must be solid even in 5/4</li>
+</ol>
+<hr />
+<h2 id="the-hexagon-concept">THE "HEXAGON" CONCEPT</h2>
+<p>The title has multiple meanings:
+- <strong>Hex (six)</strong>: The hexatonic (6-note) scales
+- <strong>Hexagon shape</strong>: Six-sided, like the 3+2 and 2+3 groupings
+- <strong>A-gon (contest)</strong>: The challenge of odd meter</p>
+<p>The hexagon is a stable shape in nature (honeycombs). Similarly, 5/4 becomes stable once internalized.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Can I feel 5/4 without counting?</li>
+<li>[ ] Do my phrases breathe naturally in the meter?</li>
+<li>[ ] Can I play hexatonic lines fluently?</li>
+<li>[ ] Does the polymetric counterpoint create tension and release?</li>
+<li>[ ] Is my time feel solid (not rushing beat 5)?</li>
+</ul>
+<hr />
+<p><strong>← <a href="09_Greezy.md">Greezy</a> | <a href="11_Crystal_Silence.md">Next: Crystal Silence →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="11-crystal-silence">
+<h1 id="chapter-11-crystal-silence">CHAPTER 11: CRYSTAL SILENCE</h1>
+<p><strong>Style:</strong> ECM Ballad | <strong>Key:</strong> A Major | <strong>Tempo:</strong> 80 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Open string voicings high up the neck."</em></p>
+<p>Crystal Silence captures the spacious, reverberant aesthetic of the ECM record label. The key of A allows rich open-string voicings, and the "campanella" technique creates a harp-like, ringing texture where notes sustain into each other.</p>
+<p><strong>Playing Tip:</strong> Let strings ring into each other (campanella). Less is more.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar ballad form:</p>
+<pre><code>| Amaj9     | F#m11     | Dmaj9     | E/A       |
+| Amaj9     | C#m7      | Bm9       | Esus4  E7 |
+| Fmaj7     | Gmaj7     | Amaj9     | Dmaj7     |
+| Bm11      | E7sus4    | Amaj9     | Amaj9     |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Open strings</strong>: A, E, B, D, G all used as pedals</li>
+<li><strong>11th chords</strong>: F#m11, Bm11 create suspension</li>
+<li><strong>Modal interchange</strong>: Fmaj7 (borrowed from A minor)</li>
+<li><strong>Campanella</strong>: Notes ring together like bells</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">ECM Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Amaj9</td>
+<td style="text-align: left;">A Lydian</td>
+<td style="text-align: left;">Open, floating</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#m11</td>
+<td style="text-align: left;">F# Aeolian</td>
+<td style="text-align: left;">Suspended, melancholy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dmaj9</td>
+<td style="text-align: left;">D Lydian</td>
+<td style="text-align: left;">Bright neighbor</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bm9</td>
+<td style="text-align: left;">B Dorian</td>
+<td style="text-align: left;">Natural 6 (G#)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fmaj7</td>
+<td style="text-align: left;">F Lydian</td>
+<td style="text-align: left;">Borrowed from minor</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gmaj7</td>
+<td style="text-align: left;">G Lydian</td>
+<td style="text-align: left;">Chromatic approach to A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-ecm-sound">The ECM Sound</h3>
+<p>ECM (Edition of Contemporary Music) recordings feature:
+- <strong>Space and reverb</strong> as compositional elements
+- <strong>Quiet dynamics</strong> (the loudest is mezzo-forte)
+- <strong>Open voicings</strong> with wide intervals
+- <strong>Melodic simplicity</strong> over harmonic sophistication</p>
+<hr />
+<h2 id="campanella-technique">CAMPANELLA TECHNIQUE</h2>
+<h3 id="what-is-campanella">What Is Campanella?</h3>
+<p>"Campanella" (Italian for "little bell") is a technique where <strong>notes ring into each other</strong>, creating overlapping sustain.</p>
+<p><strong>Normal playing:</strong></p>
+<pre><code>Note 1: |====|
+Note 2:      |====|
+Note 3:           |====|
+</code></pre>
+<p><strong>Campanella:</strong></p>
+<pre><code>Note 1: |==========|
+Note 2:    |===========|
+Note 3:       |============|
+</code></pre>
+<h3 id="how-to-achieve-it">How to Achieve It</h3>
+<ol>
+<li><strong>Don't dampen strings</strong> after picking</li>
+<li><strong>Use different strings</strong> for adjacent notes</li>
+<li><strong>Let open strings ring</strong> whenever possible</li>
+<li><strong>Use the "harp" fingering</strong> (no repeated strings)</li>
+</ol>
+<h3 id="example-a-major-scale-campanella">Example (A major scale, campanella):</h3>
+<pre><code>e|----------0--2--|
+B|-------2--------|
+G|----2-----------|
+D|-2--------------|
+A|0---------------|
+E|----------------|
+</code></pre>
+<p>Each note is on a different string, so they all ring together.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">ECM Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Amaj9</td>
+<td style="text-align: left;">A Major</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">Lydian, open</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#m11</td>
+<td style="text-align: left;">F# Minor</td>
+<td style="text-align: left;">A Major</td>
+<td style="text-align: left;">Suspended</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dmaj9</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bm9</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">Relative major</td>
+</tr>
+</tbody>
+</table>
+<h3 id="open-string-triad-pairs">Open-String Triad Pairs</h3>
+<p>Over Amaj9, use triads with open strings:</p>
+<pre><code>A Major: A(open)-C#(string 2)-E(open)
+E Major: E(open)-G#(string 1)-B(open)
+</code></pre>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-sustain-version-a">Chorus 1: Lyrical Sustain (Version A)</h3>
+<p><strong>Concept:</strong> Long, breathing phrases with maximum sustain</p>
+<ul>
+<li>Whole notes and half notes predominantly</li>
+<li>Target notes should ring for their full value</li>
+<li>Use open strings as much as possible</li>
+<li>Dynamics: pp to mp maximum</li>
+</ul>
+<p><strong>Phrase Shape:</strong></p>
+<pre><code>Bars 1-4: Ascending arch (building)
+Bars 5-8: Descending release
+Bars 9-12: Distant excursion (Fmaj7, Gmaj7)
+Bars 13-16: Return and fade
+</code></pre>
+<h3 id="chorus-2-campanella-arpeggios-version-b">Chorus 2: Campanella Arpeggios (Version B)</h3>
+<p><strong>Concept:</strong> Arpeggiated lines using different strings for each note</p>
+<ul>
+<li>No repeated strings within a phrase</li>
+<li>Notes overlap and sustain</li>
+<li>Creates "harp" or "piano" effect</li>
+<li>Speed: moderate—focus on sustain, not velocity</li>
+</ul>
+<p><strong>Example Pattern (Amaj9):</strong></p>
+<pre><code>e|------------0---------|
+B|--------2-------------|
+G|----2-----------------|
+D|--2-------------------|
+A|0---------------------|
+E|----------------------|
+</code></pre>
+<h3 id="chorus-3-high-position-open-strings-version-c">Chorus 3: High Position + Open Strings (Version C)</h3>
+<p><strong>Concept:</strong> Melody in high positions with open string drones</p>
+<p><strong>Texture:</strong>
+- <strong>Drone</strong>: Open A or E string sustained throughout
+- <strong>Melody</strong>: Frets 9-14 on strings 1-2</p>
+<p>This creates a "sitar" effect—high melody over low drone.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="open-string-voicings">Open String Voicings</h3>
+<pre><code>Amaj9:   x-0-6-6-0-0 (open E, A ring)
+F#m11:   x-0-4-6-0-0 (A pedal)
+Dmaj9:   x-5-4-6-5-0 (high E rings)
+E/A:     x-0-2-1-0-0 (E over A bass)
+Bm11:    x-2-4-2-0-0 (open E)
+</code></pre>
+<h3 id="high-position-voicings">High Position Voicings</h3>
+<pre><code>Amaj9:   x-12-11-13-12-0 (open high E)
+Dmaj7:   x-x-11-11-10-0 (high position with open E)
+</code></pre>
+<h3 id="campanella-chord-shapes">Campanella Chord Shapes</h3>
+<pre><code>Amaj7:   x-0-x-6-5-4 (notes on different strings)
+Fmaj7:   x-x-3-5-5-0 (open high E adds 7th)
+</code></pre>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-sustain">Week 1: Sustain</h3>
+<ul>
+<li>[ ] Practice not dampening strings</li>
+<li>[ ] Work on smooth, slow right-hand technique</li>
+<li>[ ] Focus on clean, ringing tone</li>
+</ul>
+<h3 id="week-2-campanella">Week 2: Campanella</h3>
+<ul>
+<li>[ ] Learn the A major scale in campanella fingering</li>
+<li>[ ] Practice arpeggios using different strings</li>
+<li>[ ] Work on Version B</li>
+</ul>
+<h3 id="week-3-high-position">Week 3: High Position</h3>
+<ul>
+<li>[ ] Explore melody in positions 9-14</li>
+<li>[ ] Add open string drones</li>
+<li>[ ] Develop Version C</li>
+</ul>
+<h3 id="week-4-integration">Week 4: Integration</h3>
+<ul>
+<li>[ ] Play all three choruses</li>
+<li>[ ] Record with reverb and evaluate</li>
+<li>[ ] Focus on dynamics (never louder than mp)</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Ralph Towner</strong> — <em>Solstice</em> (ECM guitar)</li>
+<li><strong>Bill Frisell</strong> — <em>Good Dog, Happy Man</em> (open voicings)</li>
+<li><strong>Egberto Gismonti</strong> — <em>Sol Do Meio Dia</em> (Brazilian ECM)</li>
+<li><strong>Pat Metheny</strong> — <em>One Quiet Night</em> (spacious solo guitar)</li>
+<li><strong>Keith Jarrett</strong> — <em>The Köln Concert</em> (piano, but essential ECM)</li>
+</ol>
+<hr />
+<h2 id="tone-tips">TONE TIPS</h2>
+<p>For the ECM sound:
+- <strong>Guitar</strong>: Nylon or steel-string acoustic (or clean electric)
+- <strong>Reverb</strong>: Long, lush hall reverb (essential)
+- <strong>EQ</strong>: Warm, not bright—roll off highs
+- <strong>Dynamics</strong>: Play softly; let the reverb do the work
+- <strong>Room</strong>: If acoustic, play in a resonant space</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Dampening strings</strong>: Let them ring—this is the whole point</li>
+<li><strong>Playing too loud</strong>: ECM is about quiet, intimate sound</li>
+<li><strong>Too many notes</strong>: Space and sustain are the music</li>
+<li><strong>Ignoring open strings</strong>: They're your best friends here</li>
+<li><strong>Rushing</strong>: At 80 BPM, slow down even more internally</li>
+</ol>
+<hr />
+<h2 id="the-crystal-silence-concept">THE "CRYSTAL SILENCE" CONCEPT</h2>
+<p>The title evokes:
+- <strong>Crystal</strong>: Clarity, purity, transparent sound
+- <strong>Silence</strong>: The reverb tail, the space between notes
+- <strong>ECM aesthetic</strong>: Music as atmosphere, not entertainment</p>
+<p>Imagine you're in a stone cathedral, alone, at twilight. The sound decays slowly into the space. Each note is an event.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Are my strings ringing into each other?</li>
+<li>[ ] Am I using open strings effectively?</li>
+<li>[ ] Are my dynamics soft enough?</li>
+<li>[ ] Does the high-position melody sing over the drone?</li>
+<li>[ ] Is there enough space and reverb?</li>
+</ul>
+<hr />
+<p><strong>← <a href="10_Hexagon.md">Hexagon</a> | <a href="12_Angular_Motion.md">Next: Angular Motion →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="12-angular-motion">
+<h1 id="chapter-12-angular-motion">CHAPTER 12: ANGULAR MOTION</h1>
+<p><strong>Style:</strong> Bebop/Etude | <strong>Key:</strong> Gb Major | <strong>Tempo:</strong> 200 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Wide interval skips at fast tempos."</em></p>
+<p>Angular Motion is the most technically demanding tune in the collection. At 200 BPM, the wide interval leaps require precision, economy of motion, and deep familiarity with the fretboard. This is a workout—a bebop étude for the modern guitarist.</p>
+<p><strong>Playing Tip:</strong> Economy picking is essential here.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>32-bar AABA (bebop standard form):</p>
+<pre><code>A Section (8 bars):
+| Gbmaj7  | Ebm7    | Abm7    | Db7     |
+| Gbmaj7  | Bbm7    | Ebm7 Ab7| Dbmaj7  |
+
+B Section (8 bars):
+| Bmaj7   | E7      | Amaj7   | D7      |
+| Gmaj7   | C7      | Abm7    | Db7     |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Bebop changes</strong>: ii-V-I progressions throughout</li>
+<li><strong>Bridge modulation</strong>: To distant B major</li>
+<li><strong>Fast tempo</strong>: 200 BPM demands efficiency</li>
+<li><strong>Wide intervals</strong>: 6ths, 7ths, 9ths in melodic lines</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Bebop Addition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Gbmaj7</td>
+<td style="text-align: left;">Gb Major Bebop</td>
+<td style="text-align: left;">Add natural 6 (E) as passing tone</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebm7</td>
+<td style="text-align: left;">Eb Dorian</td>
+<td style="text-align: left;">Natural 6 (C)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Db7</td>
+<td style="text-align: left;">Db Mixolydian Bebop</td>
+<td style="text-align: left;">Add natural 7 (C) as passing tone</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bmaj7</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">Lydian for color</td>
+</tr>
+<tr>
+<td style="text-align: left;">E7</td>
+<td style="text-align: left;">E Mixolydian</td>
+<td style="text-align: left;">Bebop scale</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bebop-scales">Bebop Scales</h3>
+<p>Bebop scales add a <strong>chromatic passing tone</strong> to create 8-note scales:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Base Scale</th>
+<th style="text-align: left;">Bebop Version</th>
+<th style="text-align: left;">Added Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Gb Major</td>
+<td style="text-align: left;">Gb Bebop Major</td>
+<td style="text-align: left;">Natural 6 (E natural)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Db Mixolydian</td>
+<td style="text-align: left;">Db Bebop Dominant</td>
+<td style="text-align: left;">Natural 7 (C natural)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eb Dorian</td>
+<td style="text-align: left;">Eb Bebop Dorian</td>
+<td style="text-align: left;">Natural 3 (G natural)</td>
+</tr>
+</tbody>
+</table>
+<p>The added note ensures chord tones land on downbeats.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Interval Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Gbmaj7</td>
+<td style="text-align: left;">Gb Major</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Lydian (9, #11, 6)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Db7</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Cb Major</td>
+<td style="text-align: left;">Mixolydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebm7</td>
+<td style="text-align: left;">Gb Major</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Minor from relative</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bmaj7</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">C# Major</td>
+<td style="text-align: left;">Bridge key</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wide-interval-cells">Wide Interval Cells</h3>
+<p>Over Gbmaj7, practice:</p>
+<pre><code>Gb up to F (major 7th) → down to Db (3rd below) → up to Bb (6th)
+</code></pre>
+<p>These wide leaps define the "angular" quality.</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-bebop-lines-version-a">Chorus 1: Bebop Lines (Version A)</h3>
+<p><strong>Concept:</strong> Classic bebop vocabulary with chromatic approach notes</p>
+<ul>
+<li>Continuous eighth notes (at 200 BPM!)</li>
+<li>Chord tones on downbeats, passing tones on upbeats</li>
+<li>Chromatic enclosures (surround target notes)</li>
+<li>Strong resolutions at phrase ends</li>
+</ul>
+<p><strong>Bebop Devices:</strong>
+| Device | Example (over Gbmaj7) |
+|:---|:---|
+| Enclosure | E-Ab-Gb (below-above-target) |
+| Chromatic approach | F-Gb (from below) |
+| Scale run | Gb-Ab-Bb-Cb-Db... |</p>
+<h3 id="chorus-2-wide-interval-lines-version-b">Chorus 2: Wide Interval Lines (Version B)</h3>
+<p><strong>Concept:</strong> Melodic lines built from 6ths, 7ths, and 9ths</p>
+<ul>
+<li>Avoid stepwise motion</li>
+<li>Every interval should be a 6th or larger</li>
+<li>Creates "angular" quality</li>
+<li>Still swing at 200 BPM</li>
+</ul>
+<p><strong>Pattern:</strong></p>
+<pre><code>Over Gbmaj7: Gb (root) - F (maj7 up) - Bb (6th) - Db (min 3rd up) - Ab (4th down)
+</code></pre>
+<h3 id="chorus-3-intervallic-counterpoint-version-c">Chorus 3: Intervallic Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Two voices, both with wide intervals</p>
+<p><strong>Texture:</strong>
+- <strong>Top voice</strong>: Wide-interval melody
+- <strong>Bottom voice</strong>: Counter-melody also using wide intervals</p>
+<p>At 200 BPM, this requires extreme preparation and economy.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="bebop-voicings-rootless">Bebop Voicings (rootless)</h3>
+<pre><code>Gbmaj7:  x-x-5-7-6-6 (3-5-7-9)
+Ebm7:    x-x-8-8-7-9 (rootless)
+Db7:     x-4-3-4-3-x (shell)
+Abm7:    x-x-6-8-7-7
+</code></pre>
+<h3 id="quick-change-voicings">Quick-Change Voicings</h3>
+<p>At 200 BPM, use minimal movement:</p>
+<pre><code>Ebm7 → Ab7 → Dbmaj7:
+x-6-6-6-7-6 → x-4-5-4-4-4 → x-4-3-5-6-x
+</code></pre>
+<hr />
+<h2 id="technique-economy-picking">TECHNIQUE: ECONOMY PICKING</h2>
+<h3 id="what-is-economy-picking">What Is Economy Picking?</h3>
+<p>Economy picking combines alternate picking with sweep picking:
+- When moving to a higher string: continue the downstroke
+- When moving to a lower string: continue the upstroke</p>
+<p><strong>Example:</strong></p>
+<pre><code>String 2: ↓ (down)
+String 1: ↓ (continue down—sweep)
+String 1: ↑ (alternate)
+String 2: ↑ (continue up—sweep)
+</code></pre>
+<h3 id="why-economy-at-200-bpm">Why Economy at 200 BPM?</h3>
+<ul>
+<li><strong>Fewer pick movements</strong> = more speed potential</li>
+<li><strong>Less tension</strong> = better endurance</li>
+<li><strong>Smoother string crossings</strong> = cleaner intervals</li>
+</ul>
+<h3 id="practice-pattern">Practice Pattern</h3>
+<pre><code>e|--12-15-17--|
+B|-------15---|
+G|------------|
+Pick: ↓  ↓  ↓  (all downs, sweeping to higher strings)
+</code></pre>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-slow-foundations">Week 1: Slow Foundations</h3>
+<ul>
+<li>[ ] Learn the changes at 80 BPM</li>
+<li>[ ] Practice bebop scales over each chord</li>
+<li>[ ] Work on economy picking technique</li>
+</ul>
+<h3 id="week-2-intervals">Week 2: Intervals</h3>
+<ul>
+<li>[ ] Practice 6th intervals across the neck</li>
+<li>[ ] Practice major 7th intervals</li>
+<li>[ ] Apply to Version B at 100 BPM</li>
+</ul>
+<h3 id="week-3-speed-building">Week 3: Speed Building</h3>
+<ul>
+<li>[ ] Increase tempo by 10 BPM each day</li>
+<li>[ ] Focus on relaxation and economy</li>
+<li>[ ] Target 160 BPM by end of week</li>
+</ul>
+<h3 id="week-4-performance-tempo">Week 4: Performance Tempo</h3>
+<ul>
+<li>[ ] Push to 180, then 200 BPM</li>
+<li>[ ] Record and analyze technique</li>
+<li>[ ] Work on Version C (counterpoint)</li>
+</ul>
+<hr />
+<h2 id="speed-building-method">SPEED BUILDING METHOD</h2>
+<h3 id="the-burst-technique">The "Burst" Technique</h3>
+<ol>
+<li>Set metronome to comfortable tempo (100 BPM)</li>
+<li>Play 4 bars perfectly</li>
+<li>Increase by 5 BPM</li>
+<li>Repeat until you can't play cleanly</li>
+<li>Drop back 20 BPM</li>
+<li>Repeat daily</li>
+</ol>
+<h3 id="the-chunk-method">The "Chunk" Method</h3>
+<ol>
+<li>Divide the tune into 4-bar phrases</li>
+<li>Master each chunk at tempo</li>
+<li>Connect chunks together</li>
+<li>Eventually play through without stopping</li>
+</ol>
+<h3 id="relaxation-check">Relaxation Check</h3>
+<p>At high tempos, tension is the enemy:
+- Shake out hands between phrases
+- Breathe normally (don't hold breath)
+- Minimize finger movement
+- Let gravity help your pick hand</p>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Charlie Parker</strong> — Any recording (the bebop source)</li>
+<li><strong>Pat Martino</strong> — <em>El Hombre</em> (guitar bebop)</li>
+<li><strong>Joe Pass</strong> — <em>Virtuoso</em> (fast single lines)</li>
+<li><strong>George Benson</strong> — <em>Beyond the Blue Horizon</em> (bebop guitar)</li>
+<li><strong>Jimmy Raney</strong> — <em>A</em> (melodic bebop)</li>
+</ol>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Tension</strong>: At high tempos, tension kills speed—stay relaxed</li>
+<li><strong>Rushing</strong>: Even at 200 BPM, lay back slightly</li>
+<li><strong>Ignoring intervals</strong>: The "angular" quality requires wide leaps</li>
+<li><strong>Sloppy picking</strong>: Economy picking must be precise</li>
+<li><strong>Giving up too soon</strong>: Speed takes time—be patient</li>
+</ol>
+<hr />
+<h2 id="the-angular-motion-concept">THE "ANGULAR MOTION" CONCEPT</h2>
+<p>The title describes:
+- <strong>Angular</strong>: Wide intervals, unexpected leaps
+- <strong>Motion</strong>: Continuous eighth notes, constant movement</p>
+<p>Think of a modern sculpture—clean lines, unexpected angles, geometric precision. Your lines should have that quality.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Can I play the changes at 200 BPM?</li>
+<li>[ ] Are my intervals truly wide (6ths, 7ths, 9ths)?</li>
+<li>[ ] Is my economy picking smooth?</li>
+<li>[ ] Am I relaxed at tempo?</li>
+<li>[ ] Does it still swing (even at high speed)?</li>
+</ul>
+<hr />
+<p><strong>← <a href="11_Crystal_Silence.md">Crystal Silence</a> | <a href="13_The_Void.md">Next: The Void →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="13-the-void">
+<h1 id="chapter-13-the-void">CHAPTER 13: THE VOID</h1>
+<p><strong>Style:</strong> Free/Experimental | <strong>Key:</strong> Free | <strong>Tempo:</strong> Free | <strong>Time:</strong> Free</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Textural improvisation guide; no fixed chords."</em></p>
+<p>The Void is unlike any other tune in this collection. There is no predetermined harmony, no tempo, no meter. This is a framework for <strong>free improvisation</strong>, focusing on texture, timbre, dynamics, and space.</p>
+<p><strong>Playing Tip:</strong> Focus on timbre and dynamic swells. Listen more than you play.</p>
+<hr />
+<h2 id="the-concept">THE CONCEPT</h2>
+<h3 id="what-is-free-improvisation">What Is Free Improvisation?</h3>
+<p>Free improvisation abandons:
+- Fixed chord progressions
+- Predetermined tempo
+- Regular meter
+- Even traditional melody</p>
+<p>What remains:
+- <strong>Sound</strong>: Explore the guitar's full sonic palette
+- <strong>Texture</strong>: Create layers, densities, sparse moments
+- <strong>Dynamics</strong>: From silence to full volume
+- <strong>Time</strong>: Elastic, breathing, human time
+- <strong>Listening</strong>: Deep attention to what you're creating</p>
+<hr />
+<h2 id="the-framework">THE FRAMEWORK</h2>
+<p>While The Void has no fixed form, here is a <strong>suggested arc</strong>:</p>
+<h3 id="section-1-emergence-000-200">Section 1: EMERGENCE (0:00 - 2:00)</h3>
+<ul>
+<li>Begin from silence</li>
+<li>First sounds should be <strong>barely audible</strong></li>
+<li>Use harmonics, volume swells, subtle textures</li>
+<li>Establish a sense of space</li>
+</ul>
+<h3 id="section-2-exploration-200-500">Section 2: EXPLORATION (2:00 - 5:00)</h3>
+<ul>
+<li>Gradually introduce more activity</li>
+<li>Explore different timbres (positions, techniques)</li>
+<li>Allow melodic fragments to emerge</li>
+<li>No rush—let ideas develop organically</li>
+</ul>
+<h3 id="section-3-intensity-500-700">Section 3: INTENSITY (5:00 - 7:00)</h3>
+<ul>
+<li>Build to the most active section</li>
+<li>Denser textures, louder dynamics</li>
+<li>Still listen—don't just "fill space"</li>
+<li>Peak should feel earned, not forced</li>
+</ul>
+<h3 id="section-4-dissolution-700-900">Section 4: DISSOLUTION (7:00 - 9:00)</h3>
+<ul>
+<li>Gradually recede</li>
+<li>Return to simpler textures</li>
+<li>More space, quieter dynamics</li>
+<li>Prepare for ending</li>
+</ul>
+<h3 id="section-5-void-900-1000">Section 5: VOID (9:00 - 10:00)</h3>
+<ul>
+<li>Return to near-silence</li>
+<li>Final sounds should be <strong>barely audible</strong></li>
+<li>End in silence, not on a note</li>
+</ul>
+<hr />
+<h2 id="extended-techniques">EXTENDED TECHNIQUES</h2>
+<h3 id="natural-harmonics">Natural Harmonics</h3>
+<p>Touch the string lightly at these fret positions:
+| Fret | Interval | Tone Quality |
+|:---|:---|:---|
+| 12 | Octave | Clear, bell-like |
+| 7 | Perfect 5th | Bright |
+| 5 | 2 octaves | Clear |
+| 4 | Major 3rd | Softer |
+| 3 | Perfect 5th (2 oct) | Delicate |</p>
+<h3 id="artificial-harmonics">Artificial Harmonics</h3>
+<ol>
+<li>Fret a note normally</li>
+<li>Touch the string 12 frets higher with picking hand</li>
+<li>Pluck behind the touch point</li>
+</ol>
+<h3 id="prepared-guitar">Prepared Guitar</h3>
+<p>Add objects to alter the sound:
+- Paper between strings (buzzy mute)
+- Capo on unusual fret (detuned)
+- Objects on strings (percussion)</p>
+<h3 id="behind-the-nut">Behind the Nut</h3>
+<p>Play the string between the nut and tuning pegs for:
+- Very high, glassy tones
+- Microtonal intervals
+- Unusual timbres</p>
+<h3 id="e-bow-sustained-tones">E-Bow / Sustained Tones</h3>
+<p>If available, use an E-Bow for:
+- Infinite sustain
+- Violin-like bowing effect
+- Drone textures</p>
+<hr />
+<h2 id="texture-palette">TEXTURE PALETTE</h2>
+<h3 id="sparse-textures">Sparse Textures</h3>
+<ul>
+<li>Single notes with long decay</li>
+<li>Harmonics only</li>
+<li>Silence as compositional element</li>
+<li>Volume swells from nothing</li>
+</ul>
+<h3 id="medium-textures">Medium Textures</h3>
+<ul>
+<li>Slow arpeggios</li>
+<li>Two-note intervals (dyads)</li>
+<li>Melodic fragments</li>
+<li>Gentle rhythmic patterns</li>
+</ul>
+<h3 id="dense-textures">Dense Textures</h3>
+<ul>
+<li>Full chords</li>
+<li>Rapid arpeggios</li>
+<li>Multiple techniques simultaneously</li>
+<li>Controlled chaos</li>
+</ul>
+<hr />
+<h2 id="dynamic-range">DYNAMIC RANGE</h2>
+<h3 id="the-full-spectrum">The Full Spectrum</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Level</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ppp</td>
+<td style="text-align: left;">Barely audible</td>
+<td style="text-align: left;">Opening, closing</td>
+</tr>
+<tr>
+<td style="text-align: left;">pp</td>
+<td style="text-align: left;">Very soft</td>
+<td style="text-align: left;">Sparse textures</td>
+</tr>
+<tr>
+<td style="text-align: left;">p</td>
+<td style="text-align: left;">Soft</td>
+<td style="text-align: left;">Exploration</td>
+</tr>
+<tr>
+<td style="text-align: left;">mp</td>
+<td style="text-align: left;">Moderately soft</td>
+<td style="text-align: left;">Development</td>
+</tr>
+<tr>
+<td style="text-align: left;">mf</td>
+<td style="text-align: left;">Moderately loud</td>
+<td style="text-align: left;">Activity</td>
+</tr>
+<tr>
+<td style="text-align: left;">f</td>
+<td style="text-align: left;">Loud</td>
+<td style="text-align: left;">Intensity peak</td>
+</tr>
+<tr>
+<td style="text-align: left;">ff</td>
+<td style="text-align: left;">Very loud</td>
+<td style="text-align: left;">Use sparingly</td>
+</tr>
+<tr>
+<td style="text-align: left;">fff</td>
+<td style="text-align: left;">As loud as possible</td>
+<td style="text-align: left;">Rare, if ever</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dynamic-gestures">Dynamic Gestures</h3>
+<ul>
+<li><strong>Swell</strong>: ppp → mf → ppp (over 4-8 seconds)</li>
+<li><strong>Attack-decay</strong>: ff → ppp (sudden loud, slow fade)</li>
+<li><strong>Crescendo</strong>: pp → f (gradual build)</li>
+<li><strong>Subito</strong>: Sudden dynamic change</li>
+</ul>
+<hr />
+<h2 id="the-three-choruses">THE THREE "CHORUSES"</h2>
+<h3 id="approach-1-timbral-exploration">Approach 1: Timbral Exploration</h3>
+<p><strong>Focus:</strong> Discover every sound your guitar can make</p>
+<ul>
+<li>Spend 10 minutes exploring one technique</li>
+<li>Natural harmonics only</li>
+<li>Or: left-hand-only (hammer-ons, pull-offs without picking)</li>
+<li>Or: percussive sounds only</li>
+</ul>
+<h3 id="approach-2-melodic-fragments">Approach 2: Melodic Fragments</h3>
+<p><strong>Focus:</strong> Let melodies emerge from texture</p>
+<ul>
+<li>Start with texture</li>
+<li>Notice when melodic fragments appear</li>
+<li>Follow them briefly</li>
+<li>Let them dissolve back into texture</li>
+</ul>
+<h3 id="approach-3-emotional-arc">Approach 3: Emotional Arc</h3>
+<p><strong>Focus:</strong> Tell a story without words</p>
+<ul>
+<li>Choose an emotion or image</li>
+<li>Let your playing express it</li>
+<li>Don't illustrate—embody</li>
+<li>Allow the emotion to evolve</li>
+</ul>
+<hr />
+<h2 id="listening-strategies">LISTENING STRATEGIES</h2>
+<h3 id="before-playing">Before Playing</h3>
+<ul>
+<li>Sit in silence for 60 seconds</li>
+<li>Listen to the room</li>
+<li>Notice ambient sounds</li>
+<li>Begin only when ready</li>
+</ul>
+<h3 id="while-playing">While Playing</h3>
+<ul>
+<li>Listen to your sound as if you were the audience</li>
+<li>Respond to what you hear, not what you planned</li>
+<li>Leave space for the sound to breathe</li>
+<li>If lost, return to silence</li>
+</ul>
+<h3 id="after-playing">After Playing</h3>
+<ul>
+<li>Sit in silence for 30 seconds</li>
+<li>Let the last sounds decay completely</li>
+<li>Don't rush to evaluate</li>
+<li>Absorb the experience</li>
+</ul>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-techniques">Week 1: Techniques</h3>
+<ul>
+<li>[ ] Explore natural harmonics (10 min)</li>
+<li>[ ] Explore artificial harmonics (10 min)</li>
+<li>[ ] Explore behind-the-nut sounds (10 min)</li>
+<li>[ ] Explore prepared guitar (10 min)</li>
+</ul>
+<h3 id="week-2-textures">Week 2: Textures</h3>
+<ul>
+<li>[ ] Practice sparse textures only (15 min)</li>
+<li>[ ] Practice dense textures only (15 min)</li>
+<li>[ ] Practice transitions between densities (15 min)</li>
+</ul>
+<h3 id="week-3-dynamics">Week 3: Dynamics</h3>
+<ul>
+<li>[ ] Practice full dynamic range (ppp to fff)</li>
+<li>[ ] Practice volume swells (5-second swells)</li>
+<li>[ ] Practice sudden dynamic changes</li>
+</ul>
+<h3 id="week-4-full-improvisation">Week 4: Full Improvisation</h3>
+<ul>
+<li>[ ] Improvise for 10 minutes, recording</li>
+<li>[ ] Listen back critically</li>
+<li>[ ] Identify what worked, what didn't</li>
+<li>[ ] Improvise again with lessons applied</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Derek Bailey</strong> — <em>Solo Guitar</em> (free improv pioneer)</li>
+<li><strong>Fred Frith</strong> — <em>Guitar Solos</em> (extended techniques)</li>
+<li><strong>Bill Frisell</strong> — <em>Ghost Town</em> (textural, ambient)</li>
+<li><strong>Nels Cline</strong> — <em>Instrumentals</em> (Wilco guitarist, experimental)</li>
+<li><strong>John Cage</strong> — <em>Sonatas and Interludes</em> (prepared piano—apply to guitar)</li>
+<li><strong>Keith Rowe</strong> — <em>Guitar and Piano</em> (tabletop guitar)</li>
+</ol>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Playing too much</strong>: Silence is your friend</li>
+<li><strong>Relying on clichés</strong>: Listen, don't auto-pilot</li>
+<li><strong>Ignoring dynamics</strong>: The full range is essential</li>
+<li><strong>Fear of "wrong" notes</strong>: There are no wrong notes here</li>
+<li><strong>Not listening</strong>: The most important skill is attention</li>
+</ol>
+<hr />
+<h2 id="the-void-concept">THE "VOID" CONCEPT</h2>
+<p>The title has multiple meanings:
+- <strong>Emptiness</strong>: The absence of predetermined structure
+- <strong>Space</strong>: The silence between sounds
+- <strong>Potential</strong>: The void is full of possibility
+- <strong>Buddhist</strong>: The nature of mind, before thought</p>
+<p>Enter the void with openness. What you find there is yours alone.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<p>After each improvisation, ask:
+- [ ] Did I listen more than I played?
+- [ ] Did I use the full dynamic range?
+- [ ] Did I explore different textures?
+- [ ] Did the improvisation have an arc?
+- [ ] Did I start and end with intention?</p>
+<hr />
+<h2 id="a-final-thought">A FINAL THOUGHT</h2>
+<p>Free improvisation is not "anything goes." It requires:
+- <strong>Deep listening</strong> (to yourself, to the space)
+- <strong>Technical command</strong> (to realize your ideas)
+- <strong>Courage</strong> (to risk silence, to risk "ugly" sounds)
+- <strong>Patience</strong> (to let ideas develop)
+- <strong>Trust</strong> (in your musical instincts)</p>
+<p>The Void is both the most challenging and the most liberating piece in this collection. Embrace the unknown.</p>
+<hr />
+<p><strong>← <a href="12_Angular_Motion.md">Angular Motion</a> | <a href="14_Solar_Flare.md">Next: Solar Flare →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="14-solar-flare">
+<h1 id="chapter-14-solar-flare">CHAPTER 14: SOLAR FLARE</h1>
+<p><strong>Style:</strong> Fusion/Original | <strong>Key:</strong> C# Major | <strong>Tempo:</strong> 150 BPM | <strong>Time:</strong> 7/8</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Rapid-fire triad pairs in a 7/8 ostinato."</em></p>
+<p>Solar Flare combines the rhythmic complexity of 7/8 with the melodic intensity of rapid triad pair movement. The key of C# (enharmonic Db) is unusual for guitar but creates a bright, cutting sound perfect for fusion.</p>
+<p><strong>Playing Tip:</strong> Accent the first beat of each grouping (4+3 or 3+4).</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar form in 7/8:</p>
+<pre><code>| C#maj7   | D#m7     | Emaj7    | F#7      |
+| C#maj7   | A#m7     | Bmaj7    | G#7sus4  |
+| Amaj7    | Bmaj7    | C#maj7   | D#7      |
+| G#m7     | C#7      | F#maj7   | G#7sus4  |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>7/8 meter</strong>: Grouped as 4+3 or 3+4</li>
+<li><strong>Rapid triad pairs</strong>: Constant eighth-note movement</li>
+<li><strong>Modal mixture</strong>: Borrowing from parallel minor</li>
+<li><strong>Fusion vocabulary</strong>: Pentatonics, altered dominants</li>
+</ol>
+<hr />
+<h2 id="understanding-78">UNDERSTANDING 7/8</h2>
+<h3 id="the-two-groupings">The Two Groupings</h3>
+<p><strong>4+3 (ONE-two-three-four-FIVE-six-seven):</strong></p>
+<pre><code>| X . . . X . . |
+  1 2 3 4 5 6 7
+</code></pre>
+<p><strong>3+4 (ONE-two-three-FOUR-five-six-seven):</strong></p>
+<pre><code>| X . . X . . . |
+  1 2 3 4 5 6 7
+</code></pre>
+<p>Solar Flare primarily uses <strong>4+3</strong>, with occasional <strong>3+4</strong> for phrase variation.</p>
+<h3 id="physical-practice">Physical Practice</h3>
+<p>Before playing:
+1. Count: ONE-two-three-four-FIVE-six-seven (accent 1 and 5)
+2. Clap on 1 and 5
+3. Walk: four steps, three steps, four steps, three steps
+4. Feel it before you play it</p>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Fusion Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">C#maj7</td>
+<td style="text-align: left;">C# Lydian</td>
+<td style="text-align: left;">#11 = F## (G natural)</td>
+</tr>
+<tr>
+<td style="text-align: left;">D#m7</td>
+<td style="text-align: left;">D# Dorian</td>
+<td style="text-align: left;">Natural 6 = B# (C natural)</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#7</td>
+<td style="text-align: left;">F# Mixolydian</td>
+<td style="text-align: left;">Lydian Dominant for #11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Amaj7</td>
+<td style="text-align: left;">A Lydian</td>
+<td style="text-align: left;">Borrowed from C# minor</td>
+</tr>
+<tr>
+<td style="text-align: left;">G#7sus4</td>
+<td style="text-align: left;">G# Mixolydian</td>
+<td style="text-align: left;">Sus4 tension</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fusion-pentatonics">Fusion Pentatonics</h3>
+<p>Over C#maj7, use:
+- <strong>C# major pentatonic</strong>: C#-D#-E#-G#-A#
+- <strong>D# minor pentatonic</strong>: D#-F#-G#-A#-C# (II minor = Lydian sound)
+- <strong>G# minor pentatonic</strong>: G#-B-C#-D#-F# (V minor = modal sound)</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Fusion Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">C#maj7</td>
+<td style="text-align: left;">C# Major</td>
+<td style="text-align: left;">D# Major</td>
+<td style="text-align: left;">Lydian (9, #11, 6)</td>
+</tr>
+<tr>
+<td style="text-align: left;">D#m7</td>
+<td style="text-align: left;">D# Minor</td>
+<td style="text-align: left;">F# Major</td>
+<td style="text-align: left;">Dorian color</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#7</td>
+<td style="text-align: left;">F# Major</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">Mixolydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Amaj7</td>
+<td style="text-align: left;">A Major</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-78-triad-pattern">The 7/8 Triad Pattern</h3>
+<p>Fit triad pairs into 7/8:</p>
+<pre><code>| C#-E#-G# D#-F##-A# | (4 + 3 = 7)
+     (4)       (3)
+</code></pre>
+<p>Or:</p>
+<pre><code>| C#-E#-G# D#-F## | A#-C#-E# | (3 + 4 = 7)
+     (3)    (2)      (2)
+</code></pre>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-78-version-a">Chorus 1: Lyrical 7/8 (Version A)</h3>
+<p><strong>Concept:</strong> Singing melody that breathes with the 7/8</p>
+<ul>
+<li>Emphasize the natural phrase lengths (7, 14, 21, 28 beats)</li>
+<li>Use the 4+3 grouping for forward momentum</li>
+<li>Phrase endings often on beat 5 or 7</li>
+<li>Let the meter become natural</li>
+</ul>
+<p><strong>Phrase Lengths:</strong>
+| Bars | Beats | Feel |
+|:---|:---|:---|
+| 1 | 7 | Short fragment |
+| 2 | 14 | Standard phrase |
+| 4 | 28 | Extended phrase |</p>
+<h3 id="chorus-2-rapid-triad-pairs-version-b">Chorus 2: Rapid Triad Pairs (Version B)</h3>
+<p><strong>Concept:</strong> Continuous eighth notes using triad pairs</p>
+<ul>
+<li>7 eighth notes per bar = 3+4 or 4+3 triads</li>
+<li>Constant movement, no rests</li>
+<li>Accent chord changes only</li>
+<li>Creates "solar flare" intensity</li>
+</ul>
+<p><strong>Pattern Example (C#maj7):</strong></p>
+<pre><code>| C#-E#-G# A#-D#-F## A# | (4+3 grouping)
+</code></pre>
+<h3 id="chorus-3-polymetric-counterpoint-version-c">Chorus 3: Polymetric Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> One voice in 7/8, another implying 4/4</p>
+<p><strong>Texture:</strong>
+- <strong>Top voice</strong>: Clear 7/8 melody
+- <strong>Bottom voice</strong>: 4-note pattern (implies 4/4)</p>
+<p>The polyrhythm resolves every 28 beats (4 bars of 7/8 = 7 bars of 4/4).</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="c-major-key-voicings">C# Major Key Voicings</h3>
+<pre><code>C#maj7:   x-4-3-5-6-x (root position)
+D#m7:     x-6-6-6-7-6
+Emaj7:    x-7-6-8-9-x
+F#7:      2-x-2-3-2-x (barre)
+A#m7:     x-1-3-1-2-x
+Bmaj7:    x-2-1-3-4-x
+</code></pre>
+<h3 id="fusion-voicings-quartal">Fusion Voicings (quartal)</h3>
+<pre><code>C#maj7:   x-4-6-6-6-x (stacked 4ths)
+G#7sus4:  x-x-6-8-7-9 (sus4 stack)
+</code></pre>
+<hr />
+<h2 id="technique-78-at-150-bpm">TECHNIQUE: 7/8 AT 150 BPM</h2>
+<h3 id="speed-odd-meter">Speed + Odd Meter</h3>
+<p>At 150 BPM in 7/8:
+- Each beat = 400ms
+- Each bar = 2.8 seconds
+- Eighth note = 200ms</p>
+<p>This is fast, but the 7/8 creates natural breathing points.</p>
+<h3 id="practice-strategy">Practice Strategy</h3>
+<ol>
+<li><strong>Start at 60 BPM</strong>: Learn the material slowly</li>
+<li><strong>Group in 4+3</strong>: Feel the subdivisions clearly</li>
+<li><strong>Use metronome on 1 and 5</strong>: Accent the groupings</li>
+<li><strong>Gradually increase</strong>: 10 BPM at a time</li>
+<li><strong>Target 150</strong>: But don't sacrifice clarity for speed</li>
+</ol>
+<h3 id="relaxation">Relaxation</h3>
+<p>At high tempos in odd meter:
+- Breathe with the 7/8 (inhale on 1-4, exhale on 5-7)
+- Minimize motion
+- Let the pattern carry you
+- Trust muscle memory</p>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-meter">Week 1: The Meter</h3>
+<ul>
+<li>[ ] Internalize 7/8 through counting/clapping</li>
+<li>[ ] Practice quarter notes through the changes</li>
+<li>[ ] Feel 4+3 and 3+4 groupings</li>
+</ul>
+<h3 id="week-2-triad-pairs">Week 2: Triad Pairs</h3>
+<ul>
+<li>[ ] Master C#/D# major triad pair</li>
+<li>[ ] Apply to 7/8 rhythm</li>
+<li>[ ] Work on Version B slowly (80 BPM)</li>
+</ul>
+<h3 id="week-3-speed-building">Week 3: Speed Building</h3>
+<ul>
+<li>[ ] Increase tempo by 10 BPM daily</li>
+<li>[ ] Maintain clean articulation</li>
+<li>[ ] Target 120 BPM by end of week</li>
+</ul>
+<h3 id="week-4-performance-tempo">Week 4: Performance Tempo</h3>
+<ul>
+<li>[ ] Push to 150 BPM</li>
+<li>[ ] Work on polymetric counterpoint</li>
+<li>[ ] Integrate all three choruses</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Allan Holdsworth</strong> — <em>Metal Fatigue</em> (fusion, odd meters)</li>
+<li><strong>Mahavishnu Orchestra</strong> — <em>Inner Mounting Flame</em> (fusion classic)</li>
+<li><strong>Return to Forever</strong> — <em>Romantic Warrior</em> (fusion)</li>
+<li><strong>Tigran Hamasyan</strong> — <em>An Ancient Observer</em> (modern fusion)</li>
+<li><strong>Animals as Leaders</strong> — <em>The Joy of Motion</em> (modern guitar)</li>
+</ol>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Losing the 7</strong>: The brain wants 8—fight it</li>
+<li><strong>Rushing beat 7</strong>: The final beat needs full value</li>
+<li><strong>Too many accents</strong>: Accent 1 and 5, let others flow</li>
+<li><strong>Tension at speed</strong>: Relaxation enables speed</li>
+<li><strong>Ignoring groupings</strong>: 4+3 ≠ 3+4—know which you're using</li>
+</ol>
+<hr />
+<h2 id="the-solar-flare-concept">THE "SOLAR FLARE" CONCEPT</h2>
+<p>The title evokes:
+- <strong>Solar</strong>: Bright, intense, C# major brilliance
+- <strong>Flare</strong>: Sudden burst of energy, rapid triad pairs
+- <strong>Cosmic</strong>: The 7/8 feel is otherworldly</p>
+<p>Imagine a sun in explosion—intense, brilliant, rhythmically complex. Your playing should have that energy.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Can I feel 7/8 without counting?</li>
+<li>[ ] Are my triad pairs clean at tempo?</li>
+<li>[ ] Is my 4+3 grouping clear?</li>
+<li>[ ] Does the polymetric counterpoint create tension?</li>
+<li>[ ] Does it have "solar flare" intensity?</li>
+</ul>
+<hr />
+<p><strong>← <a href="13_The_Void.md">The Void</a> | <a href="15_Final_Departure.md">Next: Final Departure →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="15-final-departure">
+<h1 id="chapter-15-final-departure">CHAPTER 15: FINAL DEPARTURE</h1>
+<p><strong>Style:</strong> Closing Ballad | <strong>Key:</strong> Db Major | <strong>Tempo:</strong> 70 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Lush, orchestral drop-2 voicings."</em></p>
+<p>Final Departure is the conclusion of the Trio Tunes journey. This closing ballad features rich, orchestral voicings inspired by Gil Evans and Maria Schneider. The key of Db provides warmth and depth, and the rubato phrasing allows for maximum expression.</p>
+<p><strong>Playing Tip:</strong> Play rubato; breathe with the phrases.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar ballad with orchestral harmony:</p>
+<pre><code>| Dbmaj9   | Bbm9     | Gbmaj9   | Ab13sus4 |
+| Dbmaj9   | Fm9      | Bbm11    | Ebm9  Ab7|
+| Fmaj7    | Bbm7     | Ebm9     | Ab7alt   |
+| Dbmaj9   | Gbmaj9   | Dbmaj9/Ab| Dbmaj9   |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Drop-2 voicings</strong>: The signature orchestral guitar sound</li>
+<li><strong>Extended chords</strong>: 9ths, 11ths, 13ths throughout</li>
+<li><strong>Pedal point</strong>: Ab pedal in the ending</li>
+<li><strong>Modal interchange</strong>: Fmaj7 (borrowed from Db minor)</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Orchestral Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dbmaj9</td>
+<td style="text-align: left;">Db Lydian</td>
+<td style="text-align: left;">#11 = G natural</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbm9</td>
+<td style="text-align: left;">Bb Dorian</td>
+<td style="text-align: left;">Natural 6 = G natural</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gbmaj9</td>
+<td style="text-align: left;">Gb Lydian</td>
+<td style="text-align: left;">#11 = C natural</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ab13sus4</td>
+<td style="text-align: left;">Ab Mixolydian</td>
+<td style="text-align: left;">13 = F natural</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fmaj7</td>
+<td style="text-align: left;">F Lydian</td>
+<td style="text-align: left;">Borrowed chord</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ab7alt</td>
+<td style="text-align: left;">Ab Altered</td>
+<td style="text-align: left;">Tension before home</td>
+</tr>
+</tbody>
+</table>
+<h3 id="orchestral-thinking">Orchestral Thinking</h3>
+<p>Think like an arranger:
+- <strong>Inner voices</strong> matter as much as melody
+- <strong>Voice leading</strong> should be smooth
+- <strong>Dynamics</strong> should swell and recede
+- <strong>Space</strong> is essential</p>
+<hr />
+<h2 id="drop-2-voicings">DROP-2 VOICINGS</h2>
+<h3 id="what-is-drop-2">What Is Drop-2?</h3>
+<p>In a close-voiced chord (all notes within an octave), <strong>drop the 2nd voice from the top down an octave</strong>.</p>
+<p><strong>Close voicing (Dbmaj7):</strong></p>
+<pre><code>Top to bottom: C - Ab - F - Db
+</code></pre>
+<p><strong>Drop-2 voicing:</strong></p>
+<pre><code>Top to bottom: C - F - Db - Ab (Ab dropped)
+</code></pre>
+<h3 id="why-drop-2">Why Drop-2?</h3>
+<ul>
+<li>Creates <strong>open, orchestral</strong> sound</li>
+<li><strong>Playable</strong> on guitar (close voicings often aren't)</li>
+<li><strong>Rich</strong> yet <strong>clear</strong></li>
+<li>Standard for <strong>jazz guitar comping</strong></li>
+</ul>
+<h3 id="the-four-inversions">The Four Inversions</h3>
+<p>For Dbmaj7, the four drop-2 inversions are:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Inversion</th>
+<th style="text-align: left;">Top Note</th>
+<th style="text-align: left;">Guitar Shape</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Root position</td>
+<td style="text-align: left;">C (7th)</td>
+<td style="text-align: left;">x-4-5-5-6-x</td>
+</tr>
+<tr>
+<td style="text-align: left;">1st inversion</td>
+<td style="text-align: left;">Db (root)</td>
+<td style="text-align: left;">x-6-5-6-6-x</td>
+</tr>
+<tr>
+<td style="text-align: left;">2nd inversion</td>
+<td style="text-align: left;">F (3rd)</td>
+<td style="text-align: left;">x-8-10-10-9-x</td>
+</tr>
+<tr>
+<td style="text-align: left;">3rd inversion</td>
+<td style="text-align: left;">Ab (5th)</td>
+<td style="text-align: left;">x-11-10-11-11-x</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Orchestral Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dbmaj9</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">9, #11, 6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbm9</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">Relative major</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gbmaj9</td>
+<td style="text-align: left;">Gb Major</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ab7alt</td>
+<td style="text-align: left;">Gb Major</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">Altered tensions</td>
+</tr>
+</tbody>
+</table>
+<h3 id="voice-leading-priority">Voice-Leading Priority</h3>
+<p>In ballad playing, prioritize <strong>smooth voice leading</strong> over triad pair angularity:
+- Move each voice by step when possible
+- Common tones stay in place
+- Chromatic movement is beautiful</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-melody-version-a">Chorus 1: Lyrical Melody (Version A)</h3>
+<p><strong>Concept:</strong> Singing, aria-like melody</p>
+<ul>
+<li>Long tones, whole notes and half notes</li>
+<li>Phrases arc upward, then resolve downward</li>
+<li>Rubato: take time where the music breathes</li>
+<li>Dynamics: pp to mf, never louder</li>
+</ul>
+<p><strong>Phrasing:</strong></p>
+<pre><code>Bars 1-4: First statement (establish)
+Bars 5-8: Development (expand)
+Bars 9-12: Climax (most motion)
+Bars 13-16: Resolution (home)
+</code></pre>
+<h3 id="chorus-2-drop-2-chord-melody-version-b">Chorus 2: Drop-2 Chord Melody (Version B)</h3>
+<p><strong>Concept:</strong> Melody harmonized with drop-2 voicings</p>
+<ul>
+<li>Every melody note gets a chord</li>
+<li>Voice leading must be smooth</li>
+<li>Inner voices move independently</li>
+<li>Creates "small orchestra" effect</li>
+</ul>
+<h3 id="chorus-3-orchestral-counterpoint-version-c">Chorus 3: Orchestral Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Multiple independent voices, Gil Evans style</p>
+<p><strong>Texture:</strong>
+- <strong>Soprano</strong>: Melody (top voice)
+- <strong>Alto</strong>: Counter-melody (2nd voice)
+- <strong>Tenor</strong>: Sustained harmony (3rd voice)
+- <strong>Bass</strong>: Root motion (bottom voice)</p>
+<p>This is the most challenging approach—true four-voice writing.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="drop-2-voicings-string-set-5-4-3-2">Drop-2 Voicings (String Set 5-4-3-2)</h3>
+<pre><code>Dbmaj9:    x-4-5-5-6-x (root position)
+Bbm9:      x-1-3-1-2-1 (with 9)
+Gbmaj9:    x-x-4-5-3-4 (high position)
+Ab13sus4:  x-x-6-8-9-9
+Fm9:       x-x-3-5-4-4
+Ebm9:      x-x-1-3-2-2
+Ab7alt:    x-x-5-6-5-4
+</code></pre>
+<h3 id="extended-voicings-full-strings">Extended Voicings (Full Strings)</h3>
+<pre><code>Dbmaj9:    x-4-3-5-6-4 (with 9 on top)
+Gbmaj9:    2-x-3-3-2-4 (with 9 on top)
+</code></pre>
+<hr />
+<h2 id="rubato-playing">RUBATO PLAYING</h2>
+<h3 id="what-is-rubato">What Is Rubato?</h3>
+<p>"Rubato" (Italian for "robbed time") means:
+- Speeding up slightly here
+- Slowing down slightly there
+- Breathing with the phrases
+- Time is elastic, not metronomic</p>
+<h3 id="how-to-practice-rubato">How to Practice Rubato</h3>
+<ol>
+<li><strong>Learn the piece in strict time first</strong></li>
+<li><strong>Identify natural breathing points</strong></li>
+<li><strong>Slow down into cadences</strong></li>
+<li><strong>Speed up through active passages</strong></li>
+<li><strong>Always return to the pulse</strong></li>
+</ol>
+<h3 id="common-rubato-moments-in-final-departure">Common Rubato Moments in Final Departure</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Location</th>
+<th style="text-align: left;">Rubato Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Bar 4 (Ab13sus4)</td>
+<td style="text-align: left;">Ritardando into the resolution</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bar 8 (Ebm9-Ab7)</td>
+<td style="text-align: left;">Slight accelerando through ii-V</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bar 12 (Ab7alt)</td>
+<td style="text-align: left;">Maximum rubato—delay the resolution</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bar 16 (Dbmaj9)</td>
+<td style="text-align: left;">Fermata—hold as long as desired</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-voicings">Week 1: Voicings</h3>
+<ul>
+<li>[ ] Learn all drop-2 inversions for Dbmaj7</li>
+<li>[ ] Apply to each chord in the form</li>
+<li>[ ] Practice voice leading between chords</li>
+</ul>
+<h3 id="week-2-melody">Week 2: Melody</h3>
+<ul>
+<li>[ ] Learn Version A melody</li>
+<li>[ ] Practice singing the melody</li>
+<li>[ ] Add rubato gradually</li>
+</ul>
+<h3 id="week-3-chord-melody">Week 3: Chord Melody</h3>
+<ul>
+<li>[ ] Harmonize melody with drop-2 voicings</li>
+<li>[ ] Focus on smooth voice leading</li>
+<li>[ ] Work on Version B</li>
+</ul>
+<h3 id="week-4-orchestral">Week 4: Orchestral</h3>
+<ul>
+<li>[ ] Develop independent inner voices</li>
+<li>[ ] Practice four-voice texture</li>
+<li>[ ] Create your own arrangement</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Gil Evans</strong> — <em>Out of the Cool</em> (orchestral jazz)</li>
+<li><strong>Maria Schneider</strong> — <em>Evanescence</em> (modern big band)</li>
+<li><strong>Jim Hall</strong> — <em>Concierto</em> (ballad guitar with orchestra)</li>
+<li><strong>Pat Metheny</strong> — <em>What's It All About</em> (solo guitar ballads)</li>
+<li><strong>Kenny Burrell</strong> — <em>Midnight Blue</em> (intimate ballad playing)</li>
+<li><strong>Bill Evans</strong> — <em>You Must Believe in Spring</em> (rubato piano)</li>
+</ol>
+<hr />
+<h2 id="tone-tips">TONE TIPS</h2>
+<p>For the ballad sound:
+- <strong>Guitar</strong>: Hollowbody or semi-hollow
+- <strong>Amp</strong>: Clean, warm
+- <strong>Reverb</strong>: Lush hall reverb
+- <strong>Volume</strong>: Soft, intimate
+- <strong>Attack</strong>: Round, no pick attack</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Rushing cadences</strong>: Slow down at resolution points</li>
+<li><strong>Stiff time</strong>: Let the rubato breathe</li>
+<li><strong>Poor voice leading</strong>: Each voice should move smoothly</li>
+<li><strong>Too loud</strong>: This is intimate music</li>
+<li><strong>Ignoring inner voices</strong>: They matter as much as melody</li>
+</ol>
+<hr />
+<h2 id="the-final-departure-concept">THE "FINAL DEPARTURE" CONCEPT</h2>
+<p>As the closing tune, this piece represents:
+- <strong>Departure</strong>: The end of the journey
+- <strong>Final</strong>: A sense of completion, resolution
+- <strong>Gratitude</strong>: For the musical ground covered</p>
+<p>The title is bittersweet—an ending that's also a new beginning.</p>
+<hr />
+<h2 id="a-closing-thought">A CLOSING THOUGHT</h2>
+<p>The Trio Tunes collection has taken you through:
+- Blues, bossa, ballad
+- Funk, fusion, free
+- Bebop, odd meters, extended technique
+- Counterpoint, triad pairs, voice leading</p>
+<p><strong>Final Departure</strong> asks you to bring it all together—not by showing off, but by <strong>serving the music</strong>.</p>
+<p>Play with feeling. Play with intention. Play with gratitude.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Are my drop-2 voicings smooth and connected?</li>
+<li>[ ] Does my rubato feel natural?</li>
+<li>[ ] Are inner voices moving independently?</li>
+<li>[ ] Is my dynamic range appropriate (pp to mf)?</li>
+<li>[ ] Does it feel like a conclusion—a final departure?</li>
+</ul>
+<hr />
+<p><strong>← <a href="14_Solar_Flare.md">Solar Flare</a> | <a href="16_Conclusion.md">Conclusion →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+<div class="chapter-divider page-break"></div>
+<div id="16-conclusion">
+<h1 id="conclusion">CONCLUSION</h1>
+<h2 id="the-journey-complete">THE JOURNEY COMPLETE</h2>
+<hr />
+<p>Congratulations. You've worked through the entire <strong>Trio Tunes</strong> collection—15 etudes spanning the full spectrum of jazz guitar styles, techniques, and concepts.</p>
+<hr />
+<h2 id="what-youve-learned">WHAT YOU'VE LEARNED</h2>
+<h3 id="styles-explored">Styles Explored</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Style</th>
+<th style="text-align: left;">Tune</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Blues (Cycle)</td>
+<td style="text-align: left;">Blue Cycle</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wayne Shorter (Avant)</td>
+<td style="text-align: left;">Orbit</td>
+</tr>
+<tr>
+<td style="text-align: left;">Scofield Funk</td>
+<td style="text-align: left;">Rust &amp; Chrome</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bossa Nova</td>
+<td style="text-align: left;">Sao Paulo Rain</td>
+</tr>
+<tr>
+<td style="text-align: left;">Scofield Ballad</td>
+<td style="text-align: left;">The Mirror</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pat Metheny</td>
+<td style="text-align: left;">Bright Size Life 2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Experimental (Monk)</td>
+<td style="text-align: left;">Monk's Dream</td>
+</tr>
+<tr>
+<td style="text-align: left;">Wayne Shorter (Post-Bop)</td>
+<td style="text-align: left;">Nefertiti's Shadow</td>
+</tr>
+<tr>
+<td style="text-align: left;">Blues Shuffle</td>
+<td style="text-align: left;">Greezy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Odd Meter (5/4)</td>
+<td style="text-align: left;">Hexagon</td>
+</tr>
+<tr>
+<td style="text-align: left;">ECM Ballad</td>
+<td style="text-align: left;">Crystal Silence</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bebop Etude</td>
+<td style="text-align: left;">Angular Motion</td>
+</tr>
+<tr>
+<td style="text-align: left;">Free Improvisation</td>
+<td style="text-align: left;">The Void</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fusion (7/8)</td>
+<td style="text-align: left;">Solar Flare</td>
+</tr>
+<tr>
+<td style="text-align: left;">Orchestral Ballad</td>
+<td style="text-align: left;">Final Departure</td>
+</tr>
+</tbody>
+</table>
+<h3 id="techniques-mastered">Techniques Mastered</h3>
+<ul>
+<li><strong>Triad Pairs</strong>: The I/II major pair for Lydian sounds</li>
+<li><strong>Counterpoint</strong>: Jimmy Wyble-inspired two-voice independence</li>
+<li><strong>Odd Meters</strong>: 3/4, 5/4, 7/8, 12/8</li>
+<li><strong>Extended Techniques</strong>: Harmonics, prepared guitar, E-bow</li>
+<li><strong>Drop-2 Voicings</strong>: Orchestral guitar sound</li>
+<li><strong>Volume Swells</strong>: Ballad expression</li>
+<li><strong>Economy Picking</strong>: High-speed efficiency</li>
+<li><strong>Campanella</strong>: Ringing, harp-like textures</li>
+<li><strong>Rubato</strong>: Elastic, breathing time</li>
+</ul>
+<h3 id="concepts-internalized">Concepts Internalized</h3>
+<ul>
+<li><strong>Melody-Derived Harmony (MDH)</strong>: Chords serve melody</li>
+<li><strong>Barry Harris Logic</strong>: 6th Diminished scales</li>
+<li><strong>Scale Palette</strong>: Matching scales to chords</li>
+<li><strong>Emotional Arc</strong>: Building and releasing tension</li>
+<li><strong>Space</strong>: Silence as a compositional element</li>
+</ul>
+<hr />
+<h2 id="where-to-go-from-here">WHERE TO GO FROM HERE</h2>
+<h3 id="1-revisit-the-tunes">1. Revisit the Tunes</h3>
+<p>Return to each tune with fresh ears. You'll discover new layers each time:
+- <strong>First pass</strong>: Learn the material
+- <strong>Second pass</strong>: Refine technique
+- <strong>Third pass</strong>: Develop personal interpretation
+- <strong>Ongoing</strong>: Continue to deepen understanding</p>
+<h3 id="2-transcribe">2. Transcribe</h3>
+<p>Apply these concepts to your transcriptions:
+- When you transcribe Scofield, notice the triad pairs
+- When you transcribe Metheny, notice the pedal points
+- When you transcribe Shorter, notice the melody-derived harmony</p>
+<h3 id="3-compose">3. Compose</h3>
+<p>Create your own tunes using these frameworks:
+- Write a 5/4 tune using hexatonic scales
+- Compose a Scofield-style ballad with wide voicings
+- Develop a counterpoint etude over blues changes</p>
+<h3 id="4-perform">4. Perform</h3>
+<p>These tunes are meant to be played:
+- At jam sessions (the standards-based tunes)
+- As solo guitar pieces (the ballads)
+- With a trio (as written—"Trio Tunes")</p>
+<h3 id="5-teach">5. Teach</h3>
+<p>The best way to learn is to teach:
+- Explain triad pairs to a student
+- Demonstrate counterpoint concepts
+- Share the Method Book with others</p>
+<hr />
+<h2 id="the-core-principles">THE CORE PRINCIPLES</h2>
+<p>If you remember nothing else, remember these:</p>
+<h3 id="1-melody-first">1. Melody First</h3>
+<p>The melody generates everything. Start there.</p>
+<h3 id="2-voice-leading-matters">2. Voice Leading Matters</h3>
+<p>Smooth connections between chords are more important than complex chords.</p>
+<h3 id="3-space-is-music">3. Space Is Music</h3>
+<p>Silence is as important as sound. Don't fill every moment.</p>
+<h3 id="4-technique-serves-expression">4. Technique Serves Expression</h3>
+<p>Speed, accuracy, and facility exist to serve the music, not to impress.</p>
+<h3 id="5-listen-more-than-you-play">5. Listen More Than You Play</h3>
+<p>The greatest musicians are the greatest listeners.</p>
+<hr />
+<h2 id="gratitude">GRATITUDE</h2>
+<p>Thank you for taking this journey through the Trio Tunes.</p>
+<p>These etudes represent a synthesis of many traditions:
+- The bebop language of Charlie Parker and Bud Powell
+- The harmonic innovations of Wayne Shorter and Herbie Hancock
+- The guitar mastery of Jim Hall, Joe Pass, and Pat Martino
+- The counterpoint genius of Jimmy Wyble
+- The textural explorations of Bill Frisell
+- The modern vocabulary of John Scofield and Pat Metheny
+- The free spirit of Derek Bailey and Fred Frith</p>
+<p>We stand on the shoulders of giants. May this work honor their legacy.</p>
+<hr />
+<h2 id="a-final-word">A FINAL WORD</h2>
+<p>Music is not a destination—it's a journey. The Trio Tunes are waypoints, not endpoints.</p>
+<p>Keep practicing. Keep listening. Keep growing.</p>
+<p><em>"There is no end. There is only the never-ending journey of making music."</em><br />
+— Pat Metheny</p>
+<hr />
+<h2 id="the-end-and-the-beginning">THE END... AND THE BEGINNING</h2>
+<p><strong>Go back to <a href="01_Blue_Cycle.md">Blue Cycle</a> and start again.</strong></p>
+<p>You'll be surprised how much has changed—not the music, but you.</p>
+<hr />
+<p><em>Grand Criteria of Excellence (GCE) Jazz Guitar Collection</em><br />
+<em>December 2025</em></p>
+<hr />
+<p><strong><a href="15_Final_Departure.md">← Final Departure</a> | <a href="00_Introduction.md">Return to Introduction →</a></strong></p>
+<a href="#table-of-contents" class="back-to-toc">↑ Back to Table of Contents</a>
+</div>
+    
+    <div class="footer">
+        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+        <p><em>Grand Criteria of Excellence</em></p>
+    </div>
+</body>
+</html>

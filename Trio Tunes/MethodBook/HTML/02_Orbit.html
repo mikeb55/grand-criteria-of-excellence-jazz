@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>02 Orbit - Trio Tunes Method Book</title>
+    
+<style>
+@page {
+    size: letter;
+    margin: 0.75in 0.75in 1in 0.75in;
+}
+
+@media print {
+    body { font-size: 11pt; }
+    .page-break { page-break-before: always; }
+    pre, table { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    .no-print { display: none; }
+    .back-to-toc { display: none; }
+    a { text-decoration: none; color: #222; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+/* TABLE OF CONTENTS STYLES */
+.toc-container {
+    border: 2px solid #333;
+    padding: 30px 40px;
+    margin: 30px 0 50px 0;
+    background: #fafafa;
+}
+
+.toc-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 22pt;
+}
+
+.toc-chapter {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.toc-chapter:last-child {
+    border-bottom: none;
+}
+
+.toc-chapter-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.toc-chapter-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.toc-chapter-title a:hover {
+    text-decoration: underline;
+}
+
+.toc-chapter-num {
+    color: #666;
+    font-weight: normal;
+}
+
+.toc-subheadings {
+    margin-left: 25px;
+    font-size: 11pt;
+    color: #444;
+}
+
+.toc-subheadings a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toc-subheadings a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO TOC LINK */
+.back-to-toc {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-toc:hover {
+    background: #e0e0e0;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26pt;
+    color: #1a1a2e;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16pt;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13pt;
+    color: #333;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+p { margin-bottom: 12px; text-align: justify; }
+
+ul, ol { margin-left: 25px; margin-bottom: 12px; }
+
+li { margin-bottom: 6px; }
+
+/* TABLES - Printer friendly */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+
+/* CODE - Printer friendly */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    border: 1px solid #ddd;
+}
+
+pre {
+    background-color: #f8f8f8;
+    color: #222;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #222;
+}
+
+blockquote {
+    border-left: 3px solid #666;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 35px 0;
+}
+
+strong { color: #111; }
+em { color: #333; }
+a { color: #333; }
+
+/* Header banner */
+.header-banner {
+    border: 2px solid #333;
+    padding: 25px 30px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.header-banner h1 {
+    color: #111;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 28pt;
+}
+
+.header-banner p {
+    color: #444;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+}
+
+.chapter-divider {
+    border-top: 3px double #333;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+}
+
+.print-instructions {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-instructions { display: none; }
+    .header-banner { margin-top: 0; }
+}
+</style>
+
+</head>
+<body>
+    <h1 id="chapter-2-orbit">CHAPTER 2: ORBIT</h1>
+<p><strong>Style:</strong> Wayne Shorter (Avant) | <strong>Key:</strong> F Major | <strong>Tempo:</strong> 160 BPM | <strong>Time:</strong> 3/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Non-functional harmony over a floating pulse."</em></p>
+<p>Orbit channels the mysterious, spacious quality of Wayne Shorter's compositions. The waltz time signature (3/4) creates a lilting, orbital motion while the harmony deliberately avoids traditional V-I resolutions.</p>
+<p><strong>Playing Tip:</strong> Let the intervals ring; prioritize sustain over speed.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar form with through-composed feel:</p>
+<pre><code>| Fmaj7#11 | Ebmaj7#5 | Dbmaj7   | Bmaj7    |
+| Bbm9     | Abmaj7   | Gbmaj7   | Emaj7    |
+| Fmaj7#11 | Dbmaj7   | Amaj7    | Gmaj7    |
+| Fmaj7#11 | Ebm9     | Dbmaj7   | Fmaj7    |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Non-functional movement</strong>: Chords relate by interval, not by resolution</li>
+<li><strong>Major 7th dominance</strong>: Almost every chord is a major 7th variant</li>
+<li><strong>Chromatic root motion</strong>: F → Eb → Db → B (descending chromatic)</li>
+<li><strong>Symmetry</strong>: Bar 1 material returns in bars 9 and 13</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Color Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Fmaj7#11</td>
+<td style="text-align: left;">F Lydian</td>
+<td style="text-align: left;">B natural (#11)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebmaj7#5</td>
+<td style="text-align: left;">Eb Lydian Augmented</td>
+<td style="text-align: left;">B natural + G#</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7</td>
+<td style="text-align: left;">Db Lydian</td>
+<td style="text-align: left;">G natural (#11)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bmaj7</td>
+<td style="text-align: left;">B Lydian</td>
+<td style="text-align: left;">E# (#11)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbm9</td>
+<td style="text-align: left;">Bb Dorian</td>
+<td style="text-align: left;">G natural (6th)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Emaj7</td>
+<td style="text-align: left;">E Lydian</td>
+<td style="text-align: left;">A# (#11)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="shorters-approach">Shorter's Approach</h3>
+<p>Wayne Shorter often uses <strong>Lydian as default</strong> for major 7th chords. The #11 creates a floating, unresolved quality that defines this style.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Creates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Fmaj7#11</td>
+<td style="text-align: left;">F Major</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">Lydian color (9, #11, 6)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebmaj7#5</td>
+<td style="text-align: left;">Eb Augmented</td>
+<td style="text-align: left;">Bb Major</td>
+<td style="text-align: left;">Augmented + Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">9, #11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbm9</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Minor 9 sound</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pattern-lydian-triad-pair">Pattern: Lydian Triad Pair</h3>
+<p>Over Fmaj7#11:</p>
+<pre><code>F-A-C (Imaj) → G-B-D (IImaj) → F-A-C...
+</code></pre>
+<p>The G Major triad provides B natural (the #11) and D (the 6th).</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-version-a">Chorus 1: Lyrical (Version A)</h3>
+<p><strong>Concept:</strong> Floating, long-tone melody</p>
+<ul>
+<li>Emphasize the 3/4 pulse gently—avoid heavy downbeats</li>
+<li>Use half notes and dotted half notes</li>
+<li>Let phrases span across bar lines</li>
+<li>Target chord tones on beats 1 and 3</li>
+</ul>
+<p><strong>Motif:</strong> Ascending perfect 4th (like planets in orbit)</p>
+<h3 id="chorus-2-modern-interval-lines-version-b">Chorus 2: Modern Interval Lines (Version B)</h3>
+<p><strong>Concept:</strong> Wide intervals, Shorter-style angularity</p>
+<ul>
+<li>Major 7ths and minor 9ths between successive notes</li>
+<li>Avoid stepwise motion</li>
+<li>Create tension through silence—use rests strategically</li>
+</ul>
+<p><strong>Example over Fmaj7#11:</strong></p>
+<pre><code>E (maj7) → F (8va up) → B (#11) → C (5th, 8vb)
+</code></pre>
+<h3 id="chorus-3-parallel-motion-counterpoint-version-c">Chorus 3: Parallel Motion Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Two voices moving in parallel motion (unusual!)</p>
+<p>Unlike Blue Cycle's contrary motion, Orbit uses <strong>parallel 4ths and 5ths</strong>:
+- Top voice: Melody
+- Bottom voice: Perfect 4th or 5th below</p>
+<p>This creates a medieval, modal quality appropriate to Shorter's cosmic aesthetic.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="quartal-voicings-shorter-style">Quartal Voicings (Shorter-style)</h3>
+<pre><code>Fmaj7#11: x-x-3-4-5-5 (stacked 4ths: C-F-B-E)
+Ebmaj7#5: x-6-5-4-4-x (Eb with G# tension)
+Dbmaj7:   x-4-5-5-6-x (with Lydian #11)
+</code></pre>
+<h3 id="wide-drop-2-voicings">Wide Drop-2 Voicings</h3>
+<pre><code>Fmaj7:  1-x-2-2-1-x (root position)
+Bmaj7:  7-x-8-8-7-x (root position)
+</code></pre>
+<hr />
+<h2 id="the-34-feel">THE 3/4 FEEL</h2>
+<h3 id="counting-the-waltz">Counting the Waltz</h3>
+<p>Internalize the pulse as:
+- <strong>ONE</strong>-two-three, <strong>ONE</strong>-two-three
+- Not: one-TWO-three (avoid polka feel)</p>
+<h3 id="phrase-lengths">Phrase Lengths</h3>
+<p>In 3/4, natural phrase lengths are:
+- 2 bars = 6 beats (short phrase)
+- 4 bars = 12 beats (standard phrase)
+- 8 bars = 24 beats (extended phrase)</p>
+<p>Let your lines follow these natural groupings.</p>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-float">Week 1: The Float</h3>
+<ul>
+<li>[ ] Learn Version A melody with extreme sustain</li>
+<li>[ ] Practice letting notes ring into each other</li>
+<li>[ ] Use volume swells for dynamics</li>
+</ul>
+<h3 id="week-2-intervals">Week 2: Intervals</h3>
+<ul>
+<li>[ ] Drill major 7th intervals in all positions</li>
+<li>[ ] Practice minor 9th jumps</li>
+<li>[ ] Work on Version B slowly (80 BPM)</li>
+</ul>
+<h3 id="week-3-parallel-motion">Week 3: Parallel Motion</h3>
+<ul>
+<li>[ ] Practice parallel 4ths ascending and descending</li>
+<li>[ ] Add the melody as top voice</li>
+<li>[ ] Work on Version C</li>
+</ul>
+<h3 id="week-4-synthesis">Week 4: Synthesis</h3>
+<ul>
+<li>[ ] Connect all three choruses</li>
+<li>[ ] Develop your own phrasing within the form</li>
+<li>[ ] Record with a 3/4 drum loop</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Wayne Shorter</strong> — <em>Speak No Evil</em> (the blueprint)</li>
+<li><strong>Wayne Shorter</strong> — <em>JuJu</em> (more floating harmony)</li>
+<li><strong>Herbie Hancock</strong> — <em>Maiden Voyage</em> (related aesthetic)</li>
+<li><strong>Kenny Wheeler</strong> — <em>Gnu High</em> (ECM-style space)</li>
+</ol>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Forcing resolution</strong>: Don't try to make the chords "go somewhere"</li>
+<li><strong>Heavy accents</strong>: Keep the 3/4 light and floating</li>
+<li><strong>Too many notes</strong>: Space is essential in this style</li>
+<li><strong>Ignoring sustain</strong>: Shorter's melodies sing—don't chop notes short</li>
+</ol>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Does my playing have a floating quality?</li>
+<li>[ ] Can I hear the major 7th chords as "home" (not needing resolution)?</li>
+<li>[ ] Are my phrases breathing naturally in 3/4?</li>
+<li>[ ] Is there enough space between ideas?</li>
+</ul>
+<hr />
+<p><strong>← <a href="01_Blue_Cycle.md">Blue Cycle</a> | <a href="03_Rust_And_Chrome.md">Next: Rust &amp; Chrome →</a></strong></p>
+    <div class="footer">
+        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+    </div>
+</body>
+</html>

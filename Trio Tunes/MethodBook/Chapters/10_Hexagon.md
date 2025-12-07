@@ -271,3 +271,4 @@ The hexagon is a stable shape in nature (honeycombs). Similarly, 5/4 becomes sta
 
 **← [Greezy](09_Greezy.md) | [Next: Crystal Silence →](11_Crystal_Silence.md)**
 
+

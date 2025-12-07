@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>14 Solar Flare - Trio Tunes Method Book</title>
+    
+<style>
+@page {
+    size: letter;
+    margin: 0.75in 0.75in 1in 0.75in;
+}
+
+@media print {
+    body { font-size: 11pt; }
+    .page-break { page-break-before: always; }
+    pre, table { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    .no-print { display: none; }
+    .back-to-toc { display: none; }
+    a { text-decoration: none; color: #222; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+/* TABLE OF CONTENTS STYLES */
+.toc-container {
+    border: 2px solid #333;
+    padding: 30px 40px;
+    margin: 30px 0 50px 0;
+    background: #fafafa;
+}
+
+.toc-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 22pt;
+}
+
+.toc-chapter {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.toc-chapter:last-child {
+    border-bottom: none;
+}
+
+.toc-chapter-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.toc-chapter-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.toc-chapter-title a:hover {
+    text-decoration: underline;
+}
+
+.toc-chapter-num {
+    color: #666;
+    font-weight: normal;
+}
+
+.toc-subheadings {
+    margin-left: 25px;
+    font-size: 11pt;
+    color: #444;
+}
+
+.toc-subheadings a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toc-subheadings a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO TOC LINK */
+.back-to-toc {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-toc:hover {
+    background: #e0e0e0;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26pt;
+    color: #1a1a2e;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16pt;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13pt;
+    color: #333;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+p { margin-bottom: 12px; text-align: justify; }
+
+ul, ol { margin-left: 25px; margin-bottom: 12px; }
+
+li { margin-bottom: 6px; }
+
+/* TABLES - Printer friendly */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+
+/* CODE - Printer friendly */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    border: 1px solid #ddd;
+}
+
+pre {
+    background-color: #f8f8f8;
+    color: #222;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #222;
+}
+
+blockquote {
+    border-left: 3px solid #666;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 35px 0;
+}
+
+strong { color: #111; }
+em { color: #333; }
+a { color: #333; }
+
+/* Header banner */
+.header-banner {
+    border: 2px solid #333;
+    padding: 25px 30px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.header-banner h1 {
+    color: #111;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 28pt;
+}
+
+.header-banner p {
+    color: #444;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+}
+
+.chapter-divider {
+    border-top: 3px double #333;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+}
+
+.print-instructions {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-instructions { display: none; }
+    .header-banner { margin-top: 0; }
+}
+</style>
+
+</head>
+<body>
+    <h1 id="chapter-14-solar-flare">CHAPTER 14: SOLAR FLARE</h1>
+<p><strong>Style:</strong> Fusion/Original | <strong>Key:</strong> C# Major | <strong>Tempo:</strong> 150 BPM | <strong>Time:</strong> 7/8</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Rapid-fire triad pairs in a 7/8 ostinato."</em></p>
+<p>Solar Flare combines the rhythmic complexity of 7/8 with the melodic intensity of rapid triad pair movement. The key of C# (enharmonic Db) is unusual for guitar but creates a bright, cutting sound perfect for fusion.</p>
+<p><strong>Playing Tip:</strong> Accent the first beat of each grouping (4+3 or 3+4).</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar form in 7/8:</p>
+<pre><code>| C#maj7   | D#m7     | Emaj7    | F#7      |
+| C#maj7   | A#m7     | Bmaj7    | G#7sus4  |
+| Amaj7    | Bmaj7    | C#maj7   | D#7      |
+| G#m7     | C#7      | F#maj7   | G#7sus4  |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>7/8 meter</strong>: Grouped as 4+3 or 3+4</li>
+<li><strong>Rapid triad pairs</strong>: Constant eighth-note movement</li>
+<li><strong>Modal mixture</strong>: Borrowing from parallel minor</li>
+<li><strong>Fusion vocabulary</strong>: Pentatonics, altered dominants</li>
+</ol>
+<hr />
+<h2 id="understanding-78">UNDERSTANDING 7/8</h2>
+<h3 id="the-two-groupings">The Two Groupings</h3>
+<p><strong>4+3 (ONE-two-three-four-FIVE-six-seven):</strong></p>
+<pre><code>| X . . . X . . |
+  1 2 3 4 5 6 7
+</code></pre>
+<p><strong>3+4 (ONE-two-three-FOUR-five-six-seven):</strong></p>
+<pre><code>| X . . X . . . |
+  1 2 3 4 5 6 7
+</code></pre>
+<p>Solar Flare primarily uses <strong>4+3</strong>, with occasional <strong>3+4</strong> for phrase variation.</p>
+<h3 id="physical-practice">Physical Practice</h3>
+<p>Before playing:
+1. Count: ONE-two-three-four-FIVE-six-seven (accent 1 and 5)
+2. Clap on 1 and 5
+3. Walk: four steps, three steps, four steps, three steps
+4. Feel it before you play it</p>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Fusion Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">C#maj7</td>
+<td style="text-align: left;">C# Lydian</td>
+<td style="text-align: left;">#11 = F## (G natural)</td>
+</tr>
+<tr>
+<td style="text-align: left;">D#m7</td>
+<td style="text-align: left;">D# Dorian</td>
+<td style="text-align: left;">Natural 6 = B# (C natural)</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#7</td>
+<td style="text-align: left;">F# Mixolydian</td>
+<td style="text-align: left;">Lydian Dominant for #11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Amaj7</td>
+<td style="text-align: left;">A Lydian</td>
+<td style="text-align: left;">Borrowed from C# minor</td>
+</tr>
+<tr>
+<td style="text-align: left;">G#7sus4</td>
+<td style="text-align: left;">G# Mixolydian</td>
+<td style="text-align: left;">Sus4 tension</td>
+</tr>
+</tbody>
+</table>
+<h3 id="fusion-pentatonics">Fusion Pentatonics</h3>
+<p>Over C#maj7, use:
+- <strong>C# major pentatonic</strong>: C#-D#-E#-G#-A#
+- <strong>D# minor pentatonic</strong>: D#-F#-G#-A#-C# (II minor = Lydian sound)
+- <strong>G# minor pentatonic</strong>: G#-B-C#-D#-F# (V minor = modal sound)</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Fusion Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">C#maj7</td>
+<td style="text-align: left;">C# Major</td>
+<td style="text-align: left;">D# Major</td>
+<td style="text-align: left;">Lydian (9, #11, 6)</td>
+</tr>
+<tr>
+<td style="text-align: left;">D#m7</td>
+<td style="text-align: left;">D# Minor</td>
+<td style="text-align: left;">F# Major</td>
+<td style="text-align: left;">Dorian color</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#7</td>
+<td style="text-align: left;">F# Major</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">Mixolydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Amaj7</td>
+<td style="text-align: left;">A Major</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-78-triad-pattern">The 7/8 Triad Pattern</h3>
+<p>Fit triad pairs into 7/8:</p>
+<pre><code>| C#-E#-G# D#-F##-A# | (4 + 3 = 7)
+     (4)       (3)
+</code></pre>
+<p>Or:</p>
+<pre><code>| C#-E#-G# D#-F## | A#-C#-E# | (3 + 4 = 7)
+     (3)    (2)      (2)
+</code></pre>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-78-version-a">Chorus 1: Lyrical 7/8 (Version A)</h3>
+<p><strong>Concept:</strong> Singing melody that breathes with the 7/8</p>
+<ul>
+<li>Emphasize the natural phrase lengths (7, 14, 21, 28 beats)</li>
+<li>Use the 4+3 grouping for forward momentum</li>
+<li>Phrase endings often on beat 5 or 7</li>
+<li>Let the meter become natural</li>
+</ul>
+<p><strong>Phrase Lengths:</strong>
+| Bars | Beats | Feel |
+|:---|:---|:---|
+| 1 | 7 | Short fragment |
+| 2 | 14 | Standard phrase |
+| 4 | 28 | Extended phrase |</p>
+<h3 id="chorus-2-rapid-triad-pairs-version-b">Chorus 2: Rapid Triad Pairs (Version B)</h3>
+<p><strong>Concept:</strong> Continuous eighth notes using triad pairs</p>
+<ul>
+<li>7 eighth notes per bar = 3+4 or 4+3 triads</li>
+<li>Constant movement, no rests</li>
+<li>Accent chord changes only</li>
+<li>Creates "solar flare" intensity</li>
+</ul>
+<p><strong>Pattern Example (C#maj7):</strong></p>
+<pre><code>| C#-E#-G# A#-D#-F## A# | (4+3 grouping)
+</code></pre>
+<h3 id="chorus-3-polymetric-counterpoint-version-c">Chorus 3: Polymetric Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> One voice in 7/8, another implying 4/4</p>
+<p><strong>Texture:</strong>
+- <strong>Top voice</strong>: Clear 7/8 melody
+- <strong>Bottom voice</strong>: 4-note pattern (implies 4/4)</p>
+<p>The polyrhythm resolves every 28 beats (4 bars of 7/8 = 7 bars of 4/4).</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="c-major-key-voicings">C# Major Key Voicings</h3>
+<pre><code>C#maj7:   x-4-3-5-6-x (root position)
+D#m7:     x-6-6-6-7-6
+Emaj7:    x-7-6-8-9-x
+F#7:      2-x-2-3-2-x (barre)
+A#m7:     x-1-3-1-2-x
+Bmaj7:    x-2-1-3-4-x
+</code></pre>
+<h3 id="fusion-voicings-quartal">Fusion Voicings (quartal)</h3>
+<pre><code>C#maj7:   x-4-6-6-6-x (stacked 4ths)
+G#7sus4:  x-x-6-8-7-9 (sus4 stack)
+</code></pre>
+<hr />
+<h2 id="technique-78-at-150-bpm">TECHNIQUE: 7/8 AT 150 BPM</h2>
+<h3 id="speed-odd-meter">Speed + Odd Meter</h3>
+<p>At 150 BPM in 7/8:
+- Each beat = 400ms
+- Each bar = 2.8 seconds
+- Eighth note = 200ms</p>
+<p>This is fast, but the 7/8 creates natural breathing points.</p>
+<h3 id="practice-strategy">Practice Strategy</h3>
+<ol>
+<li><strong>Start at 60 BPM</strong>: Learn the material slowly</li>
+<li><strong>Group in 4+3</strong>: Feel the subdivisions clearly</li>
+<li><strong>Use metronome on 1 and 5</strong>: Accent the groupings</li>
+<li><strong>Gradually increase</strong>: 10 BPM at a time</li>
+<li><strong>Target 150</strong>: But don't sacrifice clarity for speed</li>
+</ol>
+<h3 id="relaxation">Relaxation</h3>
+<p>At high tempos in odd meter:
+- Breathe with the 7/8 (inhale on 1-4, exhale on 5-7)
+- Minimize motion
+- Let the pattern carry you
+- Trust muscle memory</p>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-meter">Week 1: The Meter</h3>
+<ul>
+<li>[ ] Internalize 7/8 through counting/clapping</li>
+<li>[ ] Practice quarter notes through the changes</li>
+<li>[ ] Feel 4+3 and 3+4 groupings</li>
+</ul>
+<h3 id="week-2-triad-pairs">Week 2: Triad Pairs</h3>
+<ul>
+<li>[ ] Master C#/D# major triad pair</li>
+<li>[ ] Apply to 7/8 rhythm</li>
+<li>[ ] Work on Version B slowly (80 BPM)</li>
+</ul>
+<h3 id="week-3-speed-building">Week 3: Speed Building</h3>
+<ul>
+<li>[ ] Increase tempo by 10 BPM daily</li>
+<li>[ ] Maintain clean articulation</li>
+<li>[ ] Target 120 BPM by end of week</li>
+</ul>
+<h3 id="week-4-performance-tempo">Week 4: Performance Tempo</h3>
+<ul>
+<li>[ ] Push to 150 BPM</li>
+<li>[ ] Work on polymetric counterpoint</li>
+<li>[ ] Integrate all three choruses</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Allan Holdsworth</strong> — <em>Metal Fatigue</em> (fusion, odd meters)</li>
+<li><strong>Mahavishnu Orchestra</strong> — <em>Inner Mounting Flame</em> (fusion classic)</li>
+<li><strong>Return to Forever</strong> — <em>Romantic Warrior</em> (fusion)</li>
+<li><strong>Tigran Hamasyan</strong> — <em>An Ancient Observer</em> (modern fusion)</li>
+<li><strong>Animals as Leaders</strong> — <em>The Joy of Motion</em> (modern guitar)</li>
+</ol>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Losing the 7</strong>: The brain wants 8—fight it</li>
+<li><strong>Rushing beat 7</strong>: The final beat needs full value</li>
+<li><strong>Too many accents</strong>: Accent 1 and 5, let others flow</li>
+<li><strong>Tension at speed</strong>: Relaxation enables speed</li>
+<li><strong>Ignoring groupings</strong>: 4+3 ≠ 3+4—know which you're using</li>
+</ol>
+<hr />
+<h2 id="the-solar-flare-concept">THE "SOLAR FLARE" CONCEPT</h2>
+<p>The title evokes:
+- <strong>Solar</strong>: Bright, intense, C# major brilliance
+- <strong>Flare</strong>: Sudden burst of energy, rapid triad pairs
+- <strong>Cosmic</strong>: The 7/8 feel is otherworldly</p>
+<p>Imagine a sun in explosion—intense, brilliant, rhythmically complex. Your playing should have that energy.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Can I feel 7/8 without counting?</li>
+<li>[ ] Are my triad pairs clean at tempo?</li>
+<li>[ ] Is my 4+3 grouping clear?</li>
+<li>[ ] Does the polymetric counterpoint create tension?</li>
+<li>[ ] Does it have "solar flare" intensity?</li>
+</ul>
+<hr />
+<p><strong>← <a href="13_The_Void.md">The Void</a> | <a href="15_Final_Departure.md">Next: Final Departure →</a></strong></p>
+    <div class="footer">
+        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+    </div>
+</body>
+</html>

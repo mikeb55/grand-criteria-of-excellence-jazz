@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="4.0">
+  <work>
+    <work-title>The Mirror - Quartal Chord-Melody Etude</work-title>
+  </work>
+  <identification>
+    <creator type="composer">GCE Jazz - 7-Etude System</creator>
+    <rights>© 2025 Grand Criteria of Excellence</rights>
+    <encoding>
+      <software>Cursor AI - 7-Etude Generator v1.0</software>
+      <encoding-date>2025-12-07</encoding-date>
+    </encoding>
+  </identification>
+  <defaults>
+    <scaling><millimeters>6.35</millimeters><tenths>40</tenths></scaling>
+  </defaults>
+  <part-list>
+    <score-part id="P1">
+      <part-name>Jazz Guitar</part-name>
+      <part-abbreviation>Gtr.</part-abbreviation>
+    </score-part>
+  </part-list>
+  <part id="P1">
+    <!-- QUARTAL CHORD-MELODY: Stacked 4ths harmonizing melody -->
+    <!-- A Section Bars 1-4 -->
+    <measure number="1">
+      <attributes>
+        <divisions>24</divisions>
+        <key><fifths>-4</fifths><mode>major</mode></key>
+        <time><beats>4</beats><beat-type>4</beat-type></time>
+        <clef><sign>G</sign><line>2</line></clef>
+      </attributes>
+      <direction placement="above">
+        <direction-type><words font-size="12" font-weight="bold">Quartal Chord-Melody ♩= 60</words></direction-type>
+        <sound tempo="60"/>
+      </direction>
+      <direction placement="above">
+        <direction-type><words font-size="10" font-style="italic">Stacked 4ths, let ring</words></direction-type>
+      </direction>
+      <harmony><root><root-step>A</root-step><root-alter>-1</root-alter></root><kind>major-ninth</kind></harmony>
+      <!-- Eb quartal stack: Eb-Ab-Db (4ths) with melody Eb on top -->
+      <note><pitch><step>D</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type><notations><dynamics><p/></dynamics></notations></note>
+      <note><chord/><pitch><step>A</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+    </measure>
+    <measure number="2">
+      <harmony><root><root-step>F</root-step></root><kind text="m9">minor-ninth</kind></harmony>
+      <!-- Ab quartal stack: Ab-Db-Gb with melody Ab on top -->
+      <note><pitch><step>G</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>D</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>A</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+    </measure>
+    <measure number="3">
+      <harmony><root><root-step>D</root-step><root-alter>-1</root-alter></root><kind>major-seventh</kind><degree><degree-value>11</degree-value><degree-alter>1</degree-alter><degree-type>add</degree-type></degree></harmony>
+      <!-- G quartal stack: G-C-F with melody G (the #11) on top -->
+      <note><pitch><step>F</step><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>C</step><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>G</step><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+    </measure>
+    <measure number="4">
+      <harmony><root><root-step>E</root-step><root-alter>-1</root-alter></root><kind>suspended-fourth</kind></harmony>
+      <!-- Db→C resolution: Db quartal then C quartal -->
+      <note><pitch><step>A</step><alter>-1</alter><octave>3</octave></pitch><duration>48</duration><type>half</type></note>
+      <note><chord/><pitch><step>D</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><type>half</type></note>
+      <harmony><root><root-step>E</root-step><root-alter>-1</root-alter></root><kind>dominant</kind></harmony>
+      <note><pitch><step>G</step><octave>3</octave></pitch><duration>48</duration><type>half</type></note>
+      <note><chord/><pitch><step>C</step><octave>4</octave></pitch><duration>48</duration><type>half</type></note>
+    </measure>
+    <!-- A Section Bars 5-8 -->
+    <measure number="5">
+      <harmony><root><root-step>A</root-step><root-alter>-1</root-alter></root><kind>major-ninth</kind></harmony>
+      <note><pitch><step>D</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>A</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+    </measure>
+    <measure number="6">
+      <harmony><root><root-step>B</root-step><root-alter>-1</root-alter></root><kind text="m9">minor-ninth</kind></harmony>
+      <!-- Db quartal: Db-Gb-Cb with Db melody -->
+      <note><pitch><step>C</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>G</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>D</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+    </measure>
+    <measure number="7">
+      <harmony><root><root-step>G</root-step><root-alter>-1</root-alter></root><kind>major-seventh</kind></harmony>
+      <!-- F quartal: F-Bb-Eb with F melody -->
+      <note><pitch><step>E</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>B</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>F</step><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+    </measure>
+    <measure number="8">
+      <harmony><root><root-step>C</root-step></root><kind>minor-seventh</kind></harmony>
+      <note><pitch><step>E</step><alter>-1</alter><octave>3</octave></pitch><duration>48</duration><type>half</type></note>
+      <note><chord/><pitch><step>B</step><alter>-1</alter><octave>3</octave></pitch><duration>48</duration><type>half</type></note>
+      <harmony><root><root-step>F</root-step></root><kind>minor-seventh</kind></harmony>
+      <note><pitch><step>E</step><alter>-1</alter><octave>3</octave></pitch><duration>48</duration><type>half</type></note>
+      <note><chord/><pitch><step>A</step><alter>-1</alter><octave>3</octave></pitch><duration>48</duration><type>half</type></note>
+    </measure>
+    <!-- B Section (Bridge) Bars 9-12 -->
+    <measure number="9">
+      <direction placement="above"><direction-type><rehearsal>B</rehearsal></direction-type></direction>
+      <harmony><root><root-step>B</root-step></root><kind>major-seventh</kind><degree><degree-value>11</degree-value><degree-alter>1</degree-alter><degree-type>add</degree-type></degree></harmony>
+      <!-- D#/Eb quartal: inverted for mirror effect -->
+      <note><pitch><step>A</step><alter>1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>D</step><alter>1</alter><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>G</step><alter>1</alter><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+    </measure>
+    <measure number="10">
+      <harmony><root><root-step>E</root-step></root><kind>major-seventh</kind></harmony>
+      <!-- G# quartal: G#-C#-F# -->
+      <note><pitch><step>C</step><alter>1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>F</step><alter>1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>G</step><alter>1</alter><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+    </measure>
+    <measure number="11">
+      <harmony><root><root-step>B</root-step><root-alter>-1</root-alter></root><kind>minor-seventh</kind></harmony>
+      <!-- F quartal: F-Bb-Eb -->
+      <note><pitch><step>E</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>B</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>F</step><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+    </measure>
+    <measure number="12">
+      <harmony><root><root-step>E</root-step><root-alter>-1</root-alter></root><kind>dominant</kind><degree><degree-value>9</degree-value><degree-alter>-1</degree-alter><degree-type>alter</degree-type></degree></harmony>
+      <!-- Gb (b9) quartal: Gb-Cb-Fb resolving -->
+      <note><pitch><step>C</step><alter>-1</alter><octave>3</octave></pitch><duration>48</duration><type>half</type></note>
+      <note><chord/><pitch><step>G</step><alter>-1</alter><octave>3</octave></pitch><duration>48</duration><type>half</type></note>
+      <note><pitch><step>B</step><alter>-1</alter><octave>3</octave></pitch><duration>48</duration><type>half</type></note>
+      <note><chord/><pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><type>half</type></note>
+    </measure>
+    <!-- A' Section (Mirror) Bars 13-16: INVERTED quartal motion -->
+    <measure number="13">
+      <direction placement="above"><direction-type><rehearsal>A'</rehearsal></direction-type></direction>
+      <direction placement="above"><direction-type><words font-size="9" font-style="italic">Mirror: inverted quartal stacks</words></direction-type></direction>
+      <harmony><root><root-step>A</root-step><root-alter>-1</root-alter></root><kind>major-ninth</kind></harmony>
+      <!-- Inverted: 5ths instead of 4ths (Eb-Bb-F) -->
+      <note><pitch><step>B</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>F</step><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>E</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+    </measure>
+    <measure number="14">
+      <harmony><root><root-step>F</root-step></root><kind>minor-11th</kind></harmony>
+      <!-- Bb quintal stack inverted -->
+      <note><pitch><step>F</step><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>C</step><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>B</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+    </measure>
+    <measure number="15">
+      <harmony><root><root-step>D</root-step><root-alter>-1</root-alter></root><kind>major-ninth</kind></harmony>
+      <note><pitch><step>G</step><octave>3</octave></pitch><duration>48</duration><type>half</type></note>
+      <note><chord/><pitch><step>D</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><type>half</type></note>
+      <note><chord/><pitch><step>C</step><octave>4</octave></pitch><duration>48</duration><type>half</type></note>
+      <harmony><root><root-step>D</root-step><root-alter>-1</root-alter></root><kind>minor-major</kind></harmony>
+      <!-- Cb melody: chromatic shift -->
+      <note><pitch><step>G</step><alter>-1</alter><octave>3</octave></pitch><duration>48</duration><type>half</type></note>
+      <note><chord/><pitch><step>D</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><type>half</type></note>
+      <note><chord/><pitch><step>C</step><alter>-1</alter><octave>4</octave></pitch><duration>48</duration><type>half</type></note>
+    </measure>
+    <measure number="16">
+      <harmony><root><root-step>A</root-step><root-alter>-1</root-alter></root><kind>major-seventh</kind><bass><bass-step>E</bass-step><bass-alter>-1</bass-alter></bass></harmony>
+      <!-- Final Ab quintal resolution -->
+      <note><pitch><step>E</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>B</step><alter>-1</alter><octave>3</octave></pitch><duration>96</duration><type>whole</type></note>
+      <note><chord/><pitch><step>A</step><alter>-1</alter><octave>4</octave></pitch><duration>96</duration><type>whole</type></note>
+      <barline location="right"><bar-style>light-heavy</bar-style></barline>
+    </measure>
+  </part>
+</score-partwise>
+
+

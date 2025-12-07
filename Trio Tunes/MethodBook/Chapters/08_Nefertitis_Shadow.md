@@ -258,3 +258,4 @@ When playing, imagine the melody as a figure walking, and the harmony as its sha
 
 **← [Monk's Dream](07_Monks_Dream.md) | [Next: Greezy →](09_Greezy.md)**
 
+

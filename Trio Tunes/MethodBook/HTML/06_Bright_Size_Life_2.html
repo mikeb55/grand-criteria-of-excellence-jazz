@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>06 Bright Size Life 2 - Trio Tunes Method Book</title>
+    
+<style>
+@page {
+    size: letter;
+    margin: 0.75in 0.75in 1in 0.75in;
+}
+
+@media print {
+    body { font-size: 11pt; }
+    .page-break { page-break-before: always; }
+    pre, table { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    .no-print { display: none; }
+    .back-to-toc { display: none; }
+    a { text-decoration: none; color: #222; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+/* TABLE OF CONTENTS STYLES */
+.toc-container {
+    border: 2px solid #333;
+    padding: 30px 40px;
+    margin: 30px 0 50px 0;
+    background: #fafafa;
+}
+
+.toc-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 22pt;
+}
+
+.toc-chapter {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.toc-chapter:last-child {
+    border-bottom: none;
+}
+
+.toc-chapter-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.toc-chapter-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.toc-chapter-title a:hover {
+    text-decoration: underline;
+}
+
+.toc-chapter-num {
+    color: #666;
+    font-weight: normal;
+}
+
+.toc-subheadings {
+    margin-left: 25px;
+    font-size: 11pt;
+    color: #444;
+}
+
+.toc-subheadings a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toc-subheadings a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO TOC LINK */
+.back-to-toc {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-toc:hover {
+    background: #e0e0e0;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26pt;
+    color: #1a1a2e;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16pt;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13pt;
+    color: #333;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+p { margin-bottom: 12px; text-align: justify; }
+
+ul, ol { margin-left: 25px; margin-bottom: 12px; }
+
+li { margin-bottom: 6px; }
+
+/* TABLES - Printer friendly */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+
+/* CODE - Printer friendly */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    border: 1px solid #ddd;
+}
+
+pre {
+    background-color: #f8f8f8;
+    color: #222;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #222;
+}
+
+blockquote {
+    border-left: 3px solid #666;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 35px 0;
+}
+
+strong { color: #111; }
+em { color: #333; }
+a { color: #333; }
+
+/* Header banner */
+.header-banner {
+    border: 2px solid #333;
+    padding: 25px 30px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.header-banner h1 {
+    color: #111;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 28pt;
+}
+
+.header-banner p {
+    color: #444;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+}
+
+.chapter-divider {
+    border-top: 3px double #333;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+}
+
+.print-instructions {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-instructions { display: none; }
+    .header-banner { margin-top: 0; }
+}
+</style>
+
+</head>
+<body>
+    <h1 id="chapter-6-bright-size-life-2">CHAPTER 6: BRIGHT SIZE LIFE 2</h1>
+<p><strong>Style:</strong> Pat Metheny | <strong>Key:</strong> D Major | <strong>Tempo:</strong> 145 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Triad pairs moving constantly over a pedal."</em></p>
+<p>Named in tribute to Pat Metheny's landmark album, this tune captures his signature sound: bright, flowing lines over pedal tones with constant harmonic motion. The key of D allows extensive use of open strings, creating the characteristic "ringing" Metheny texture.</p>
+<p><strong>Playing Tip:</strong> Play with a light, fluid touch; no hard accents.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>32-bar form with pedal-point A sections:</p>
+<pre><code>A Section (8 bars) - D Pedal:
+| Dmaj7   | Em7/D   | F#m7/D  | Gmaj7/D |
+| Dmaj7   | A/D     | Bm7/D   | Asus4   |
+
+B Section (8 bars) - Moving Bass:
+| Bbmaj7  | Cmaj7   | Ebmaj7  | Fmaj7   |
+| Abmaj7  | Bbmaj7  | Dbmaj7  | A7sus4  |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>D pedal</strong>: Entire A section has D in the bass</li>
+<li><strong>Major 7th cycle</strong>: B section moves through distant major 7ths</li>
+<li><strong>Pentatonic melodies</strong>: Strong emphasis on D major pentatonic</li>
+<li><strong>Lydian colors</strong>: Many chords suggest Lydian (#11) sonority</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Metheny Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dmaj7</td>
+<td style="text-align: left;">D Lydian</td>
+<td style="text-align: left;">#11 (G#) for brightness</td>
+</tr>
+<tr>
+<td style="text-align: left;">Em7/D</td>
+<td style="text-align: left;">E Dorian</td>
+<td style="text-align: left;">Natural 6 (C#)</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#m7/D</td>
+<td style="text-align: left;">F# Phrygian</td>
+<td style="text-align: left;">Dark but over bright D</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbmaj7</td>
+<td style="text-align: left;">Bb Lydian</td>
+<td style="text-align: left;">E natural (#11)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebmaj7</td>
+<td style="text-align: left;">Eb Lydian</td>
+<td style="text-align: left;">A natural (#11)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7</td>
+<td style="text-align: left;">Db Lydian</td>
+<td style="text-align: left;">G natural (#11)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-metheny-sound">The Metheny Sound</h3>
+<p>Pat Metheny builds lines from:
+- <strong>Pentatonic scales</strong> as the core
+- <strong>Lydian extensions</strong> for color
+- <strong>Arpeggiated triads</strong> in constant motion
+- <strong>Open strings</strong> for sustain and resonance</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Metheny Application</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dmaj7</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">9, #11, 6 = Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Em7/D</td>
+<td style="text-align: left;">E Minor</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">Dorian color</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbmaj7</td>
+<td style="text-align: left;">Bb Major</td>
+<td style="text-align: left;">C Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebmaj7</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">F Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-metheny-pattern">The "Metheny Pattern"</h3>
+<p>Over Dmaj7, this pattern captures the sound:</p>
+<pre><code>D - F# - A - E - G# - B - D - E
+(D maj)     (E maj)     (return)
+</code></pre>
+<p>Continuous eighth notes, light articulation, ringing sustain.</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-pentatonic-version-a">Chorus 1: Lyrical Pentatonic (Version A)</h3>
+<p><strong>Concept:</strong> Singing melodies using major pentatonic</p>
+<ul>
+<li>Core notes: D - E - F# - A - B (D major pentatonic)</li>
+<li>Add C# for Lydian moments</li>
+<li>Phrases should arc naturally—up then down</li>
+<li>Target chord tones on downbeats</li>
+</ul>
+<p><strong>Phrase Shape:</strong></p>
+<pre><code>Bars 1-2: Ascending (question)
+Bars 3-4: Descending (answer)
+Bars 5-8: Development and resolution
+</code></pre>
+<h3 id="chorus-2-constant-triad-motion-version-b">Chorus 2: Constant Triad Motion (Version B)</h3>
+<p><strong>Concept:</strong> Non-stop triad arpeggiation</p>
+<ul>
+<li>Use the D/E triad pair over the A section</li>
+<li>B section: New triad pair for each chord</li>
+<li>Continuous eighth notes—never stop moving</li>
+<li>Slight accents on chord changes only</li>
+</ul>
+<p><strong>Pattern:</strong></p>
+<pre><code>| D triad up | E triad down | D triad up | E triad down |
+</code></pre>
+<h3 id="chorus-3-pedal-point-counterpoint-version-c">Chorus 3: Pedal Point Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Open D drone with independent melody</p>
+<p><strong>Texture:</strong>
+- <strong>Bass</strong>: Open D string (continuous)
+- <strong>Melody</strong>: Arpeggiated lines on upper strings</p>
+<p>This creates a "harp-like" effect characteristic of Metheny's acoustic work.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="pedal-point-voicings">Pedal Point Voicings</h3>
+<pre><code>Dmaj7:    x-5-4-6-5-x or 0-5-4-6-5-x (open D)
+Em7/D:    0-5-4-5-5-x (D in bass)
+F#m7/D:   0-x-4-6-5-x (D in bass)
+Gmaj7/D:  0-5-4-4-3-x (D in bass)
+A/D:      0-5-4-6-5-x (A triad over D)
+</code></pre>
+<h3 id="b-section-voicings">B Section Voicings</h3>
+<pre><code>Bbmaj7:   x-1-0-2-3-x (first position)
+Cmaj7:    x-3-2-4-5-x 
+Ebmaj7:   x-6-5-7-8-x
+Dbmaj7:   x-4-3-5-6-x
+Abmaj7:   4-x-5-5-4-x
+</code></pre>
+<hr />
+<h2 id="technique-the-metheny-touch">TECHNIQUE: THE METHENY TOUCH</h2>
+<h3 id="right-hand">Right Hand</h3>
+<ul>
+<li><strong>Light attack</strong>: The pick barely touches the string</li>
+<li><strong>Follow-through</strong>: Let the pick glide through, not chop</li>
+<li><strong>Consistent dynamics</strong>: Every note at the same level</li>
+<li><strong>Slight palm muting</strong>: For the characteristic "thump"</li>
+</ul>
+<h3 id="left-hand">Left Hand</h3>
+<ul>
+<li><strong>Legato</strong>: Use hammer-ons and pull-offs liberally</li>
+<li><strong>Let ring</strong>: Don't dampen notes prematurely</li>
+<li><strong>Finger independence</strong>: Melody moves while drone sustains</li>
+</ul>
+<h3 id="the-ringing-effect">The "Ringing" Effect</h3>
+<p>Use open strings whenever possible:</p>
+<pre><code>Over Dmaj7:  D (open) - F# (string 1, fret 2) - A (open) - E (open)
+</code></pre>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-pentatonic-foundation">Week 1: Pentatonic Foundation</h3>
+<ul>
+<li>[ ] Master D major pentatonic in all positions</li>
+<li>[ ] Add C# for Lydian extension</li>
+<li>[ ] Practice Version A melody</li>
+</ul>
+<h3 id="week-2-triad-pairs">Week 2: Triad Pairs</h3>
+<ul>
+<li>[ ] Drill D/E major triad pair</li>
+<li>[ ] Apply to the entire A section</li>
+<li>[ ] Work on Version B at slow tempo (80 BPM)</li>
+</ul>
+<h3 id="week-3-pedal-technique">Week 3: Pedal Technique</h3>
+<ul>
+<li>[ ] Practice maintaining open D while playing melody</li>
+<li>[ ] Work on independence between bass and treble</li>
+<li>[ ] Develop Version C</li>
+</ul>
+<h3 id="week-4-the-flow">Week 4: The Flow</h3>
+<ul>
+<li>[ ] Play all three choruses consecutively</li>
+<li>[ ] Work on consistent dynamics (no accents)</li>
+<li>[ ] Practice with a delay pedal (dotted eighth)</li>
+</ul>
+<hr />
+<h2 id="delay-settings">DELAY SETTINGS</h2>
+<p>The "Metheny delay" is essential for this sound:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Setting</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Time</td>
+<td style="text-align: left;">Dotted eighth (562ms at 145 BPM)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Feedback</td>
+<td style="text-align: left;">2-3 repeats</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mix</td>
+<td style="text-align: left;">30-40% wet</td>
+</tr>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">Analog or tape emulation</td>
+</tr>
+</tbody>
+</table>
+<p>The delay creates rhythmic complexity from simple lines.</p>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Pat Metheny</strong> — <em>Bright Size Life</em> (the original)</li>
+<li><strong>Pat Metheny Group</strong> — <em>Offramp</em> (group sound)</li>
+<li><strong>Pat Metheny</strong> — <em>One Quiet Night</em> (solo acoustic)</li>
+<li><strong>Pat Metheny &amp; Charlie Haden</strong> — <em>Beyond the Missouri Sky</em></li>
+<li><strong>Lyle Mays</strong> — <em>Lyle Mays</em> (Metheny's keyboard partner)</li>
+</ol>
+<hr />
+<h2 id="tone-tips">TONE TIPS</h2>
+<p>For the Metheny sound:
+- <strong>Guitar</strong>: Hollowbody or semi-hollow (Gibson ES-175, Ibanez PM)
+- <strong>Amp</strong>: Roland JC-120 or similar clean solid-state
+- <strong>Delay</strong>: Essential—dotted eighth
+- <strong>Chorus</strong>: Optional, light modulation
+- <strong>Compression</strong>: Light, for sustain</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Accenting notes</strong>: Keep dynamics absolutely even</li>
+<li><strong>Losing the pedal</strong>: The D should ring throughout</li>
+<li><strong>Too stiff</strong>: The lines should flow like water</li>
+<li><strong>Overusing delay</strong>: The delay enhances, but the playing must be clean</li>
+<li><strong>Wrong triad pair</strong>: D/E for A section, new pair each chord in B</li>
+</ol>
+<hr />
+<h2 id="the-bright-size-concept">THE "BRIGHT SIZE" CONCEPT</h2>
+<p>The title refers to the expansive, optimistic quality of the music:
+- <strong>Bright</strong>: Major tonality, open strings, ringing sustain
+- <strong>Size</strong>: Wide intervallic range, sense of space
+- <strong>Life</strong>: Forward motion, continuous flow</p>
+<p>Think of sunlight on water—constant movement, unchanging brightness.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Are my dynamics completely even?</li>
+<li>[ ] Does the D pedal sustain throughout the A section?</li>
+<li>[ ] Can I play continuous eighth notes without tension?</li>
+<li>[ ] Does my delay sound musical (not cluttered)?</li>
+<li>[ ] Is there a sense of flow and forward motion?</li>
+</ul>
+<hr />
+<p><strong>← <a href="05_The_Mirror.md">The Mirror</a> | <a href="07_Monks_Dream.md">Next: Monk's Dream →</a></strong></p>
+    <div class="footer">
+        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+    </div>
+</body>
+</html>

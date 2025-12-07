@@ -129,3 +129,4 @@ Turn to **Chapter 1: Blue Cycle** to start your journey through the Trio Tunes c
 
 **Next Chapter: [Tune 1 - Blue Cycle →](01_Blue_Cycle.md)**
 
+

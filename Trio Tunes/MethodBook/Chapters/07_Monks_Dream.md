@@ -271,3 +271,4 @@ When playing this tune, think in curves, not straight lines.
 
 **← [Bright Size Life 2](06_Bright_Size_Life_2.md) | [Next: Nefertiti's Shadow →](08_Nefertitis_Shadow.md)**
 
+

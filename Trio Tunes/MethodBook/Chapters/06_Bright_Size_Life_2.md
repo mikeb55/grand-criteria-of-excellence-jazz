@@ -259,3 +259,4 @@ Think of sunlight on water—constant movement, unchanging brightness.
 
 **← [The Mirror](05_The_Mirror.md) | [Next: Monk's Dream →](07_Monks_Dream.md)**
 
+
