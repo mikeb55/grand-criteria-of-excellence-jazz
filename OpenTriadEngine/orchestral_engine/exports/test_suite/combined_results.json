@@ -1,0 +1,97 @@
+{
+  "test_suite": "Orchestral Engine Automated Test Suite v1.0",
+  "generated": "2025-12-08T13:54:23.241616",
+  "total_tests": 10,
+  "passed": 10,
+  "failed": 0,
+  "results": {
+    "test_1": {
+      "name": "Orchestral Open-Triad Expansion",
+      "key": "C major",
+      "bars": 8,
+      "texture": "homophonic",
+      "instruments": 6,
+      "all_in_range": true,
+      "status": "PASS"
+    },
+    "test_2": {
+      "name": "Functional ii-V-I",
+      "key": "G major",
+      "bars": 4,
+      "vl_sm_mode": "APVL + TRAM",
+      "status": "PASS"
+    },
+    "test_3": {
+      "name": "Modal Harmonic Field",
+      "key": "D Dorian",
+      "bars": 6,
+      "texture": "harmonic_field",
+      "vl_sm_mode": "SISM spacing",
+      "status": "PASS"
+    },
+    "test_4": {
+      "name": "Contrapuntal Orchestral Writing",
+      "key": "A minor",
+      "bars": 4,
+      "texture": "contrapuntal",
+      "voice_independence": "preserved",
+      "status": "PASS"
+    },
+    "test_5": {
+      "name": "Triad-Pair Orchestral Texture",
+      "key": "E Phrygian",
+      "bars": 6,
+      "triad_pair": "Fmaj - Gmaj",
+      "status": "PASS"
+    },
+    "test_6": {
+      "name": "Hybrid Texture with Melody",
+      "key": "Bb Lydian",
+      "bars": 8,
+      "texture": "hybrid",
+      "melody_instrument": "flute",
+      "status": "PASS"
+    },
+    "test_7": {
+      "name": "Ostinato + Pads",
+      "key": "F Lydian",
+      "bars": 6,
+      "texture": "ostinato",
+      "pattern": "3:2 polyrhythm",
+      "status": "PASS"
+    },
+    "test_8": {
+      "name": "High vs Low Register Profiles",
+      "key": "E major",
+      "bars": "4 each",
+      "version_a": {
+        "profile": "bright/high",
+        "in_range": true
+      },
+      "version_b": {
+        "profile": "dark/low",
+        "in_range": true
+      },
+      "status": "PASS"
+    },
+    "test_9": {
+      "name": "Full Scene Sketch (Cinematic)",
+      "key": "C melodic minor",
+      "bars": 12,
+      "texture": "hybrid",
+      "motion_type": "cinematic",
+      "status": "PASS"
+    },
+    "test_10": {
+      "name": "Diagnostic Bundle",
+      "output": "test_10_diagnostics.json",
+      "validations": {
+        "spacing": "valid",
+        "registers": "all in range",
+        "vl_sm": "all modes tested",
+        "orchestration": "all profiles tested"
+      },
+      "status": "PASS"
+    }
+  }
+}

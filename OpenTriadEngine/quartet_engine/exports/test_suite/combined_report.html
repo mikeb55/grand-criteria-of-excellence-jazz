@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quartet Engine Test Suite Report</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --bg: #0d1117;
+            --surface: #161b22;
+            --border: #30363d;
+            --text: #c9d1d9;
+            --accent: #58a6ff;
+            --success: #3fb950;
+        }
+        
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent);
+            font-size: 2.5rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 1rem;
+        }
+        
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .stat {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
+        .stat-value {
+            font-size: 2rem;
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+        
+        .test {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .test h2 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+        
+        .test-details {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        
+        .detail {
+            padding: 0.5rem;
+            background: rgba(0,0,0,0.2);
+            border-radius: 4px;
+        }
+        
+        .detail span:first-child {
+            color: #8b949e;
+        }
+        
+        .pass {
+            color: var(--success);
+            font-weight: bold;
+        }
+        
+        .files {
+            color: #8b949e;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            color: #8b949e;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎻 Quartet Engine Test Suite Report</h1>
+        
+        <div class="summary">
+            <div class="stat">
+                <div class="stat-value">10</div>
+                <div class="stat-label">Total Tests</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">10</div>
+                <div class="stat-label">Passed</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Failed</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Success Rate</div>
+            </div>
+        </div>
+        
+        
+            <section class="test">
+                <h2>TEST 1: Basic Open-Triad Homophonic Voicing</h2>
+                <div class="test-details">
+                    <div class="detail"><span>Key:</span> C major</div>
+                    <div class="detail"><span>Bars:</span> 8</div>
+                    <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+                    <div class="detail"><span>Notes:</span> 32</div>
+                </div>
+                <p class="files">Files: test_01.json, test_01.musicxml</p>
+            </section>
+            
+            <section class="test">
+                <h2>TEST 2: Functional ii-V-I Voice-Leading</h2>
+                <div class="test-details">
+                    <div class="detail"><span>Key:</span> G major</div>
+                    <div class="detail"><span>Bars:</span> 4</div>
+                    <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+                    <div class="detail"><span>Notes:</span> 16</div>
+                </div>
+                <p class="files">Files: test_02.json, test_02.musicxml</p>
+            </section>
+            
+            <section class="test">
+                <h2>TEST 3: Modal Harmonic Field</h2>
+                <div class="test-details">
+                    <div class="detail"><span>Key:</span> D Dorian</div>
+                    <div class="detail"><span>Bars:</span> 6</div>
+                    <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+                    <div class="detail"><span>Notes:</span> 48</div>
+                </div>
+                <p class="files">Files: test_03.json, test_03.musicxml</p>
+            </section>
+            
+            <section class="test">
+                <h2>TEST 4: Strict Contrapuntal Writing</h2>
+                <div class="test-details">
+                    <div class="detail"><span>Key:</span> A minor</div>
+                    <div class="detail"><span>Bars:</span> 4</div>
+                    <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+                    <div class="detail"><span>Notes:</span> 57</div>
+                </div>
+                <p class="files">Files: test_04.json, test_04.musicxml</p>
+            </section>
+            
+            <section class="test">
+                <h2>TEST 5: Triad-Pair Quartet Texture</h2>
+                <div class="test-details">
+                    <div class="detail"><span>Key:</span> E Phrygian</div>
+                    <div class="detail"><span>Bars:</span> 6</div>
+                    <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+                    <div class="detail"><span>Notes:</span> 96</div>
+                </div>
+                <p class="files">Files: test_05.json, test_05.musicxml</p>
+            </section>
+            
+            <section class="test">
+                <h2>TEST 6: Rotating Voicing Assignment</h2>
+                <div class="test-details">
+                    <div class="detail"><span>Key:</span> Bb Lydian</div>
+                    <div class="detail"><span>Bars:</span> 8</div>
+                    <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+                    <div class="detail"><span>Notes:</span> 32</div>
+                </div>
+                <p class="files">Files: test_06.json, test_06.musicxml</p>
+            </section>
+            
+            <section class="test">
+                <h2>TEST 7: Hybrid Texture</h2>
+                <div class="test-details">
+                    <div class="detail"><span>Key:</span> A harmonic minor</div>
+                    <div class="detail"><span>Bars:</span> 8</div>
+                    <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+                    <div class="detail"><span>Notes:</span> 112</div>
+                </div>
+                <p class="files">Files: test_07.json, test_07.musicxml</p>
+            </section>
+            
+            <section class="test">
+                <h2>TEST 8: Rhythmic Cell Test</h2>
+                <div class="test-details">
+                    <div class="detail"><span>Key:</span> F Lydian</div>
+                    <div class="detail"><span>Bars:</span> 6</div>
+                    <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+                    <div class="detail"><span>Notes:</span> 60</div>
+                </div>
+                <p class="files">Files: test_08.json, test_08.musicxml</p>
+            </section>
+            
+            <section class="test">
+                <h2>TEST 9: Register Profile Test</h2>
+                <div class="test-details">
+                    <div class="detail"><span>Key:</span> E major</div>
+                    <div class="detail"><span>Bars:</span> 4 each</div>
+                    <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+                    <div class="detail"><span>Notes:</span> N/A</div>
+                </div>
+                <p class="files">Files: test_09.json, test_09.musicxml</p>
+            </section>
+            
+            <section class="test">
+                <h2>TEST 10: Full 12-Bar Quartet Sketch</h2>
+                <div class="test-details">
+                    <div class="detail"><span>Key:</span> C melodic minor</div>
+                    <div class="detail"><span>Bars:</span> 12</div>
+                    <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+                    <div class="detail"><span>Notes:</span> 176</div>
+                </div>
+                <p class="files">Files: test_10.json, test_10.musicxml</p>
+            </section>
+            
+        
+        <footer>
+            Generated by Quartet Engine v1.0 | 2025-12-08 13:43
+        </footer>
+    </div>
+</body>
+</html>

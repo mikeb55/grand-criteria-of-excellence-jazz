@@ -1,0 +1,380 @@
+{
+  "quartet_engine_version": "1.0.0",
+  "generated": "2025-12-08T13:43:08.338525",
+  "score": {
+    "title": "Test 6: Bb Lydian Rotating Voicings",
+    "composer": "Quartet Engine",
+    "key": "Bb",
+    "time_signature": [
+      4,
+      4
+    ],
+    "tempo": 80,
+    "bars": 8,
+    "voices": {
+      "violin_1": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 62,
+          "step": "D",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 5,
+          "beat": 1.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 6,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 7,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 8,
+          "beat": 1.0,
+          "pitch": 62,
+          "step": "D",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        }
+      ],
+      "violin_2": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 62,
+          "step": "D",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 5,
+          "beat": 1.0,
+          "pitch": 62,
+          "step": "D",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 6,
+          "beat": 1.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 7,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 8,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        }
+      ],
+      "viola": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 62,
+          "step": "D",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 5,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 6,
+          "beat": 1.0,
+          "pitch": 62,
+          "step": "D",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 7,
+          "beat": 1.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 8,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        }
+      ],
+      "cello": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 46,
+          "step": "A",
+          "octave": 2,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 62,
+          "step": "D",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 5,
+          "beat": 1.0,
+          "pitch": 46,
+          "step": "A",
+          "octave": 2,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 6,
+          "beat": 1.0,
+          "pitch": 58,
+          "step": "A",
+          "octave": 3,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 7,
+          "beat": 1.0,
+          "pitch": 62,
+          "step": "D",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 8,
+          "beat": 1.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        }
+      ]
+    },
+    "texture": "harmonic_field",
+    "analysis": "Rotating voicing: triad roles cycle through instruments each bar",
+    "metadata": {}
+  }
+}

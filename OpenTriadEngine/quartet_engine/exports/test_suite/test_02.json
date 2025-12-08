@@ -1,0 +1,204 @@
+{
+  "quartet_engine_version": "1.0.0",
+  "generated": "2025-12-08T13:43:08.298787",
+  "score": {
+    "title": "Test 2: ii-V-I in G Major",
+    "composer": "Quartet Engine",
+    "key": "G",
+    "time_signature": [
+      4,
+      4
+    ],
+    "tempo": 80,
+    "bars": 4,
+    "voices": {
+      "violin_1": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 74,
+          "step": "D",
+          "octave": 5,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 76,
+          "step": "E",
+          "octave": 5,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 78,
+          "step": "F",
+          "octave": 5,
+          "alter": 1,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 67,
+          "step": "G",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        }
+      ],
+      "violin_2": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 71,
+          "step": "B",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 72,
+          "step": "C",
+          "octave": 5,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 74,
+          "step": "D",
+          "octave": 5,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 64,
+          "step": "E",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        }
+      ],
+      "viola": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 67,
+          "step": "G",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 69,
+          "step": "A",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 71,
+          "step": "B",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 60,
+          "step": "C",
+          "octave": 4,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        }
+      ],
+      "cello": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 55,
+          "step": "G",
+          "octave": 3,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 57,
+          "step": "A",
+          "octave": 3,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 59,
+          "step": "B",
+          "octave": 3,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 48,
+          "step": "C",
+          "octave": 3,
+          "alter": 0,
+          "duration": 4.0,
+          "articulation": null,
+          "dynamic": null
+        }
+      ]
+    },
+    "texture": "homophonic",
+    "analysis": "Homophonic texture with 1 chord(s) per bar",
+    "metadata": {}
+  }
+}

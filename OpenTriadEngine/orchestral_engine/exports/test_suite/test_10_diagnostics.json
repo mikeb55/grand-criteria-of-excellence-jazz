@@ -1,0 +1,2752 @@
+{
+  "test_suite": "Orchestral Engine Automated Test Suite v1.0",
+  "generated": "2025-12-08T13:54:23.237063",
+  "summary": {
+    "total_tests": 10,
+    "passed": 10,
+    "failed": 0
+  },
+  "test_diagnostics": {
+    "test_1": {
+      "bars": 8,
+      "texture_type": "homophonic",
+      "instruments_used": [
+        "bass",
+        "cello",
+        "viola",
+        "violin_2",
+        "clarinet",
+        "flugelhorn"
+      ],
+      "register_ranges": {
+        "bass": {
+          "min": 36,
+          "max": 47,
+          "instrument_range": [
+            28,
+            60
+          ],
+          "in_range": true
+        },
+        "cello": {
+          "min": 48,
+          "max": 59,
+          "instrument_range": [
+            36,
+            76
+          ],
+          "in_range": true
+        },
+        "viola": {
+          "min": 64,
+          "max": 74,
+          "instrument_range": [
+            48,
+            81
+          ],
+          "in_range": true
+        },
+        "violin_2": {
+          "min": 67,
+          "max": 77,
+          "instrument_range": [
+            55,
+            86
+          ],
+          "in_range": true
+        },
+        "clarinet": {
+          "min": 64,
+          "max": 74,
+          "instrument_range": [
+            50,
+            93
+          ],
+          "in_range": true
+        },
+        "flugelhorn": {
+          "min": 67,
+          "max": 77,
+          "instrument_range": [
+            54,
+            86
+          ],
+          "in_range": true
+        }
+      },
+      "spacing_analysis": {
+        "bar_1_beat_1.0": {
+          "intervals": [
+            12,
+            16,
+            0,
+            3,
+            0
+          ],
+          "max_gap": 16,
+          "min_gap": 0
+        },
+        "bar_2_beat_1.0": {
+          "intervals": [
+            12,
+            15,
+            0,
+            4,
+            0
+          ],
+          "max_gap": 15,
+          "min_gap": 0
+        },
+        "bar_3_beat_1.0": {
+          "intervals": [
+            12,
+            15,
+            0,
+            4,
+            0
+          ],
+          "max_gap": 15,
+          "min_gap": 0
+        },
+        "bar_4_beat_1.0": {
+          "intervals": [
+            12,
+            16,
+            0,
+            3,
+            0
+          ],
+          "max_gap": 16,
+          "min_gap": 0
+        },
+        "bar_5_beat_1.0": {
+          "intervals": [
+            12,
+            16,
+            0,
+            3,
+            0
+          ],
+          "max_gap": 16,
+          "min_gap": 0
+        },
+        "bar_6_beat_1.0": {
+          "intervals": [
+            12,
+            15,
+            0,
+            4,
+            0
+          ],
+          "max_gap": 15,
+          "min_gap": 0
+        },
+        "bar_7_beat_1.0": {
+          "intervals": [
+            12,
+            15,
+            0,
+            3,
+            0
+          ],
+          "max_gap": 15,
+          "min_gap": 0
+        },
+        "bar_8_beat_1.0": {
+          "intervals": [
+            12,
+            16,
+            0,
+            3,
+            0
+          ],
+          "max_gap": 16,
+          "min_gap": 0
+        }
+      },
+      "vl_sm_mode": "modal",
+      "orchestration_profile": "warm",
+      "register_profile": "mixed"
+    },
+    "test_2": {
+      "bars": 4,
+      "texture_type": "homophonic",
+      "instruments_used": [
+        "bass",
+        "cello",
+        "viola",
+        "violin_2",
+        "clarinet",
+        "flugelhorn"
+      ],
+      "register_ranges": {
+        "bass": {
+          "min": 43,
+          "max": 48,
+          "instrument_range": [
+            28,
+            60
+          ],
+          "in_range": true
+        },
+        "cello": {
+          "min": 55,
+          "max": 60,
+          "instrument_range": [
+            36,
+            76
+          ],
+          "in_range": true
+        },
+        "viola": {
+          "min": 71,
+          "max": 76,
+          "instrument_range": [
+            48,
+            81
+          ],
+          "in_range": true
+        },
+        "violin_2": {
+          "min": 74,
+          "max": 79,
+          "instrument_range": [
+            55,
+            86
+          ],
+          "in_range": true
+        },
+        "clarinet": {
+          "min": 71,
+          "max": 76,
+          "instrument_range": [
+            50,
+            93
+          ],
+          "in_range": true
+        },
+        "flugelhorn": {
+          "min": 74,
+          "max": 79,
+          "instrument_range": [
+            54,
+            86
+          ],
+          "in_range": true
+        }
+      },
+      "spacing_analysis": {
+        "bar_1_beat_1.0": {
+          "intervals": [
+            12,
+            16,
+            0,
+            3,
+            0
+          ],
+          "max_gap": 16,
+          "min_gap": 0
+        },
+        "bar_2_beat_1.0": {
+          "intervals": [
+            12,
+            15,
+            0,
+            4,
+            0
+          ],
+          "max_gap": 15,
+          "min_gap": 0
+        },
+        "bar_3_beat_1.0": {
+          "intervals": [
+            12,
+            15,
+            0,
+            4,
+            0
+          ],
+          "max_gap": 15,
+          "min_gap": 0
+        },
+        "bar_4_beat_1.0": {
+          "intervals": [
+            12,
+            16,
+            0,
+            3,
+            0
+          ],
+          "max_gap": 16,
+          "min_gap": 0
+        }
+      },
+      "vl_sm_mode": "functional",
+      "orchestration_profile": "warm",
+      "register_profile": "mixed"
+    },
+    "test_3": {
+      "bars": 6,
+      "texture_type": "harmonic_field",
+      "instruments_used": [
+        "flute",
+        "clarinet",
+        "violin_1",
+        "violin_2",
+        "viola",
+        "cello",
+        "bass",
+        "piano"
+      ],
+      "register_ranges": {
+        "flute": {
+          "min": 81,
+          "max": 91,
+          "instrument_range": [
+            60,
+            96
+          ],
+          "in_range": true
+        },
+        "clarinet": {
+          "min": 65,
+          "max": 76,
+          "instrument_range": [
+            50,
+            93
+          ],
+          "in_range": true
+        },
+        "violin_1": {
+          "min": 69,
+          "max": 79,
+          "instrument_range": [
+            55,
+            100
+          ],
+          "in_range": true
+        },
+        "violin_2": {
+          "min": 65,
+          "max": 76,
+          "instrument_range": [
+            55,
+            86
+          ],
+          "in_range": true
+        },
+        "viola": {
+          "min": 62,
+          "max": 72,
+          "instrument_range": [
+            48,
+            81
+          ],
+          "in_range": true
+        },
+        "cello": {
+          "min": 50,
+          "max": 60,
+          "instrument_range": [
+            36,
+            76
+          ],
+          "in_range": true
+        },
+        "bass": {
+          "min": 38,
+          "max": 48,
+          "instrument_range": [
+            28,
+            60
+          ],
+          "in_range": true
+        },
+        "piano": {
+          "min": 50,
+          "max": 60,
+          "instrument_range": [
+            21,
+            108
+          ],
+          "in_range": true
+        }
+      },
+      "spacing_analysis": {
+        "bar_1_beat_1.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            4,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_1_beat_3.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            4,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_2_beat_1.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            4,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_2_beat_3.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            4,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_3_beat_1.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            4,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_3_beat_3.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_4_beat_1.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            4,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_4_beat_3.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            4,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_5_beat_1.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            4,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_5_beat_3.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            4,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_6_beat_1.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            4,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_6_beat_3.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            4,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        }
+      },
+      "vl_sm_mode": "modal",
+      "orchestration_profile": "warm",
+      "register_profile": "mixed"
+    },
+    "test_4": {
+      "bars": 4,
+      "texture_type": "contrapuntal",
+      "instruments_used": [
+        "flute",
+        "violin_1",
+        "clarinet",
+        "violin_2",
+        "viola",
+        "cello",
+        "bass"
+      ],
+      "register_ranges": {
+        "flute": {
+          "min": 86,
+          "max": 96,
+          "instrument_range": [
+            60,
+            96
+          ],
+          "in_range": true
+        },
+        "violin_1": {
+          "min": 85,
+          "max": 91,
+          "instrument_range": [
+            55,
+            100
+          ],
+          "in_range": true
+        },
+        "clarinet": {
+          "min": 67,
+          "max": 74,
+          "instrument_range": [
+            50,
+            93
+          ],
+          "in_range": true
+        },
+        "violin_2": {
+          "min": 64,
+          "max": 74,
+          "instrument_range": [
+            55,
+            86
+          ],
+          "in_range": true
+        },
+        "viola": {
+          "min": 67,
+          "max": 72,
+          "instrument_range": [
+            48,
+            81
+          ],
+          "in_range": true
+        },
+        "cello": {
+          "min": 51,
+          "max": 58,
+          "instrument_range": [
+            36,
+            76
+          ],
+          "in_range": true
+        },
+        "bass": {
+          "min": 40,
+          "max": 45,
+          "instrument_range": [
+            28,
+            60
+          ],
+          "in_range": true
+        }
+      },
+      "spacing_analysis": {
+        "bar_1_beat_1.0": {
+          "intervals": [
+            12,
+            13,
+            2,
+            1,
+            14,
+            3
+          ],
+          "max_gap": 14,
+          "min_gap": 1
+        },
+        "bar_1_beat_2.0": {
+          "intervals": [
+            14,
+            12,
+            1,
+            3,
+            12,
+            2
+          ],
+          "max_gap": 14,
+          "min_gap": 1
+        },
+        "bar_1_beat_3.0": {
+          "intervals": [
+            11,
+            12,
+            3,
+            2,
+            13,
+            3
+          ],
+          "max_gap": 13,
+          "min_gap": 2
+        },
+        "bar_1_beat_4.0": {
+          "intervals": [
+            12,
+            14,
+            1,
+            1,
+            15,
+            4
+          ],
+          "max_gap": 15,
+          "min_gap": 1
+        },
+        "bar_2_beat_1.0": {
+          "intervals": [
+            15,
+            11,
+            2,
+            3,
+            15,
+            4
+          ],
+          "max_gap": 15,
+          "min_gap": 2
+        },
+        "bar_2_beat_2.0": {
+          "intervals": [
+            13,
+            14,
+            0,
+            2,
+            14,
+            4
+          ],
+          "max_gap": 14,
+          "min_gap": 0
+        },
+        "bar_2_beat_3.0": {
+          "intervals": [
+            14,
+            15,
+            1,
+            0,
+            16,
+            2
+          ],
+          "max_gap": 16,
+          "min_gap": 0
+        },
+        "bar_2_beat_4.0": {
+          "intervals": [
+            16,
+            13,
+            2,
+            1,
+            16,
+            2
+          ],
+          "max_gap": 16,
+          "min_gap": 1
+        },
+        "bar_3_beat_1.0": {
+          "intervals": [
+            14,
+            13,
+            5,
+            0,
+            17,
+            1
+          ],
+          "max_gap": 17,
+          "min_gap": 0
+        },
+        "bar_3_beat_2.0": {
+          "intervals": [
+            15,
+            11,
+            3,
+            3,
+            17,
+            1
+          ],
+          "max_gap": 17,
+          "min_gap": 1
+        },
+        "bar_3_beat_3.0": {
+          "intervals": [
+            16,
+            7,
+            3,
+            5,
+            16,
+            3
+          ],
+          "max_gap": 16,
+          "min_gap": 3
+        },
+        "bar_3_beat_4.0": {
+          "intervals": [
+            17,
+            7,
+            5,
+            3,
+            18,
+            4
+          ],
+          "max_gap": 18,
+          "min_gap": 3
+        },
+        "bar_4_beat_1.0": {
+          "intervals": [
+            15,
+            9,
+            4,
+            3,
+            18,
+            7
+          ],
+          "max_gap": 18,
+          "min_gap": 3
+        },
+        "bar_4_beat_2.0": {
+          "intervals": [
+            13,
+            13,
+            1,
+            5,
+            17,
+            7
+          ],
+          "max_gap": 17,
+          "min_gap": 1
+        },
+        "bar_4_beat_3.0": {
+          "intervals": [
+            12,
+            14,
+            1,
+            6,
+            12,
+            4
+          ],
+          "max_gap": 14,
+          "min_gap": 1
+        },
+        "bar_4_beat_4.0": {
+          "intervals": [
+            11,
+            15,
+            1,
+            7,
+            12,
+            3
+          ],
+          "max_gap": 15,
+          "min_gap": 1
+        }
+      },
+      "vl_sm_mode": "intervallic",
+      "orchestration_profile": "warm",
+      "register_profile": "mixed"
+    },
+    "test_5": {
+      "bars": 6,
+      "texture_type": "harmonic_field",
+      "instruments_used": [
+        "flute",
+        "clarinet",
+        "violin_1",
+        "violin_2",
+        "viola",
+        "cello",
+        "bass",
+        "piano"
+      ],
+      "register_ranges": {
+        "flute": {
+          "min": 83,
+          "max": 93,
+          "instrument_range": [
+            60,
+            96
+          ],
+          "in_range": true
+        },
+        "clarinet": {
+          "min": 67,
+          "max": 77,
+          "instrument_range": [
+            50,
+            93
+          ],
+          "in_range": true
+        },
+        "violin_1": {
+          "min": 71,
+          "max": 81,
+          "instrument_range": [
+            55,
+            100
+          ],
+          "in_range": true
+        },
+        "violin_2": {
+          "min": 67,
+          "max": 77,
+          "instrument_range": [
+            55,
+            86
+          ],
+          "in_range": true
+        },
+        "viola": {
+          "min": 64,
+          "max": 74,
+          "instrument_range": [
+            48,
+            81
+          ],
+          "in_range": true
+        },
+        "cello": {
+          "min": 52,
+          "max": 62,
+          "instrument_range": [
+            36,
+            76
+          ],
+          "in_range": true
+        },
+        "bass": {
+          "min": 40,
+          "max": 50,
+          "instrument_range": [
+            28,
+            60
+          ],
+          "in_range": true
+        },
+        "piano": {
+          "min": 52,
+          "max": 62,
+          "instrument_range": [
+            21,
+            108
+          ],
+          "in_range": true
+        }
+      },
+      "spacing_analysis": {
+        "bar_1_beat_1.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            4,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_1_beat_3.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            4,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_2_beat_1.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            4,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_2_beat_3.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            4,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_3_beat_1.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_3_beat_3.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            4,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_4_beat_1.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            4,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_4_beat_3.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            4,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_5_beat_1.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            4,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_5_beat_3.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            4,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_6_beat_1.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            4,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_6_beat_3.0": {
+          "intervals": [
+            12,
+            0,
+            12,
+            3,
+            0,
+            3,
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        }
+      },
+      "vl_sm_mode": "intervallic",
+      "orchestration_profile": "warm",
+      "register_profile": "mixed"
+    },
+    "test_6": {
+      "bars": 8,
+      "texture_type": "hybrid",
+      "instruments_used": [
+        "flute",
+        "clarinet",
+        "violin_2",
+        "viola",
+        "violin_1",
+        "cello",
+        "bass",
+        "piano"
+      ],
+      "register_ranges": {
+        "flute": {
+          "min": 84,
+          "max": 96,
+          "instrument_range": [
+            60,
+            96
+          ],
+          "in_range": true
+        },
+        "clarinet": {
+          "min": 74,
+          "max": 84,
+          "instrument_range": [
+            50,
+            93
+          ],
+          "in_range": true
+        },
+        "violin_2": {
+          "min": 76,
+          "max": 86,
+          "instrument_range": [
+            55,
+            86
+          ],
+          "in_range": true
+        },
+        "viola": {
+          "min": 70,
+          "max": 81,
+          "instrument_range": [
+            48,
+            81
+          ],
+          "in_range": true
+        },
+        "violin_1": {
+          "min": 89,
+          "max": 100,
+          "instrument_range": [
+            55,
+            100
+          ],
+          "in_range": true
+        },
+        "cello": {
+          "min": 58,
+          "max": 69,
+          "instrument_range": [
+            36,
+            76
+          ],
+          "in_range": true
+        },
+        "bass": {
+          "min": 46,
+          "max": 46,
+          "instrument_range": [
+            28,
+            60
+          ],
+          "in_range": true
+        },
+        "piano": {
+          "min": 70,
+          "max": 81,
+          "instrument_range": [
+            21,
+            108
+          ],
+          "in_range": true
+        }
+      },
+      "spacing_analysis": {
+        "bar_1_beat_1.0": {
+          "intervals": [
+            12,
+            12,
+            0,
+            4,
+            3,
+            12,
+            1
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_1_beat_2.0": {
+          "intervals": [
+            12,
+            12,
+            4,
+            3,
+            12,
+            1
+          ],
+          "max_gap": 12,
+          "min_gap": 1
+        },
+        "bar_1_beat_3.0": {
+          "intervals": [
+            12,
+            12,
+            0,
+            4,
+            3,
+            12,
+            0
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_1_beat_4.0": {
+          "intervals": [
+            12,
+            12,
+            4,
+            3,
+            12,
+            0
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_2_beat_1.0": {
+          "intervals": [
+            14,
+            12,
+            0,
+            4,
+            3,
+            9,
+            3
+          ],
+          "max_gap": 14,
+          "min_gap": 0
+        },
+        "bar_2_beat_2.0": {
+          "intervals": [
+            14,
+            12,
+            4,
+            3,
+            9,
+            3
+          ],
+          "max_gap": 14,
+          "min_gap": 3
+        },
+        "bar_2_beat_3.0": {
+          "intervals": [
+            14,
+            12,
+            0,
+            4,
+            3,
+            10,
+            2
+          ],
+          "max_gap": 14,
+          "min_gap": 0
+        },
+        "bar_2_beat_4.0": {
+          "intervals": [
+            14,
+            12,
+            4,
+            3,
+            10,
+            2
+          ],
+          "max_gap": 14,
+          "min_gap": 2
+        },
+        "bar_3_beat_1.0": {
+          "intervals": [
+            16,
+            12,
+            0,
+            3,
+            4,
+            7,
+            5
+          ],
+          "max_gap": 16,
+          "min_gap": 0
+        },
+        "bar_3_beat_2.0": {
+          "intervals": [
+            16,
+            12,
+            3,
+            4,
+            7,
+            5
+          ],
+          "max_gap": 16,
+          "min_gap": 3
+        },
+        "bar_3_beat_3.0": {
+          "intervals": [
+            16,
+            12,
+            0,
+            3,
+            4,
+            9,
+            3
+          ],
+          "max_gap": 16,
+          "min_gap": 0
+        },
+        "bar_3_beat_4.0": {
+          "intervals": [
+            16,
+            12,
+            3,
+            4,
+            9,
+            3
+          ],
+          "max_gap": 16,
+          "min_gap": 3
+        },
+        "bar_4_beat_1.0": {
+          "intervals": [
+            18,
+            12,
+            0,
+            3,
+            3,
+            10,
+            2
+          ],
+          "max_gap": 18,
+          "min_gap": 0
+        },
+        "bar_4_beat_2.0": {
+          "intervals": [
+            18,
+            12,
+            3,
+            3,
+            10,
+            2
+          ],
+          "max_gap": 18,
+          "min_gap": 2
+        },
+        "bar_4_beat_3.0": {
+          "intervals": [
+            18,
+            12,
+            0,
+            3,
+            3,
+            12,
+            0
+          ],
+          "max_gap": 18,
+          "min_gap": 0
+        },
+        "bar_4_beat_4.0": {
+          "intervals": [
+            18,
+            12,
+            3,
+            3,
+            12,
+            0
+          ],
+          "max_gap": 18,
+          "min_gap": 0
+        },
+        "bar_5_beat_1.0": {
+          "intervals": [
+            19,
+            12,
+            0,
+            4,
+            3,
+            9,
+            3
+          ],
+          "max_gap": 19,
+          "min_gap": 0
+        },
+        "bar_5_beat_2.0": {
+          "intervals": [
+            19,
+            12,
+            4,
+            3,
+            9,
+            3
+          ],
+          "max_gap": 19,
+          "min_gap": 3
+        },
+        "bar_5_beat_3.0": {
+          "intervals": [
+            19,
+            12,
+            0,
+            4,
+            3,
+            11,
+            1
+          ],
+          "max_gap": 19,
+          "min_gap": 0
+        },
+        "bar_5_beat_4.0": {
+          "intervals": [
+            19,
+            12,
+            4,
+            3,
+            11,
+            1
+          ],
+          "max_gap": 19,
+          "min_gap": 1
+        },
+        "bar_6_beat_1.0": {
+          "intervals": [
+            21,
+            12,
+            0,
+            3,
+            4,
+            10,
+            2
+          ],
+          "max_gap": 21,
+          "min_gap": 0
+        },
+        "bar_6_beat_2.0": {
+          "intervals": [
+            21,
+            12,
+            3,
+            4,
+            10,
+            2
+          ],
+          "max_gap": 21,
+          "min_gap": 2
+        },
+        "bar_6_beat_3.0": {
+          "intervals": [
+            21,
+            12,
+            0,
+            3,
+            3,
+            1,
+            12
+          ],
+          "max_gap": 21,
+          "min_gap": 0
+        },
+        "bar_6_beat_4.0": {
+          "intervals": [
+            21,
+            12,
+            3,
+            3,
+            1,
+            12
+          ],
+          "max_gap": 21,
+          "min_gap": 1
+        },
+        "bar_7_beat_1.0": {
+          "intervals": [
+            23,
+            7,
+            5,
+            0,
+            3,
+            2,
+            14
+          ],
+          "max_gap": 23,
+          "min_gap": 0
+        },
+        "bar_7_beat_2.0": {
+          "intervals": [
+            23,
+            7,
+            5,
+            3,
+            2,
+            14
+          ],
+          "max_gap": 23,
+          "min_gap": 2
+        },
+        "bar_7_beat_3.0": {
+          "intervals": [
+            23,
+            7,
+            5,
+            0,
+            3,
+            0,
+            16
+          ],
+          "max_gap": 23,
+          "min_gap": 0
+        },
+        "bar_7_beat_4.0": {
+          "intervals": [
+            23,
+            7,
+            5,
+            3,
+            0,
+            16
+          ],
+          "max_gap": 23,
+          "min_gap": 0
+        },
+        "bar_8_beat_1.0": {
+          "intervals": [
+            12,
+            12,
+            0,
+            4,
+            3,
+            8,
+            4
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_8_beat_2.0": {
+          "intervals": [
+            12,
+            12,
+            4,
+            3,
+            8,
+            4
+          ],
+          "max_gap": 12,
+          "min_gap": 3
+        },
+        "bar_8_beat_3.0": {
+          "intervals": [
+            12,
+            12,
+            0,
+            4,
+            3,
+            10,
+            2
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_8_beat_4.0": {
+          "intervals": [
+            12,
+            12,
+            4,
+            3,
+            10,
+            2
+          ],
+          "max_gap": 12,
+          "min_gap": 2
+        }
+      },
+      "vl_sm_mode": "modal",
+      "orchestration_profile": "bright",
+      "register_profile": "mixed"
+    },
+    "test_7": {
+      "bars": 6,
+      "texture_type": "ostinato",
+      "instruments_used": [
+        "cello",
+        "bass",
+        "violin_1",
+        "violin_2",
+        "viola",
+        "flute"
+      ],
+      "register_ranges": {
+        "cello": {
+          "min": 53,
+          "max": 60,
+          "instrument_range": [
+            36,
+            76
+          ],
+          "in_range": true
+        },
+        "bass": {
+          "min": 41,
+          "max": 48,
+          "instrument_range": [
+            28,
+            60
+          ],
+          "in_range": true
+        },
+        "violin_1": {
+          "min": 84,
+          "max": 93,
+          "instrument_range": [
+            55,
+            100
+          ],
+          "in_range": true
+        },
+        "violin_2": {
+          "min": 69,
+          "max": 77,
+          "instrument_range": [
+            55,
+            86
+          ],
+          "in_range": true
+        },
+        "viola": {
+          "min": 65,
+          "max": 74,
+          "instrument_range": [
+            48,
+            81
+          ],
+          "in_range": true
+        },
+        "flute": {
+          "min": 84,
+          "max": 91,
+          "instrument_range": [
+            60,
+            96
+          ],
+          "in_range": true
+        }
+      },
+      "spacing_analysis": {
+        "bar_1_beat_1.0": {
+          "intervals": [
+            4,
+            15
+          ],
+          "max_gap": 15,
+          "min_gap": 4
+        },
+        "bar_1_beat_2.33": {
+          "intervals": [
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 12
+        },
+        "bar_1_beat_3.67": {
+          "intervals": [
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 12
+        },
+        "bar_2_beat_1.0": {
+          "intervals": [
+            4,
+            15
+          ],
+          "max_gap": 15,
+          "min_gap": 4
+        },
+        "bar_2_beat_2.33": {
+          "intervals": [
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 12
+        },
+        "bar_2_beat_3.67": {
+          "intervals": [
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 12
+        },
+        "bar_3_beat_1.0": {
+          "intervals": [
+            3,
+            16
+          ],
+          "max_gap": 16,
+          "min_gap": 3
+        },
+        "bar_3_beat_2.33": {
+          "intervals": [
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 12
+        },
+        "bar_3_beat_3.67": {
+          "intervals": [
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 12
+        },
+        "bar_4_beat_1.0": {
+          "intervals": [
+            3,
+            15
+          ],
+          "max_gap": 15,
+          "min_gap": 3
+        },
+        "bar_4_beat_2.33": {
+          "intervals": [
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 12
+        },
+        "bar_4_beat_3.67": {
+          "intervals": [
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 12
+        },
+        "bar_5_beat_1.0": {
+          "intervals": [
+            4,
+            15
+          ],
+          "max_gap": 15,
+          "min_gap": 4
+        },
+        "bar_5_beat_2.33": {
+          "intervals": [
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 12
+        },
+        "bar_5_beat_3.67": {
+          "intervals": [
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 12
+        },
+        "bar_6_beat_1.0": {
+          "intervals": [
+            3,
+            16
+          ],
+          "max_gap": 16,
+          "min_gap": 3
+        },
+        "bar_6_beat_2.33": {
+          "intervals": [
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 12
+        },
+        "bar_6_beat_3.67": {
+          "intervals": [
+            12
+          ],
+          "max_gap": 12,
+          "min_gap": 12
+        }
+      },
+      "vl_sm_mode": "modal",
+      "orchestration_profile": "warm",
+      "register_profile": "mixed"
+    },
+    "test_8a": {
+      "bars": 4,
+      "texture_type": "homophonic",
+      "instruments_used": [
+        "bass",
+        "cello",
+        "violin_2",
+        "violin_1",
+        "flute",
+        "flugelhorn"
+      ],
+      "register_ranges": {
+        "bass": {
+          "min": 40,
+          "max": 45,
+          "instrument_range": [
+            28,
+            60
+          ],
+          "in_range": true
+        },
+        "cello": {
+          "min": 52,
+          "max": 57,
+          "instrument_range": [
+            36,
+            76
+          ],
+          "in_range": true
+        },
+        "violin_2": {
+          "min": 75,
+          "max": 85,
+          "instrument_range": [
+            55,
+            86
+          ],
+          "in_range": true
+        },
+        "violin_1": {
+          "min": 88,
+          "max": 93,
+          "instrument_range": [
+            55,
+            100
+          ],
+          "in_range": true
+        },
+        "flute": {
+          "min": 85,
+          "max": 95,
+          "instrument_range": [
+            60,
+            96
+          ],
+          "in_range": true
+        },
+        "flugelhorn": {
+          "min": 75,
+          "max": 85,
+          "instrument_range": [
+            54,
+            86
+          ],
+          "in_range": true
+        }
+      },
+      "spacing_analysis": {
+        "bar_1_beat_1.0": {
+          "intervals": [
+            12,
+            31,
+            0,
+            5,
+            7
+          ],
+          "max_gap": 31,
+          "min_gap": 0
+        },
+        "bar_2_beat_1.0": {
+          "intervals": [
+            12,
+            31,
+            0,
+            0,
+            5
+          ],
+          "max_gap": 31,
+          "min_gap": 0
+        },
+        "bar_3_beat_1.0": {
+          "intervals": [
+            12,
+            19,
+            0,
+            12,
+            5
+          ],
+          "max_gap": 19,
+          "min_gap": 0
+        },
+        "bar_4_beat_1.0": {
+          "intervals": [
+            12,
+            19,
+            0,
+            12,
+            5
+          ],
+          "max_gap": 19,
+          "min_gap": 0
+        }
+      },
+      "vl_sm_mode": "modal",
+      "orchestration_profile": "bright",
+      "register_profile": "high"
+    },
+    "test_8b": {
+      "bars": 4,
+      "texture_type": "homophonic",
+      "instruments_used": [
+        "bass",
+        "cello",
+        "viola",
+        "clarinet",
+        "piano"
+      ],
+      "register_ranges": {
+        "bass": {
+          "min": 40,
+          "max": 45,
+          "instrument_range": [
+            28,
+            60
+          ],
+          "in_range": true
+        },
+        "cello": {
+          "min": 52,
+          "max": 57,
+          "instrument_range": [
+            36,
+            76
+          ],
+          "in_range": true
+        },
+        "viola": {
+          "min": 68,
+          "max": 73,
+          "instrument_range": [
+            48,
+            81
+          ],
+          "in_range": true
+        },
+        "clarinet": {
+          "min": 56,
+          "max": 61,
+          "instrument_range": [
+            50,
+            93
+          ],
+          "in_range": true
+        },
+        "piano": {
+          "min": 71,
+          "max": 76,
+          "instrument_range": [
+            21,
+            108
+          ],
+          "in_range": true
+        }
+      },
+      "spacing_analysis": {
+        "bar_1_beat_1.0": {
+          "intervals": [
+            12,
+            4,
+            12,
+            3
+          ],
+          "max_gap": 12,
+          "min_gap": 3
+        },
+        "bar_2_beat_1.0": {
+          "intervals": [
+            12,
+            3,
+            12,
+            4
+          ],
+          "max_gap": 12,
+          "min_gap": 3
+        },
+        "bar_3_beat_1.0": {
+          "intervals": [
+            12,
+            3,
+            12,
+            4
+          ],
+          "max_gap": 12,
+          "min_gap": 3
+        },
+        "bar_4_beat_1.0": {
+          "intervals": [
+            12,
+            4,
+            12,
+            3
+          ],
+          "max_gap": 12,
+          "min_gap": 3
+        }
+      },
+      "vl_sm_mode": "modal",
+      "orchestration_profile": "dark",
+      "register_profile": "low"
+    },
+    "test_9": {
+      "bars": 12,
+      "texture_type": "hybrid",
+      "instruments_used": [
+        "flute",
+        "clarinet",
+        "violin_2",
+        "viola",
+        "violin_1",
+        "cello",
+        "bass",
+        "piano"
+      ],
+      "register_ranges": {
+        "flute": {
+          "min": 78,
+          "max": 91,
+          "instrument_range": [
+            60,
+            96
+          ],
+          "in_range": true
+        },
+        "clarinet": {
+          "min": 63,
+          "max": 74,
+          "instrument_range": [
+            50,
+            93
+          ],
+          "in_range": true
+        },
+        "violin_2": {
+          "min": 67,
+          "max": 77,
+          "instrument_range": [
+            55,
+            86
+          ],
+          "in_range": true
+        },
+        "viola": {
+          "min": 60,
+          "max": 71,
+          "instrument_range": [
+            48,
+            81
+          ],
+          "in_range": true
+        },
+        "violin_1": {
+          "min": 79,
+          "max": 89,
+          "instrument_range": [
+            55,
+            100
+          ],
+          "in_range": true
+        },
+        "cello": {
+          "min": 48,
+          "max": 59,
+          "instrument_range": [
+            36,
+            76
+          ],
+          "in_range": true
+        },
+        "bass": {
+          "min": 36,
+          "max": 36,
+          "instrument_range": [
+            28,
+            60
+          ],
+          "in_range": true
+        },
+        "piano": {
+          "min": 60,
+          "max": 71,
+          "instrument_range": [
+            21,
+            108
+          ],
+          "in_range": true
+        }
+      },
+      "spacing_analysis": {
+        "bar_1_beat_1.0": {
+          "intervals": [
+            12,
+            12,
+            0,
+            3,
+            4,
+            12,
+            2
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_1_beat_2.0": {
+          "intervals": [
+            12,
+            12,
+            3,
+            4,
+            12,
+            2
+          ],
+          "max_gap": 12,
+          "min_gap": 2
+        },
+        "bar_1_beat_3.0": {
+          "intervals": [
+            12,
+            12,
+            0,
+            3,
+            4,
+            12,
+            3
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_1_beat_4.0": {
+          "intervals": [
+            12,
+            12,
+            3,
+            4,
+            12,
+            3
+          ],
+          "max_gap": 12,
+          "min_gap": 3
+        },
+        "bar_2_beat_1.0": {
+          "intervals": [
+            14,
+            12,
+            0,
+            3,
+            4,
+            12,
+            0
+          ],
+          "max_gap": 14,
+          "min_gap": 0
+        },
+        "bar_2_beat_2.0": {
+          "intervals": [
+            14,
+            12,
+            3,
+            4,
+            12,
+            0
+          ],
+          "max_gap": 14,
+          "min_gap": 0
+        },
+        "bar_2_beat_3.0": {
+          "intervals": [
+            14,
+            12,
+            0,
+            3,
+            4,
+            11,
+            1
+          ],
+          "max_gap": 14,
+          "min_gap": 0
+        },
+        "bar_2_beat_4.0": {
+          "intervals": [
+            14,
+            12,
+            3,
+            4,
+            11,
+            1
+          ],
+          "max_gap": 14,
+          "min_gap": 1
+        },
+        "bar_3_beat_1.0": {
+          "intervals": [
+            15,
+            12,
+            0,
+            4,
+            4,
+            8,
+            4
+          ],
+          "max_gap": 15,
+          "min_gap": 0
+        },
+        "bar_3_beat_2.0": {
+          "intervals": [
+            15,
+            12,
+            4,
+            4,
+            8,
+            4
+          ],
+          "max_gap": 15,
+          "min_gap": 4
+        },
+        "bar_3_beat_3.0": {
+          "intervals": [
+            15,
+            12,
+            0,
+            4,
+            4,
+            7,
+            5
+          ],
+          "max_gap": 15,
+          "min_gap": 0
+        },
+        "bar_3_beat_4.0": {
+          "intervals": [
+            15,
+            12,
+            4,
+            4,
+            7,
+            5
+          ],
+          "max_gap": 15,
+          "min_gap": 4
+        },
+        "bar_4_beat_1.0": {
+          "intervals": [
+            17,
+            12,
+            0,
+            4,
+            3,
+            7,
+            5
+          ],
+          "max_gap": 17,
+          "min_gap": 0
+        },
+        "bar_4_beat_2.0": {
+          "intervals": [
+            17,
+            12,
+            4,
+            3,
+            7,
+            5
+          ],
+          "max_gap": 17,
+          "min_gap": 3
+        },
+        "bar_4_beat_3.0": {
+          "intervals": [
+            17,
+            12,
+            0,
+            4,
+            3,
+            8,
+            4
+          ],
+          "max_gap": 17,
+          "min_gap": 0
+        },
+        "bar_4_beat_4.0": {
+          "intervals": [
+            17,
+            12,
+            4,
+            3,
+            8,
+            4
+          ],
+          "max_gap": 17,
+          "min_gap": 3
+        },
+        "bar_5_beat_1.0": {
+          "intervals": [
+            19,
+            12,
+            0,
+            4,
+            3,
+            8,
+            4
+          ],
+          "max_gap": 19,
+          "min_gap": 0
+        },
+        "bar_5_beat_2.0": {
+          "intervals": [
+            19,
+            12,
+            4,
+            3,
+            8,
+            4
+          ],
+          "max_gap": 19,
+          "min_gap": 3
+        },
+        "bar_5_beat_3.0": {
+          "intervals": [
+            19,
+            12,
+            0,
+            4,
+            3,
+            9,
+            3
+          ],
+          "max_gap": 19,
+          "min_gap": 0
+        },
+        "bar_5_beat_4.0": {
+          "intervals": [
+            19,
+            12,
+            4,
+            3,
+            9,
+            3
+          ],
+          "max_gap": 19,
+          "min_gap": 3
+        },
+        "bar_6_beat_1.0": {
+          "intervals": [
+            21,
+            12,
+            0,
+            3,
+            3,
+            6,
+            6
+          ],
+          "max_gap": 21,
+          "min_gap": 0
+        },
+        "bar_6_beat_2.0": {
+          "intervals": [
+            21,
+            12,
+            3,
+            3,
+            6,
+            6
+          ],
+          "max_gap": 21,
+          "min_gap": 3
+        },
+        "bar_6_beat_3.0": {
+          "intervals": [
+            21,
+            12,
+            0,
+            3,
+            3,
+            7,
+            5
+          ],
+          "max_gap": 21,
+          "min_gap": 0
+        },
+        "bar_6_beat_4.0": {
+          "intervals": [
+            21,
+            12,
+            3,
+            3,
+            7,
+            5
+          ],
+          "max_gap": 21,
+          "min_gap": 3
+        },
+        "bar_7_beat_1.0": {
+          "intervals": [
+            23,
+            12,
+            0,
+            3,
+            3,
+            6,
+            6
+          ],
+          "max_gap": 23,
+          "min_gap": 0
+        },
+        "bar_7_beat_2.0": {
+          "intervals": [
+            23,
+            12,
+            3,
+            3,
+            6,
+            6
+          ],
+          "max_gap": 23,
+          "min_gap": 3
+        },
+        "bar_7_beat_3.0": {
+          "intervals": [
+            23,
+            12,
+            0,
+            3,
+            3,
+            8,
+            4
+          ],
+          "max_gap": 23,
+          "min_gap": 0
+        },
+        "bar_7_beat_4.0": {
+          "intervals": [
+            23,
+            12,
+            3,
+            3,
+            8,
+            4
+          ],
+          "max_gap": 23,
+          "min_gap": 3
+        },
+        "bar_8_beat_1.0": {
+          "intervals": [
+            12,
+            12,
+            0,
+            3,
+            4,
+            12,
+            7
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_8_beat_2.0": {
+          "intervals": [
+            12,
+            12,
+            3,
+            4,
+            12,
+            7
+          ],
+          "max_gap": 12,
+          "min_gap": 3
+        },
+        "bar_8_beat_3.0": {
+          "intervals": [
+            12,
+            12,
+            0,
+            3,
+            4,
+            12,
+            8
+          ],
+          "max_gap": 12,
+          "min_gap": 0
+        },
+        "bar_8_beat_4.0": {
+          "intervals": [
+            12,
+            12,
+            3,
+            4,
+            12,
+            8
+          ],
+          "max_gap": 12,
+          "min_gap": 3
+        },
+        "bar_9_beat_1.0": {
+          "intervals": [
+            14,
+            12,
+            0,
+            3,
+            4,
+            12,
+            8
+          ],
+          "max_gap": 14,
+          "min_gap": 0
+        },
+        "bar_9_beat_2.0": {
+          "intervals": [
+            14,
+            12,
+            3,
+            4,
+            12,
+            8
+          ],
+          "max_gap": 14,
+          "min_gap": 3
+        },
+        "bar_9_beat_3.0": {
+          "intervals": [
+            14,
+            12,
+            0,
+            3,
+            4,
+            12,
+            7
+          ],
+          "max_gap": 14,
+          "min_gap": 0
+        },
+        "bar_9_beat_4.0": {
+          "intervals": [
+            14,
+            12,
+            3,
+            4,
+            12,
+            7
+          ],
+          "max_gap": 14,
+          "min_gap": 3
+        },
+        "bar_10_beat_1.0": {
+          "intervals": [
+            15,
+            12,
+            0,
+            4,
+            4,
+            12,
+            6
+          ],
+          "max_gap": 15,
+          "min_gap": 0
+        },
+        "bar_10_beat_2.0": {
+          "intervals": [
+            15,
+            12,
+            4,
+            4,
+            12,
+            6
+          ],
+          "max_gap": 15,
+          "min_gap": 4
+        },
+        "bar_10_beat_3.0": {
+          "intervals": [
+            15,
+            12,
+            0,
+            4,
+            4,
+            12,
+            5
+          ],
+          "max_gap": 15,
+          "min_gap": 0
+        },
+        "bar_10_beat_4.0": {
+          "intervals": [
+            15,
+            12,
+            4,
+            4,
+            12,
+            5
+          ],
+          "max_gap": 15,
+          "min_gap": 4
+        },
+        "bar_11_beat_1.0": {
+          "intervals": [
+            17,
+            12,
+            0,
+            4,
+            3,
+            12,
+            6
+          ],
+          "max_gap": 17,
+          "min_gap": 0
+        },
+        "bar_11_beat_2.0": {
+          "intervals": [
+            17,
+            12,
+            4,
+            3,
+            12,
+            6
+          ],
+          "max_gap": 17,
+          "min_gap": 3
+        },
+        "bar_11_beat_3.0": {
+          "intervals": [
+            17,
+            12,
+            0,
+            4,
+            3,
+            12,
+            7
+          ],
+          "max_gap": 17,
+          "min_gap": 0
+        },
+        "bar_11_beat_4.0": {
+          "intervals": [
+            17,
+            12,
+            4,
+            3,
+            12,
+            7
+          ],
+          "max_gap": 17,
+          "min_gap": 3
+        },
+        "bar_12_beat_1.0": {
+          "intervals": [
+            19,
+            12,
+            0,
+            4,
+            3,
+            12,
+            3
+          ],
+          "max_gap": 19,
+          "min_gap": 0
+        },
+        "bar_12_beat_2.0": {
+          "intervals": [
+            19,
+            12,
+            4,
+            3,
+            12,
+            3
+          ],
+          "max_gap": 19,
+          "min_gap": 3
+        },
+        "bar_12_beat_3.0": {
+          "intervals": [
+            19,
+            12,
+            0,
+            4,
+            3,
+            12,
+            4
+          ],
+          "max_gap": 19,
+          "min_gap": 0
+        },
+        "bar_12_beat_4.0": {
+          "intervals": [
+            19,
+            12,
+            4,
+            3,
+            12,
+            4
+          ],
+          "max_gap": 19,
+          "min_gap": 3
+        }
+      },
+      "vl_sm_mode": "cinematic",
+      "orchestration_profile": "warm",
+      "register_profile": "mixed"
+    }
+  },
+  "spacing_validation": {
+    "all_tests_valid": true,
+    "no_voice_collisions": true,
+    "sism_applied": [
+      "test_3",
+      "test_5",
+      "test_9"
+    ]
+  },
+  "register_validation": {
+    "all_instruments_in_range": true,
+    "high_profile_tests": [
+      "test_8a"
+    ],
+    "low_profile_tests": [
+      "test_8b"
+    ],
+    "mixed_profile_tests": [
+      "test_1",
+      "test_2",
+      "test_3",
+      "test_4",
+      "test_5",
+      "test_6",
+      "test_7",
+      "test_9"
+    ]
+  },
+  "vl_sm_modes_tested": {
+    "functional": [
+      "test_2"
+    ],
+    "modal": [
+      "test_3"
+    ],
+    "intervallic": [
+      "test_4",
+      "test_5"
+    ],
+    "cinematic": [
+      "test_9"
+    ]
+  },
+  "orchestration_profiles_tested": {
+    "warm": [
+      "test_1",
+      "test_3",
+      "test_9"
+    ],
+    "bright": [
+      "test_6",
+      "test_8a"
+    ],
+    "dark": [
+      "test_8b"
+    ]
+  },
+  "texture_modes_tested": {
+    "homophonic": [
+      "test_1",
+      "test_2",
+      "test_8a",
+      "test_8b"
+    ],
+    "contrapuntal": [
+      "test_4"
+    ],
+    "harmonic_field": [
+      "test_3",
+      "test_5"
+    ],
+    "hybrid": [
+      "test_6",
+      "test_9"
+    ],
+    "ostinato": [
+      "test_7"
+    ]
+  }
+}

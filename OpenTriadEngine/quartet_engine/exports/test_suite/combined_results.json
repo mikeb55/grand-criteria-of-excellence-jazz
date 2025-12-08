@@ -1,0 +1,116 @@
+{
+  "test_suite": "Quartet Engine Automated Test Suite v1.0",
+  "generated": "2025-12-08T13:43:08.381722",
+  "total_tests": 10,
+  "passed": 10,
+  "failed": 0,
+  "results": {
+    "test_1": {
+      "name": "Basic Open-Triad Homophonic Voicing",
+      "key": "C major",
+      "bars": 8,
+      "texture": "homophonic",
+      "status": "PASS",
+      "notes_generated": 32,
+      "analysis": "Homophonic texture with 1 chord(s) per bar"
+    },
+    "test_2": {
+      "name": "Functional ii-V-I Voice-Leading",
+      "key": "G major",
+      "bars": 4,
+      "motion_type": "functional",
+      "vl_sm_mode": "APVL + TRAM",
+      "status": "PASS",
+      "notes_generated": 16,
+      "voice_leading_description": "Common-tone retention, smooth outer voices, tension-release alternation"
+    },
+    "test_3": {
+      "name": "Modal Harmonic Field",
+      "key": "D Dorian",
+      "bars": 6,
+      "texture": "harmonic_field",
+      "vl_sm_mode": "SISM spacing",
+      "status": "PASS",
+      "notes_generated": 48
+    },
+    "test_4": {
+      "name": "Strict Contrapuntal Writing",
+      "key": "A minor",
+      "bars": 4,
+      "texture": "contrapuntal",
+      "voice_crossing": "avoided",
+      "motion_preference": "contrary/oblique",
+      "status": "PASS",
+      "notes_generated": 57
+    },
+    "test_5": {
+      "name": "Triad-Pair Quartet Texture",
+      "key": "E Phrygian",
+      "bars": 6,
+      "triad_pair": "Fmaj - Gmaj",
+      "entries": "staggered",
+      "status": "PASS",
+      "notes_generated": 96
+    },
+    "test_6": {
+      "name": "Rotating Voicing Assignment",
+      "key": "Bb Lydian",
+      "bars": 8,
+      "rotation_pattern": "Every bar",
+      "register_safety": "Maintained",
+      "status": "PASS",
+      "notes_generated": 32
+    },
+    "test_7": {
+      "name": "Hybrid Texture",
+      "key": "A harmonic minor",
+      "bars": 8,
+      "violin_1": "melody",
+      "violin_2_viola": "inner counterpoint",
+      "cello": "stepwise bass",
+      "status": "PASS",
+      "notes_generated": 112
+    },
+    "test_8": {
+      "name": "Rhythmic Cell Test",
+      "key": "F Lydian",
+      "bars": 6,
+      "cello": "ostinato (3:2 cell)",
+      "viola": "syncopations",
+      "violins": "open-triad punctuations",
+      "status": "PASS",
+      "notes_generated": 60
+    },
+    "test_9": {
+      "name": "Register Profile Test",
+      "key": "E major",
+      "bars": "4 each",
+      "version_a": {
+        "profile": "high_lift",
+        "notes": 16
+      },
+      "version_b": {
+        "profile": "dark_low",
+        "notes": 16
+      },
+      "playability": "Verified",
+      "status": "PASS"
+    },
+    "test_10": {
+      "name": "Full 12-Bar Quartet Sketch",
+      "key": "C melodic minor",
+      "bars": 12,
+      "techniques": [
+        "open triads",
+        "triad-pair gestures",
+        "hybrid texture",
+        "counterpoint",
+        "VL-SM adaptive"
+      ],
+      "harmonic_logic": "Modal with SISM spacing",
+      "voice_leading": "Stepwise outer voices, common-tone retention",
+      "status": "PASS",
+      "notes_generated": 176
+    }
+  }
+}

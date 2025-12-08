@@ -1,0 +1,1343 @@
+{
+  "orchestral_engine_version": "1.0.0",
+  "generated": "2025-12-08T13:54:23.143925",
+  "score": {
+    "title": "Test 3: D Dorian Harmonic Field",
+    "composer": "Orchestral Engine",
+    "key": "D",
+    "time_signature": [
+      4,
+      4
+    ],
+    "tempo": 80,
+    "bars": 6,
+    "voices": {
+      "flute": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 81,
+          "step": "A",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 1,
+          "beat": 3.0,
+          "pitch": 83,
+          "step": "B",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 84,
+          "step": "C",
+          "octave": 6,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 3.0,
+          "pitch": 86,
+          "step": "D",
+          "octave": 6,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 88,
+          "step": "E",
+          "octave": 6,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 3.0,
+          "pitch": 89,
+          "step": "F",
+          "octave": 6,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 91,
+          "step": "G",
+          "octave": 6,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 3.0,
+          "pitch": 81,
+          "step": "A",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 1.0,
+          "pitch": 83,
+          "step": "B",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 3.0,
+          "pitch": 84,
+          "step": "C",
+          "octave": 6,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 1.0,
+          "pitch": 86,
+          "step": "D",
+          "octave": 6,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 3.0,
+          "pitch": 88,
+          "step": "E",
+          "octave": 6,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        }
+      ],
+      "clarinet": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 1,
+          "beat": 3.0,
+          "pitch": 67,
+          "step": "G",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 69,
+          "step": "A",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 3.0,
+          "pitch": 71,
+          "step": "B",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 72,
+          "step": "C",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 3.0,
+          "pitch": 74,
+          "step": "D",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 76,
+          "step": "E",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 3.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 1.0,
+          "pitch": 67,
+          "step": "G",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 3.0,
+          "pitch": 69,
+          "step": "A",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 1.0,
+          "pitch": 71,
+          "step": "B",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 3.0,
+          "pitch": 72,
+          "step": "C",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        }
+      ],
+      "flugelhorn": [],
+      "violin_1": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 69,
+          "step": "A",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 1,
+          "beat": 3.0,
+          "pitch": 71,
+          "step": "B",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 72,
+          "step": "C",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 3.0,
+          "pitch": 74,
+          "step": "D",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 76,
+          "step": "E",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 3.0,
+          "pitch": 77,
+          "step": "F",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 79,
+          "step": "G",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 3.0,
+          "pitch": 69,
+          "step": "A",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 1.0,
+          "pitch": 71,
+          "step": "B",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 3.0,
+          "pitch": 72,
+          "step": "C",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 1.0,
+          "pitch": 74,
+          "step": "D",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 3.0,
+          "pitch": 76,
+          "step": "E",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        }
+      ],
+      "violin_2": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 1,
+          "beat": 3.0,
+          "pitch": 67,
+          "step": "G",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 69,
+          "step": "A",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 3.0,
+          "pitch": 71,
+          "step": "B",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 72,
+          "step": "C",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 3.0,
+          "pitch": 74,
+          "step": "D",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 76,
+          "step": "E",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 3.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 1.0,
+          "pitch": 67,
+          "step": "G",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 3.0,
+          "pitch": 69,
+          "step": "A",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 1.0,
+          "pitch": 71,
+          "step": "B",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 3.0,
+          "pitch": 72,
+          "step": "C",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        }
+      ],
+      "viola": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 62,
+          "step": "D",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 1,
+          "beat": 3.0,
+          "pitch": 64,
+          "step": "E",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 3.0,
+          "pitch": 67,
+          "step": "G",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 69,
+          "step": "A",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 3.0,
+          "pitch": 71,
+          "step": "B",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 72,
+          "step": "C",
+          "octave": 5,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 3.0,
+          "pitch": 62,
+          "step": "D",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 1.0,
+          "pitch": 64,
+          "step": "E",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 3.0,
+          "pitch": 65,
+          "step": "F",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 1.0,
+          "pitch": 67,
+          "step": "G",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 3.0,
+          "pitch": 69,
+          "step": "A",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        }
+      ],
+      "cello": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 50,
+          "step": "D",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 1,
+          "beat": 3.0,
+          "pitch": 52,
+          "step": "E",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 53,
+          "step": "F",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 3.0,
+          "pitch": 55,
+          "step": "G",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 57,
+          "step": "A",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 3.0,
+          "pitch": 59,
+          "step": "B",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 60,
+          "step": "C",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 3.0,
+          "pitch": 50,
+          "step": "D",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 1.0,
+          "pitch": 52,
+          "step": "E",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 3.0,
+          "pitch": 53,
+          "step": "F",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 1.0,
+          "pitch": 55,
+          "step": "G",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 3.0,
+          "pitch": 57,
+          "step": "A",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        }
+      ],
+      "bass": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 38,
+          "step": "D",
+          "octave": 2,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 1,
+          "beat": 3.0,
+          "pitch": 40,
+          "step": "E",
+          "octave": 2,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 41,
+          "step": "F",
+          "octave": 2,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 3.0,
+          "pitch": 43,
+          "step": "G",
+          "octave": 2,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 45,
+          "step": "A",
+          "octave": 2,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 3.0,
+          "pitch": 47,
+          "step": "B",
+          "octave": 2,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 48,
+          "step": "C",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 3.0,
+          "pitch": 38,
+          "step": "D",
+          "octave": 2,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 1.0,
+          "pitch": 40,
+          "step": "E",
+          "octave": 2,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 3.0,
+          "pitch": 41,
+          "step": "F",
+          "octave": 2,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 1.0,
+          "pitch": 43,
+          "step": "G",
+          "octave": 2,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 3.0,
+          "pitch": 45,
+          "step": "A",
+          "octave": 2,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        }
+      ],
+      "piano": [
+        {
+          "bar": 1,
+          "beat": 1.0,
+          "pitch": 50,
+          "step": "D",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 1,
+          "beat": 3.0,
+          "pitch": 52,
+          "step": "E",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 1.0,
+          "pitch": 53,
+          "step": "F",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 2,
+          "beat": 3.0,
+          "pitch": 55,
+          "step": "G",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 1.0,
+          "pitch": 57,
+          "step": "A",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 3,
+          "beat": 3.0,
+          "pitch": 59,
+          "step": "B",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 1.0,
+          "pitch": 60,
+          "step": "C",
+          "octave": 4,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 4,
+          "beat": 3.0,
+          "pitch": 50,
+          "step": "D",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 1.0,
+          "pitch": 52,
+          "step": "E",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 5,
+          "beat": 3.0,
+          "pitch": 53,
+          "step": "F",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 1.0,
+          "pitch": 55,
+          "step": "G",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        },
+        {
+          "bar": 6,
+          "beat": 3.0,
+          "pitch": 57,
+          "step": "A",
+          "octave": 3,
+          "alter": 0,
+          "duration": 2.0,
+          "articulation": null,
+          "dynamic": "mf"
+        }
+      ],
+      "percussion": []
+    },
+    "texture": "harmonic_field",
+    "analysis": "Harmonic field: rotating open-triad loops with wind colors",
+    "metadata": {}
+  },
+  "diagnostics": {
+    "bars": 6,
+    "texture_type": "harmonic_field",
+    "instruments_used": [
+      "flute",
+      "clarinet",
+      "violin_1",
+      "violin_2",
+      "viola",
+      "cello",
+      "bass",
+      "piano"
+    ],
+    "register_ranges": {
+      "flute": {
+        "min": 81,
+        "max": 91,
+        "instrument_range": [
+          60,
+          96
+        ],
+        "in_range": true
+      },
+      "clarinet": {
+        "min": 65,
+        "max": 76,
+        "instrument_range": [
+          50,
+          93
+        ],
+        "in_range": true
+      },
+      "violin_1": {
+        "min": 69,
+        "max": 79,
+        "instrument_range": [
+          55,
+          100
+        ],
+        "in_range": true
+      },
+      "violin_2": {
+        "min": 65,
+        "max": 76,
+        "instrument_range": [
+          55,
+          86
+        ],
+        "in_range": true
+      },
+      "viola": {
+        "min": 62,
+        "max": 72,
+        "instrument_range": [
+          48,
+          81
+        ],
+        "in_range": true
+      },
+      "cello": {
+        "min": 50,
+        "max": 60,
+        "instrument_range": [
+          36,
+          76
+        ],
+        "in_range": true
+      },
+      "bass": {
+        "min": 38,
+        "max": 48,
+        "instrument_range": [
+          28,
+          60
+        ],
+        "in_range": true
+      },
+      "piano": {
+        "min": 50,
+        "max": 60,
+        "instrument_range": [
+          21,
+          108
+        ],
+        "in_range": true
+      }
+    },
+    "spacing_analysis": {
+      "bar_1_beat_1.0": {
+        "intervals": [
+          12,
+          0,
+          12,
+          3,
+          0,
+          4,
+          12
+        ],
+        "max_gap": 12,
+        "min_gap": 0
+      },
+      "bar_1_beat_3.0": {
+        "intervals": [
+          12,
+          0,
+          12,
+          3,
+          0,
+          4,
+          12
+        ],
+        "max_gap": 12,
+        "min_gap": 0
+      },
+      "bar_2_beat_1.0": {
+        "intervals": [
+          12,
+          0,
+          12,
+          4,
+          0,
+          3,
+          12
+        ],
+        "max_gap": 12,
+        "min_gap": 0
+      },
+      "bar_2_beat_3.0": {
+        "intervals": [
+          12,
+          0,
+          12,
+          4,
+          0,
+          3,
+          12
+        ],
+        "max_gap": 12,
+        "min_gap": 0
+      },
+      "bar_3_beat_1.0": {
+        "intervals": [
+          12,
+          0,
+          12,
+          3,
+          0,
+          4,
+          12
+        ],
+        "max_gap": 12,
+        "min_gap": 0
+      },
+      "bar_3_beat_3.0": {
+        "intervals": [
+          12,
+          0,
+          12,
+          3,
+          0,
+          3,
+          12
+        ],
+        "max_gap": 12,
+        "min_gap": 0
+      },
+      "bar_4_beat_1.0": {
+        "intervals": [
+          12,
+          0,
+          12,
+          4,
+          0,
+          3,
+          12
+        ],
+        "max_gap": 12,
+        "min_gap": 0
+      },
+      "bar_4_beat_3.0": {
+        "intervals": [
+          12,
+          0,
+          12,
+          3,
+          0,
+          4,
+          12
+        ],
+        "max_gap": 12,
+        "min_gap": 0
+      },
+      "bar_5_beat_1.0": {
+        "intervals": [
+          12,
+          0,
+          12,
+          3,
+          0,
+          4,
+          12
+        ],
+        "max_gap": 12,
+        "min_gap": 0
+      },
+      "bar_5_beat_3.0": {
+        "intervals": [
+          12,
+          0,
+          12,
+          4,
+          0,
+          3,
+          12
+        ],
+        "max_gap": 12,
+        "min_gap": 0
+      },
+      "bar_6_beat_1.0": {
+        "intervals": [
+          12,
+          0,
+          12,
+          4,
+          0,
+          3,
+          12
+        ],
+        "max_gap": 12,
+        "min_gap": 0
+      },
+      "bar_6_beat_3.0": {
+        "intervals": [
+          12,
+          0,
+          12,
+          3,
+          0,
+          4,
+          12
+        ],
+        "max_gap": 12,
+        "min_gap": 0
+      }
+    },
+    "vl_sm_mode": "modal",
+    "orchestration_profile": "warm",
+    "register_profile": "mixed"
+  }
+}

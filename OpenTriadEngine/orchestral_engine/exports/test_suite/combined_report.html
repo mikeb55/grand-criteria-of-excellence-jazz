@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orchestral Engine Test Suite Report</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Source+Code+Pro&display=swap');
+        
+        :root {
+            --bg: #1a1a2e;
+            --surface: #16213e;
+            --border: #e94560;
+            --text: #eaeaea;
+            --accent: #f59e0b;
+            --success: #10b981;
+        }
+        
+        body {
+            font-family: 'Source Code Pro', monospace;
+            background: linear-gradient(180deg, var(--bg), #0f0f23);
+            color: var(--text);
+            margin: 0;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: var(--accent);
+            font-size: 2.5rem;
+            text-align: center;
+            border-bottom: 3px solid var(--border);
+            padding-bottom: 1rem;
+        }
+        
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .stat {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
+        .stat-value {
+            font-size: 2.5rem;
+            color: var(--accent);
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            color: #8b949e;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+        }
+        
+        .test {
+            background: var(--surface);
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .test h2 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+        
+        .test-details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        
+        .detail {
+            padding: 0.5rem;
+            background: rgba(0,0,0,0.2);
+            border-radius: 4px;
+        }
+        
+        .detail span:first-child {
+            color: #8b949e;
+        }
+        
+        .pass {
+            color: var(--success);
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            color: #8b949e;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎼 Orchestral Engine Test Suite</h1>
+        
+        <div class="summary">
+            <div class="stat">
+                <div class="stat-value">10</div>
+                <div class="stat-label">Total Tests</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">10</div>
+                <div class="stat-label">Passed</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">0</div>
+                <div class="stat-label">Failed</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Success</div>
+            </div>
+        </div>
+        
+        
+        <section class="test">
+            <h2>TEST 1: Orchestral Open-Triad Expansion</h2>
+            <div class="test-details">
+                <div class="detail"><span>Key:</span> C major</div>
+                <div class="detail"><span>Bars:</span> 8</div>
+                <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+            </div>
+        </section>
+        
+        <section class="test">
+            <h2>TEST 2: Functional ii-V-I</h2>
+            <div class="test-details">
+                <div class="detail"><span>Key:</span> G major</div>
+                <div class="detail"><span>Bars:</span> 4</div>
+                <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+            </div>
+        </section>
+        
+        <section class="test">
+            <h2>TEST 3: Modal Harmonic Field</h2>
+            <div class="test-details">
+                <div class="detail"><span>Key:</span> D Dorian</div>
+                <div class="detail"><span>Bars:</span> 6</div>
+                <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+            </div>
+        </section>
+        
+        <section class="test">
+            <h2>TEST 4: Contrapuntal Orchestral Writing</h2>
+            <div class="test-details">
+                <div class="detail"><span>Key:</span> A minor</div>
+                <div class="detail"><span>Bars:</span> 4</div>
+                <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+            </div>
+        </section>
+        
+        <section class="test">
+            <h2>TEST 5: Triad-Pair Orchestral Texture</h2>
+            <div class="test-details">
+                <div class="detail"><span>Key:</span> E Phrygian</div>
+                <div class="detail"><span>Bars:</span> 6</div>
+                <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+            </div>
+        </section>
+        
+        <section class="test">
+            <h2>TEST 6: Hybrid Texture with Melody</h2>
+            <div class="test-details">
+                <div class="detail"><span>Key:</span> Bb Lydian</div>
+                <div class="detail"><span>Bars:</span> 8</div>
+                <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+            </div>
+        </section>
+        
+        <section class="test">
+            <h2>TEST 7: Ostinato + Pads</h2>
+            <div class="test-details">
+                <div class="detail"><span>Key:</span> F Lydian</div>
+                <div class="detail"><span>Bars:</span> 6</div>
+                <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+            </div>
+        </section>
+        
+        <section class="test">
+            <h2>TEST 8: High vs Low Register Profiles</h2>
+            <div class="test-details">
+                <div class="detail"><span>Key:</span> E major</div>
+                <div class="detail"><span>Bars:</span> 4 each</div>
+                <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+            </div>
+        </section>
+        
+        <section class="test">
+            <h2>TEST 9: Full Scene Sketch (Cinematic)</h2>
+            <div class="test-details">
+                <div class="detail"><span>Key:</span> C melodic minor</div>
+                <div class="detail"><span>Bars:</span> 12</div>
+                <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+            </div>
+        </section>
+        
+        <section class="test">
+            <h2>TEST 10: Diagnostic Bundle</h2>
+            <div class="test-details">
+                <div class="detail"><span>Key:</span> N/A</div>
+                <div class="detail"><span>Bars:</span> N/A</div>
+                <div class="detail"><span>Status:</span> <span class="pass">PASS</span></div>
+            </div>
+        </section>
+        
+        
+        <footer>
+            Generated by Orchestral Engine v1.0 | 2025-12-08 13:54
+        </footer>
+    </div>
+</body>
+</html>
