@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCE Jazz Guitar - iReal Pro Charts V5</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #eee;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle { text-align: center; color: #888; margin-bottom: 30px; }
+        .version { text-align: center; color: #00d4ff; margin-bottom: 20px; font-size: 0.9rem; }
+        .instructions {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-left: 4px solid #00d4ff;
+        }
+        .instructions h3 { color: #00d4ff; margin-bottom: 10px; }
+        .instructions ol { padding-left: 20px; }
+        .instructions li { margin: 8px 0; color: #aaa; }
+        .tune-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 15px;
+        }
+        .tune-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .tune-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,212,255,0.2);
+        }
+        .tune-num {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            color: #fff;
+            font-weight: bold;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+        .tune-title { font-size: 1.1rem; font-weight: bold; margin-bottom: 5px; }
+        .tune-meta { color: #888; font-size: 0.85rem; margin-bottom: 12px; }
+        .import-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #00d4ff, #0099cc);
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .import-btn:hover { opacity: 0.85; }
+        .footer { text-align: center; margin-top: 30px; color: #666; font-size: 0.85rem; }
+        .new-badge {
+            background: #7b2cbf;
+            color: white;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GCE JAZZ GUITAR</h1>
+        <p class="subtitle">iReal Pro Charts - 16 Tunes</p>
+        <p class="version">Version 5 - Corrected progressions from MethodBook + Rehearsal Marks</p>
+        
+        <div class="instructions">
+            <h3>How to Import</h3>
+            <ol>
+                <li>Make sure <strong>iReal Pro</strong> is installed</li>
+                <li>Click any <strong>"Import"</strong> button</li>
+                <li>iReal Pro opens with the chart</li>
+                <li>Tap <strong>"OK"</strong> to save</li>
+            </ol>
+        </div>
+        
+        <div class="tune-grid">
+
+            <div class="tune-card">
+                <div class="tune-num">1</div>
+                <div class="tune-title">Blue Cycle</div>
+                <div class="tune-meta">Blues | Bb | 4/4 | 120 BPM</div>
+                <a href="irealbook://Blue%20Cycle=GCE%20Jazz=Blues=Bb=n=T44*A{Bb7 |Eb7 |Bb7 |Fm7 Bb7 |Eb7 |Edim7 |Bb7 |G7alt |Cm7 |F7alt |Bb7 G7alt|}Cm7 F7 Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">2</div>
+                <div class="tune-title">Orbit</div>
+                <div class="tune-meta">Waltz | F | 3/4 | 160 BPM</div>
+                <a href="irealbook://Orbit=GCE%20Jazz=Waltz=F=n=T34*A[F^7#11 |Eb^7#5 |Db^7 |B^7 |Bbm9 |Ab^7 |Gb^7 |E^7 |*B F^7#11 |Db^7 |A^7 |G^7 |*A F^7#11 |Ebm9 |Db^7 |F^7 Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">3</div>
+                <div class="tune-title">Rust And Chrome</div>
+                <div class="tune-meta">Funk | E | 4/4 | 95 BPM</div>
+                <a href="irealbook://Rust%20And%20Chrome=GCE%20Jazz=Funk=E=n=T44*A{E7#9 |E7#9 |A7 |A7 |E7#9 |E7#9 |B7#9 |A7 |*B E7#9 |E7#9 |F#7 |A7 B7 |*A E7#9 |E7#9 |E7#9|}E7#9 Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">4</div>
+                <div class="tune-title">Sao Paulo Rain</div>
+                <div class="tune-meta">Bossa Nova | D | 4/4 | 130 BPM</div>
+                <a href="irealbook://Sao%20Paulo%20Rain=GCE%20Jazz=Bossa%20Nova=D=n=T44*A[D^9 |D6/9 |Bm(^7) |Bm7 |Em9 |A7#11 |D^9 |A7sus A7 |*B Gm(^7) |Gm6 |Gb7#11 |F^7#11 |Em9 |Eb9#11 |D^9 |A7alt Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">5</div>
+                <div class="tune-title">The Mirror</div>
+                <div class="tune-meta">Ballad | Ab | 4/4 | 60 BPM</div>
+                <a href="irealbook://The%20Mirror=GCE%20Jazz=Ballad=Ab=n=T44*A[Ab^9 |Fm9 |Db^7#11 |Ebsus Eb7 |Ab^9 |Bbm9 |Gb^7 |Cm7 Fm7 |*B B^7#11 |E^7 |Bbm7 |Eb7alt |*A Ab^9 |Fm11 |Db^9 Dbm |Ab^7/Eb Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">6</div>
+                <div class="tune-title">Bright Size Life 2</div>
+                <div class="tune-meta">Even 8ths | D | 4/4 | 145 BPM</div>
+                <a href="irealbook://Bright%20Size%20Life%202=GCE%20Jazz=Even%208ths=D=n=T44*A[D^7 |Em7/D |F#m7/D |G^7/D |D^7 |A/D |Bm7/D |Asus |*B Bb^7 |C^7 |Eb^7 |F^7 |Ab^7 |Bb^7 |Db^7 |A7sus Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">7</div>
+                <div class="tune-title">Monks Dream</div>
+                <div class="tune-meta">Medium Swing | C | 4/4 | 110 BPM</div>
+                <a href="irealbook://Monks%20Dream=GCE%20Jazz=Medium%20Swing=C=n=T44*A[C^7#11 |C^7#11 |Db7#11 |Db7#11 |Dm7 |G7#5 |C^7 |Eb7 |*B Ab7 |Db7 |Gb7 |B7 |*A Em7 |A7#11 |Dm7 |G7#9 Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">8</div>
+                <div class="tune-title">Nefertitis Shadow</div>
+                <div class="tune-meta">Up Tempo Swing | Eb | 4/4 | 180 BPM</div>
+                <a href="irealbook://Nefertitis%20Shadow=GCE%20Jazz=Up%20Tempo%20Swing=Eb=n=T44*A[Eb^7#11 |Db/Eb |Cm11 |Ab^7#5 |Gb^7 |Fm11 |Bbsus |Db^7 |*B Bm11 |A^7#11 |Ab/Bb |Gb^7 |*A Fm11 |Eb^7#11 |Db/Eb |Eb^7 Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">9</div>
+                <div class="tune-title">Greezy</div>
+                <div class="tune-meta">Blues Shuffle | G | 12/8 | 100 BPM</div>
+                <a href="irealbook://Greezy=GCE%20Jazz=Blues=G=n=T12*A{G7 |C7 |G7 |G7 G#o7 |C7 |C#o7 |G7 |E7 |Am7 |D7#9 |G7 E7|}Am7 D7 Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">10</div>
+                <div class="tune-title">Hexagon</div>
+                <div class="tune-meta">Even 8ths | B | 5/4 | 135 BPM</div>
+                <a href="irealbook://Hexagon=GCE%20Jazz=Even%208ths=B=n=T54*A[B^7#5 |C#/B |Eaug |C#m(add9) |B^7#5 |D#aug |G#m/B |F#sus |*B A/B |B/C# |C#sus |D#sus |*A G#m11 |C#/G# |F#sus |F#7sus Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">11</div>
+                <div class="tune-title">Crystal Silence</div>
+                <div class="tune-meta">Ballad | A | 4/4 | 80 BPM</div>
+                <a href="irealbook://Crystal%20Silence=GCE%20Jazz=Ballad=A=n=T44*A[A^9 |F#m11 |D^9 |E/A |A^9 |C#m7 |Bm9 |Esus E7 |*B F^7 |G^7 |A^9 |D^7 |*A Bm11 |E7sus |A^9 |A^9 Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">12</div>
+                <div class="tune-title">Angular Motion</div>
+                <div class="tune-meta">Up Tempo Swing | Gb | 4/4 | 200 BPM</div>
+                <a href="irealbook://Angular%20Motion=GCE%20Jazz=Up%20Tempo%20Swing=Gb=n=T44*A{Gb^7 |Fm7b5 Bb7 |Ebm7 |Eo7 |Abm7 |Db7 Gb7 |Gb^7|}Abm7 Db7 |*B Em7 |A7 |D^7 |Dm7 G7 |C^7 |F#m7 B7 |Bbm7 |Eb7 Ab7 Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">13</div>
+                <div class="tune-title">The Void</div>
+                <div class="tune-meta">Free | C | 4/4</div>
+                <a href="irealbook://The%20Void=GCE%20Jazz=Free=C=n=T44*i[x |x |x |x |x |x |x |x |x |x |x |x |x |x |x |x Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">14</div>
+                <div class="tune-title">Solar Flare</div>
+                <div class="tune-meta">Even 8ths | C# | 7/8 | 150 BPM</div>
+                <a href="irealbook://Solar%20Flare=GCE%20Jazz=Even%208ths=Db=n=T78*A[C#sus |D#/C# |E/C# |F#/C# |C#sus |A#m11 |B/C# |G#sus |*B A/B |B/C# |C#sus |D#sus |*A G#m11 |C#/G# |F#sus |G#7sus Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">15</div>
+                <div class="tune-title">Final Departure</div>
+                <div class="tune-meta">Ballad | Db | 4/4 | 70 BPM</div>
+                <a href="irealbook://Final%20Departure=GCE%20Jazz=Ballad=Db=n=T44*A[Db^9 |Bbm9 |Gb^9 |Ab13sus |Db^9 |Fm9 |Bbm11 |Ebm9 Ab7 |*B F^7 |Bbm7 |Ebm9 |Ab7alt |*A Db^9 |Gb^9 |Db^9/Ab |Db^9 Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+            <div class="tune-card">
+                <div class="tune-num">16</div>
+                <div class="tune-title">Blue Minor <span class="new-badge">NEW</span></div>
+                <div class="tune-meta">Minor Blues | Cm | 4/4 | 110 BPM</div>
+                <a href="irealbook://Blue%20Minor=GCE%20Jazz=Minor%20Blues=C-=n=T44*A{Cm(^7) |Cm6 |Fm9 |Fm6 |Cm(^7) |Cm7 |Ab^7 |G7alt |Dm7b5 |G7alt |Cm(^7)|}Dm7b5 G7 Z" class="import-btn">Import to iReal Pro</a>
+            </div>
+
+        </div>
+        <p class="footer">GCE Jazz Guitar Collection V5 • Grand Criteria of Excellence • December 2025</p>
+    </div>
+</body>
+</html>
+

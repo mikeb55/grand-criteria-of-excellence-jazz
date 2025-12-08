@@ -9,11 +9,6 @@
 *.wav
 *.mp3
 
-# BUT allow Trio Tunes lead sheets and combined PDFs
-!Trio Tunes/PDF/*.pdf
-!Trio Tunes/Tune*/LeadSheet/**/*.pdf
-!Trio Tunes/Tune*/LeadSheet/**/*.musicxml
-
 # Python
 __pycache__/
 *.pyc
