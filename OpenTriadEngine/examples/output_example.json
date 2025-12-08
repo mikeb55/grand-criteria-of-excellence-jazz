@@ -1,0 +1,199 @@
+{
+  "version": "1.0",
+  "engine": "Open Triad Engine",
+  "description": "Example output: C Major Scale in Open Triads with ii-V-I",
+  
+  "scale_triads": {
+    "scale": "C Ionian",
+    "triads": [
+      {
+        "root": "C4",
+        "triad_type": "major",
+        "inversion": 0,
+        "voicing_type": "open_root",
+        "voices": ["C4", "E4", "G5"],
+        "symbol": "C",
+        "intervals": [4, 15],
+        "contour": "M-W",
+        "is_open": true
+      },
+      {
+        "root": "D4",
+        "triad_type": "minor",
+        "inversion": 0,
+        "voicing_type": "open_root",
+        "voices": ["D4", "F4", "A5"],
+        "symbol": "Dm",
+        "intervals": [3, 16],
+        "contour": "N-W",
+        "is_open": true
+      },
+      {
+        "root": "E4",
+        "triad_type": "minor",
+        "inversion": 0,
+        "voicing_type": "open_root",
+        "voices": ["E4", "G4", "B5"],
+        "symbol": "Em",
+        "intervals": [3, 16],
+        "contour": "N-W",
+        "is_open": true
+      },
+      {
+        "root": "F4",
+        "triad_type": "major",
+        "inversion": 0,
+        "voicing_type": "open_root",
+        "voices": ["F4", "A4", "C6"],
+        "symbol": "F",
+        "intervals": [4, 15],
+        "contour": "M-W",
+        "is_open": true
+      },
+      {
+        "root": "G4",
+        "triad_type": "major",
+        "inversion": 0,
+        "voicing_type": "open_root",
+        "voices": ["G4", "B4", "D6"],
+        "symbol": "G",
+        "intervals": [4, 15],
+        "contour": "M-W",
+        "is_open": true
+      },
+      {
+        "root": "A4",
+        "triad_type": "minor",
+        "inversion": 0,
+        "voicing_type": "open_root",
+        "voices": ["A4", "C5", "E6"],
+        "symbol": "Am",
+        "intervals": [3, 16],
+        "contour": "N-W",
+        "is_open": true
+      },
+      {
+        "root": "B4",
+        "triad_type": "diminished",
+        "inversion": 0,
+        "voicing_type": "open_root",
+        "voices": ["B4", "D5", "F6"],
+        "symbol": "Bdim",
+        "intervals": [3, 15],
+        "contour": "N-W",
+        "is_open": true
+      }
+    ]
+  },
+  
+  "two_five_one": {
+    "key": "C",
+    "mode": "major",
+    "progression": {
+      "ii": {
+        "root": "D4",
+        "triad_type": "minor",
+        "voicing_type": "open_root",
+        "voices": ["D4", "F4", "A5"],
+        "symbol": "Dm"
+      },
+      "V": {
+        "root": "G4",
+        "triad_type": "major",
+        "voicing_type": "open_first",
+        "voices": ["B3", "D4", "G5"],
+        "symbol": "G"
+      },
+      "I": {
+        "root": "C4",
+        "triad_type": "major",
+        "voicing_type": "open_root",
+        "voices": ["C4", "E4", "G5"],
+        "symbol": "C"
+      }
+    },
+    "voice_leading": [
+      {
+        "from": "Dm",
+        "to": "G",
+        "motions": [
+          {"voice": "bass", "from": "D4", "to": "B3", "interval": -3, "type": "skip"},
+          {"voice": "middle", "from": "F4", "to": "D4", "interval": -3, "type": "skip"},
+          {"voice": "top", "from": "A5", "to": "G5", "interval": -2, "type": "step"}
+        ],
+        "narrative": "Common tone retained: D. Bass moves down a minor third. Top voice steps down."
+      },
+      {
+        "from": "G",
+        "to": "C",
+        "motions": [
+          {"voice": "bass", "from": "B3", "to": "C4", "interval": 1, "type": "step"},
+          {"voice": "middle", "from": "D4", "to": "E4", "interval": 2, "type": "step"},
+          {"voice": "top", "from": "G5", "to": "G5", "interval": 0, "type": "common_tone"}
+        ],
+        "narrative": "Common tone retained: G. Outer voices move by step. Overall: contrary motion."
+      }
+    ]
+  },
+  
+  "shape_bundle_example": {
+    "chord": "C",
+    "shapes": {
+      "open_root": {
+        "voices": ["C4", "E4", "G5"],
+        "bass": "C",
+        "top": "G"
+      },
+      "open_first": {
+        "voices": ["E3", "G4", "C5"],
+        "bass": "E",
+        "top": "C"
+      },
+      "open_second": {
+        "voices": ["G3", "C4", "E5"],
+        "bass": "G",
+        "top": "E"
+      }
+    },
+    "contours": {
+      "open_root": {"type": "ascending", "range": 19},
+      "open_first": {"type": "ascending", "range": 20},
+      "open_second": {"type": "ascending", "range": 20}
+    }
+  },
+  
+  "melodic_patterns": {
+    "source_chord": "C",
+    "patterns": [
+      {
+        "type": "arpeggio_up",
+        "notes": ["C4", "E4", "G5"],
+        "contour": "ascending"
+      },
+      {
+        "type": "arpeggio_down",
+        "notes": ["G5", "E4", "C4"],
+        "contour": "descending"
+      },
+      {
+        "type": "rotation_1-3-2",
+        "notes": ["C4", "G5", "E4"],
+        "contour": "arch"
+      },
+      {
+        "type": "wave",
+        "notes": ["C4", "G5", "E4", "C5", "G5", "E4"],
+        "contour": "wave"
+      }
+    ]
+  },
+  
+  "metadata": {
+    "generated_by": "Open Triad Engine v1.0",
+    "voice_leading_mode": "functional",
+    "total_triads": 7,
+    "unique_roots": ["C", "D", "E", "F", "G", "A", "B"],
+    "voicing_types": ["open_root", "open_first", "open_second"]
+  }
+}
+
