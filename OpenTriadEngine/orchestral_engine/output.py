@@ -291,7 +291,7 @@ class OrchestraOutput:
             f.write(xml)
     
     def to_html(self, score: OrchestraScore) -> str:
-        """Generate HTML score sheet (for PDF)."""
+        """Generate HTML score sheet (for PDF) - printer-friendly: dark text on light background."""
         voices_html = ""
         for inst in self.SCORE_ORDER:
             if inst in score.voices and score.voices[inst]:
@@ -314,38 +314,34 @@ class OrchestraOutput:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{html.escape(score.title)}</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=JetBrains+Mono&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Code+Pro&display=swap');
         
         :root {{
-            --bg: #0f172a;
-            --surface: #1e293b;
-            --accent: #f59e0b;
-            --accent2: #10b981;
-            --text: #f1f5f9;
-            --muted: #94a3b8;
+            --bg: #ffffff;
+            --surface: #f8f9fa;
+            --accent: #1e3a5f;
+            --accent2: #3d5a80;
+            --text: #333333;
+            --muted: #666666;
+            --border: #dee2e6;
         }}
         
         body {{
-            font-family: 'Crimson Pro', Georgia, serif;
-            background: linear-gradient(135deg, var(--bg) 0%, #1a1a2e 100%);
+            font-family: 'Merriweather', Georgia, serif;
+            background: var(--bg);
             color: var(--text);
             padding: 2rem;
             margin: 0;
-            min-height: 100vh;
         }}
         
         .container {{
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
-            background: var(--surface);
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
         }}
         
         h1 {{
             color: var(--accent);
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 0.5rem;
             border-bottom: 3px solid var(--accent);
             padding-bottom: 0.5rem;
@@ -354,7 +350,7 @@ class OrchestraOutput:
         .composer {{
             color: var(--muted);
             font-style: italic;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             margin-bottom: 2rem;
         }}
         
@@ -363,9 +359,10 @@ class OrchestraOutput:
             grid-template-columns: repeat(5, 1fr);
             gap: 1rem;
             margin-bottom: 2rem;
-            padding: 1.5rem;
-            background: rgba(0,0,0,0.3);
-            border-radius: 12px;
+            padding: 1rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
         }}
         
         .meta-item {{
@@ -376,37 +373,38 @@ class OrchestraOutput:
             font-size: 0.75rem;
             color: var(--muted);
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.05em;
         }}
         
         .meta-value {{
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: var(--accent);
             font-weight: bold;
         }}
         
         h2 {{
-            color: var(--accent2);
+            color: var(--accent);
             margin-top: 2rem;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }}
         
         .voice {{
-            background: rgba(0,0,0,0.2);
-            padding: 1rem 1.5rem;
-            border-radius: 8px;
-            margin-bottom: 0.75rem;
+            background: var(--surface);
+            border: 1px solid var(--border);
             border-left: 4px solid var(--accent);
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 0.75rem;
         }}
         
         .voice h3 {{
             color: var(--accent);
             margin: 0 0 0.5rem 0;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }}
         
         .notes {{
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'Source Code Pro', monospace;
             font-size: 0.8rem;
             color: var(--muted);
             word-wrap: break-word;
@@ -414,11 +412,11 @@ class OrchestraOutput:
         }}
         
         .analysis {{
-            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(16, 185, 129, 0.1));
+            background: var(--surface);
             border-left: 4px solid var(--accent2);
-            padding: 1.5rem;
+            padding: 1rem;
             margin-top: 2rem;
-            border-radius: 8px;
+            border-radius: 6px;
         }}
         
         footer {{
@@ -426,14 +424,20 @@ class OrchestraOutput:
             color: var(--muted);
             margin-top: 2rem;
             padding-top: 1rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
+            border-top: 1px solid var(--border);
             font-size: 0.9rem;
+        }}
+        
+        @media print {{
+            body {{ padding: 0.5rem; }}
+            .metadata {{ padding: 0.5rem; }}
+            .voice {{ padding: 0.5rem; margin-bottom: 0.5rem; }}
         }}
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🎼 {html.escape(score.title)}</h1>
+        <h1>{html.escape(score.title)}</h1>
         <p class="composer">by {html.escape(score.composer)}</p>
         
         <div class="metadata">

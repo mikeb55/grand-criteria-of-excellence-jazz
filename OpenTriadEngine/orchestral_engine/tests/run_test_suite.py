@@ -637,7 +637,7 @@ def run_test_suite():
 
 
 def generate_combined_html(results: dict, output_dir: Path):
-    """Generate combined HTML report."""
+    """Generate combined HTML report (printer-friendly: dark text on light background)."""
     
     tests_html = ""
     test_num = 1
@@ -660,38 +660,37 @@ def generate_combined_html(results: dict, output_dir: Path):
     <meta charset="UTF-8">
     <title>Orchestral Engine Test Suite Report</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Source+Code+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Code+Pro&display=swap');
         
         :root {{
-            --bg: #1a1a2e;
-            --surface: #16213e;
-            --border: #e94560;
-            --text: #eaeaea;
-            --accent: #f59e0b;
-            --success: #10b981;
+            --bg: #ffffff;
+            --surface: #f8f9fa;
+            --border: #dee2e6;
+            --text: #333333;
+            --accent: #1e3a5f;
+            --success: #28a745;
         }}
         
         body {{
             font-family: 'Source Code Pro', monospace;
-            background: linear-gradient(180deg, var(--bg), #0f0f23);
+            background: var(--bg);
             color: var(--text);
             margin: 0;
             padding: 2rem;
-            min-height: 100vh;
         }}
         
         .container {{
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
         }}
         
         h1 {{
-            font-family: 'Cinzel', serif;
+            font-family: 'Merriweather', serif;
             color: var(--accent);
-            font-size: 2.5rem;
+            font-size: 2rem;
             text-align: center;
-            border-bottom: 3px solid var(--border);
-            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 0.75rem;
         }}
         
         .summary {{
@@ -703,51 +702,55 @@ def generate_combined_html(results: dict, output_dir: Path):
         
         .stat {{
             background: var(--surface);
-            border: 1px solid var(--border);
-            padding: 1.5rem;
+            border: 2px solid var(--border);
+            padding: 1.25rem;
             text-align: center;
             border-radius: 8px;
         }}
         
         .stat-value {{
-            font-size: 2.5rem;
+            font-size: 1.75rem;
             color: var(--accent);
             font-weight: bold;
         }}
         
         .stat-label {{
-            color: #8b949e;
-            font-size: 0.85rem;
+            color: #666666;
+            font-size: 0.8rem;
             text-transform: uppercase;
         }}
         
         .test {{
             background: var(--surface);
+            border: 1px solid var(--border);
             border-left: 4px solid var(--accent);
-            border-radius: 8px;
-            padding: 1.5rem;
+            border-radius: 6px;
+            padding: 1.25rem;
             margin: 1rem 0;
         }}
         
         .test h2 {{
             color: var(--accent);
             margin-top: 0;
+            font-size: 1.1rem;
         }}
         
         .test-details {{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
+            gap: 0.75rem;
         }}
         
         .detail {{
             padding: 0.5rem;
-            background: rgba(0,0,0,0.2);
+            background: #ffffff;
+            border: 1px solid var(--border);
             border-radius: 4px;
+            font-size: 0.85rem;
         }}
         
         .detail span:first-child {{
-            color: #8b949e;
+            color: #666666;
         }}
         
         .pass {{
@@ -757,16 +760,22 @@ def generate_combined_html(results: dict, output_dir: Path):
         
         footer {{
             text-align: center;
-            color: #8b949e;
-            margin-top: 3rem;
+            color: #666666;
+            margin-top: 2rem;
             padding-top: 1rem;
             border-top: 1px solid var(--border);
+        }}
+        
+        @media print {{
+            body {{ padding: 0.5rem; }}
+            .stat {{ padding: 0.75rem; }}
+            .test {{ padding: 0.75rem; margin: 0.5rem 0; }}
         }}
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🎼 Orchestral Engine Test Suite</h1>
+        <h1>Orchestral Engine Test Suite Report</h1>
         
         <div class="summary">
             <div class="stat">

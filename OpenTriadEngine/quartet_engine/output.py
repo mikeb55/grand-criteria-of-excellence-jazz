@@ -341,7 +341,7 @@ class QuartetOutput:
             score: QuartetScore object
         
         Returns:
-            HTML string
+            HTML string (printer-friendly: dark text on light background)
         """
         # Build voice tables
         voices_html = ""
@@ -366,18 +366,20 @@ class QuartetOutput:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{html.escape(score.title)}</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Code+Pro&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Code+Pro&display=swap');
         
         :root {{
-            --bg: #1a1a2e;
-            --surface: #16213e;
-            --accent: #e94560;
-            --text: #eaeaea;
-            --muted: #a0a0a0;
+            --bg: #ffffff;
+            --surface: #f8f9fa;
+            --accent: #1e3a5f;
+            --accent2: #3d5a80;
+            --text: #333333;
+            --muted: #666666;
+            --border: #dee2e6;
         }}
         
         body {{
-            font-family: 'Playfair Display', Georgia, serif;
+            font-family: 'Merriweather', Georgia, serif;
             background: var(--bg);
             color: var(--text);
             padding: 2rem;
@@ -387,16 +389,13 @@ class QuartetOutput:
         .container {{
             max-width: 900px;
             margin: 0 auto;
-            background: var(--surface);
-            padding: 2rem;
-            border-radius: 12px;
         }}
         
         h1 {{
             color: var(--accent);
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent);
+            border-bottom: 3px solid var(--accent);
             padding-bottom: 0.5rem;
         }}
         
@@ -412,7 +411,8 @@ class QuartetOutput:
             gap: 1rem;
             margin-bottom: 2rem;
             padding: 1rem;
-            background: rgba(0,0,0,0.2);
+            background: var(--surface);
+            border: 1px solid var(--border);
             border-radius: 8px;
         }}
         
@@ -435,10 +435,13 @@ class QuartetOutput:
         h2 {{
             color: var(--accent);
             margin-top: 2rem;
+            font-size: 1.3rem;
         }}
         
         .voice {{
-            background: rgba(0,0,0,0.2);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
             padding: 1rem;
             border-radius: 6px;
             margin-bottom: 1rem;
@@ -457,8 +460,8 @@ class QuartetOutput:
         }}
         
         .analysis {{
-            background: rgba(233, 69, 96, 0.1);
-            border-left: 4px solid var(--accent);
+            background: var(--surface);
+            border-left: 4px solid var(--accent2);
             padding: 1rem;
             margin-top: 2rem;
         }}
@@ -467,7 +470,15 @@ class QuartetOutput:
             text-align: center;
             color: var(--muted);
             margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
             font-size: 0.9rem;
+        }}
+        
+        @media print {{
+            body {{ padding: 0.5rem; }}
+            .metadata {{ padding: 0.5rem; }}
+            .voice {{ padding: 0.5rem; margin-bottom: 0.5rem; }}
         }}
     </style>
 </head>
