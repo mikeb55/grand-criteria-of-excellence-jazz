@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Triad Engine v1.0 - Complete Instruction Manual</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
+        
+        :root {
+            --primary: #1e3a5f;
+            --secondary: #3d5a80;
+            --accent: #ee6c4d;
+            --light: #f8f9fa;
+            --dark: #293241;
+            --code-bg: #2d3748;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background: white;
+        }
+        
+        h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.5em;
+            color: var(--primary);
+            border-bottom: 4px solid var(--accent);
+            padding-bottom: 15px;
+            margin-top: 50px;
+        }
+        
+        h1:first-of-type {
+            margin-top: 0;
+            font-size: 3em;
+            text-align: center;
+            border-bottom: none;
+        }
+        
+        h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8em;
+            color: var(--secondary);
+            margin-top: 40px;
+            border-left: 5px solid var(--accent);
+            padding-left: 15px;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            color: var(--primary);
+            margin-top: 30px;
+        }
+        
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            background: #f1f3f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background: var(--code-bg);
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85em;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95em;
+        }
+        
+        th {
+            background: var(--primary);
+            color: white;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .toc {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        
+        .toc h2 {
+            margin-top: 0;
+            border-left: none;
+            padding-left: 0;
+        }
+        
+        .toc ol {
+            columns: 2;
+            column-gap: 40px;
+        }
+        
+        .toc li {
+            margin-bottom: 8px;
+        }
+        
+        .toc a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        
+        .toc a:hover {
+            color: var(--accent);
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%);
+            border-left: 5px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .tip-box {
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            border-left: 5px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .note-box {
+            background: linear-gradient(135deg, #cce5ff 0%, #b8daff 100%);
+            border-left: 5px solid #007bff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .example {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .example h4 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+        
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            margin: 50px 0;
+        }
+        
+        .subtitle {
+            text-align: center;
+            font-size: 1.3em;
+            color: var(--secondary);
+            margin-top: -20px;
+            margin-bottom: 40px;
+        }
+        
+        .version {
+            text-align: center;
+            color: #6c757d;
+            margin-bottom: 50px;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+            pre {
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+            h1, h2 {
+                page-break-after: avoid;
+            }
+            pre, table {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>🎹 Open Triad Engine v1.0</h1>
+<p class="subtitle">Complete Instruction Manual</p>
+<p class="version">Version 1.0 | GCE-Jazz Project</p>
+
+<div class="toc">
+<h2>Table of Contents</h2>
+<ol>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#install">Installation</a></li>
+    <li><a href="#quickstart">Quick Start</a></li>
+    <li><a href="#concepts">Core Concepts</a></li>
+    <li><a href="#triads">Creating Triads</a></li>
+    <li><a href="#voicings">Open Voicing Transformations</a></li>
+    <li><a href="#inversions">Inversions</a></li>
+    <li><a href="#scales">Scale Mapping</a></li>
+    <li><a href="#voiceleading">Voice Leading</a></li>
+    <li><a href="#patterns">Shape Bundles & Patterns</a></li>
+    <li><a href="#engines">Special Engines</a></li>
+    <li><a href="#export">Export Functions</a></li>
+    <li><a href="#integration">Integration</a></li>
+    <li><a href="#api">API Reference</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
+</ol>
+</div>
+
+<hr>
+
+<h1 id="intro">1. Introduction</h1>
+
+<p>The <strong>Open Triad Engine</strong> is a modular generative engine that:</p>
+
+<ul>
+    <li>Converts closed triads into open triads (drop-2, drop-3, super-open)</li>
+    <li>Cycles through inversions intelligently</li>
+    <li>Performs adaptive voice-leading with 4 specialized modes</li>
+    <li>Maps shapes across scales and progressions</li>
+    <li>Outputs melodic, harmonic, chord-melody, counterpoint, and orchestration material</li>
+</ul>
+
+<div class="note-box">
+<strong>Integration Ready:</strong> The engine is designed to be called by other generators like EtudeGen, MAMS, TriadPair Engine, Counterpoint Companion, and Quartet Engine.
+</div>
+
+<hr>
+
+<h1 id="install">2. Installation</h1>
+
+<h2>2.1 Location</h2>
+<pre><code>C:\Users\mike\Documents\Cursor AI Projects\GCE-Jazz\OpenTriadEngine\</code></pre>
+
+<h2>2.2 Verify Installation</h2>
+<pre><code>cd OpenTriadEngine
+python -c "from open_triad_engine import OpenTriadEngine; print('Engine loaded!')"</code></pre>
+
+<hr>
+
+<h1 id="quickstart">3. Quick Start</h1>
+
+<h2>3.1 Basic Import</h2>
+<pre><code>from open_triad_engine import OpenTriadEngine, create_engine, Note, Triad</code></pre>
+
+<h2>3.2 Create an Engine</h2>
+<pre><code># Default configuration
+engine = OpenTriadEngine()
+
+# With custom configuration
+engine = create_engine(
+    mode='melodic',           # melodic | harmonic | chord_melody | counterpoint | orchestration
+    priority='smooth',        # smooth | intervallic | mixed
+    triad_type='major'        # major | minor | dim | aug | sus
+)</code></pre>
+
+<h2>3.3 Your First Open Triads</h2>
+<pre><code>engine = OpenTriadEngine()
+
+# Generate open triads for C major scale
+result = engine.generate_scale_triads('C', 'ionian')
+
+# Print the results
+for triad in result.data:
+    voices = [str(v) for v in triad.voices]
+    print(f"{triad.symbol}: {voices}")</code></pre>
+
+<div class="example">
+<h4>Output:</h4>
+<pre><code>C: ['C4', 'E4', 'G5']
+Dm: ['D4', 'F4', 'A5']
+Em: ['E4', 'G4', 'B5']
+F: ['F4', 'A4', 'C6']
+G: ['G4', 'B4', 'D6']
+Am: ['A4', 'C5', 'E6']
+Bdim: ['B4', 'D5', 'F6']</code></pre>
+</div>
+
+<hr>
+
+<h1 id="concepts">4. Core Concepts</h1>
+
+<h2>4.1 What is an Open Triad?</h2>
+
+<table>
+    <tr>
+        <th>Voicing</th>
+        <th>Notes</th>
+        <th>Outer Interval</th>
+    </tr>
+    <tr>
+        <td>Closed</td>
+        <td>C4-E4-G4</td>
+        <td>7 semitones</td>
+    </tr>
+    <tr>
+        <td>Drop-2</td>
+        <td>E3-C4-G4</td>
+        <td>15 semitones</td>
+    </tr>
+    <tr>
+        <td>Drop-3</td>
+        <td>C3-E4-G4</td>
+        <td>19 semitones</td>
+    </tr>
+    <tr>
+        <td>Super-Open</td>
+        <td>C3-E4-G5</td>
+        <td>31 semitones</td>
+    </tr>
+</table>
+
+<h2>4.2 The Note Class</h2>
+<pre><code>from open_triad_engine import Note
+
+# Create a note
+note = Note('C', 4)  # Middle C
+
+# Properties
+print(note.name)        # 'C'
+print(note.octave)      # 4
+print(note.midi_number) # 60
+
+# Transpose
+g4 = note.transpose(7)  # G4 (up a fifth)</code></pre>
+
+<hr>
+
+<h1 id="triads">5. Creating Triads</h1>
+
+<h2>5.1 Using the Engine</h2>
+<pre><code>engine = OpenTriadEngine()
+
+# Create individual triads
+c_major = engine.create_triad('C', 'major', 4)
+d_minor = engine.create_triad('D', 'minor', 4)
+f_sharp_dim = engine.create_triad('F#', 'dim', 4)
+g_aug = engine.create_triad('G', 'aug', 4)
+a_sus4 = engine.create_triad('A', 'sus4', 4)</code></pre>
+
+<h2>5.2 Triad Types</h2>
+<table>
+    <tr>
+        <th>Type</th>
+        <th>Symbol</th>
+        <th>Intervals</th>
+        <th>Example</th>
+    </tr>
+    <tr><td>Major</td><td>'major'</td><td>R, M3, P5</td><td>C-E-G</td></tr>
+    <tr><td>Minor</td><td>'minor'</td><td>R, m3, P5</td><td>C-Eb-G</td></tr>
+    <tr><td>Diminished</td><td>'dim'</td><td>R, m3, d5</td><td>C-Eb-Gb</td></tr>
+    <tr><td>Augmented</td><td>'aug'</td><td>R, M3, A5</td><td>C-E-G#</td></tr>
+    <tr><td>Sus2</td><td>'sus2'</td><td>R, M2, P5</td><td>C-D-G</td></tr>
+    <tr><td>Sus4</td><td>'sus4'</td><td>R, P4, P5</td><td>C-F-G</td></tr>
+</table>
+
+<hr>
+
+<h1 id="voicings">6. Open Voicing Transformations</h1>
+
+<h2>6.1 Drop-2 Voicing</h2>
+<pre><code>engine = OpenTriadEngine()
+closed = engine.create_triad('C', 'major', 4)
+
+# Convert to drop-2
+drop2 = engine.to_open_voicing(closed, 'drop2')
+print(f"Drop-2: {[str(v) for v in drop2.voices]}")
+# Output: Drop-2: ['E3', 'C4', 'G4']</code></pre>
+
+<h2>6.2 Drop-3 Voicing</h2>
+<pre><code>drop3 = engine.to_open_voicing(closed, 'drop3')
+# Output: ['C3', 'E4', 'G4']</code></pre>
+
+<h2>6.3 Super-Open Voicing</h2>
+<pre><code>super_open = engine.to_open_voicing(closed, 'super_open')
+# Output: ['C3', 'E4', 'G5']</code></pre>
+
+<hr>
+
+<h1 id="inversions">7. Inversions</h1>
+
+<h2>7.1 Get All Inversions</h2>
+<pre><code>triad = engine.create_triad('C', 'major', 4)
+inversions = engine.get_all_inversions(triad)
+
+print("Root:", [str(v) for v in inversions['open_root'].voices])
+print("1st:", [str(v) for v in inversions['open_first'].voices])
+print("2nd:", [str(v) for v in inversions['open_second'].voices])</code></pre>
+
+<div class="example">
+<h4>Output:</h4>
+<pre><code>Root: ['C4', 'E4', 'G5']
+1st:  ['E3', 'G4', 'C5']
+2nd:  ['G3', 'C4', 'E5']</code></pre>
+</div>
+
+<hr>
+
+<h1 id="scales">8. Scale Mapping</h1>
+
+<h2>8.1 Generate Triads for a Scale</h2>
+<pre><code># C Ionian (Major)
+c_major = engine.generate_scale_triads('C', 'ionian')
+
+# D Dorian
+d_dorian = engine.generate_scale_triads('D', 'dorian')
+
+# A Melodic Minor
+a_mel_minor = engine.generate_scale_triads('A', 'melodic_minor')</code></pre>
+
+<h2>8.2 Available Scales (50+)</h2>
+<table>
+    <tr>
+        <th>Category</th>
+        <th>Scales</th>
+    </tr>
+    <tr>
+        <td>Diatonic</td>
+        <td>ionian, dorian, phrygian, lydian, mixolydian, aeolian, locrian</td>
+    </tr>
+    <tr>
+        <td>Melodic Minor</td>
+        <td>melodic_minor, dorian_b2, lydian_augmented, lydian_dominant, altered</td>
+    </tr>
+    <tr>
+        <td>Symmetric</td>
+        <td>whole_tone, half_whole, whole_half, augmented</td>
+    </tr>
+    <tr>
+        <td>Pentatonic</td>
+        <td>major_pentatonic, minor_pentatonic, blues</td>
+    </tr>
+    <tr>
+        <td>Exotic</td>
+        <td>hirajoshi, hungarian_minor, persian, double_harmonic</td>
+    </tr>
+</table>
+
+<hr>
+
+<h1 id="voiceleading">9. Voice Leading</h1>
+
+<h2>9.1 Four Voice-Leading Modes</h2>
+<table>
+    <tr>
+        <th>Mode</th>
+        <th>Best For</th>
+        <th>Features</th>
+    </tr>
+    <tr>
+        <td><strong>Functional</strong></td>
+        <td>Traditional harmony, ii-V-I</td>
+        <td>APVL, TRAM, common-tone retention</td>
+    </tr>
+    <tr>
+        <td><strong>Modal</strong></td>
+        <td>Modern jazz</td>
+        <td>SISM, intervallic freedom</td>
+    </tr>
+    <tr>
+        <td><strong>Counterpoint</strong></td>
+        <td>Independent lines</td>
+        <td>Contrary motion, no crossing</td>
+    </tr>
+    <tr>
+        <td><strong>Orchestration</strong></td>
+        <td>Ensemble writing</td>
+        <td>Register mapping, instrument assignment</td>
+    </tr>
+</table>
+
+<h2>9.2 Voice Lead a Progression</h2>
+<pre><code># ii-V-I in C
+result = engine.voice_lead_progression(['Dm', 'G', 'C'])
+
+for triad in result.data['triads']:
+    print(f"{triad.symbol}: {[str(v) for v in triad.voices]}")</code></pre>
+
+<div class="example">
+<h4>Output:</h4>
+<pre><code>Dm: ['D4', 'F4', 'A5']
+G:  ['B3', 'D4', 'G5']
+C:  ['C4', 'E4', 'G5']</code></pre>
+</div>
+
+<hr>
+
+<h1 id="patterns">10. Shape Bundles & Patterns</h1>
+
+<h2>10.1 Generate Melodic Patterns</h2>
+<pre><code>triad = engine.create_triad('C', 'major', 4)
+patterns = engine.generate_patterns(triad)
+
+for pattern in patterns[:5]:
+    notes = [str(n) for n in pattern.notes]
+    print(f"{pattern.pattern_type}: {notes}")</code></pre>
+
+<div class="example">
+<h4>Pattern Types:</h4>
+<pre><code>arpeggio_up: ['C4', 'E4', 'G4']
+arpeggio_down: ['G4', 'E4', 'C4']
+rotation_1-3-2: ['C4', 'G4', 'E4']
+wave: ['C4', 'G4', 'E4', 'C5', 'G4', 'E4']
+pendulum: ['C4', 'G4', 'C4', 'E4', 'G4', 'E4']</code></pre>
+</div>
+
+<hr>
+
+<h1 id="engines">11. Special Engines</h1>
+
+<h2>11.1 ii-V-I Engine</h2>
+<pre><code>result = engine.generate_two_five_one('C')
+
+print(f"ii: {result.ii.symbol}")   # Dm
+print(f"V:  {result.V.symbol}")    # G
+print(f"I:  {result.I.symbol}")    # C</code></pre>
+
+<h2>11.2 Chord-Melody Engine</h2>
+<pre><code>melody = [Note('E', 5), Note('D', 5), Note('C', 5)]
+voicings = engine.create_chord_melody(melody)
+
+for v in voicings:
+    print(f"Melody: {v.melody_note}, Chord: {v.triad.symbol}")</code></pre>
+
+<h2>11.3 Triad-Pair Engine</h2>
+<pre><code>pair = engine.create_triad_pair('C', 'klemons')
+print(f"Pair: {pair.triad1.symbol} + {pair.triad2.symbol}")
+# Output: Pair: C + D</code></pre>
+
+<h2>11.4 Counterpoint Companion</h2>
+<pre><code>triads = [engine.create_triad('C', 'major'), engine.create_triad('F', 'major')]
+result = engine.generate_counterpoint(triads)
+
+print("Soprano:", [str(n) for n in result.soprano.notes])
+print("Alto:", [str(n) for n in result.alto.notes])
+print("Bass:", [str(n) for n in result.bass.notes])</code></pre>
+
+<hr>
+
+<h1 id="export">12. Export Functions</h1>
+
+<h2>12.1 MusicXML (for Notation Software)</h2>
+<pre><code>triads = engine.generate_scale_triads('C', 'ionian').data
+path = engine.export_musicxml(triads, 'output.xml', title='Open Triads')</code></pre>
+
+<h2>12.2 JSON</h2>
+<pre><code>path = engine.export_json(triads, 'triads.json')</code></pre>
+
+<h2>12.3 Guitar TAB</h2>
+<pre><code>path = engine.export_tab(triads, 'triads.txt')</code></pre>
+
+<h2>12.4 HTML Etude</h2>
+<pre><code>path = engine.export_etude(
+    title='C Major Study',
+    key='C',
+    triads=triads,
+    filename='etude.html'
+)</code></pre>
+
+<hr>
+
+<h1 id="integration">13. Integration</h1>
+
+<h2>Quick Functions for Other Generators</h2>
+<pre><code>from open_triad_engine.engine import (
+    quick_open_triads,
+    quick_voice_lead,
+    quick_two_five_one
+)
+
+# One-liners
+triads = quick_open_triads('G', 'dorian')
+voiced = quick_voice_lead(['Am7', 'D7', 'Gmaj7'])
+two_five_one = quick_two_five_one('Bb')</code></pre>
+
+<hr>
+
+<h1 id="api">14. API Reference</h1>
+
+<h2>EngineConfig Options</h2>
+<table>
+    <tr><th>Option</th><th>Values</th><th>Default</th></tr>
+    <tr><td>triad_type</td><td>major, minor, dim, aug, sus</td><td>'major'</td></tr>
+    <tr><td>mode</td><td>melodic, harmonic, chord_melody, counterpoint, orchestration</td><td>'melodic'</td></tr>
+    <tr><td>priority</td><td>smooth, intervallic, mixed</td><td>'smooth'</td></tr>
+    <tr><td>string_set</td><td>'6-4', '5-3', '4-2', 'auto'</td><td>'auto'</td></tr>
+</table>
+
+<hr>
+
+<h1 id="troubleshooting">15. Troubleshooting</h1>
+
+<h2>Import Errors</h2>
+<pre><code>import sys
+sys.path.insert(0, 'C:/path/to/OpenTriadEngine')
+from open_triad_engine import OpenTriadEngine</code></pre>
+
+<h2>Run Tests</h2>
+<pre><code>cd OpenTriadEngine
+pytest tests/ -v</code></pre>
+
+<hr>
+
+<div style="text-align: center; margin-top: 50px; color: #6c757d;">
+    <p><strong>Open Triad Engine v1.0</strong></p>
+    <p>Part of the GCE-Jazz Project</p>
+    <p>Manual Version 1.0</p>
+</div>
+
+</body>
+</html>
+
