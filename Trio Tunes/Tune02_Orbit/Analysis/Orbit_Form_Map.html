@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orbit - Form Map</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #333; padding: 40px; max-width: 900px; margin: 0 auto; }
+        h1 { text-align: center; color: #1a1a2e; border-bottom: 3px solid #333; padding-bottom: 10px; }
+        .form-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 30px 0; }
+        .bar { background: #f5f5f5; border: 2px solid #333; border-radius: 8px; padding: 15px; text-align: center; }
+        .bar-num { font-size: 0.8em; color: #666; }
+        .chord { font-size: 1.2em; font-weight: bold; margin: 10px 0; }
+        .scale { font-size: 0.9em; color: #555; }
+        .section-a { background: #e3f2fd; }
+        .section-b { background: #fff3e0; }
+        .home { background: #c8e6c9; border-color: #2e7d32; }
+        .legend { display: flex; justify-content: center; gap: 30px; margin: 20px 0; }
+        .legend-item { display: flex; align-items: center; gap: 8px; }
+        .legend-box { width: 20px; height: 20px; border: 1px solid #333; border-radius: 4px; }
+        .info { background: #fafafa; padding: 20px; border: 1px solid #ddd; margin-top: 30px; }
+        @media print { body { padding: 20px; } }
+    </style>
+</head>
+<body>
+    <h1>ORBIT — Form Map</h1>
+    <p style="text-align: center; color: #666;">Wayne Shorter Style | F Major | 3/4 | 160 BPM</p>
+    
+    <div class="legend">
+        <div class="legend-item"><div class="legend-box section-a"></div> Section A</div>
+        <div class="legend-item"><div class="legend-box section-b"></div> Section B</div>
+        <div class="legend-item"><div class="legend-box home"></div> Home (Fmaj7)</div>
+    </div>
+    
+    <div class="form-grid">
+        <div class="bar section-a home"><div class="bar-num">Bar 1</div><div class="chord">Fmaj7#11</div><div class="scale">F Lydian</div></div>
+        <div class="bar section-a"><div class="bar-num">Bar 2</div><div class="chord">Ebmaj7#5</div><div class="scale">Eb Lyd Aug</div></div>
+        <div class="bar section-a"><div class="bar-num">Bar 3</div><div class="chord">Dbmaj7</div><div class="scale">Db Lydian</div></div>
+        <div class="bar section-a"><div class="bar-num">Bar 4</div><div class="chord">Bmaj7</div><div class="scale">B Lydian</div></div>
+        
+        <div class="bar section-a"><div class="bar-num">Bar 5</div><div class="chord">Bbm9</div><div class="scale">Bb Dorian</div></div>
+        <div class="bar section-a"><div class="bar-num">Bar 6</div><div class="chord">Abmaj7</div><div class="scale">Ab Lydian</div></div>
+        <div class="bar section-a"><div class="bar-num">Bar 7</div><div class="chord">Gbmaj7</div><div class="scale">Gb Lydian</div></div>
+        <div class="bar section-a"><div class="bar-num">Bar 8</div><div class="chord">Emaj7</div><div class="scale">E Lydian</div></div>
+        
+        <div class="bar section-b home"><div class="bar-num">Bar 9</div><div class="chord">Fmaj7#11</div><div class="scale">F Lydian</div></div>
+        <div class="bar section-b"><div class="bar-num">Bar 10</div><div class="chord">Dbmaj7</div><div class="scale">Db Lydian</div></div>
+        <div class="bar section-b"><div class="bar-num">Bar 11</div><div class="chord">Amaj7</div><div class="scale">A Lydian</div></div>
+        <div class="bar section-b"><div class="bar-num">Bar 12</div><div class="chord">Gmaj7</div><div class="scale">G Lydian</div></div>
+        
+        <div class="bar section-b home"><div class="bar-num">Bar 13</div><div class="chord">Fmaj7#11</div><div class="scale">F Lydian</div></div>
+        <div class="bar section-b"><div class="bar-num">Bar 14</div><div class="chord">Ebm9</div><div class="scale">Eb Dorian</div></div>
+        <div class="bar section-b"><div class="bar-num">Bar 15</div><div class="chord">Dbmaj7</div><div class="scale">Db Lydian</div></div>
+        <div class="bar section-b home"><div class="bar-num">Bar 16</div><div class="chord">Fmaj7</div><div class="scale">F Lydian</div></div>
+    </div>
+    
+    <div class="info">
+        <h3>Root Motion Pattern</h3>
+        <p><strong>Bars 1-4:</strong> F → Eb → Db → B (chromatic descent)</p>
+        <p><strong>Bars 5-8:</strong> Bb → Ab → Gb → E (continued descent)</p>
+        <p><strong>Bars 9-12:</strong> F → Db → A → G (wider intervals)</p>
+        <p><strong>Bars 13-16:</strong> F → Eb → Db → F (return home)</p>
+    </div>
+</body>
+</html>
