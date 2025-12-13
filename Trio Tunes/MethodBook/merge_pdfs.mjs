@@ -11,6 +11,7 @@ if (!existsSync(outputDir)) {
 }
 
 const pdfFiles = [
+    '00_Preface.pdf',
     '00_Introduction.pdf',
     '01_The_Mirror.pdf',
     '02_Crystal_Silence.pdf',
