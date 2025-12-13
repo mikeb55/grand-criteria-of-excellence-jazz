@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>09 Greezy - Trio Tunes Method Book</title>
+    
+<style>
+@page {
+    size: letter;
+    margin: 0.75in 0.75in 1in 0.75in;
+}
+
+@media print {
+    body { font-size: 11pt; }
+    .page-break { page-break-before: always; }
+    pre, table { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    .no-print { display: none; }
+    .back-to-toc { display: none; }
+    a { text-decoration: none; color: #222; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+/* TABLE OF CONTENTS STYLES */
+.toc-container {
+    border: 2px solid #333;
+    padding: 30px 40px;
+    margin: 30px 0 50px 0;
+    background: #fafafa;
+}
+
+.toc-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 22pt;
+}
+
+.toc-chapter {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.toc-chapter:last-child {
+    border-bottom: none;
+}
+
+.toc-chapter-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.toc-chapter-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.toc-chapter-title a:hover {
+    text-decoration: underline;
+}
+
+.toc-chapter-num {
+    color: #666;
+    font-weight: normal;
+}
+
+.toc-subheadings {
+    margin-left: 25px;
+    font-size: 11pt;
+    color: #444;
+}
+
+.toc-subheadings a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toc-subheadings a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO TOC LINK */
+.back-to-toc {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-toc:hover {
+    background: #e0e0e0;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26pt;
+    color: #1a1a2e;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16pt;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13pt;
+    color: #333;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+p { margin-bottom: 12px; text-align: justify; }
+
+ul, ol { margin-left: 25px; margin-bottom: 12px; }
+
+li { margin-bottom: 6px; }
+
+/* TABLES - Printer friendly */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+
+/* CODE - Printer friendly */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    border: 1px solid #ddd;
+}
+
+pre {
+    background-color: #f8f8f8;
+    color: #222;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #222;
+}
+
+blockquote {
+    border-left: 3px solid #666;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 35px 0;
+}
+
+strong { color: #111; }
+em { color: #333; }
+a { color: #333; }
+
+/* Header banner */
+.header-banner {
+    border: 2px solid #333;
+    padding: 25px 30px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.header-banner h1 {
+    color: #111;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 28pt;
+}
+
+.header-banner p {
+    color: #444;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+}
+
+.chapter-divider {
+    border-top: 3px double #333;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+}
+
+.print-instructions {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-instructions { display: none; }
+    .header-banner { margin-top: 0; }
+}
+</style>
+
+</head>
+<body>
+    <h1 id="chapter-9-greezy">CHAPTER 9: GREEZY</h1>
+<p><strong>Style:</strong> Blues Shuffle | <strong>Key:</strong> G Major | <strong>Tempo:</strong> 100 BPM | <strong>Time:</strong> 12/8</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Traditional shuffle with modern diminished substitutions."</em></p>
+<p>Greezy is the greasiest tune in the collection—a down-home blues shuffle in 12/8 with modern harmonic twists. The diminished substitutions add unexpected color while keeping the deep blues feel intact.</p>
+<p><strong>Playing Tip:</strong> Lock with the imaginary drummer's triplet feel. Feel the grease.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>12-bar blues with diminished substitutions:</p>
+<pre><code>| G7       | C7       | G7       | G7  G#dim7 |
+| C7       | C#dim7   | G7       | E7         |
+| Am7      | D7#9     | G7  E7   | Am7  D7    |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>12/8 shuffle</strong>: Triplet subdivision throughout</li>
+<li><strong>Diminished connectors</strong>: G#dim7 and C#dim7 as chromatic passing chords</li>
+<li><strong>#9 dominants</strong>: D7#9 for the classic blues "crunch"</li>
+<li><strong>Quick changes</strong>: Bars 4, 11, 12 have two chords each</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Blues Option</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">G7</td>
+<td style="text-align: left;">G Mixolydian</td>
+<td style="text-align: left;">G Blues</td>
+</tr>
+<tr>
+<td style="text-align: left;">C7</td>
+<td style="text-align: left;">C Mixolydian</td>
+<td style="text-align: left;">C Blues</td>
+</tr>
+<tr>
+<td style="text-align: left;">G#dim7</td>
+<td style="text-align: left;">G# Half-Whole Diminished</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;">C#dim7</td>
+<td style="text-align: left;">C# Half-Whole Diminished</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;">E7</td>
+<td style="text-align: left;">E Mixolydian</td>
+<td style="text-align: left;">E Blues</td>
+</tr>
+<tr>
+<td style="text-align: left;">D7#9</td>
+<td style="text-align: left;">D Half-Whole Diminished</td>
+<td style="text-align: left;">D Blues</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-blues-scale-kingdom">The Blues Scale Kingdom</h3>
+<p>Over the whole form, you can use <strong>G Blues</strong> (G-Bb-C-Db-D-F) as a "master scale":
+- Works over G7, C7, D7
+- Creates delicious tension over E7
+- Even works over diminished chords (with adjustment)</p>
+<hr />
+<h2 id="the-128-feel">THE 12/8 FEEL</h2>
+<h3 id="understanding-128">Understanding 12/8</h3>
+<p>12/8 means <strong>12 eighth notes per bar</strong>, grouped in <strong>four groups of three</strong>:</p>
+<pre><code>| 1 2 3 | 4 5 6 | 7 8 9 | 10 11 12 |
+| 1 . . | 2 . . | 3 . . | 4  .  .  |
+</code></pre>
+<p>Each beat has a triplet subdivision built in.</p>
+<h3 id="the-shuffle-vs-128">The Shuffle vs. 12/8</h3>
+<ul>
+<li><strong>Shuffle</strong>: 4/4 with swung eighths (triplet interpretation)</li>
+<li><strong>12/8</strong>: Triplets are explicitly written</li>
+</ul>
+<p>They sound similar, but 12/8 is more "greasy"—the triplets are heavier.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Blues Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">G7</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">F Major</td>
+<td style="text-align: left;">Mixolydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7</td>
+<td style="text-align: left;">Bb Minor</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">Blues minor/major</td>
+</tr>
+<tr>
+<td style="text-align: left;">C7</td>
+<td style="text-align: left;">C Major</td>
+<td style="text-align: left;">Bb Major</td>
+<td style="text-align: left;">Mixolydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">D7#9</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">The crunch</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-greezy-pair">The "Greezy Pair"</h3>
+<p>Over G7, alternate:
+- <strong>G Major</strong> (G-B-D) = bright
+- <strong>Bb Minor</strong> (Bb-Db-F) = dark, bluesy (contains b3, b5, b7 of G)</p>
+<p>This major/minor ambiguity is the essence of blues.</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-classic-blues-version-a">Chorus 1: Classic Blues (Version A)</h3>
+<p><strong>Concept:</strong> Traditional blues vocabulary with triplet phrasing</p>
+<ul>
+<li>Start phrases on beat 2 or 4</li>
+<li>Bends on the b3, 4, and b7</li>
+<li>Call and response structure</li>
+<li>Leave space for the "church"</li>
+</ul>
+<p><strong>Classic Licks:</strong></p>
+<pre><code>(in G Blues)
+e|----------------3-3-|
+B|----3-5-3-------3---|
+G|---------5-3-5------|
+D|--5-----------------|
+</code></pre>
+<h3 id="chorus-2-diminished-connections-version-b">Chorus 2: Diminished Connections (Version B)</h3>
+<p><strong>Concept:</strong> Use diminished arpeggios as chromatic connectors</p>
+<ul>
+<li>Over G#dim7: G#-B-D-F arpeggio (connects G7 to Am7 sound)</li>
+<li>Over C#dim7: C#-E-G-Bb arpeggio (connects C7 to D7 sound)</li>
+<li>Diminished arpeggios resolve by half-step</li>
+</ul>
+<p><strong>Diminished Pattern:</strong></p>
+<pre><code>G#dim7: G#-B-D-F (down) resolving to G or A
+C#dim7: C#-E-G-Bb (down) resolving to D
+</code></pre>
+<h3 id="chorus-3-two-voice-blues-version-c">Chorus 3: Two-Voice Blues (Version C)</h3>
+<p><strong>Concept:</strong> Bass line against melody, blues style</p>
+<p><strong>Texture:</strong>
+- <strong>Bass</strong>: Root notes on beats 1 and 3 (in triplet grouping)
+- <strong>Melody</strong>: Blues licks on the off-beats</p>
+<p>This creates a "one-man-band" effect, common in solo blues guitar.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="blues-voicings">Blues Voicings</h3>
+<pre><code>G7:      3-x-3-4-3-x (shell)
+         3-5-3-4-3-3 (full barre)
+C7:      x-3-2-3-1-x
+         8-x-8-9-8-x (same shape as G7)
+D7#9:    x-5-4-5-4-x (the Hendrix chord)
+E7:      0-2-0-1-0-0 (open position)
+</code></pre>
+<h3 id="diminished-voicings">Diminished Voicings</h3>
+<pre><code>G#dim7:  4-x-3-4-3-x
+C#dim7:  x-4-5-3-5-x
+</code></pre>
+<h3 id="blues-shuffle-comping-pattern">Blues Shuffle Comping Pattern</h3>
+<pre><code>| G7            | G7            |
+| 3-x-x-4-3-x   | 3-x-x-5-3-x   | (alternating 5th and 6th)
+</code></pre>
+<hr />
+<h2 id="technique-the-shuffle-feel">TECHNIQUE: THE SHUFFLE FEEL</h2>
+<h3 id="right-hand">Right Hand</h3>
+<ul>
+<li><strong>Downstrokes on beats 1, 2, 3, 4</strong> (the big beats)</li>
+<li><strong>Upstrokes on the triplet "3"</strong> (the swing)</li>
+<li>Think: <strong>DOWN-down-UP, DOWN-down-UP</strong></li>
+</ul>
+<h3 id="left-hand">Left Hand</h3>
+<ul>
+<li><strong>Muting</strong>: Control unwanted strings</li>
+<li><strong>Grace notes</strong>: Quick hammer-ons/pull-offs for grease</li>
+<li><strong>Bends</strong>: Slow, vocal bends are essential</li>
+</ul>
+<h3 id="the-pocket">The "Pocket"</h3>
+<p>Play slightly <strong>behind</strong> the beat:
+- Don't rush
+- Let the groove breathe
+- The bass player and drummer are your reference</p>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-feel">Week 1: The Feel</h3>
+<ul>
+<li>[ ] Practice the 12/8 pattern with a metronome</li>
+<li>[ ] Work on the shuffle comping pattern</li>
+<li>[ ] Feel the triplets in your body (tap foot, nod head)</li>
+</ul>
+<h3 id="week-2-blues-vocabulary">Week 2: Blues Vocabulary</h3>
+<ul>
+<li>[ ] Transcribe classic blues licks (BB King, Freddie King)</li>
+<li>[ ] Apply to the Greezy changes</li>
+<li>[ ] Work on Version A</li>
+</ul>
+<h3 id="week-3-diminished">Week 3: Diminished</h3>
+<ul>
+<li>[ ] Master diminished arpeggios from any root</li>
+<li>[ ] Practice using them as chromatic connectors</li>
+<li>[ ] Develop Version B</li>
+</ul>
+<h3 id="week-4-two-voice">Week 4: Two-Voice</h3>
+<ul>
+<li>[ ] Isolate bass line</li>
+<li>[ ] Isolate melody</li>
+<li>[ ] Combine slowly</li>
+<li>[ ] Work on Version C</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>BB King</strong> — <em>Live at the Regal</em> (the master)</li>
+<li><strong>Freddie King</strong> — <em>Getting Ready</em> (Texas shuffle)</li>
+<li><strong>Albert King</strong> — <em>Born Under a Bad Sign</em> (slow grease)</li>
+<li><strong>Stevie Ray Vaughan</strong> — <em>Texas Flood</em> (modern blues)</li>
+<li><strong>Robben Ford</strong> — <em>Talk to Your Daughter</em> (jazz-blues)</li>
+</ol>
+<hr />
+<h2 id="tone-tips">TONE TIPS</h2>
+<p>For the blues shuffle sound:
+- <strong>Guitar</strong>: Anything with humbuckers (or single-coils with attitude)
+- <strong>Amp</strong>: Just breaking up, but not fully distorted
+- <strong>No effects</strong>: Maybe a touch of reverb
+- <strong>Fingers</strong>: Dig in with the pick; don't be polite</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Rushing the shuffle</strong>: Stay behind the beat</li>
+<li><strong>Ignoring the diminished</strong>: These are the "modern" touches—use them</li>
+<li><strong>Too many notes</strong>: Blues is about feel, not quantity</li>
+<li><strong>Stiff bends</strong>: Bends should be slow, vocal, expressive</li>
+<li><strong>Losing the triplet</strong>: Every beat is divided in three—feel it</li>
+</ol>
+<hr />
+<h2 id="the-greezy-concept">THE "GREEZY" CONCEPT</h2>
+<p>The title is intentional slang:
+- <strong>Greasy</strong>: Smooth, slippery, funky
+- <strong>Easy</strong>: Relaxed, in the pocket
+- <strong>Greezy</strong>: The combination—effortless funk</p>
+<p>When playing this tune, imagine you're cooking:
+- Low heat (don't rush)
+- Good ingredients (strong vocabulary)
+- Let it simmer (space between phrases)</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Is my shuffle feel solid and relaxed?</li>
+<li>[ ] Do I use the diminished chords as connectors?</li>
+<li>[ ] Are my bends in tune and expressive?</li>
+<li>[ ] Can I play bass and melody simultaneously?</li>
+<li>[ ] Does it feel "greezy"?</li>
+</ul>
+<hr />
+<p><strong>← <a href="08_Nefertitis_Shadow.md">Nefertiti's Shadow</a> | <a href="10_Hexagon.md">Next: Hexagon →</a></strong></p>
+    <div class="footer">
+        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+    </div>
+</body>
+</html>

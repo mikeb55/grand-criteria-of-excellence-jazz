@@ -1,6 +1,6 @@
 % Table of Contents: Jazz Guitar Etude Album
 % Grand Criteria of Excellence (GCE)
-% December 8, 2025
+% December 6, 2025
 
 # ALBUM OVERVIEW: THE GCE JAZZ GUITAR COLLECTION
 
@@ -21,8 +21,8 @@
 | **13** | **"The Void"** | Free | Free | Free | Experimental | Textural improvisation guide; no fixed chords. | Focus on timbre and dynamic swells. |
 | **14** | **"Solar Flare"** | C# | 150 | 7/8 | Fusion/Original | Rapid-fire triad pairs in a 7/8 ostinato. | Accent the first beat of the 3 and the 2 groups. |
 | **15** | **"Final Departure"** | Db | 70 | 4/4 | Closing Ballad | Lush, orchestral drop-2 voicings. | Play rubato; breathe with the phrases. |
-| **16** | **"Blue Minor"** | Cm | 110 | 4/4 | Minor Blues | Essential minor blues with melodic minor colors. | Let the minor 3rd ring; master the minor ii-V. |
 
 ---
 
-**Note:** This collection covers all required styles (Blues Major & Minor, Shorter, Scofield, Metheny, Bossa, Experimental, Originals) and includes required odd meters (Tracks 2, 10, 14).
+**Note:** This collection covers all required styles (Blues, Shorter, Scofield, Metheny, Bossa, Experimental, Originals) and includes required odd meters (Tracks 2, 10, 14).
+

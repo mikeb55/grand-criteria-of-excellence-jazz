@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>12 Angular Motion - Trio Tunes Method Book</title>
+    
+<style>
+@page {
+    size: letter;
+    margin: 0.75in 0.75in 1in 0.75in;
+}
+
+@media print {
+    body { font-size: 11pt; }
+    .page-break { page-break-before: always; }
+    pre, table { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    .no-print { display: none; }
+    .back-to-toc { display: none; }
+    a { text-decoration: none; color: #222; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+/* TABLE OF CONTENTS STYLES */
+.toc-container {
+    border: 2px solid #333;
+    padding: 30px 40px;
+    margin: 30px 0 50px 0;
+    background: #fafafa;
+}
+
+.toc-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 22pt;
+}
+
+.toc-chapter {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.toc-chapter:last-child {
+    border-bottom: none;
+}
+
+.toc-chapter-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.toc-chapter-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.toc-chapter-title a:hover {
+    text-decoration: underline;
+}
+
+.toc-chapter-num {
+    color: #666;
+    font-weight: normal;
+}
+
+.toc-subheadings {
+    margin-left: 25px;
+    font-size: 11pt;
+    color: #444;
+}
+
+.toc-subheadings a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toc-subheadings a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO TOC LINK */
+.back-to-toc {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-toc:hover {
+    background: #e0e0e0;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26pt;
+    color: #1a1a2e;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16pt;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13pt;
+    color: #333;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+p { margin-bottom: 12px; text-align: justify; }
+
+ul, ol { margin-left: 25px; margin-bottom: 12px; }
+
+li { margin-bottom: 6px; }
+
+/* TABLES - Printer friendly */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+
+/* CODE - Printer friendly */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    border: 1px solid #ddd;
+}
+
+pre {
+    background-color: #f8f8f8;
+    color: #222;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #222;
+}
+
+blockquote {
+    border-left: 3px solid #666;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 35px 0;
+}
+
+strong { color: #111; }
+em { color: #333; }
+a { color: #333; }
+
+/* Header banner */
+.header-banner {
+    border: 2px solid #333;
+    padding: 25px 30px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.header-banner h1 {
+    color: #111;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 28pt;
+}
+
+.header-banner p {
+    color: #444;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+}
+
+.chapter-divider {
+    border-top: 3px double #333;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+}
+
+.print-instructions {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-instructions { display: none; }
+    .header-banner { margin-top: 0; }
+}
+</style>
+
+</head>
+<body>
+    <h1 id="chapter-12-angular-motion">CHAPTER 12: ANGULAR MOTION</h1>
+<p><strong>Style:</strong> Bebop/Etude | <strong>Key:</strong> Gb Major | <strong>Tempo:</strong> 200 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Wide interval skips at fast tempos."</em></p>
+<p>Angular Motion is the most technically demanding tune in the collection. At 200 BPM, the wide interval leaps require precision, economy of motion, and deep familiarity with the fretboard. This is a workout—a bebop étude for the modern guitarist.</p>
+<p><strong>Playing Tip:</strong> Economy picking is essential here.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>32-bar AABA with bebop vocabulary (Bird Changes):</p>
+<pre><code>A Section (8 bars):
+| Gbmaj7  | Fm7b5 Bb7| Ebm7   | Edim7   |
+| Abm7    | Db7 Gb7 | Gbmaj7 | Abm7 Db7|
+
+B Section (8 bars):
+| Em7     | A7      | Dmaj7   | Dm7  G7 |
+| Cmaj7   | F#m7 B7 | Bbm7   | Eb7 Ab7 |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Diminished passing chords</strong>: Edim7 (#IVdim) — classic Bird connector</li>
+<li><strong>ii-V chains</strong>: Em7-A7, Dm7-G7, F#m7-B7 — cycling through keys</li>
+<li><strong>Tritone subs implied</strong>: Db7→Gb7, Eb7→Ab7 — back-cycling dominants</li>
+<li><strong>200 BPM</strong>: These changes demand bebop-scale facility</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Bebop Addition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Gbmaj7</td>
+<td style="text-align: left;">Gb Major Bebop</td>
+<td style="text-align: left;">Add natural 6 (E) as passing tone</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebm7</td>
+<td style="text-align: left;">Eb Dorian</td>
+<td style="text-align: left;">Natural 6 (C)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Db7</td>
+<td style="text-align: left;">Db Mixolydian Bebop</td>
+<td style="text-align: left;">Add natural 7 (C) as passing tone</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bmaj7</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">Lydian for color</td>
+</tr>
+<tr>
+<td style="text-align: left;">E7</td>
+<td style="text-align: left;">E Mixolydian</td>
+<td style="text-align: left;">Bebop scale</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bebop-scales">Bebop Scales</h3>
+<p>Bebop scales add a <strong>chromatic passing tone</strong> to create 8-note scales:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Base Scale</th>
+<th style="text-align: left;">Bebop Version</th>
+<th style="text-align: left;">Added Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Gb Major</td>
+<td style="text-align: left;">Gb Bebop Major</td>
+<td style="text-align: left;">Natural 6 (E natural)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Db Mixolydian</td>
+<td style="text-align: left;">Db Bebop Dominant</td>
+<td style="text-align: left;">Natural 7 (C natural)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eb Dorian</td>
+<td style="text-align: left;">Eb Bebop Dorian</td>
+<td style="text-align: left;">Natural 3 (G natural)</td>
+</tr>
+</tbody>
+</table>
+<p>The added note ensures chord tones land on downbeats.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Interval Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Gbmaj7</td>
+<td style="text-align: left;">Gb Major</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Lydian (9, #11, 6)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Db7</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Cb Major</td>
+<td style="text-align: left;">Mixolydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ebm7</td>
+<td style="text-align: left;">Gb Major</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Minor from relative</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bmaj7</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">C# Major</td>
+<td style="text-align: left;">Bridge key</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wide-interval-cells">Wide Interval Cells</h3>
+<p>Over Gbmaj7, practice:</p>
+<pre><code>Gb up to F (major 7th) → down to Db (3rd below) → up to Bb (6th)
+</code></pre>
+<p>These wide leaps define the "angular" quality.</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-bebop-lines-version-a">Chorus 1: Bebop Lines (Version A)</h3>
+<p><strong>Concept:</strong> Classic bebop vocabulary with chromatic approach notes</p>
+<ul>
+<li>Continuous eighth notes (at 200 BPM!)</li>
+<li>Chord tones on downbeats, passing tones on upbeats</li>
+<li>Chromatic enclosures (surround target notes)</li>
+<li>Strong resolutions at phrase ends</li>
+</ul>
+<p><strong>Bebop Devices:</strong>
+| Device | Example (over Gbmaj7) |
+|:---|:---|
+| Enclosure | E-Ab-Gb (below-above-target) |
+| Chromatic approach | F-Gb (from below) |
+| Scale run | Gb-Ab-Bb-Cb-Db... |</p>
+<h3 id="chorus-2-wide-interval-lines-version-b">Chorus 2: Wide Interval Lines (Version B)</h3>
+<p><strong>Concept:</strong> Melodic lines built from 6ths, 7ths, and 9ths</p>
+<ul>
+<li>Avoid stepwise motion</li>
+<li>Every interval should be a 6th or larger</li>
+<li>Creates "angular" quality</li>
+<li>Still swing at 200 BPM</li>
+</ul>
+<p><strong>Pattern:</strong></p>
+<pre><code>Over Gbmaj7: Gb (root) - F (maj7 up) - Bb (6th) - Db (min 3rd up) - Ab (4th down)
+</code></pre>
+<h3 id="chorus-3-intervallic-counterpoint-version-c">Chorus 3: Intervallic Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Two voices, both with wide intervals</p>
+<p><strong>Texture:</strong>
+- <strong>Top voice</strong>: Wide-interval melody
+- <strong>Bottom voice</strong>: Counter-melody also using wide intervals</p>
+<p>At 200 BPM, this requires extreme preparation and economy.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="bebop-voicings-rootless">Bebop Voicings (rootless)</h3>
+<pre><code>Gbmaj7:  x-x-5-7-6-6 (3-5-7-9)
+Ebm7:    x-x-8-8-7-9 (rootless)
+Db7:     x-4-3-4-3-x (shell)
+Abm7:    x-x-6-8-7-7
+</code></pre>
+<h3 id="quick-change-voicings">Quick-Change Voicings</h3>
+<p>At 200 BPM, use minimal movement:</p>
+<pre><code>Ebm7 → Ab7 → Dbmaj7:
+x-6-6-6-7-6 → x-4-5-4-4-4 → x-4-3-5-6-x
+</code></pre>
+<hr />
+<h2 id="technique-economy-picking">TECHNIQUE: ECONOMY PICKING</h2>
+<h3 id="what-is-economy-picking">What Is Economy Picking?</h3>
+<p>Economy picking combines alternate picking with sweep picking:
+- When moving to a higher string: continue the downstroke
+- When moving to a lower string: continue the upstroke</p>
+<p><strong>Example:</strong></p>
+<pre><code>String 2: ↓ (down)
+String 1: ↓ (continue down—sweep)
+String 1: ↑ (alternate)
+String 2: ↑ (continue up—sweep)
+</code></pre>
+<h3 id="why-economy-at-200-bpm">Why Economy at 200 BPM?</h3>
+<ul>
+<li><strong>Fewer pick movements</strong> = more speed potential</li>
+<li><strong>Less tension</strong> = better endurance</li>
+<li><strong>Smoother string crossings</strong> = cleaner intervals</li>
+</ul>
+<h3 id="practice-pattern">Practice Pattern</h3>
+<pre><code>e|--12-15-17--|
+B|-------15---|
+G|------------|
+Pick: ↓  ↓  ↓  (all downs, sweeping to higher strings)
+</code></pre>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-slow-foundations">Week 1: Slow Foundations</h3>
+<ul>
+<li>[ ] Learn the changes at 80 BPM</li>
+<li>[ ] Practice bebop scales over each chord</li>
+<li>[ ] Work on economy picking technique</li>
+</ul>
+<h3 id="week-2-intervals">Week 2: Intervals</h3>
+<ul>
+<li>[ ] Practice 6th intervals across the neck</li>
+<li>[ ] Practice major 7th intervals</li>
+<li>[ ] Apply to Version B at 100 BPM</li>
+</ul>
+<h3 id="week-3-speed-building">Week 3: Speed Building</h3>
+<ul>
+<li>[ ] Increase tempo by 10 BPM each day</li>
+<li>[ ] Focus on relaxation and economy</li>
+<li>[ ] Target 160 BPM by end of week</li>
+</ul>
+<h3 id="week-4-performance-tempo">Week 4: Performance Tempo</h3>
+<ul>
+<li>[ ] Push to 180, then 200 BPM</li>
+<li>[ ] Record and analyze technique</li>
+<li>[ ] Work on Version C (counterpoint)</li>
+</ul>
+<hr />
+<h2 id="speed-building-method">SPEED BUILDING METHOD</h2>
+<h3 id="the-burst-technique">The "Burst" Technique</h3>
+<ol>
+<li>Set metronome to comfortable tempo (100 BPM)</li>
+<li>Play 4 bars perfectly</li>
+<li>Increase by 5 BPM</li>
+<li>Repeat until you can't play cleanly</li>
+<li>Drop back 20 BPM</li>
+<li>Repeat daily</li>
+</ol>
+<h3 id="the-chunk-method">The "Chunk" Method</h3>
+<ol>
+<li>Divide the tune into 4-bar phrases</li>
+<li>Master each chunk at tempo</li>
+<li>Connect chunks together</li>
+<li>Eventually play through without stopping</li>
+</ol>
+<h3 id="relaxation-check">Relaxation Check</h3>
+<p>At high tempos, tension is the enemy:
+- Shake out hands between phrases
+- Breathe normally (don't hold breath)
+- Minimize finger movement
+- Let gravity help your pick hand</p>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Charlie Parker</strong> — Any recording (the bebop source)</li>
+<li><strong>Pat Martino</strong> — <em>El Hombre</em> (guitar bebop)</li>
+<li><strong>Joe Pass</strong> — <em>Virtuoso</em> (fast single lines)</li>
+<li><strong>George Benson</strong> — <em>Beyond the Blue Horizon</em> (bebop guitar)</li>
+<li><strong>Jimmy Raney</strong> — <em>A</em> (melodic bebop)</li>
+</ol>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Tension</strong>: At high tempos, tension kills speed—stay relaxed</li>
+<li><strong>Rushing</strong>: Even at 200 BPM, lay back slightly</li>
+<li><strong>Ignoring intervals</strong>: The "angular" quality requires wide leaps</li>
+<li><strong>Sloppy picking</strong>: Economy picking must be precise</li>
+<li><strong>Giving up too soon</strong>: Speed takes time—be patient</li>
+</ol>
+<hr />
+<h2 id="the-angular-motion-concept">THE "ANGULAR MOTION" CONCEPT</h2>
+<p>The title describes:
+- <strong>Angular</strong>: Wide intervals, unexpected leaps
+- <strong>Motion</strong>: Continuous eighth notes, constant movement</p>
+<p>Think of a modern sculpture—clean lines, unexpected angles, geometric precision. Your lines should have that quality.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Can I play the changes at 200 BPM?</li>
+<li>[ ] Are my intervals truly wide (6ths, 7ths, 9ths)?</li>
+<li>[ ] Is my economy picking smooth?</li>
+<li>[ ] Am I relaxed at tempo?</li>
+<li>[ ] Does it still swing (even at high speed)?</li>
+</ul>
+<hr />
+<p><strong>← <a href="11_Crystal_Silence.md">Crystal Silence</a> | <a href="13_The_Void.md">Next: The Void →</a></strong></p>
+    <div class="footer">
+        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+    </div>
+</body>
+</html>

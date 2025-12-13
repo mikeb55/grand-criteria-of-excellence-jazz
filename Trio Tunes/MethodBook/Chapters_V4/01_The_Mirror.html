@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>05 The Mirror - Trio Tunes Method Book</title>
+    
+<style>
+@page {
+    size: letter;
+    margin: 0.75in 0.75in 1in 0.75in;
+}
+
+@media print {
+    body { font-size: 11pt; }
+    .page-break { page-break-before: always; }
+    pre, table { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    .no-print { display: none; }
+    .back-to-toc { display: none; }
+    a { text-decoration: none; color: #222; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+/* TABLE OF CONTENTS STYLES */
+.toc-container {
+    border: 2px solid #333;
+    padding: 30px 40px;
+    margin: 30px 0 50px 0;
+    background: #fafafa;
+}
+
+.toc-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 22pt;
+}
+
+.toc-chapter {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.toc-chapter:last-child {
+    border-bottom: none;
+}
+
+.toc-chapter-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.toc-chapter-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.toc-chapter-title a:hover {
+    text-decoration: underline;
+}
+
+.toc-chapter-num {
+    color: #666;
+    font-weight: normal;
+}
+
+.toc-subheadings {
+    margin-left: 25px;
+    font-size: 11pt;
+    color: #444;
+}
+
+.toc-subheadings a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toc-subheadings a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO TOC LINK */
+.back-to-toc {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-toc:hover {
+    background: #e0e0e0;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26pt;
+    color: #1a1a2e;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16pt;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13pt;
+    color: #333;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+p { margin-bottom: 12px; text-align: justify; }
+
+ul, ol { margin-left: 25px; margin-bottom: 12px; }
+
+li { margin-bottom: 6px; }
+
+/* TABLES - Printer friendly */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+
+/* CODE - Printer friendly */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    border: 1px solid #ddd;
+}
+
+pre {
+    background-color: #f8f8f8;
+    color: #222;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #222;
+}
+
+blockquote {
+    border-left: 3px solid #666;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 35px 0;
+}
+
+strong { color: #111; }
+em { color: #333; }
+a { color: #333; }
+
+/* Header banner */
+.header-banner {
+    border: 2px solid #333;
+    padding: 25px 30px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.header-banner h1 {
+    color: #111;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 28pt;
+}
+
+.header-banner p {
+    color: #444;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+}
+
+.chapter-divider {
+    border-top: 3px double #333;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+}
+
+.print-instructions {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-instructions { display: none; }
+    .header-banner { margin-top: 0; }
+}
+</style>
+
+</head>
+<body>
+    <h1 id="chapter-5-the-mirror">CHAPTER 5: THE MIRROR</h1>
+<p><strong>Style:</strong> Scofield Ballad | <strong>Key:</strong> Ab Major | <strong>Tempo:</strong> 60 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Sparse, haunting voicings with wide spreads."</em></p>
+<p>The Mirror is the emotional center of the Trio Tunes collection. At 60 BPM, every note matters. The "mirror" concept refers to the contrary motion counterpoint in Chorus 3—when one voice ascends, the other descends, creating a reflective, palindromic effect.</p>
+<p><strong>Playing Tip:</strong> Use volume swells; control the decay. Let each note breathe.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar AABA form:</p>
+<pre><code>A Section (Bars 1-8):
+| Abmaj9    | Fm9       | Dbmaj7#11 | Ebsus Eb7 |
+| Abmaj9    | Bbm9      | Gbmaj7    | Cm7  Fm7  |
+
+B Section (Bars 9-12):
+| Bmaj7#11  | Emaj7     | Bbm7      | Eb7alt    |
+
+A' Section (Bars 13-16):
+| Abmaj9    | Fm11      | Dbmaj9 Dbm| Abmaj7/Eb |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Wide voicings</strong>: Intervals of 9ths, 10ths, and 11ths</li>
+<li><strong>Distant relations</strong>: Bmaj7#11 and Emaj7 in the bridge (tritone away from home)</li>
+<li><strong>Modal interchange</strong>: Gbmaj7 borrowed from Ab Dorian</li>
+<li><strong>Melancholy turn</strong>: Dbmaj9 → Dbm(maj7) in bar 15</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Emotional Quality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Abmaj9</td>
+<td style="text-align: left;">Ab Lydian</td>
+<td style="text-align: left;">Open, spacious</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fm9</td>
+<td style="text-align: left;">F Dorian</td>
+<td style="text-align: left;">Melancholy but not dark</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7#11</td>
+<td style="text-align: left;">Db Lydian</td>
+<td style="text-align: left;">Floating, dreamlike</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gbmaj7</td>
+<td style="text-align: left;">Gb Lydian</td>
+<td style="text-align: left;">Distant, introspective</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bmaj7#11</td>
+<td style="text-align: left;">B Lydian</td>
+<td style="text-align: left;">Ethereal, otherworldly</td>
+</tr>
+<tr>
+<td style="text-align: left;">Emaj7</td>
+<td style="text-align: left;">E Lydian</td>
+<td style="text-align: left;">Bright but distant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eb7alt</td>
+<td style="text-align: left;">Eb Altered</td>
+<td style="text-align: left;">Tension seeking resolution</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbm(maj7)</td>
+<td style="text-align: left;">Db Melodic Minor</td>
+<td style="text-align: left;">The melancholy turn</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-scofield-ballad-sound">The Scofield Ballad Sound</h3>
+<p>Scofield's ballads feature:
+- <strong>Wide intervals</strong> that create space
+- <strong>Sustained notes</strong> with volume swells
+- <strong>Chromatic voice leading</strong> within slow-moving harmony
+- <strong>Silence</strong> as an equal partner to sound</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Spread Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Abmaj9</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">5-7-9 upper structure</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fm9</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">Relative major color</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7#11</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">G Diminished</td>
+<td style="text-align: left;">#11 tension</td>
+</tr>
+<tr>
+<td style="text-align: left;">Emaj7</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">Pure Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eb7alt</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">A Major</td>
+<td style="text-align: left;">Tritone pair</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wide-interval-cells">Wide Interval Cells</h3>
+<p>Over Abmaj9, practice these wide cells:</p>
+<pre><code>Eb (5) up to C (3, octave up) = minor 6th
+C (3) down to Eb (5, octave down) = major 10th
+G (7) up to Bb (9) = minor 3rd, but voiced wide
+</code></pre>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-atmosphere-version-a">Chorus 1: Lyrical Atmosphere (Version A)</h3>
+<p><strong>Concept:</strong> Sparse, breathing phrases with maximum sustain</p>
+<ul>
+<li><strong>Bars 1-4</strong>: Whole notes and half notes, minimal movement</li>
+<li><strong>Volume swells</strong>: Fade in each phrase, decay naturally</li>
+<li><strong>Motif</strong>: Descending perfect 5th (Eb → Ab) answered by ascending minor 6th</li>
+<li><strong>Bridge</strong>: Ascending major 7th leap (G# → G) creates ethereal tension</li>
+<li><strong>Bars 13-16</strong>: Return to opening material; fade on final Ab pedal</li>
+</ul>
+<p><strong>Dynamic Curve:</strong></p>
+<pre><code>pp ────── mp ── mf ──── mp ────── pp
+Bar 1      Bar 9        Bar 13    Bar 16
+</code></pre>
+<h3 id="chorus-2-wide-interval-lines-version-b">Chorus 2: Wide Interval Lines (Version B)</h3>
+<p><strong>Concept:</strong> Scofield-style intervallic playing</p>
+<ul>
+<li><strong>Major 7ths</strong>: Eb up to D (over Abmaj9)</li>
+<li><strong>Minor 9ths</strong>: Ab up to A (chromatic tension)</li>
+<li><strong>Tritones</strong>: G to Db (over Dbmaj7#11)</li>
+</ul>
+<p><strong>Bar-by-bar targets:</strong>
+| Bar | Chord | Wide Interval |
+|:---:|:---|:---|
+| 1 | Abmaj9 | Eb → D (major 7th) |
+| 3 | Dbmaj7#11 | G → Db (tritone) |
+| 9 | Bmaj7#11 | D# → D (octave drop) |
+| 12 | Eb7alt | Gb → F → Eb (chromatic descent) |</p>
+<h3 id="chorus-3-mirror-counterpoint-version-c">Chorus 3: Mirror Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Contrary motion—true "mirror" reflection</p>
+<p><strong>The Mirror Technique:</strong>
+- When the <strong>top voice ascends</strong>, the <strong>bottom voice descends</strong>
+- When the <strong>top voice descends</strong>, the <strong>bottom voice ascends</strong>
+- Voices cross at key moments (Bar 9)
+- Voices converge on unison, then spread to octave (ending)</p>
+<p><strong>Texture Map:</strong>
+| Section | Top Voice | Bottom Voice |
+|:---|:---|:---|
+| Bars 1-4 | Sustained whole notes | Contrary quarter notes |
+| Bar 9 | Descends below bottom | Ascends above top |
+| Bar 15 | C → Cb (chromatic) | Ab → A (chromatic, contrary) |
+| Bar 16 | Converge on Eb | Spread to Ab octave |</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="wide-spread-voicings">Wide Spread Voicings</h3>
+<pre><code>Abmaj9:    4-x-5-5-4-3 (open G string rings)
+Fm9:       x-8-8-8-9-8 (standard shape)
+Dbmaj7#11: x-4-3-5-6-x (G natural in melody)
+Gbmaj7:    2-x-3-3-2-x (root position)
+</code></pre>
+<h3 id="bridge-voicings-distant-keys">Bridge Voicings (Distant Keys)</h3>
+<pre><code>Bmaj7#11:  x-2-1-3-4-x (B Lydian voicing)
+Emaj7:     x-7-6-8-9-x (wide E Lydian)
+Bbm7:      x-1-3-1-2-x (shell)
+Eb7alt:    x-6-5-6-7-x (cluster)
+</code></pre>
+<h3 id="ending-voicing">Ending Voicing</h3>
+<pre><code>Abmaj7/Eb: x-6-5-5-4-4 (Ab over Eb pedal)
+           0-6-5-5-4-x (with open E as enharmonic Fb!)
+</code></pre>
+<hr />
+<h2 id="technique-volume-swells">TECHNIQUE: VOLUME SWELLS</h2>
+<h3 id="the-basic-swell">The Basic Swell</h3>
+<ol>
+<li>Pick the note with volume at <strong>0</strong></li>
+<li>Slowly roll volume up to <strong>7-8</strong> (not full)</li>
+<li>Let the note decay naturally</li>
+<li>Next note: repeat</li>
+</ol>
+<h3 id="volume-control-options">Volume Control Options</h3>
+<ul>
+<li><strong>Volume knob</strong>: Most expressive, requires practice</li>
+<li><strong>Volume pedal</strong>: Easier, less guitar-like</li>
+<li><strong>Picking dynamics</strong>: Softest possible attack, let amp do the work</li>
+</ul>
+<h3 id="practice-exercise">Practice Exercise</h3>
+<pre><code>| Abmaj9 chord (whole note) |
+Volume: 0 → 5 → 3 → 0 (over 4 beats)
+</code></pre>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-breathing">Week 1: Breathing</h3>
+<ul>
+<li>[ ] Practice breathing with each phrase (literally breathe)</li>
+<li>[ ] Master volume swell technique</li>
+<li>[ ] Learn Version A at even slower tempo (40 BPM)</li>
+</ul>
+<h3 id="week-2-wide-intervals">Week 2: Wide Intervals</h3>
+<ul>
+<li>[ ] Drill major 7th intervals across the neck</li>
+<li>[ ] Practice tritone intervals</li>
+<li>[ ] Work on Version B targeting the wide leaps</li>
+</ul>
+<h3 id="week-3-the-mirror">Week 3: The Mirror</h3>
+<ul>
+<li>[ ] Practice contrary motion scales (one hand up, one down)</li>
+<li>[ ] Isolate top voice of Version C</li>
+<li>[ ] Isolate bottom voice of Version C</li>
+<li>[ ] Combine at 40 BPM</li>
+</ul>
+<h3 id="week-4-emotional-expression">Week 4: Emotional Expression</h3>
+<ul>
+<li>[ ] Play through all three choruses</li>
+<li>[ ] Record with reverb and evaluate</li>
+<li>[ ] Develop your own rubato feel</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>John Scofield</strong> — <em>Meant to Be</em> (his ballad playing)</li>
+<li><strong>Bill Frisell</strong> — <em>Good Dog, Happy Man</em> (spacious, ambient)</li>
+<li><strong>Pat Metheny</strong> — <em>One Quiet Night</em> (solo ballads)</li>
+<li><strong>Jim Hall</strong> — <em>Concierto</em> (the master of ballad guitar)</li>
+<li><strong>Kenny Burrell</strong> — <em>Midnight Blue</em> (warm, intimate)</li>
+</ol>
+<hr />
+<h2 id="tone-tips">TONE TIPS</h2>
+<p>For The Mirror:
+- <strong>Clean to edge-of-breakup</strong>: Not distorted, but not sterile
+- <strong>Reverb</strong>: Plate or hall, medium decay
+- <strong>Delay</strong>: Optional, dotted-eighth for Metheny flavor
+- <strong>EQ</strong>: Roll off highs slightly, boost mids for warmth</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Too many notes</strong>: Silence is essential—don't fill every space</li>
+<li><strong>Rushing</strong>: At 60 BPM, subdivisions feel eternal—be patient</li>
+<li><strong>Ignoring dynamics</strong>: The loudest note should be mp at most</li>
+<li><strong>Stiff rhythm</strong>: Play rubato, breathe with the music</li>
+<li><strong>Forgetting the mirror</strong>: In Chorus 3, the contrary motion must be audible</li>
+</ol>
+<hr />
+<h2 id="the-mirror-concept">THE MIRROR CONCEPT</h2>
+<p>The title refers to multiple reflections:
+1. <strong>Harmonic</strong>: The B section "reflects" the A section from a distant key
+2. <strong>Melodic</strong>: Phrases often mirror themselves (up then down)
+3. <strong>Contrapuntal</strong>: Chorus 3's contrary motion is a literal mirror
+4. <strong>Emotional</strong>: The introspective quality invites self-reflection</p>
+<p>When playing this piece, imagine looking into still water—calm, deep, revealing.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Does every note have purpose?</li>
+<li>[ ] Can I hear the mirror counterpoint clearly?</li>
+<li>[ ] Am I using volume swells effectively?</li>
+<li>[ ] Does the bridge feel "distant" harmonically?</li>
+<li>[ ] Is there enough silence?</li>
+<li>[ ] Does the music breathe?</li>
+</ul>
+<hr />
+<p><strong>← <a href="04_Sao_Paulo_Rain.md">Sao Paulo Rain</a> | <a href="06_Bright_Size_Life_2.md">Next: Bright Size Life 2 →</a></strong></p>
+    <div class="footer">
+        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+    </div>
+</body>
+</html>
