@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>00 Introduction - Trio Tunes Method Book</title>
+    <title>GCE Jazz Guitar Trio Tunes - Method Book V4</title>
     
 <style>
 @page {
@@ -17,7 +17,6 @@
     pre, table { page-break-inside: avoid; }
     h1, h2, h3 { page-break-after: avoid; }
     .no-print { display: none; }
-    .back-to-toc { display: none; }
     a { text-decoration: none; color: #222; }
 }
 
@@ -27,504 +26,324 @@ body {
     font-family: Georgia, 'Times New Roman', serif;
     font-size: 12pt;
     line-height: 1.6;
-    color: #222;
+    color: #333;
     max-width: 850px;
     margin: 0 auto;
     padding: 40px 20px;
     background: #fff;
 }
 
-/* TABLE OF CONTENTS STYLES */
-.toc-container {
-    border: 2px solid #333;
-    padding: 30px 40px;
-    margin: 30px 0 50px 0;
+h1 {
+    text-align: center;
+    font-size: 28pt;
+    margin-bottom: 10px;
+    color: #1a1a2e;
+    border-bottom: 3px solid #1a1a2e;
+    padding-bottom: 15px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14pt;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.version {
+    text-align: center;
+    font-size: 11pt;
+    color: #7b2cbf;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.intro-text {
+    font-size: 12pt;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* TIER SECTIONS */
+.tier-section {
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.tier-concert-core {
+    background: linear-gradient(135deg, #f8f4ff 0%, #fff 100%);
+    border-left: 5px solid #7b2cbf;
+}
+
+.tier-performance {
+    background: linear-gradient(135deg, #f0f8ff 0%, #fff 100%);
+    border-left: 5px solid #00a0dc;
+}
+
+.tier-advanced {
+    background: linear-gradient(135deg, #fff8f0 0%, #fff 100%);
+    border-left: 5px solid #ff8c00;
+}
+
+.tier-title {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tier-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 10pt;
+    color: white;
+}
+
+.badge-core { background: #7b2cbf; }
+.badge-performance { background: #00a0dc; }
+.badge-advanced { background: #ff8c00; }
+
+/* TABLE OF CONTENTS */
+.toc-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.toc-table th {
+    text-align: left;
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border-bottom: 2px solid #333;
+    font-size: 10pt;
+}
+
+.toc-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.toc-table tr:hover {
     background: #fafafa;
 }
 
-.toc-container h2 {
-    text-align: center;
-    border-bottom: 2px solid #333;
-    padding-bottom: 15px;
-    margin-top: 0;
-    font-size: 22pt;
-}
-
-.toc-chapter {
-    margin: 20px 0;
-    padding: 10px 0;
-    border-bottom: 1px dotted #999;
-}
-
-.toc-chapter:last-child {
-    border-bottom: none;
-}
-
-.toc-chapter-title {
-    font-size: 14pt;
+.chapter-num {
     font-weight: bold;
-    margin-bottom: 8px;
+    color: #7b2cbf;
+    width: 50px;
 }
 
-.toc-chapter-title a {
+.chapter-title {
+    font-weight: bold;
+}
+
+.chapter-title a {
     color: #1a1a2e;
     text-decoration: none;
 }
 
-.toc-chapter-title a:hover {
+.chapter-title a:hover {
     text-decoration: underline;
 }
 
-.toc-chapter-num {
+.chapter-style {
     color: #666;
-    font-weight: normal;
-}
-
-.toc-subheadings {
-    margin-left: 25px;
-    font-size: 11pt;
-    color: #444;
-}
-
-.toc-subheadings a {
-    color: #444;
-    text-decoration: none;
-    margin-right: 15px;
-}
-
-.toc-subheadings a:hover {
-    text-decoration: underline;
-}
-
-/* BACK TO TOC LINK */
-.back-to-toc {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 15px;
-    background: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 10pt;
-    color: #333;
-    text-decoration: none;
-}
-
-.back-to-toc:hover {
-    background: #e0e0e0;
-}
-
-/* HEADINGS */
-h1 {
-    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 26pt;
-    color: #1a1a2e;
-    border-bottom: 3px solid #333;
-    padding-bottom: 10px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 16pt;
-    color: #222;
-    margin-top: 30px;
-    border-bottom: 1px solid #999;
-    padding-bottom: 5px;
-}
-
-h3 {
-    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 13pt;
-    color: #333;
-    margin-top: 20px;
-}
-
-h4 {
-    font-size: 12pt;
-    font-weight: bold;
-    color: #222;
-    margin-top: 15px;
-}
-
-p { margin-bottom: 12px; text-align: justify; }
-
-ul, ol { margin-left: 25px; margin-bottom: 12px; }
-
-li { margin-bottom: 6px; }
-
-/* TABLES - Printer friendly */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 10pt;
-    border: 1px solid #333;
-}
-
-th {
-    background-color: #f0f0f0;
-    color: #222;
-    padding: 10px 12px;
-    text-align: left;
-    font-weight: bold;
-    border: 1px solid #333;
-}
-
-td {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-}
-
-tr:nth-child(even) { background-color: #fafafa; }
-
-/* CODE - Printer friendly */
-code {
-    font-family: 'Consolas', 'Courier New', monospace;
-    background-color: #f5f5f5;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 10pt;
-    border: 1px solid #ddd;
-}
-
-pre {
-    background-color: #f8f8f8;
-    color: #222;
-    padding: 15px 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    overflow-x: auto;
-    font-family: 'Consolas', 'Courier New', monospace;
-    font-size: 10pt;
-    line-height: 1.4;
-}
-
-pre code {
-    background-color: transparent;
-    padding: 0;
-    border: none;
-    color: #222;
-}
-
-blockquote {
-    border-left: 3px solid #666;
-    margin: 20px 0;
-    padding: 10px 20px;
-    background-color: #fafafa;
     font-style: italic;
+    font-size: 10pt;
 }
 
-hr {
-    border: none;
-    border-top: 2px solid #333;
-    margin: 35px 0;
-}
-
-strong { color: #111; }
-em { color: #333; }
-a { color: #333; }
-
-/* Header banner */
-.header-banner {
-    border: 2px solid #333;
-    padding: 25px 30px;
-    margin: 0 0 40px 0;
+.chapter-rating {
     text-align: center;
-    background-color: #fafafa;
+    font-weight: bold;
 }
 
-.header-banner h1 {
-    color: #111;
-    border: none;
-    margin: 0 0 10px 0;
-    padding: 0;
-    font-size: 28pt;
-}
-
-.header-banner p {
-    color: #444;
-    margin: 5px 0;
-    text-align: center;
-    font-size: 12pt;
-}
+.rating-gold { color: #d4af37; }
+.rating-silver { color: #7b2cbf; }
 
 .footer {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid #ccc;
     text-align: center;
-    color: #666;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #888;
     font-size: 10pt;
 }
-
-.chapter-divider {
-    border-top: 3px double #333;
-    margin: 50px 0 30px 0;
-    padding-top: 20px;
-}
-
-.print-instructions {
-    background-color: #fffde7;
-    border: 1px solid #ffd54f;
-    padding: 15px 20px;
-    margin-bottom: 30px;
-    border-radius: 5px;
-}
-
-@media print {
-    .print-instructions { display: none; }
-    .header-banner { margin-top: 0; }
-}
 </style>
-
 </head>
 <body>
-    <h1 id="the-trio-tunes-method-book">THE TRIO TUNES METHOD BOOK</h1>
-<h2 id="a-comprehensive-guide-to-jazz-guitar-etudes">A Comprehensive Guide to Jazz Guitar Etudes</h2>
-<h3 id="grand-criteria-of-excellence-gce-jazz-collection">Grand Criteria of Excellence (GCE) Jazz Collection</h3>
-<hr />
-<h2 id="welcome">WELCOME</h2>
-<p>This method book accompanies the <strong>Trio Tunes</strong> collection—15 original jazz guitar etudes designed to develop your technique, harmonic vocabulary, and musical expression. Each tune explores a different style, from traditional blues to avant-garde experimentation.</p>
-<hr />
-<h2 id="how-to-use-this-book">HOW TO USE THIS BOOK</h2>
-<h3 id="the-four-lead-sheet-variations">The Four Lead Sheet Variations</h3>
-<p>Each tune in this collection comes with <strong>four distinct lead sheet versions</strong>:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Version</th>
-<th style="text-align: left;">Name</th>
-<th style="text-align: left;">Focus</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><strong>A</strong></td>
-<td style="text-align: left;">Lyrical</td>
-<td style="text-align: left;">Melodic, singable lines with clear phrase structures</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>B</strong></td>
-<td style="text-align: left;">Modern</td>
-<td style="text-align: left;">Triad pairs, wide intervals, contemporary harmony</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>C</strong></td>
-<td style="text-align: left;">Counterpoint</td>
-<td style="text-align: left;">Two-voice writing (Wyble-inspired independence)</td>
-</tr>
-<tr>
-<td style="text-align: center;"><strong>D</strong></td>
-<td style="text-align: left;">Hybrid</td>
-<td style="text-align: left;">Combines elements from A, B, and C</td>
-</tr>
-</tbody>
-</table>
-<h3 id="practice-flow">Practice Flow</h3>
-<ol>
-<li><strong>Learn the Melody</strong> (Version A) — Internalize the form and phrasing</li>
-<li><strong>Study the Harmony</strong> — Work through chord voicings and scale palettes</li>
-<li><strong>Apply Triad Pairs</strong> (Version B) — Modern melodic language</li>
-<li><strong>Develop Independence</strong> (Version C) — Two-voice counterpoint</li>
-<li><strong>Integrate</strong> (Version D) — Combine all approaches organically</li>
-</ol>
-<h3 id="companion-materials">Companion Materials</h3>
-<p>Each tune folder contains:
-- <strong>LeadSheet/</strong> — The four versions (A, B, C, D) as PDF and MusicXML
-- <strong>Practice/</strong> — Supplementary exercises:
-  - <code>Etudes/</code> — Written-out etude choruses
-  - <code>Phrases/</code> — Vocabulary licks over the changes
-  - <code>TriadPairs/</code> — Specific triad pair patterns
-  - <code>Counterpoint/</code> — Two-voice exercises
-- <strong>Analysis/</strong> — Harmonic breakdowns and annotations
-- <strong>Source/</strong> — Original composition files</p>
-<hr />
-<h2 id="core-concepts">CORE CONCEPTS</h2>
-<h3 id="1-melody-derived-harmony-mdh">1. Melody-Derived Harmony (MDH)</h3>
-<p>Every chord in these etudes exists to <strong>support the melody</strong>. The harmony isn't arbitrary—it's generated from the melodic content. When practicing, always sing or hear the melody in your head, even when working through voicings.</p>
-<h3 id="2-triad-pair-system">2. Triad Pair System</h3>
-<p>We use a consistent <strong>Stable + Color Triad</strong> approach:
-- <strong>Stable Triad</strong>: Contains chord tones (1, 3, 5)
-- <strong>Color Triad</strong>: Adds tensions (7, 9, 11, 13, alterations)</p>
-<p>Example over Cmaj7:
-- Stable: C Major (C-E-G)
-- Color: D Major (D-F#-A) — provides 9, #11, 13</p>
-<h3 id="3-jimmy-wyble-counterpoint">3. Jimmy Wyble Counterpoint</h3>
-<p>Inspired by the legendary Jimmy Wyble, these etudes feature <strong>independent two-voice writing</strong>:
-- Top voice: Melody (often sustained)
-- Bottom voice: Counter-melody or walking line
-- Goal: Each voice should be singable independently</p>
-<h3 id="4-barry-harris-harmonic-approach">4. Barry Harris Harmonic Approach</h3>
-<p>Several tunes incorporate Barry Harris's <strong>6th Diminished Scale</strong> logic:
-- Major 6 Diminished: 1-2-3-4-5-b6-6-7
-- Minor 6 Diminished: 1-2-b3-3-4-5-6-b7
-- Creates smooth, bebop-style voice leading</p>
-<hr />
-<h2 id="the-15-tunes-at-a-glance">THE 15 TUNES AT A GLANCE</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">#</th>
-<th style="text-align: left;">Title</th>
-<th style="text-align: center;">Key</th>
-<th style="text-align: center;">BPM</th>
-<th style="text-align: center;">Time</th>
-<th style="text-align: left;">Style</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">1</td>
-<td style="text-align: left;">Blue Cycle</td>
-<td style="text-align: center;">Bb</td>
-<td style="text-align: center;">120</td>
-<td style="text-align: center;">4/4</td>
-<td style="text-align: left;">Blues (Cycle)</td>
-</tr>
-<tr>
-<td style="text-align: center;">2</td>
-<td style="text-align: left;">Orbit</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">160</td>
-<td style="text-align: center;">3/4</td>
-<td style="text-align: left;">Wayne Shorter</td>
-</tr>
-<tr>
-<td style="text-align: center;">3</td>
-<td style="text-align: left;">Rust &amp; Chrome</td>
-<td style="text-align: center;">E</td>
-<td style="text-align: center;">95</td>
-<td style="text-align: center;">4/4</td>
-<td style="text-align: left;">Scofield Funk</td>
-</tr>
-<tr>
-<td style="text-align: center;">4</td>
-<td style="text-align: left;">Sao Paulo Rain</td>
-<td style="text-align: center;">D</td>
-<td style="text-align: center;">130</td>
-<td style="text-align: center;">4/4</td>
-<td style="text-align: left;">Bossa Nova</td>
-</tr>
-<tr>
-<td style="text-align: center;">5</td>
-<td style="text-align: left;">The Mirror</td>
-<td style="text-align: center;">Ab</td>
-<td style="text-align: center;">60</td>
-<td style="text-align: center;">4/4</td>
-<td style="text-align: left;">Scofield Ballad</td>
-</tr>
-<tr>
-<td style="text-align: center;">6</td>
-<td style="text-align: left;">Bright Size Life 2</td>
-<td style="text-align: center;">D</td>
-<td style="text-align: center;">145</td>
-<td style="text-align: center;">4/4</td>
-<td style="text-align: left;">Pat Metheny</td>
-</tr>
-<tr>
-<td style="text-align: center;">7</td>
-<td style="text-align: left;">Monk's Dream</td>
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">110</td>
-<td style="text-align: center;">4/4</td>
-<td style="text-align: left;">Experimental</td>
-</tr>
-<tr>
-<td style="text-align: center;">8</td>
-<td style="text-align: left;">Nefertiti's Shadow</td>
-<td style="text-align: center;">Eb</td>
-<td style="text-align: center;">180</td>
-<td style="text-align: center;">4/4</td>
-<td style="text-align: left;">Wayne Shorter</td>
-</tr>
-<tr>
-<td style="text-align: center;">9</td>
-<td style="text-align: left;">Greezy</td>
-<td style="text-align: center;">G</td>
-<td style="text-align: center;">100</td>
-<td style="text-align: center;">12/8</td>
-<td style="text-align: left;">Blues Shuffle</td>
-</tr>
-<tr>
-<td style="text-align: center;">10</td>
-<td style="text-align: left;">Hexagon</td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">135</td>
-<td style="text-align: center;">5/4</td>
-<td style="text-align: left;">Odd Meter</td>
-</tr>
-<tr>
-<td style="text-align: center;">11</td>
-<td style="text-align: left;">Crystal Silence</td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">80</td>
-<td style="text-align: center;">4/4</td>
-<td style="text-align: left;">ECM Ballad</td>
-</tr>
-<tr>
-<td style="text-align: center;">12</td>
-<td style="text-align: left;">Angular Motion</td>
-<td style="text-align: center;">Gb</td>
-<td style="text-align: center;">200</td>
-<td style="text-align: center;">4/4</td>
-<td style="text-align: left;">Bebop</td>
-</tr>
-<tr>
-<td style="text-align: center;">13</td>
-<td style="text-align: left;">The Void</td>
-<td style="text-align: center;">Free</td>
-<td style="text-align: center;">Free</td>
-<td style="text-align: center;">Free</td>
-<td style="text-align: left;">Experimental</td>
-</tr>
-<tr>
-<td style="text-align: center;">14</td>
-<td style="text-align: left;">Solar Flare</td>
-<td style="text-align: center;">C#</td>
-<td style="text-align: center;">150</td>
-<td style="text-align: center;">7/8</td>
-<td style="text-align: left;">Fusion</td>
-</tr>
-<tr>
-<td style="text-align: center;">15</td>
-<td style="text-align: left;">Final Departure</td>
-<td style="text-align: center;">Db</td>
-<td style="text-align: center;">70</td>
-<td style="text-align: center;">4/4</td>
-<td style="text-align: left;">Closing Ballad</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="equipment-recommendations">EQUIPMENT RECOMMENDATIONS</h2>
-<h3 id="guitar-setup">Guitar Setup</h3>
-<ul>
-<li><strong>Action</strong>: Medium-low for clean articulation</li>
-<li><strong>Strings</strong>: .011-.050 flatwound or semi-flatwound for warm tone</li>
-<li><strong>Pickup Selection</strong>: Neck or middle position for most tunes</li>
-</ul>
-<h3 id="amplification">Amplification</h3>
-<ul>
-<li>Clean, uncompressed tone as baseline</li>
-<li>Light reverb (spring or plate) for ballads</li>
-<li>Edge-of-breakup for Scofield-style tunes (#3, #5)</li>
-</ul>
-<h3 id="optional">Optional</h3>
-<ul>
-<li><strong>Volume pedal</strong>: Essential for ballads (#5, #11, #15)</li>
-<li><strong>Delay</strong>: Dotted-eighth for Metheny style (#6)</li>
-<li><strong>Octave pedal</strong>: For bass line reinforcement in counterpoint sections</li>
-</ul>
-<hr />
-<h2 id="lets-begin">LET'S BEGIN</h2>
-<p>Turn to <strong>Chapter 1: Blue Cycle</strong> to start your journey through the Trio Tunes collection. Take your time with each tune—the goal is mastery, not speed.</p>
-<p><em>"The beautiful thing about learning is that no one can take it away from you."</em><br />
-— B.B. King</p>
-<hr />
-<p><strong>Next Chapter: <a href="01_Blue_Cycle.md">Tune 1 - Blue Cycle →</a></strong></p>
-    <div class="footer">
-        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+
+<h1>GCE JAZZ GUITAR</h1>
+<p class="subtitle">Trio Tunes Method Book</p>
+<p class="version">Version 4 — Ranked Edition • December 2025</p>
+
+<div class="intro-text">
+<p><strong>Welcome to Version 4</strong> of the GCE Jazz Guitar Method Book. This edition reorganizes the 16 original tunes based on compositional quality, educational value, and performance appeal — placing the strongest material first.</p>
+
+<p>The first six chapters feature tunes that have been independently rated for their harmonic sophistication, stylistic authenticity, and trio performance potential. These "Concert Core" tunes represent the best of the collection and are recommended as priority study material.</p>
+
+<p>All tunes include complete analysis, lead sheets, practice exercises, and performance notes for guitar trio (guitar, bass, drums).</p>
+</div>
+
+<!-- TIER 1: CONCERT CORE -->
+<div class="tier-section tier-concert-core">
+    <div class="tier-title">
+        <span class="tier-badge badge-core">TIER 1</span>
+        Concert Core — Top Rated Compositions
     </div>
+    
+    <table class="toc-table">
+        <tr>
+            <th>Ch.</th>
+            <th>Tune</th>
+            <th>Style</th>
+            <th>Rating</th>
+        </tr>
+        <tr>
+            <td class="chapter-num">01</td>
+            <td class="chapter-title"><a href="01_The_Mirror.html">The Mirror</a><br><span class="chapter-style">Jim Hall • Ballad • Ab</span></td>
+            <td>Ballad</td>
+            <td class="chapter-rating rating-gold">⭐ 9.6</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">02</td>
+            <td class="chapter-title"><a href="02_Crystal_Silence.html">Crystal Silence</a><br><span class="chapter-style">Chick Corea • Ballad • A</span></td>
+            <td>Ballad</td>
+            <td class="chapter-rating rating-gold">⭐ 9.4</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">03</td>
+            <td class="chapter-title"><a href="03_Orbit.html">Orbit</a><br><span class="chapter-style">Wayne Shorter • Waltz • F</span></td>
+            <td>Waltz</td>
+            <td class="chapter-rating rating-gold">⭐ 9.3</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">04</td>
+            <td class="chapter-title"><a href="04_Angular_Motion.html">Angular Motion</a><br><span class="chapter-style">Pat Martino • Up Tempo Swing • Gb</span></td>
+            <td>Bebop</td>
+            <td class="chapter-rating rating-silver">⭐ 8.8</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">05</td>
+            <td class="chapter-title"><a href="05_Blue_Cycle.html">Blue Cycle</a><br><span class="chapter-style">Rosenwinkel/Monder • Blues • Bb</span></td>
+            <td>Blues</td>
+            <td class="chapter-rating rating-silver">⭐ 8.6</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">06</td>
+            <td class="chapter-title"><a href="06_Greezy.html">Greezy</a><br><span class="chapter-style">Grant Green • Blues Shuffle • G</span></td>
+            <td>Blues</td>
+            <td class="chapter-rating rating-silver">⭐ 8.0</td>
+        </tr>
+    </table>
+</div>
+
+<!-- TIER 2: PERFORMANCE BOOK -->
+<div class="tier-section tier-performance">
+    <div class="tier-title">
+        <span class="tier-badge badge-performance">TIER 2</span>
+        Performance Book — Core Repertoire
+    </div>
+    
+    <table class="toc-table">
+        <tr>
+            <th>Ch.</th>
+            <th>Tune</th>
+            <th>Style</th>
+            <th>Key</th>
+        </tr>
+        <tr>
+            <td class="chapter-num">07</td>
+            <td class="chapter-title"><a href="07_Bright_Size_Life_2.html">Bright Size Life 2</a><br><span class="chapter-style">Pat Metheny • Even 8ths</span></td>
+            <td>Even 8ths</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">08</td>
+            <td class="chapter-title"><a href="08_Rust_And_Chrome.html">Rust And Chrome</a><br><span class="chapter-style">Fusion • Funk</span></td>
+            <td>Funk</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">09</td>
+            <td class="chapter-title"><a href="09_Sao_Paulo_Rain.html">Sao Paulo Rain</a><br><span class="chapter-style">Brazilian • Bossa Nova</span></td>
+            <td>Bossa</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">10</td>
+            <td class="chapter-title"><a href="10_Monks_Dream.html">Monks Dream</a><br><span class="chapter-style">Thelonious Monk • Medium Swing</span></td>
+            <td>Swing</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">11</td>
+            <td class="chapter-title"><a href="11_Nefertitis_Shadow.html">Nefertiti's Shadow</a><br><span class="chapter-style">Wayne Shorter • Up Tempo</span></td>
+            <td>Swing</td>
+            <td>Eb</td>
+        </tr>
+    </table>
+</div>
+
+<!-- TIER 3: ADVANCED STUDY -->
+<div class="tier-section tier-advanced">
+    <div class="tier-title">
+        <span class="tier-badge badge-advanced">TIER 3</span>
+        Advanced Study — Extended Techniques
+    </div>
+    
+    <table class="toc-table">
+        <tr>
+            <th>Ch.</th>
+            <th>Tune</th>
+            <th>Style</th>
+            <th>Key</th>
+        </tr>
+        <tr>
+            <td class="chapter-num">12</td>
+            <td class="chapter-title"><a href="12_Hexagon.html">Hexagon</a><br><span class="chapter-style">Odd Meter • 5/4</span></td>
+            <td>5/4</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">13</td>
+            <td class="chapter-title"><a href="13_The_Void.html">The Void</a><br><span class="chapter-style">Free / Textural</span></td>
+            <td>Free</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">14</td>
+            <td class="chapter-title"><a href="14_Solar_Flare.html">Solar Flare</a><br><span class="chapter-style">Odd Meter • 7/8</span></td>
+            <td>7/8</td>
+            <td>C#</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">15</td>
+            <td class="chapter-title"><a href="15_Final_Departure.html">Final Departure</a><br><span class="chapter-style">Ballad • Rubato</span></td>
+            <td>Ballad</td>
+            <td>Db</td>
+        </tr>
+        <tr>
+            <td class="chapter-num">16</td>
+            <td class="chapter-title"><a href="16_Blue_Minor.html">Blue Minor</a><br><span class="chapter-style">Minor Blues</span></td>
+            <td>Blues</td>
+            <td>Cm</td>
+        </tr>
+    </table>
+</div>
+
+<div style="margin-top: 40px; padding: 20px; background: #f9f9f9; border-radius: 8px;">
+    <h3 style="margin-top: 0;">About Version 4</h3>
+    <p>This edition reorganizes the method book based on independent quality ratings. The Concert Core tunes (Chapters 1-6) scored 8.0-9.6 out of 10 on compositional interest, educational value, performance appeal, and stylistic authenticity.</p>
+    <p><strong>Recommended Study Order:</strong> Start with Chapters 1-6 for maximum musical impact, then expand into Tier 2-3 based on your interests and technical level.</p>
+</div>
+
+<p class="footer">
+    GCE Jazz Guitar Method Book V4 — Ranked Edition<br>
+    Mike Bryant • Grand Criteria of Excellence • December 2025
+</p>
+
 </body>
 </html>

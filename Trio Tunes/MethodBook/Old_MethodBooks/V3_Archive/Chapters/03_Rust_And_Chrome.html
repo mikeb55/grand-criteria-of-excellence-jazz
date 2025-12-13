@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>03 Rust And Chrome - Trio Tunes Method Book</title>
+    
+<style>
+@page {
+    size: letter;
+    margin: 0.75in 0.75in 1in 0.75in;
+}
+
+@media print {
+    body { font-size: 11pt; }
+    .page-break { page-break-before: always; }
+    pre, table { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    .no-print { display: none; }
+    .back-to-toc { display: none; }
+    a { text-decoration: none; color: #222; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+/* TABLE OF CONTENTS STYLES */
+.toc-container {
+    border: 2px solid #333;
+    padding: 30px 40px;
+    margin: 30px 0 50px 0;
+    background: #fafafa;
+}
+
+.toc-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 22pt;
+}
+
+.toc-chapter {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.toc-chapter:last-child {
+    border-bottom: none;
+}
+
+.toc-chapter-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.toc-chapter-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.toc-chapter-title a:hover {
+    text-decoration: underline;
+}
+
+.toc-chapter-num {
+    color: #666;
+    font-weight: normal;
+}
+
+.toc-subheadings {
+    margin-left: 25px;
+    font-size: 11pt;
+    color: #444;
+}
+
+.toc-subheadings a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toc-subheadings a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO TOC LINK */
+.back-to-toc {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-toc:hover {
+    background: #e0e0e0;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26pt;
+    color: #1a1a2e;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16pt;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13pt;
+    color: #333;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+p { margin-bottom: 12px; text-align: justify; }
+
+ul, ol { margin-left: 25px; margin-bottom: 12px; }
+
+li { margin-bottom: 6px; }
+
+/* TABLES - Printer friendly */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+
+/* CODE - Printer friendly */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    border: 1px solid #ddd;
+}
+
+pre {
+    background-color: #f8f8f8;
+    color: #222;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #222;
+}
+
+blockquote {
+    border-left: 3px solid #666;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 35px 0;
+}
+
+strong { color: #111; }
+em { color: #333; }
+a { color: #333; }
+
+/* Header banner */
+.header-banner {
+    border: 2px solid #333;
+    padding: 25px 30px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.header-banner h1 {
+    color: #111;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 28pt;
+}
+
+.header-banner p {
+    color: #444;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+}
+
+.chapter-divider {
+    border-top: 3px double #333;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+}
+
+.print-instructions {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-instructions { display: none; }
+    .header-banner { margin-top: 0; }
+}
+</style>
+
+</head>
+<body>
+    <h1 id="chapter-3-rust-chrome">CHAPTER 3: RUST &amp; CHROME</h1>
+<p><strong>Style:</strong> Scofield Funk | <strong>Key:</strong> E Major | <strong>Tempo:</strong> 95 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Gritty, angular lines with open string drones."</em></p>
+<p>Rust &amp; Chrome channels John Scofield's funky, blues-inflected style. The key of E allows for extensive use of open strings as drones, creating a gritty, resonant texture. The slower tempo (95 BPM) gives room for rhythmic push-and-pull.</p>
+<p><strong>Playing Tip:</strong> Dig in with the right hand; use legato slides for the left.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar vamp-based form:</p>
+<pre><code>| E7#9    | E7#9    | A7      | A7      |
+| E7#9    | E7#9    | B7#9    | A7      |
+| E7#9    | E7#9    | F#7     | A7 B7   |
+| E7#9    | E7#9    | E7#9    | E7#9    |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Dominant 7#9 (Hendrix chord)</strong>: The characteristic Scofield funk sound</li>
+<li><strong>Open E pedal</strong>: The low E string drones throughout</li>
+<li><strong>Blues form variant</strong>: Based on blues but with extended vamp sections</li>
+<li><strong>Chromatic approach</strong>: F#7 in bar 11 creates tension before resolution</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Alternate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">E7#9</td>
+<td style="text-align: left;">E Blues</td>
+<td style="text-align: left;">E Mixolydian b6</td>
+</tr>
+<tr>
+<td style="text-align: left;">A7</td>
+<td style="text-align: left;">A Mixolydian</td>
+<td style="text-align: left;">A Blues</td>
+</tr>
+<tr>
+<td style="text-align: left;">B7#9</td>
+<td style="text-align: left;">B Blues</td>
+<td style="text-align: left;">B Phrygian Dominant</td>
+</tr>
+<tr>
+<td style="text-align: left;">F#7</td>
+<td style="text-align: left;">F# Mixolydian</td>
+<td style="text-align: left;">F# Lydian Dominant</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-scofield-sound">The Scofield Sound</h3>
+<p>Scofield often combines:
+- <strong>Blues scale</strong> for the core vocabulary
+- <strong>Chromatic approach notes</strong> for tension
+- <strong>Mixolydian</strong> for cleaner passages
+- <strong>Minor pentatonic a half-step up</strong> for "outside" moments</p>
+<p>Over E7#9, try E minor pentatonic AND F minor pentatonic.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">E7#9</td>
+<td style="text-align: left;">E Major</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">Creates 7, 9, #11</td>
+</tr>
+<tr>
+<td style="text-align: left;">E7#9</td>
+<td style="text-align: left;">G Minor</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">Blues minor-over-major</td>
+</tr>
+<tr>
+<td style="text-align: left;">A7</td>
+<td style="text-align: left;">A Major</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">Mixolydian color</td>
+</tr>
+<tr>
+<td style="text-align: left;">B7#9</td>
+<td style="text-align: left;">D Minor</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">Dark, angular</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-blues-triad-trick">The "Blues Triad" Trick</h3>
+<p>Over E7#9, alternate between:
+- <strong>E Major triad</strong> (E-G#-B) = the "bright" side
+- <strong>G Minor triad</strong> (G-Bb-D) = the "dark" side (b3, b5, b7)</p>
+<p>This major/minor ambiguity is the heart of blues.</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-blues-version-a">Chorus 1: Lyrical Blues (Version A)</h3>
+<p><strong>Concept:</strong> Singing, BB King-style phrases with Scofield edge</p>
+<ul>
+<li>Start phrases behind the beat</li>
+<li>Use bends and slides liberally</li>
+<li>Target the #9 (G natural) as a key tension note</li>
+<li>Leave space—let the E7 ring</li>
+</ul>
+<p><strong>Phrase Structure:</strong> Call (2 bars) → Response (2 bars) → Rest (1 bar)</p>
+<h3 id="chorus-2-angular-funk-version-b">Chorus 2: Angular Funk (Version B)</h3>
+<p><strong>Concept:</strong> Jagged, syncopated lines with triad pair angularity</p>
+<ul>
+<li>Heavy use of 16th-note syncopation</li>
+<li>Unpredictable accents</li>
+<li>Wide intervals (7ths, 9ths)</li>
+<li>Open strings as pedal points</li>
+</ul>
+<p><strong>Rhythmic Pattern:</strong></p>
+<pre><code>| 1 e + a 2 e + a 3 e + a 4 e + a |
+| X . X . . X . X . . X . X . . X |
+</code></pre>
+<h3 id="chorus-3-drone-counterpoint-version-c">Chorus 3: Drone Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Two voices—melody over sustained open string drone</p>
+<p><strong>Texture:</strong>
+- <strong>Bottom</strong>: Open E string (continuous drone)
+- <strong>Top</strong>: Melodic line on strings 1-3</p>
+<p>The drone creates a "tanpura" effect, grounding the harmony while the melody floats above.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="the-hendrix-chord-e79">The Hendrix Chord (E7#9)</h3>
+<pre><code>E7#9:   0-7-6-7-8-x (open low E)
+        x-7-6-7-8-x (no open string)
+        0-7-6-7-5-x (with D on top)
+</code></pre>
+<h3 id="funk-voicings">Funk Voicings</h3>
+<pre><code>A7:     5-x-5-6-5-x (shell)
+B7#9:   7-x-7-8-9-x 
+F#7:    2-x-2-3-2-x
+</code></pre>
+<h3 id="drone-voicings">Drone Voicings</h3>
+<pre><code>E7 drone:  0-x-x-9-8-7 (melody in harmonics)
+           0-x-x-4-5-4 (melody lower)
+</code></pre>
+<hr />
+<h2 id="technique-focus-legato-slides">TECHNIQUE FOCUS: LEGATO SLIDES</h2>
+<p>Scofield's lines often use <strong>hammer-ons, pull-offs, and slides</strong> to create a slippery, vocal quality.</p>
+<h3 id="slide-exercise">Slide Exercise</h3>
+<pre><code>e|--7-/9--7-\5--7-/9-|
+B|-------------------|
+</code></pre>
+<p>Keep the slide smooth—no audible fret clicks.</p>
+<h3 id="hammer-pull-cells">Hammer-Pull Cells</h3>
+<pre><code>e|--7-h-9-p-7--5-h-7-p-5--|
+</code></pre>
+<p>Practice these over the E7#9 vamp.</p>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-groove">Week 1: The Groove</h3>
+<ul>
+<li>[ ] Loop E7#9 and practice sitting in the pocket</li>
+<li>[ ] Work on playing behind the beat</li>
+<li>[ ] Practice bends: half-step, whole-step, 1.5 steps</li>
+</ul>
+<h3 id="week-2-angular-lines">Week 2: Angular Lines</h3>
+<ul>
+<li>[ ] Drill the E/D triad pair</li>
+<li>[ ] Practice G minor over E7 (the "dark" sound)</li>
+<li>[ ] Work on syncopated rhythmic patterns</li>
+</ul>
+<h3 id="week-3-drone-technique">Week 3: Drone Technique</h3>
+<ul>
+<li>[ ] Practice muting unwanted strings while droning E</li>
+<li>[ ] Develop independence: melody moves, drone sustains</li>
+<li>[ ] Work on Version C slowly</li>
+</ul>
+<h3 id="week-4-scofield-vibe">Week 4: Scofield Vibe</h3>
+<ul>
+<li>[ ] Combine all elements</li>
+<li>[ ] Play with a funk drum loop</li>
+<li>[ ] Record and analyze your time feel</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>John Scofield</strong> — <em>A Go Go</em> (the funk blueprint)</li>
+<li><strong>John Scofield</strong> — <em>Uberjam</em> (more groove)</li>
+<li><strong>John Scofield</strong> — <em>Pick Hits Live</em> (raw energy)</li>
+<li><strong>Medeski Martin &amp; Wood</strong> — <em>Uninvisible</em> (similar vibe)</li>
+</ol>
+<hr />
+<h2 id="tone-tips">TONE TIPS</h2>
+<p>For the authentic Scofield sound:
+- <strong>Guitar</strong>: Semi-hollow (ES-335, Ibanez AS200)
+- <strong>Amp</strong>: Overdriven tube amp (just breaking up)
+- <strong>No effects</strong>: Or minimal—slight compression, touch of reverb
+- <strong>Attack</strong>: Dig in with the pick for grit</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Too clean</strong>: This tune needs grit—don't sanitize it</li>
+<li><strong>Ignoring the drone</strong>: The open E is a feature, not a bug</li>
+<li><strong>Rushing 16ths</strong>: Stay in the pocket, especially on syncopation</li>
+<li><strong>Over-bending</strong>: Bends should be in tune, not random</li>
+</ol>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Does my E7#9 have the right amount of grit?</li>
+<li>[ ] Can I hear the minor/major blues ambiguity?</li>
+<li>[ ] Am I sitting behind the beat naturally?</li>
+<li>[ ] Does my drone counterpoint have independence?</li>
+</ul>
+<hr />
+<p><strong>← <a href="02_Orbit.md">Orbit</a> | <a href="04_Sao_Paulo_Rain.md">Next: Sao Paulo Rain →</a></strong></p>
+    <div class="footer">
+        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+    </div>
+</body>
+</html>

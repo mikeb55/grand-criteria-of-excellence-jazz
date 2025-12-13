@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>08 Nefertitis Shadow - Trio Tunes Method Book</title>
+    
+<style>
+@page {
+    size: letter;
+    margin: 0.75in 0.75in 1in 0.75in;
+}
+
+@media print {
+    body { font-size: 11pt; }
+    .page-break { page-break-before: always; }
+    pre, table { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    .no-print { display: none; }
+    .back-to-toc { display: none; }
+    a { text-decoration: none; color: #222; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+/* TABLE OF CONTENTS STYLES */
+.toc-container {
+    border: 2px solid #333;
+    padding: 30px 40px;
+    margin: 30px 0 50px 0;
+    background: #fafafa;
+}
+
+.toc-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 22pt;
+}
+
+.toc-chapter {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.toc-chapter:last-child {
+    border-bottom: none;
+}
+
+.toc-chapter-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.toc-chapter-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.toc-chapter-title a:hover {
+    text-decoration: underline;
+}
+
+.toc-chapter-num {
+    color: #666;
+    font-weight: normal;
+}
+
+.toc-subheadings {
+    margin-left: 25px;
+    font-size: 11pt;
+    color: #444;
+}
+
+.toc-subheadings a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toc-subheadings a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO TOC LINK */
+.back-to-toc {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-toc:hover {
+    background: #e0e0e0;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26pt;
+    color: #1a1a2e;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16pt;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13pt;
+    color: #333;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+p { margin-bottom: 12px; text-align: justify; }
+
+ul, ol { margin-left: 25px; margin-bottom: 12px; }
+
+li { margin-bottom: 6px; }
+
+/* TABLES - Printer friendly */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+
+/* CODE - Printer friendly */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    border: 1px solid #ddd;
+}
+
+pre {
+    background-color: #f8f8f8;
+    color: #222;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #222;
+}
+
+blockquote {
+    border-left: 3px solid #666;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 35px 0;
+}
+
+strong { color: #111; }
+em { color: #333; }
+a { color: #333; }
+
+/* Header banner */
+.header-banner {
+    border: 2px solid #333;
+    padding: 25px 30px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.header-banner h1 {
+    color: #111;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 28pt;
+}
+
+.header-banner p {
+    color: #444;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+}
+
+.chapter-divider {
+    border-top: 3px double #333;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+}
+
+.print-instructions {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-instructions { display: none; }
+    .header-banner { margin-top: 0; }
+}
+</style>
+
+</head>
+<body>
+    <h1 id="chapter-8-nefertitis-shadow">CHAPTER 8: NEFERTITI'S SHADOW</h1>
+<p><strong>Style:</strong> Wayne Shorter (Post-Bop) | <strong>Key:</strong> Eb Major | <strong>Tempo:</strong> 180 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Melody dictates harmony; no recurring V7s."</em></p>
+<p>Named after Shorter's famous composition "Nefertiti," this tune reverses traditional jazz hierarchy: the melody is paramount, and the harmony exists to serve it. There are no traditional ii-V-I progressions—the chords flow from the melodic contour.</p>
+<p><strong>Playing Tip:</strong> Listen to the top note; harmonization flows down from there.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar through-composed form with Shorter textures:</p>
+<pre><code>| Ebmaj7#11 | Db/Eb     | Cm11      | Abmaj7#5  |
+| Gbmaj7    | Fm11      | Bbsus4    | Dbmaj7    |
+| Bm11      | Amaj7#11  | Ab/Bb     | Gbmaj7    |
+| Fm11      | Ebmaj7#11 | Db/Eb     | Ebmaj7    |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Polychords</strong>: Db/Eb, Ab/Bb — upper structure triads over bass (Shorter signature)</li>
+<li><strong>Minor 11ths</strong>: Cm11, Fm11, Bm11 — suspended, floating quality</li>
+<li><strong>Sus4 that doesn't resolve</strong>: Bbsus4 hangs unresolved</li>
+<li><strong>Lydian augmented</strong>: Abmaj7#5 — bright tension</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<p>Shorter uses multiple chord types, each with its own color:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Scale</th>
+<th style="text-align: left;">Shorter Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Ebmaj7#11</td>
+<td style="text-align: left;">Eb Lydian</td>
+<td style="text-align: left;">Home — floating, stable</td>
+</tr>
+<tr>
+<td style="text-align: left;">Db/Eb</td>
+<td style="text-align: left;">Eb Mixolydian</td>
+<td style="text-align: left;">Polychord — Db triad over Eb bass</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cm11</td>
+<td style="text-align: left;">C Dorian</td>
+<td style="text-align: left;">Suspended, unresolved minor</td>
+</tr>
+<tr>
+<td style="text-align: left;">Abmaj7#5</td>
+<td style="text-align: left;">Ab Lydian Augmented</td>
+<td style="text-align: left;">Melodic minor mode III</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fm11</td>
+<td style="text-align: left;">F Dorian</td>
+<td style="text-align: left;">Floating minor 11</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbsus4</td>
+<td style="text-align: left;">Bb Mixolydian (no 3rd)</td>
+<td style="text-align: left;">Pure suspension — never resolves</td>
+</tr>
+</tbody>
+</table>
+<h3 id="shorters-harmonic-world">Shorter's Harmonic World</h3>
+<p>Wayne Shorter's post-bop harmony features:
+- <strong>Polychords</strong>: Upper structure triads over bass notes (Db/Eb)
+- <strong>Minor 11ths</strong>: Floating, suspended quality without resolution
+- <strong>Sus4 chords</strong>: Tension that never resolves
+- <strong>Lydian augmented</strong>: Bright, mysterious (#5 + #11)
+- <strong>Melody as generator</strong>: Harmony serves the melodic contour</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Lydian Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Ebmaj7</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">F Major</td>
+<td style="text-align: left;">9, #11, 6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dbmaj7</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">9, #11, 6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bmaj7</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">C# Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Amaj7</td>
+<td style="text-align: left;">A Major</td>
+<td style="text-align: left;">B Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+</tbody>
+</table>
+<h3 id="universal-pattern">Universal Pattern</h3>
+<p>For any maj7 chord, use:
+- <strong>Root triad</strong> (1-3-5)
+- <strong>II triad</strong> (9-#11-6)</p>
+<p>Example over Ebmaj7:</p>
+<pre><code>Eb-G-Bb (Eb major) + F-A-C (F major) = Eb Lydian sound
+</code></pre>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-the-singing-melody-version-a">Chorus 1: The Singing Melody (Version A)</h3>
+<p><strong>Concept:</strong> Long, arching phrases that generate the harmony</p>
+<ul>
+<li>The melody should be singable, like a vocal line</li>
+<li>Each phrase targets a specific chord tone</li>
+<li>Phrases cross bar lines freely</li>
+<li>The tempo is fast (180), but the feel is floating</li>
+</ul>
+<p><strong>Melodic Contour:</strong></p>
+<pre><code>Bars 1-4:   Descending arc
+Bars 5-8:   Ascending response
+Bars 9-12:  Development (wider intervals)
+Bars 13-16: Return and resolution
+</code></pre>
+<h3 id="chorus-2-lydian-triad-pairs-version-b">Chorus 2: Lydian Triad Pairs (Version B)</h3>
+<p><strong>Concept:</strong> Continuous eighth notes using I/II triad pairs</p>
+<ul>
+<li>At 180 BPM, eighth notes are fast but manageable</li>
+<li>Alternate between root triad and II triad</li>
+<li>Maintain the melodic contour while using pairs</li>
+<li>Accents only on chord changes</li>
+</ul>
+<p><strong>Pattern Application:</strong></p>
+<pre><code>Bar 1 (Ebmaj7): Eb-G-Bb (down) - F-A-C (up) - repeat
+Bar 2 (Dbmaj7): Db-F-Ab (down) - Eb-G-Bb (up) - repeat
+</code></pre>
+<h3 id="chorus-3-parallel-voice-leading-version-c">Chorus 3: Parallel Voice-Leading (Version C)</h3>
+<p><strong>Concept:</strong> Two voices moving in parallel major 3rds or 6ths</p>
+<p><strong>Texture:</strong>
+- <strong>Top voice</strong>: Melody
+- <strong>Bottom voice</strong>: Major 3rd or 6th below (parallel motion)</p>
+<p>This creates a sweet, consonant quality appropriate to the major 7th harmony.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="major-7th-shapes-moveable">Major 7th Shapes (moveable)</h3>
+<pre><code>Type A:  x-X-X-X-X-x  (Root on 5th string)
+Ebmaj7:  x-6-5-7-8-x
+Dbmaj7:  x-4-3-5-6-x
+Bmaj7:   x-2-1-3-4-x
+
+Type B:  X-x-X-X-X-x  (Root on 6th string)
+Amaj7:   5-x-6-6-5-x
+Gmaj7:   3-x-4-4-3-x
+Emaj7:   0-x-1-1-0-x (open position)
+</code></pre>
+<h3 id="parallel-3rds6ths-voicings">Parallel 3rds/6ths Voicings</h3>
+<pre><code>Eb + G:   x-x-8-8-x-x (parallel 3rds)
+Db + F:   x-x-6-6-x-x
+B + D#:   x-x-4-4-x-x
+</code></pre>
+<hr />
+<h2 id="technique-playing-at-180-bpm">TECHNIQUE: PLAYING AT 180 BPM</h2>
+<h3 id="time-feel">Time Feel</h3>
+<p>At 180 BPM:
+- Quarter note = 333ms
+- Eighth note = 167ms
+- Sixteenth = 83ms</p>
+<p>Focus on <strong>steady eighth notes</strong> as your primary rhythmic unit.</p>
+<h3 id="subdivision-practice">Subdivision Practice</h3>
+<ol>
+<li>Set metronome to 90 BPM (half-time)</li>
+<li>Play eighth notes (which feel like 180)</li>
+<li>Gradually move click to 180 (one click per beat)</li>
+<li>Eventually, click on 1 and 3 only (half-time feel at fast tempo)</li>
+</ol>
+<h3 id="relaxation">Relaxation</h3>
+<p>At fast tempos, tension is the enemy:
+- Relax shoulders
+- Minimal finger movement
+- Let the momentum carry you
+- Don't "work hard"—let it flow</p>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-melody">Week 1: The Melody</h3>
+<ul>
+<li>[ ] Learn Version A melody by heart</li>
+<li>[ ] Practice singing the melody</li>
+<li>[ ] Work at half tempo (90 BPM)</li>
+</ul>
+<h3 id="week-2-lydian-pairs">Week 2: Lydian Pairs</h3>
+<ul>
+<li>[ ] Master the I/II triad pair for each chord</li>
+<li>[ ] Practice transitions between pairs</li>
+<li>[ ] Work on Version B at 120 BPM</li>
+</ul>
+<h3 id="week-3-parallel-motion">Week 3: Parallel Motion</h3>
+<ul>
+<li>[ ] Practice parallel 3rds through the changes</li>
+<li>[ ] Practice parallel 6ths through the changes</li>
+<li>[ ] Develop Version C</li>
+</ul>
+<h3 id="week-4-full-speed">Week 4: Full Speed</h3>
+<ul>
+<li>[ ] Bring everything up to 180 BPM</li>
+<li>[ ] Focus on relaxation and flow</li>
+<li>[ ] Record and evaluate</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Wayne Shorter</strong> — <em>Speak No Evil</em> ("Nefertiti" is on this album)</li>
+<li><strong>Wayne Shorter</strong> — <em>Adam's Apple</em></li>
+<li><strong>Miles Davis</strong> — <em>Nefertiti</em> (the album featuring Shorter's tune)</li>
+<li><strong>Herbie Hancock</strong> — <em>Maiden Voyage</em> (similar aesthetic)</li>
+<li><strong>Wayne Shorter Quartet</strong> — <em>Without a Net</em> (modern Shorter)</li>
+</ol>
+<hr />
+<h2 id="the-nefertiti-approach">THE "NEFERTITI" APPROACH</h2>
+<p>Wayne Shorter's "Nefertiti" (1967) revolutionized jazz composition:
+- The <strong>melody repeats</strong> while the rhythm section improvises
+- The <strong>form is secondary</strong> to the melodic statement
+- <strong>Harmony serves melody</strong>, not the other way around</p>
+<p>This tune applies those principles to guitar:
+- The melody is primary
+- The chords are chosen to harmonize specific melody notes
+- No functional progressions—just beautiful sounds</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Thinking harmonically first</strong>: Start with the melody, always</li>
+<li><strong>Adding dominants</strong>: There are no V7 chords—respect the maj7 world</li>
+<li><strong>Rushing at 180</strong>: Stay relaxed; let the tempo carry you</li>
+<li><strong>Ignoring the contour</strong>: The descending-ascending shape is essential</li>
+<li><strong>Over-complicating</strong>: Lydian is enough—don't add more colors</li>
+</ol>
+<hr />
+<h2 id="the-shadow-concept">THE SHADOW CONCEPT</h2>
+<p>The title "Nefertiti's Shadow" suggests:
+- <strong>Mystery</strong>: Egyptian queen, ancient beauty
+- <strong>Silhouette</strong>: The melody is the outline; harmony is the shadow
+- <strong>Following</strong>: The chords follow the melody, like a shadow follows the body</p>
+<p>When playing, imagine the melody as a figure walking, and the harmony as its shadow on the wall.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Can I sing the melody without the guitar?</li>
+<li>[ ] Does every chord support its specific melody note?</li>
+<li>[ ] Am I relaxed at 180 BPM?</li>
+<li>[ ] Does the Lydian color come through clearly?</li>
+<li>[ ] Is the parallel motion smooth and sweet?</li>
+</ul>
+<hr />
+<p><strong>← <a href="07_Monks_Dream.md">Monk's Dream</a> | <a href="09_Greezy.md">Next: Greezy →</a></strong></p>
+    <div class="footer">
+        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+    </div>
+</body>
+</html>

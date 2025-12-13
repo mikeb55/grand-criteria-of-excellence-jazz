@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>15 Final Departure - Trio Tunes Method Book</title>
+    
+<style>
+@page {
+    size: letter;
+    margin: 0.75in 0.75in 1in 0.75in;
+}
+
+@media print {
+    body { font-size: 11pt; }
+    .page-break { page-break-before: always; }
+    pre, table { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    .no-print { display: none; }
+    .back-to-toc { display: none; }
+    a { text-decoration: none; color: #222; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+/* TABLE OF CONTENTS STYLES */
+.toc-container {
+    border: 2px solid #333;
+    padding: 30px 40px;
+    margin: 30px 0 50px 0;
+    background: #fafafa;
+}
+
+.toc-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 22pt;
+}
+
+.toc-chapter {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.toc-chapter:last-child {
+    border-bottom: none;
+}
+
+.toc-chapter-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.toc-chapter-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.toc-chapter-title a:hover {
+    text-decoration: underline;
+}
+
+.toc-chapter-num {
+    color: #666;
+    font-weight: normal;
+}
+
+.toc-subheadings {
+    margin-left: 25px;
+    font-size: 11pt;
+    color: #444;
+}
+
+.toc-subheadings a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toc-subheadings a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO TOC LINK */
+.back-to-toc {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-toc:hover {
+    background: #e0e0e0;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26pt;
+    color: #1a1a2e;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16pt;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13pt;
+    color: #333;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+p { margin-bottom: 12px; text-align: justify; }
+
+ul, ol { margin-left: 25px; margin-bottom: 12px; }
+
+li { margin-bottom: 6px; }
+
+/* TABLES - Printer friendly */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+
+/* CODE - Printer friendly */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    border: 1px solid #ddd;
+}
+
+pre {
+    background-color: #f8f8f8;
+    color: #222;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #222;
+}
+
+blockquote {
+    border-left: 3px solid #666;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 35px 0;
+}
+
+strong { color: #111; }
+em { color: #333; }
+a { color: #333; }
+
+/* Header banner */
+.header-banner {
+    border: 2px solid #333;
+    padding: 25px 30px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.header-banner h1 {
+    color: #111;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 28pt;
+}
+
+.header-banner p {
+    color: #444;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+}
+
+.chapter-divider {
+    border-top: 3px double #333;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+}
+
+.print-instructions {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-instructions { display: none; }
+    .header-banner { margin-top: 0; }
+}
+</style>
+
+</head>
+<body>
+    <h1 id="chapter-15-final-departure">CHAPTER 15: FINAL DEPARTURE</h1>
+<p><strong>Style:</strong> Closing Ballad | <strong>Key:</strong> Db Major | <strong>Tempo:</strong> 70 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Lush, orchestral drop-2 voicings."</em></p>
+<p>Final Departure is the conclusion of the Trio Tunes journey. This closing ballad features rich, orchestral voicings inspired by Gil Evans and Maria Schneider. The key of Db provides warmth and depth, and the rubato phrasing allows for maximum expression.</p>
+<p><strong>Playing Tip:</strong> Play rubato; breathe with the phrases.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar ballad with orchestral harmony:</p>
+<pre><code>| Dbmaj9   | Bbm9     | Gbmaj9   | Ab13sus4 |
+| Dbmaj9   | Fm9      | Bbm11    | Ebm9  Ab7|
+| Fmaj7    | Bbm7     | Ebm9     | Ab7alt   |
+| Dbmaj9   | Gbmaj9   | Dbmaj9/Ab| Dbmaj9   |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Drop-2 voicings</strong>: The signature orchestral guitar sound</li>
+<li><strong>Extended chords</strong>: 9ths, 11ths, 13ths throughout</li>
+<li><strong>Pedal point</strong>: Ab pedal in the ending</li>
+<li><strong>Modal interchange</strong>: Fmaj7 (borrowed from Db minor)</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Orchestral Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dbmaj9</td>
+<td style="text-align: left;">Db Lydian</td>
+<td style="text-align: left;">#11 = G natural</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbm9</td>
+<td style="text-align: left;">Bb Dorian</td>
+<td style="text-align: left;">Natural 6 = G natural</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gbmaj9</td>
+<td style="text-align: left;">Gb Lydian</td>
+<td style="text-align: left;">#11 = C natural</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ab13sus4</td>
+<td style="text-align: left;">Ab Mixolydian</td>
+<td style="text-align: left;">13 = F natural</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fmaj7</td>
+<td style="text-align: left;">F Lydian</td>
+<td style="text-align: left;">Borrowed chord</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ab7alt</td>
+<td style="text-align: left;">Ab Altered</td>
+<td style="text-align: left;">Tension before home</td>
+</tr>
+</tbody>
+</table>
+<h3 id="orchestral-thinking">Orchestral Thinking</h3>
+<p>Think like an arranger:
+- <strong>Inner voices</strong> matter as much as melody
+- <strong>Voice leading</strong> should be smooth
+- <strong>Dynamics</strong> should swell and recede
+- <strong>Space</strong> is essential</p>
+<hr />
+<h2 id="drop-2-voicings">DROP-2 VOICINGS</h2>
+<h3 id="what-is-drop-2">What Is Drop-2?</h3>
+<p>In a close-voiced chord (all notes within an octave), <strong>drop the 2nd voice from the top down an octave</strong>.</p>
+<p><strong>Close voicing (Dbmaj7):</strong></p>
+<pre><code>Top to bottom: C - Ab - F - Db
+</code></pre>
+<p><strong>Drop-2 voicing:</strong></p>
+<pre><code>Top to bottom: C - F - Db - Ab (Ab dropped)
+</code></pre>
+<h3 id="why-drop-2">Why Drop-2?</h3>
+<ul>
+<li>Creates <strong>open, orchestral</strong> sound</li>
+<li><strong>Playable</strong> on guitar (close voicings often aren't)</li>
+<li><strong>Rich</strong> yet <strong>clear</strong></li>
+<li>Standard for <strong>jazz guitar comping</strong></li>
+</ul>
+<h3 id="the-four-inversions">The Four Inversions</h3>
+<p>For Dbmaj7, the four drop-2 inversions are:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Inversion</th>
+<th style="text-align: left;">Top Note</th>
+<th style="text-align: left;">Guitar Shape</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Root position</td>
+<td style="text-align: left;">C (7th)</td>
+<td style="text-align: left;">x-4-5-5-6-x</td>
+</tr>
+<tr>
+<td style="text-align: left;">1st inversion</td>
+<td style="text-align: left;">Db (root)</td>
+<td style="text-align: left;">x-6-5-6-6-x</td>
+</tr>
+<tr>
+<td style="text-align: left;">2nd inversion</td>
+<td style="text-align: left;">F (3rd)</td>
+<td style="text-align: left;">x-8-10-10-9-x</td>
+</tr>
+<tr>
+<td style="text-align: left;">3rd inversion</td>
+<td style="text-align: left;">Ab (5th)</td>
+<td style="text-align: left;">x-11-10-11-11-x</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Orchestral Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Dbmaj9</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">9, #11, 6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bbm9</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Eb Major</td>
+<td style="text-align: left;">Relative major</td>
+</tr>
+<tr>
+<td style="text-align: left;">Gbmaj9</td>
+<td style="text-align: left;">Gb Major</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ab7alt</td>
+<td style="text-align: left;">Gb Major</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">Altered tensions</td>
+</tr>
+</tbody>
+</table>
+<h3 id="voice-leading-priority">Voice-Leading Priority</h3>
+<p>In ballad playing, prioritize <strong>smooth voice leading</strong> over triad pair angularity:
+- Move each voice by step when possible
+- Common tones stay in place
+- Chromatic movement is beautiful</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-melody-version-a">Chorus 1: Lyrical Melody (Version A)</h3>
+<p><strong>Concept:</strong> Singing, aria-like melody</p>
+<ul>
+<li>Long tones, whole notes and half notes</li>
+<li>Phrases arc upward, then resolve downward</li>
+<li>Rubato: take time where the music breathes</li>
+<li>Dynamics: pp to mf, never louder</li>
+</ul>
+<p><strong>Phrasing:</strong></p>
+<pre><code>Bars 1-4: First statement (establish)
+Bars 5-8: Development (expand)
+Bars 9-12: Climax (most motion)
+Bars 13-16: Resolution (home)
+</code></pre>
+<h3 id="chorus-2-drop-2-chord-melody-version-b">Chorus 2: Drop-2 Chord Melody (Version B)</h3>
+<p><strong>Concept:</strong> Melody harmonized with drop-2 voicings</p>
+<ul>
+<li>Every melody note gets a chord</li>
+<li>Voice leading must be smooth</li>
+<li>Inner voices move independently</li>
+<li>Creates "small orchestra" effect</li>
+</ul>
+<h3 id="chorus-3-orchestral-counterpoint-version-c">Chorus 3: Orchestral Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Multiple independent voices, Gil Evans style</p>
+<p><strong>Texture:</strong>
+- <strong>Soprano</strong>: Melody (top voice)
+- <strong>Alto</strong>: Counter-melody (2nd voice)
+- <strong>Tenor</strong>: Sustained harmony (3rd voice)
+- <strong>Bass</strong>: Root motion (bottom voice)</p>
+<p>This is the most challenging approach—true four-voice writing.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="drop-2-voicings-string-set-5-4-3-2">Drop-2 Voicings (String Set 5-4-3-2)</h3>
+<pre><code>Dbmaj9:    x-4-5-5-6-x (root position)
+Bbm9:      x-1-3-1-2-1 (with 9)
+Gbmaj9:    x-x-4-5-3-4 (high position)
+Ab13sus4:  x-x-6-8-9-9
+Fm9:       x-x-3-5-4-4
+Ebm9:      x-x-1-3-2-2
+Ab7alt:    x-x-5-6-5-4
+</code></pre>
+<h3 id="extended-voicings-full-strings">Extended Voicings (Full Strings)</h3>
+<pre><code>Dbmaj9:    x-4-3-5-6-4 (with 9 on top)
+Gbmaj9:    2-x-3-3-2-4 (with 9 on top)
+</code></pre>
+<hr />
+<h2 id="rubato-playing">RUBATO PLAYING</h2>
+<h3 id="what-is-rubato">What Is Rubato?</h3>
+<p>"Rubato" (Italian for "robbed time") means:
+- Speeding up slightly here
+- Slowing down slightly there
+- Breathing with the phrases
+- Time is elastic, not metronomic</p>
+<h3 id="how-to-practice-rubato">How to Practice Rubato</h3>
+<ol>
+<li><strong>Learn the piece in strict time first</strong></li>
+<li><strong>Identify natural breathing points</strong></li>
+<li><strong>Slow down into cadences</strong></li>
+<li><strong>Speed up through active passages</strong></li>
+<li><strong>Always return to the pulse</strong></li>
+</ol>
+<h3 id="common-rubato-moments-in-final-departure">Common Rubato Moments in Final Departure</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Location</th>
+<th style="text-align: left;">Rubato Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Bar 4 (Ab13sus4)</td>
+<td style="text-align: left;">Ritardando into the resolution</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bar 8 (Ebm9-Ab7)</td>
+<td style="text-align: left;">Slight accelerando through ii-V</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bar 12 (Ab7alt)</td>
+<td style="text-align: left;">Maximum rubato—delay the resolution</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bar 16 (Dbmaj9)</td>
+<td style="text-align: left;">Fermata—hold as long as desired</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-voicings">Week 1: Voicings</h3>
+<ul>
+<li>[ ] Learn all drop-2 inversions for Dbmaj7</li>
+<li>[ ] Apply to each chord in the form</li>
+<li>[ ] Practice voice leading between chords</li>
+</ul>
+<h3 id="week-2-melody">Week 2: Melody</h3>
+<ul>
+<li>[ ] Learn Version A melody</li>
+<li>[ ] Practice singing the melody</li>
+<li>[ ] Add rubato gradually</li>
+</ul>
+<h3 id="week-3-chord-melody">Week 3: Chord Melody</h3>
+<ul>
+<li>[ ] Harmonize melody with drop-2 voicings</li>
+<li>[ ] Focus on smooth voice leading</li>
+<li>[ ] Work on Version B</li>
+</ul>
+<h3 id="week-4-orchestral">Week 4: Orchestral</h3>
+<ul>
+<li>[ ] Develop independent inner voices</li>
+<li>[ ] Practice four-voice texture</li>
+<li>[ ] Create your own arrangement</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Gil Evans</strong> — <em>Out of the Cool</em> (orchestral jazz)</li>
+<li><strong>Maria Schneider</strong> — <em>Evanescence</em> (modern big band)</li>
+<li><strong>Jim Hall</strong> — <em>Concierto</em> (ballad guitar with orchestra)</li>
+<li><strong>Pat Metheny</strong> — <em>What's It All About</em> (solo guitar ballads)</li>
+<li><strong>Kenny Burrell</strong> — <em>Midnight Blue</em> (intimate ballad playing)</li>
+<li><strong>Bill Evans</strong> — <em>You Must Believe in Spring</em> (rubato piano)</li>
+</ol>
+<hr />
+<h2 id="tone-tips">TONE TIPS</h2>
+<p>For the ballad sound:
+- <strong>Guitar</strong>: Hollowbody or semi-hollow
+- <strong>Amp</strong>: Clean, warm
+- <strong>Reverb</strong>: Lush hall reverb
+- <strong>Volume</strong>: Soft, intimate
+- <strong>Attack</strong>: Round, no pick attack</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Rushing cadences</strong>: Slow down at resolution points</li>
+<li><strong>Stiff time</strong>: Let the rubato breathe</li>
+<li><strong>Poor voice leading</strong>: Each voice should move smoothly</li>
+<li><strong>Too loud</strong>: This is intimate music</li>
+<li><strong>Ignoring inner voices</strong>: They matter as much as melody</li>
+</ol>
+<hr />
+<h2 id="the-final-departure-concept">THE "FINAL DEPARTURE" CONCEPT</h2>
+<p>As the closing tune, this piece represents:
+- <strong>Departure</strong>: The end of the journey
+- <strong>Final</strong>: A sense of completion, resolution
+- <strong>Gratitude</strong>: For the musical ground covered</p>
+<p>The title is bittersweet—an ending that's also a new beginning.</p>
+<hr />
+<h2 id="a-closing-thought">A CLOSING THOUGHT</h2>
+<p>The Trio Tunes collection has taken you through:
+- Blues, bossa, ballad
+- Funk, fusion, free
+- Bebop, odd meters, extended technique
+- Counterpoint, triad pairs, voice leading</p>
+<p><strong>Final Departure</strong> asks you to bring it all together—not by showing off, but by <strong>serving the music</strong>.</p>
+<p>Play with feeling. Play with intention. Play with gratitude.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Are my drop-2 voicings smooth and connected?</li>
+<li>[ ] Does my rubato feel natural?</li>
+<li>[ ] Are inner voices moving independently?</li>
+<li>[ ] Is my dynamic range appropriate (pp to mf)?</li>
+<li>[ ] Does it feel like a conclusion—a final departure?</li>
+</ul>
+<hr />
+<p><strong>← <a href="14_Solar_Flare.md">Solar Flare</a> | <a href="16_Conclusion.md">Conclusion →</a></strong></p>
+    <div class="footer">
+        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+    </div>
+</body>
+</html>

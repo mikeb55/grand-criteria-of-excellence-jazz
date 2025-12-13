@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>07 Monks Dream - Trio Tunes Method Book</title>
+    
+<style>
+@page {
+    size: letter;
+    margin: 0.75in 0.75in 1in 0.75in;
+}
+
+@media print {
+    body { font-size: 11pt; }
+    .page-break { page-break-before: always; }
+    pre, table { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    .no-print { display: none; }
+    .back-to-toc { display: none; }
+    a { text-decoration: none; color: #222; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+/* TABLE OF CONTENTS STYLES */
+.toc-container {
+    border: 2px solid #333;
+    padding: 30px 40px;
+    margin: 30px 0 50px 0;
+    background: #fafafa;
+}
+
+.toc-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 22pt;
+}
+
+.toc-chapter {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.toc-chapter:last-child {
+    border-bottom: none;
+}
+
+.toc-chapter-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.toc-chapter-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.toc-chapter-title a:hover {
+    text-decoration: underline;
+}
+
+.toc-chapter-num {
+    color: #666;
+    font-weight: normal;
+}
+
+.toc-subheadings {
+    margin-left: 25px;
+    font-size: 11pt;
+    color: #444;
+}
+
+.toc-subheadings a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toc-subheadings a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO TOC LINK */
+.back-to-toc {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-toc:hover {
+    background: #e0e0e0;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26pt;
+    color: #1a1a2e;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16pt;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13pt;
+    color: #333;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+p { margin-bottom: 12px; text-align: justify; }
+
+ul, ol { margin-left: 25px; margin-bottom: 12px; }
+
+li { margin-bottom: 6px; }
+
+/* TABLES - Printer friendly */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+
+/* CODE - Printer friendly */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    border: 1px solid #ddd;
+}
+
+pre {
+    background-color: #f8f8f8;
+    color: #222;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #222;
+}
+
+blockquote {
+    border-left: 3px solid #666;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 35px 0;
+}
+
+strong { color: #111; }
+em { color: #333; }
+a { color: #333; }
+
+/* Header banner */
+.header-banner {
+    border: 2px solid #333;
+    padding: 25px 30px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.header-banner h1 {
+    color: #111;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 28pt;
+}
+
+.header-banner p {
+    color: #444;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+}
+
+.chapter-divider {
+    border-top: 3px double #333;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+}
+
+.print-instructions {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-instructions { display: none; }
+    .header-banner { margin-top: 0; }
+}
+</style>
+
+</head>
+<body>
+    <h1 id="chapter-7-monks-dream">CHAPTER 7: MONK'S DREAM</h1>
+<p><strong>Style:</strong> Experimental (Thelonious Monk tribute) | <strong>Key:</strong> C Major | <strong>Tempo:</strong> 110 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Whole-tone clusters and displaced rhythms."</em></p>
+<p>Monk's Dream channels the angular, unpredictable genius of Thelonious Monk. The tune uses whole-tone scales, dissonant clusters, and deliberately "wrong" notes that become right through conviction. The key of C provides clarity for these adventures.</p>
+<p><strong>Playing Tip:</strong> Feel the space; don't rush the silence.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>16-bar form with Monk-style asymmetry:</p>
+<pre><code>| Cmaj7#11  | Cmaj7#11  | Db7#11    | Db7#11   |
+| Dm7       | G7#5      | Cmaj7     | Eb7      |
+| Ab7       | Db7       | Gb7       | B7       |
+| Em7       | A7#11     | Dm7       | G7#9     |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Whole-tone movement</strong>: C → Db → Eb → etc. (bar 1-2, 7-8)</li>
+<li><strong>Tritone substitutions</strong>: Ab7, Db7, Gb7, B7 create chromatic bass line</li>
+<li><strong>Cluster voicings</strong>: Close-voiced dissonances</li>
+<li><strong>Rhythmic displacement</strong>: Phrases start in unexpected places</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Monk Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Cmaj7#11</td>
+<td style="text-align: left;">C Lydian</td>
+<td style="text-align: left;">Whole-tone moments</td>
+</tr>
+<tr>
+<td style="text-align: left;">Db7#11</td>
+<td style="text-align: left;">Db Lydian Dominant</td>
+<td style="text-align: left;">Same whole-tone as C</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7#5</td>
+<td style="text-align: left;">G Whole-Tone</td>
+<td style="text-align: left;">Perfect for the harmony</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ab7</td>
+<td style="text-align: left;">Ab Mixolydian</td>
+<td style="text-align: left;">Blues tinge</td>
+</tr>
+<tr>
+<td style="text-align: left;">Dm7</td>
+<td style="text-align: left;">D Dorian</td>
+<td style="text-align: left;">Standard bebop</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7#9</td>
+<td style="text-align: left;">G Half-Whole Dim</td>
+<td style="text-align: left;">The Monk "crunch"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-whole-tone-scale">The Whole-Tone Scale</h3>
+<p>Both C and Db belong to the <strong>same whole-tone scale</strong>:</p>
+<pre><code>C - D - E - F# - G# - A# (- C)
+</code></pre>
+<p>This creates the floating, ambiguous quality Monk loved.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Monk Flavor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Cmaj7#11</td>
+<td style="text-align: left;">C Major</td>
+<td style="text-align: left;">D Major</td>
+<td style="text-align: left;">Lydian</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7#5</td>
+<td style="text-align: left;">G Augmented</td>
+<td style="text-align: left;">Db Augmented</td>
+<td style="text-align: left;">Whole-tone</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ab7</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Gb Major</td>
+<td style="text-align: left;">Tritone approach</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7#9</td>
+<td style="text-align: left;">G Major</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">The "crunch"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-monk-pair">The "Monk Pair"</h3>
+<p>Over G7#9, alternate between:
+- G Major (G-B-D) = the resolution sound
+- Ab Major (Ab-C-Eb) = the "wrong" note (#9, b5, b7)</p>
+<p>The Ab Major triad is "wrong" but sounds inevitably right.</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-angular-melody-version-a">Chorus 1: Angular Melody (Version A)</h3>
+<p><strong>Concept:</strong> Jagged, speech-like phrases with unexpected accents</p>
+<ul>
+<li>Phrases start on weak beats (beat 2, the "and" of 3)</li>
+<li>Wide leaps followed by steps</li>
+<li>Repeat notes with varying accents</li>
+<li>Long silences mid-phrase</li>
+</ul>
+<p><strong>Monk Rhythmic Cells:</strong></p>
+<pre><code>| . . X . | X . . X | . X . . | X . X . |
+(rest-rest-note-rest | note-rest-rest-note | etc.)
+</code></pre>
+<h3 id="chorus-2-whole-tone-clusters-version-b">Chorus 2: Whole-Tone Clusters (Version B)</h3>
+<p><strong>Concept:</strong> Dissonant chord-melody using cluster voicings</p>
+<ul>
+<li>Voice chords in close position (2nds)</li>
+<li>Use the whole-tone scale for melodic connections</li>
+<li>"Smear" between chords chromatically</li>
+<li>Emphasize tritones and augmented 5ths</li>
+</ul>
+<p><strong>Cluster Technique:</strong></p>
+<pre><code>Over Cmaj7#11: Play C-D-E-F# simultaneously (whole-tone cluster)
+Over G7#5:     Play G-B-D# simultaneously (augmented chord)
+</code></pre>
+<h3 id="chorus-3-space-and-silence-version-c">Chorus 3: Space and Silence (Version C)</h3>
+<p><strong>Concept:</strong> Extreme use of silence as a compositional element</p>
+<p><strong>Texture Map:</strong>
+| Bars | Activity | Silence |
+|:---|:---|:---|
+| 1-2 | 3 notes | 6 beats rest |
+| 3-4 | 2 notes | 7 beats rest |
+| 5-8 | Burst of activity | Then 2 full bars rest |</p>
+<p>Monk was famous for this—silence is as important as sound.</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="cluster-voicings-monk-style">Cluster Voicings (Monk-style)</h3>
+<pre><code>Cmaj7#11:  x-3-2-4-3-x (close position)
+           x-3-4-4-5-x (cluster: E-F#-G-B)
+
+Db7#11:    x-4-3-4-4-x (tritone from C)
+           x-4-5-5-6-x (cluster)
+
+G7#5:      3-x-3-4-4-x (augmented)
+G7#9:      3-x-3-4-4-4 (the crunch chord)
+</code></pre>
+<h3 id="tritone-substitution-voicings">Tritone Substitution Voicings</h3>
+<pre><code>Ab7:       4-x-4-5-4-x
+Db7:       x-4-3-4-4-x
+Gb7:       2-x-2-3-2-x
+B7:        x-2-1-2-2-x
+</code></pre>
+<hr />
+<h2 id="technique-rhythmic-displacement">TECHNIQUE: RHYTHMIC DISPLACEMENT</h2>
+<h3 id="what-is-displacement">What Is Displacement?</h3>
+<p>Taking a phrase and starting it on a different beat:</p>
+<p><strong>Original (on beat 1):</strong></p>
+<pre><code>| X X X X | . . . . |
+</code></pre>
+<p><strong>Displaced (on beat 2):</strong></p>
+<pre><code>| . X X X | X . . . |
+</code></pre>
+<p><strong>Displaced (on "and" of 3):</strong></p>
+<pre><code>| . . . X | X X X . |
+</code></pre>
+<h3 id="practice-method">Practice Method</h3>
+<ol>
+<li>Write out a simple phrase</li>
+<li>Play it starting on beat 1</li>
+<li>Play it starting on beat 2</li>
+<li>Play it starting on each 8th note position</li>
+<li>Notice how the feel changes completely</li>
+</ol>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-the-whole-tone-world">Week 1: The Whole-Tone World</h3>
+<ul>
+<li>[ ] Master the C whole-tone scale in all positions</li>
+<li>[ ] Practice whole-tone triads (augmented)</li>
+<li>[ ] Work on Version A melody with displaced rhythms</li>
+</ul>
+<h3 id="week-2-clusters">Week 2: Clusters</h3>
+<ul>
+<li>[ ] Practice close-voiced chords</li>
+<li>[ ] Work on "smearing" between chords</li>
+<li>[ ] Develop Version B chord-melody</li>
+</ul>
+<h3 id="week-3-the-silence">Week 3: The Silence</h3>
+<ul>
+<li>[ ] Practice long rests with conviction</li>
+<li>[ ] Work on starting phrases on weak beats</li>
+<li>[ ] Develop Version C with extreme space</li>
+</ul>
+<h3 id="week-4-monk-mind">Week 4: Monk Mind</h3>
+<ul>
+<li>[ ] Listen to Monk recordings daily</li>
+<li>[ ] Absorb his sense of timing</li>
+<li>[ ] Play all three choruses with Monk-like conviction</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<ol>
+<li><strong>Thelonious Monk</strong> — <em>Monk's Dream</em> (the original inspiration)</li>
+<li><strong>Thelonious Monk</strong> — <em>Brilliant Corners</em> (angular genius)</li>
+<li><strong>Thelonious Monk</strong> — <em>Solo Monk</em> (pure piano, essential)</li>
+<li><strong>Monk with John Coltrane</strong> — <em>Thelonious Monk with John Coltrane</em></li>
+<li><strong>Steve Lacy</strong> — <em>Reflections</em> (Monk repertoire on soprano)</li>
+</ol>
+<hr />
+<h2 id="the-monk-approach">THE MONK APPROACH</h2>
+<h3 id="wrong-notes">"Wrong" Notes</h3>
+<p>Monk's "wrong" notes aren't mistakes—they're choices:
+- The b9 against a major chord
+- The #11 emphasized as a melody note
+- The major 7th against a dominant 7th</p>
+<p>Play these notes with <strong>conviction</strong>, not apology.</p>
+<h3 id="space">Space</h3>
+<p>Monk's rests are composed, not accidental:
+- A rest can be 2 beats, 4 beats, even 8 beats
+- The silence creates tension
+- The next note releases it</p>
+<h3 id="rhythm">Rhythm</h3>
+<p>Monk's time feel is unique:
+- Slightly behind the beat
+- Accents on unexpected places
+- Phrases that don't line up with bar lines</p>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Playing too many notes</strong>: Monk's genius is in what he leaves out</li>
+<li><strong>Avoiding dissonance</strong>: Embrace the clusters and "wrong" notes</li>
+<li><strong>Rushing silences</strong>: A 2-beat rest should feel like 2 beats, not 1.5</li>
+<li><strong>Being too "correct"</strong>: This tune requires controlled chaos</li>
+<li><strong>Losing the pulse</strong>: The time should be solid even when phrases float</li>
+</ol>
+<hr />
+<h2 id="the-monks-dream-concept">THE "MONK'S DREAM" CONCEPT</h2>
+<p>The title refers to Monk's unique musical vision:
+- <strong>Dream</strong>: Non-linear logic, like dream sequence
+- <strong>Monk</strong>: Angular, unexpected, but inevitable
+- <strong>The journey</strong>: From C Lydian to chromatic abstraction and back</p>
+<p>When playing this tune, think in curves, not straight lines.</p>
+<hr />
+<h2 id="self-evaluation">SELF-EVALUATION</h2>
+<ul>
+<li>[ ] Do my "wrong" notes sound intentional?</li>
+<li>[ ] Am I using silence effectively?</li>
+<li>[ ] Are my clusters voiced correctly (close position)?</li>
+<li>[ ] Do my phrases start on unexpected beats?</li>
+<li>[ ] Does the whole thing swing (despite the oddness)?</li>
+</ul>
+<hr />
+<p><strong>← <a href="06_Bright_Size_Life_2.md">Bright Size Life 2</a> | <a href="08_Nefertitis_Shadow.md">Next: Nefertiti's Shadow →</a></strong></p>
+    <div class="footer">
+        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+    </div>
+</body>
+</html>

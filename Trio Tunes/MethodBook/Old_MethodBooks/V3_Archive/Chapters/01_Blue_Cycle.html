@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>01 Blue Cycle - Trio Tunes Method Book</title>
+    
+<style>
+@page {
+    size: letter;
+    margin: 0.75in 0.75in 1in 0.75in;
+}
+
+@media print {
+    body { font-size: 11pt; }
+    .page-break { page-break-before: always; }
+    pre, table { page-break-inside: avoid; }
+    h1, h2, h3 { page-break-after: avoid; }
+    .no-print { display: none; }
+    .back-to-toc { display: none; }
+    a { text-decoration: none; color: #222; }
+}
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    color: #222;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #fff;
+}
+
+/* TABLE OF CONTENTS STYLES */
+.toc-container {
+    border: 2px solid #333;
+    padding: 30px 40px;
+    margin: 30px 0 50px 0;
+    background: #fafafa;
+}
+
+.toc-container h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 15px;
+    margin-top: 0;
+    font-size: 22pt;
+}
+
+.toc-chapter {
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px dotted #999;
+}
+
+.toc-chapter:last-child {
+    border-bottom: none;
+}
+
+.toc-chapter-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.toc-chapter-title a {
+    color: #1a1a2e;
+    text-decoration: none;
+}
+
+.toc-chapter-title a:hover {
+    text-decoration: underline;
+}
+
+.toc-chapter-num {
+    color: #666;
+    font-weight: normal;
+}
+
+.toc-subheadings {
+    margin-left: 25px;
+    font-size: 11pt;
+    color: #444;
+}
+
+.toc-subheadings a {
+    color: #444;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toc-subheadings a:hover {
+    text-decoration: underline;
+}
+
+/* BACK TO TOC LINK */
+.back-to-toc {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-to-toc:hover {
+    background: #e0e0e0;
+}
+
+/* HEADINGS */
+h1 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 26pt;
+    color: #1a1a2e;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 16pt;
+    color: #222;
+    margin-top: 30px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13pt;
+    color: #333;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #222;
+    margin-top: 15px;
+}
+
+p { margin-bottom: 12px; text-align: justify; }
+
+ul, ol { margin-left: 25px; margin-bottom: 12px; }
+
+li { margin-bottom: 6px; }
+
+/* TABLES - Printer friendly */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 10pt;
+    border: 1px solid #333;
+}
+
+th {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #333;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+}
+
+tr:nth-child(even) { background-color: #fafafa; }
+
+/* CODE - Printer friendly */
+code {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 10pt;
+    border: 1px solid #ddd;
+}
+
+pre {
+    background-color: #f8f8f8;
+    color: #222;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 10pt;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: #222;
+}
+
+blockquote {
+    border-left: 3px solid #666;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fafafa;
+    font-style: italic;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 35px 0;
+}
+
+strong { color: #111; }
+em { color: #333; }
+a { color: #333; }
+
+/* Header banner */
+.header-banner {
+    border: 2px solid #333;
+    padding: 25px 30px;
+    margin: 0 0 40px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.header-banner h1 {
+    color: #111;
+    border: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 28pt;
+}
+
+.header-banner p {
+    color: #444;
+    margin: 5px 0;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    color: #666;
+    font-size: 10pt;
+}
+
+.chapter-divider {
+    border-top: 3px double #333;
+    margin: 50px 0 30px 0;
+    padding-top: 20px;
+}
+
+.print-instructions {
+    background-color: #fffde7;
+    border: 1px solid #ffd54f;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-instructions { display: none; }
+    .header-banner { margin-top: 0; }
+}
+</style>
+
+</head>
+<body>
+    <h1 id="chapter-1-blue-cycle">CHAPTER 1: BLUE CYCLE</h1>
+<p><strong>Style:</strong> Blues (Cycle) | <strong>Key:</strong> Bb Major | <strong>Tempo:</strong> 120 BPM | <strong>Time:</strong> 4/4</p>
+<hr />
+<h2 id="overview">OVERVIEW</h2>
+<p><em>"Wyble counterpoint meets Coltrane changes."</em></p>
+<p>Blue Cycle is your entry point into the Trio Tunes collection. It's built on the most fundamental form in jazz—the 12-bar blues—but with a twist: we're incorporating cycle-of-fourths movements and two-voice counterpoint inspired by Jimmy Wyble.</p>
+<p><strong>Playing Tip:</strong> Focus on hand separation; keep the bass line independent from the melody.</p>
+<hr />
+<h2 id="the-form">THE FORM</h2>
+<p>The 12-bar blues in Bb, with modern substitutions:</p>
+<pre><code>| Bb7    | Eb7    | Bb7    | Fm7 Bb7 |
+| Eb7    | Edim7  | Bb7    | G7alt   |
+| Cm7    | F7alt  | Bb7 G7 | Cm7 F7  |
+</code></pre>
+<h3 id="key-harmonic-features">Key Harmonic Features</h3>
+<ol>
+<li><strong>Bar 6 (Edim7)</strong>: Barry Harris-style connector between IV and I</li>
+<li><strong>Bar 8 (G7alt)</strong>: Tritone substitution creates forward motion</li>
+<li><strong>Bars 9-12</strong>: Classic ii-V turnaround with alterations</li>
+</ol>
+<hr />
+<h2 id="scale-palette">SCALE PALETTE</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Primary Scale</th>
+<th style="text-align: left;">Alternate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Bb7</td>
+<td style="text-align: left;">Bb Mixolydian</td>
+<td style="text-align: left;">Bb Lydian Dominant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Eb7</td>
+<td style="text-align: left;">Eb Mixolydian</td>
+<td style="text-align: left;">Eb Lydian Dominant</td>
+</tr>
+<tr>
+<td style="text-align: left;">Edim7</td>
+<td style="text-align: left;">E Whole-Half Diminished</td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7alt</td>
+<td style="text-align: left;">G Altered (Super Locrian)</td>
+<td style="text-align: left;">G Half-Whole Dim</td>
+</tr>
+<tr>
+<td style="text-align: left;">F7alt</td>
+<td style="text-align: left;">F Altered</td>
+<td style="text-align: left;">F Half-Whole Dim</td>
+</tr>
+</tbody>
+</table>
+<h3 id="barry-harris-logic">Barry Harris Logic</h3>
+<p>On the <strong>Fm7-Bb7</strong> in bar 4, use the <strong>Ab Major 6 Diminished Scale</strong>:
+- Ab - Bb - C - Db - Eb - E - F - G</p>
+<p>This single scale smoothly outlines the entire ii-V.</p>
+<hr />
+<h2 id="triad-pair-vocabulary">TRIAD PAIR VOCABULARY</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chord</th>
+<th style="text-align: left;">Stable</th>
+<th style="text-align: left;">Color</th>
+<th style="text-align: left;">Sound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Bb7</td>
+<td style="text-align: left;">Bb Major</td>
+<td style="text-align: left;">Ab Major</td>
+<td style="text-align: left;">Mixolydian (b7, 9, 11)</td>
+</tr>
+<tr>
+<td style="text-align: left;">G7alt</td>
+<td style="text-align: left;">G Augmented</td>
+<td style="text-align: left;">Db Major</td>
+<td style="text-align: left;">Tritone tension</td>
+</tr>
+<tr>
+<td style="text-align: left;">F7alt</td>
+<td style="text-align: left;">A Diminished</td>
+<td style="text-align: left;">Eb Minor</td>
+<td style="text-align: left;">7b9 + altered color</td>
+</tr>
+</tbody>
+</table>
+<h3 id="exercise-triad-pair-cells">Exercise: Triad Pair Cells</h3>
+<p>Practice this pattern over Bb7:</p>
+<pre><code>Bb-D-F (up) → Ab-C-Eb (down) → Bb-D-F (up)...
+</code></pre>
+<p>Then apply rhythmic variations:
+- Straight eighths
+- Swing eighths
+- Triplet groupings
+- Displaced accents</p>
+<hr />
+<h2 id="the-three-choruses">THE THREE CHORUSES</h2>
+<h3 id="chorus-1-lyrical-version-a">Chorus 1: Lyrical (Version A)</h3>
+<p><strong>Concept:</strong> Call and response between registers</p>
+<ul>
+<li><strong>Bars 1-4</strong>: "Question" phrase using motif F-D-C-Bb</li>
+<li><strong>Bars 5-8</strong>: "Answer" flattening the 3rd (F-Db-C-Bb)</li>
+<li><strong>Bars 9-12</strong>: Rhythmic displacement over the turnaround</li>
+</ul>
+<p><strong>Practice Focus:</strong> Sing each phrase before playing it. The melody should breathe naturally.</p>
+<h3 id="chorus-2-modern-triad-pairs-version-b">Chorus 2: Modern Triad Pairs (Version B)</h3>
+<p><strong>Concept:</strong> Continuous eighth notes, angular lines</p>
+<ul>
+<li><strong>Bar 1</strong>: Bb triad descending, Ab triad ascending</li>
+<li><strong>Bar 4 (ii-V)</strong>: Ab Major → E Diminished for Bb7b9 tension</li>
+<li><strong>Bar 8</strong>: G Augmented arpeggio into Db Major arpeggio</li>
+</ul>
+<p><strong>Practice Focus:</strong> Keep the time steady. The lines should flow despite the angularity.</p>
+<h3 id="chorus-3-wyble-counterpoint-version-c">Chorus 3: Wyble Counterpoint (Version C)</h3>
+<p><strong>Concept:</strong> Independent bass against melody</p>
+<p><strong>Texture Map:</strong>
+| Voice | Rhythm | Range |
+|:---|:---|:---|
+| Top | Dotted quarters, sustained | Strings 1-2 |
+| Bottom | Walking quarters or 8ths | Strings 4-6 |</p>
+<p><strong>Key Moment (Bar 6 - Edim7):</strong>
+- Top voice: Hold high Bb
+- Bottom voice: Chromatic walk E-G-G#-A</p>
+<p><strong>Ending:</strong> Contrary motion expansion into Bb13 chord</p>
+<hr />
+<h2 id="voicing-reference">VOICING REFERENCE</h2>
+<h3 id="shell-voicings">Shell Voicings</h3>
+<pre><code>Bb7:    6-x-6-7-x-x (Root position)
+        x-5-6-5-6-x (Eb9/Bb - 2nd inversion flavor)
+
+G7alt:  3-x-3-4-4-x (G7#5)
+        x-4-3-4-4-x (Db9 - tritone sub voicing)
+
+F7alt:  1-x-1-2-4-x (F7#9)
+</code></pre>
+<h3 id="counterpoint-voicings">Counterpoint Voicings</h3>
+<p>For the Wyble sections, use these "split" voicings:</p>
+<pre><code>Bb7 split: 6-x-x-x-6-x (Root + 5th, wide)
+Eb7 split: x-6-x-x-8-x (Root + 5th)
+</code></pre>
+<hr />
+<h2 id="practice-routine">PRACTICE ROUTINE</h2>
+<h3 id="week-1-foundation">Week 1: Foundation</h3>
+<ul>
+<li>[ ] Learn the melody (Version A) by heart</li>
+<li>[ ] Practice chord voicings through the form</li>
+<li>[ ] Memorize the scale palette</li>
+</ul>
+<h3 id="week-2-triad-pairs">Week 2: Triad Pairs</h3>
+<ul>
+<li>[ ] Drill Bb/Ab triad pair over Bb7</li>
+<li>[ ] Apply to the full blues form</li>
+<li>[ ] Work on Version B at slow tempo (60 BPM)</li>
+</ul>
+<h3 id="week-3-counterpoint">Week 3: Counterpoint</h3>
+<ul>
+<li>[ ] Isolate bass line only</li>
+<li>[ ] Isolate melody only</li>
+<li>[ ] Combine at very slow tempo (50 BPM)</li>
+<li>[ ] Gradually increase to 120 BPM</li>
+</ul>
+<h3 id="week-4-integration">Week 4: Integration</h3>
+<ul>
+<li>[ ] Play all three choruses consecutively</li>
+<li>[ ] Record yourself and analyze</li>
+<li>[ ] Work on the Version D hybrid</li>
+</ul>
+<hr />
+<h2 id="listening-recommendations">LISTENING RECOMMENDATIONS</h2>
+<p>To internalize this style, listen to:</p>
+<ol>
+<li><strong>John Coltrane</strong> — <em>Blue Train</em> (cycle movement inspiration)</li>
+<li><strong>Jimmy Wyble</strong> — <em>The Jimmy Wyble Etudes</em> (counterpoint concepts)</li>
+<li><strong>Barry Harris</strong> — Any live recording (6th diminished concepts)</li>
+<li><strong>Pat Martino</strong> — <em>El Hombre</em> (blues with modern harmony)</li>
+</ol>
+<hr />
+<h2 id="common-pitfalls">COMMON PITFALLS</h2>
+<ol>
+<li><strong>Rushing the turnaround</strong>: Bars 9-12 often speed up. Use a metronome.</li>
+<li><strong>Losing the bass independence</strong>: The bottom voice should be singable alone.</li>
+<li><strong>Overplaying altered tensions</strong>: On G7alt and F7alt, let the alterations speak—don't stack them.</li>
+</ol>
+<hr />
+<h2 id="self-evaluation-checklist">SELF-EVALUATION CHECKLIST</h2>
+<p>After learning this tune, ask yourself:</p>
+<ul>
+<li>[ ] Can I sing the melody without the guitar?</li>
+<li>[ ] Can I sing the bass line independently?</li>
+<li>[ ] Can I hear the triad pairs resolving?</li>
+<li>[ ] Does my counterpoint have clear voice separation?</li>
+<li>[ ] Does the whole thing <em>swing</em>?</li>
+</ul>
+<hr />
+<p><strong>← <a href="00_Introduction.md">Introduction</a> | <a href="02_Orbit.md">Next: Orbit →</a></strong></p>
+    <div class="footer">
+        <p>GCE Jazz - Trio Tunes Method Book © 2025</p>
+    </div>
+</body>
+</html>
