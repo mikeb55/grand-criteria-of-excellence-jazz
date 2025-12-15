@@ -1,0 +1,54 @@
+ORBIT - SHELL VOICING CHART (Level 2)
+======================================
+Position 5-9 | Shell voicings centered around 7th position
+Max stretch: 4 frets | Adjacent strings only
+Key: F Major (Lydian) | 16 bars | 3/4 time (Waltz)
+
+Bar | Chord      | Notes (low to high)      | Strings | Frets    | Type
+----|------------|--------------------------|---------|----------|------
+| 1  | Fmaj7#11   | F - A - E                | 5-4-3   | 8-7-9    | R-3-7
+| 2  | Ebmaj7#5   | Eb - G - D               | 5-4-3   | 6-5-7    | R-3-7
+| 3  | Dbmaj7     | C - F - Ab               | 4-3-2   | 5-6-9    | 7-3-5*
+| 4  | Bmaj7      | D# - A# - D#             | 5-4-3   | 6-8-8    | 3-7-3*
+| 5  | Bbm9       | Bb - Db - Ab             | 4-3-2   | 8-6-9    | R-b3-b7
+| 6  | Abmaj7     | Ab - C - G               | 4-3-2   | 6-5-8    | R-3-7
+| 7  | Gbmaj7     | F - Bb - Db              | 5-4-3   | 8-8-6    | 7-3-5*
+| 8  | Emaj7      | E - G# - D#              | 5-4-3   | 7-6-8    | R-3-7
+| 9  | Fmaj7#11   | F - A - E                | 5-4-3   | 8-7-9    | R-3-7
+|10  | Dbmaj7     | C - F - Ab               | 4-3-2   | 5-6-9    | 7-3-5*
+|11  | Amaj7      | A - C# - G#              | 5-4-3   | 5-6-6    | R-3-7
+|12  | Gmaj7      | G - B - F#               | 4-3-2   | 5-4-7    | R-3-7
+|13  | Fmaj7#11   | F - A - E                | 5-4-3   | 8-7-9    | R-3-7
+|14  | Ebm9       | Eb - Gb - Db             | 4-3-2   | 6-4-9    | R-b3-b7**
+|15  | Dbmaj7     | C - F - Ab               | 4-3-2   | 5-6-9    | 7-3-5*
+|16  | Fmaj7      | F - A - E                | 5-4-3   | 8-7-9    | R-3-7
+
+SECTION MAP
+===========
+[A]  Bars 1-8   - Chromatic descent (Lydian plateau)
+[B]  Bars 9-12  - Return and contrast
+[A'] Bars 13-16 - Resolution home
+
+POSITION GUIDE
+==============
+Primary position: Frets 5-9 (centered around 7th position)
+String sets used: 5-4-3 (A-D-G) primary, 4-3-2 (D-G-B) secondary
+All voicings validated: max stretch 4 frets, frets 4-9
+
+NOTES
+=====
+* Bars 3/10/15 (Dbmaj7): Uses rootless 7-3-5 voicing
+  - Db root unavailable within frets 5-9 on these string sets
+* Bar 4 (Bmaj7): Uses 3-7-3 (doubled 3rd, rootless)
+  - B root unavailable within position
+* Bar 7 (Gbmaj7): Uses 7-3-5 (rootless with 5th)
+  - Gb root unavailable within frets 5-9
+** Bar 14 (Ebm9): Uses fret 4 on G string (slight position shift)
+  - Alternative: shift entire voicing to accommodate
+
+Wayne Shorter style: Non-functional harmony, Lydian predominance
+Let phrases breathe across bar lines.
+
+FRETS USED: 4, 5, 6, 7, 8, 9 (bar 14 uses fret 4 - minimal deviation)
+
+

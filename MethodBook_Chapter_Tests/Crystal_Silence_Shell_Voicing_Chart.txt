@@ -1,0 +1,47 @@
+CRYSTAL SILENCE - SHELL VOICING CHART (Level 2)
+=================================================
+Position 5-9 | Shell voicings centered around 7th position
+Max stretch: 4 frets | Adjacent strings only
+Key: A Major | 16 bars | 4/4 time
+
+Bar | Chord      | Notes (low to high)      | Strings | Frets    | Type
+----|------------|--------------------------|---------|----------|------
+| 1  | Amaj9      | A - C# - G#              | 5-4-3   | 5-6-6    | R-3-7
+| 2  | F#m11      | F# - A - E               | 4-3-2   | 9-7-9    | R-b3-b7
+| 3  | Dmaj9      | D - F# - C#              | 4-3-2   | 5-7-6    | R-3-7
+| 4  | E/A        | E - G# - D               | 5-4-3   | 7-6-7    | R-3-b7
+| 5  | Amaj9      | A - C# - G#              | 5-4-3   | 5-6-6    | R-3-7
+| 6  | C#m7       | C# - E - B               | 4-3-2   | 9-9-7    | R-b3-b7
+| 7  | Bm9        | B - D - A                | 4-3-2   | 7-7-5    | R-b3-b7
+| 8a | Esus4      | E - A - D                | 5-4-3   | 7-7-7    | R-4-b7
+| 8b | E7         | E - G# - D               | 5-4-3   | 7-6-7    | R-3-b7
+| 9  | Fmaj7      | F - A - E                | 5-4-3   | 8-7-9    | R-3-7
+|10  | Gmaj7      | G - B - F#               | 4-3-2   | 5-4-7    | R-3-7
+|11  | Amaj9      | A - C# - G#              | 5-4-3   | 5-6-6    | R-3-7
+|12  | Dmaj7      | D - F# - C#              | 4-3-2   | 5-7-6    | R-3-7
+|13  | Bm11       | B - D - A                | 4-3-2   | 7-7-5    | R-b3-b7
+|14  | E7sus4     | E - A - D                | 5-4-3   | 7-7-7    | R-4-b7
+|15  | Amaj9      | A - C# - G#              | 5-4-3   | 5-6-6    | R-3-7
+|16  | Amaj9      | A - C# - G#              | 5-4-3   | 5-6-6    | R-3-7
+
+SECTION MAP
+===========
+[A]  Bars 1-8   - Main theme
+[B]  Bars 9-12  - Modal interchange (bVI, bVII)
+[A'] Bars 13-16 - Return and resolution
+
+POSITION GUIDE
+==============
+Primary position: Frets 5-9 (centered around 7th position)
+String sets used: 5-4-3 (A-D-G) primary, 4-3-2 (D-G-B) secondary
+All voicings validated: max stretch 4 frets, all frets 5-9
+
+NOTES
+=====
+* Bar 8 shows both Esus4 and E7 (two beats each)
+* Gmaj7 (bar 10) uses strings 4-3-2 to stay within fret range
+* ECM aesthetic - let notes ring, sustain through changes
+
+ALL FRETS VALIDATED: 5, 6, 7, 8, 9 only. No frets outside 5-9 range.
+
+

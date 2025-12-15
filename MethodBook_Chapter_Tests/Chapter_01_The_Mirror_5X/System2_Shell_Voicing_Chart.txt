@@ -1,0 +1,44 @@
+THE MIRROR 5X - SHELL VOICING CHART (CORRECTED)
+=================================================
+Position 5-9 | Shell voicings centered around 7th position
+Max stretch: 4 frets | Adjacent strings only
+
+Bar | Chord      | Notes (low to high)      | Strings | Frets    | Type
+----|------------|--------------------------|---------|----------|------
+ 1  | Abmaj7     | Ab - C - G               | 4-3-2   | 6-5-8    | R-3-7
+ 2  | Fm7        | F - Ab - Eb              | 5-4-3   | 8-6-8    | R-b3-b7
+ 3  | Dbmaj7     | C - F - Ab               | 3-2-1   | 5-6-9    | 7-3-5*
+ 4a | Ebsus4     | Eb - Ab - Db             | 5-4-3   | 6-6-6    | R-4-7
+ 4b | Eb7        | Eb - G - Db              | 5-4-3   | 6-5-6    | R-3-7
+ 5  | Abmaj7     | Ab - C - G               | 4-3-2   | 6-5-8    | R-3-7
+ 6  | Bbm7       | Bb - Db - Ab             | 4-3-2   | 8-6-9    | R-b3-b7
+ 7  | Gbmaj7     | F - Bb - Db              | 5-4-3   | 8-8-6    | 7-3-5*
+ 8a | Cm7        | Eb - Bb - C              | 5-4-3   | 6-8-5    | b3-b7-R
+ 8b | Fm7        | F - Ab - Eb              | 5-4-3   | 8-6-8    | R-b3-b7
+ 9  | Bmaj7      | D# - A# - D#             | 5-4-3   | 6-8-8    | 3-7-3*
+10  | Emaj7      | E - G# - D#              | 5-4-3   | 7-6-8    | R-3-7
+11  | Bbm7       | Bb - Db - Ab             | 4-3-2   | 8-6-9    | R-b3-b7
+12  | Eb7alt     | Eb - G - Db              | 5-4-3   | 6-5-6    | R-3-7
+13  | Abmaj7     | Ab - C - G               | 4-3-2   | 6-5-8    | R-3-7
+14  | Fm7        | F - Ab - Eb              | 5-4-3   | 8-6-8    | R-b3-b7
+15a | Dbmaj7     | C - F - Ab               | 3-2-1   | 5-6-9    | 7-3-5*
+15b | Dbm        | E - Ab - Db              | 5-4-3   | 7-6-6    | b3-5-R
+16  | Abmaj7     | Ab - C - G               | 4-3-2   | 6-5-8    | R-3-7
+
+POSITION GUIDE
+==============
+Primary position: Frets 5-9 (centered around 7th position)
+String sets used: 5-4-3 (A-D-G) primary, 4-3-2 (D-G-B) secondary
+All voicings validated: max stretch 4 frets, all frets 5-9
+
+NOTES
+=====
+* Bars 3/15a (Dbmaj7): Uses strings 3-2-1 (rootless 7-3-5)
+  - Dbmaj7 cannot be voiced as full R-3-7 shell on strings 5-4-3 or 4-3-2
+    within frets 5-9 due to pitch constraints
+* Bar 7 (Gbmaj7): Uses 7-3-5 (rootless with 5th)
+  - Gb root unavailable within frets 5-9 on strings 5-4-3
+* Bar 9 (Bmaj7): Uses 3-7-3 (doubled 3rd, rootless)
+  - B root unavailable within frets 5-9 on adjacent strings
+
+ALL FRETS VALIDATED: 5, 6, 7, 8, 9 only. No frets outside 5-9 range.
