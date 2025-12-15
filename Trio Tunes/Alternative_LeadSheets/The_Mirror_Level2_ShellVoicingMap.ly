@@ -1,7 +1,8 @@
 \version "2.24.0"
 
 \header {
-  title = "The Mirror 5X - Shell Voicing Map"
+  title = "The Mirror"
+  subtitle = "Level 2 Shell Voicing Map"
   composer = "Mike Bryant"
   tagline = ##f
 }
@@ -18,22 +19,22 @@
 }
 
 chordNames = \chordmode {
-  aes1:maj7
-  f1:m7
-  des1:maj7
+  aes1:maj
+  f1:m
+  des1:maj
   ees2:sus4 ees2:7
-  aes1:maj7
-  bes1:m7
-  ges1:maj7
-  c2:m7 f2:m7
-  b1:maj7
-  e1:maj7
-  bes1:m7
+  aes1:maj
+  bes1:m
+  ges1:maj
+  c2:m f2:m
+  b1:maj
+  e1:maj
+  bes1:m
   ees1:7
-  aes1:maj7
-  f1:m7
-  des2:maj7 des2:m
-  aes1:maj7
+  aes1:maj
+  f1:m
+  des2:maj des2:m
+  aes1:maj
 }
 
 notation = {

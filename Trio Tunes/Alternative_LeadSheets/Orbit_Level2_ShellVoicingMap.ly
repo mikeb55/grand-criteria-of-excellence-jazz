@@ -1,7 +1,8 @@
 \version "2.24.0"
 
 \header {
-  title = "Orbit - Shell Voicing Map"
+  title = "Orbit"
+  subtitle = "Level 2 Shell Voicing Map"
   composer = "Mike Bryant"
   tagline = ##f
 }
@@ -18,22 +19,22 @@
 }
 
 chordNames = \chordmode {
-  f1:maj7
-  ees1:maj7
-  des1:maj7
-  b1:maj7
-  bes1:m7
-  aes1:maj7
-  ges1:maj7
-  e1:maj7
-  f1:maj7
-  des1:maj7
-  a1:maj7
-  g1:maj7
-  f1:maj7
-  ees1:m7
-  des1:maj7
-  f1:maj7
+  f1:maj
+  ees1:maj
+  des1:maj
+  b1:maj
+  bes1:m
+  aes1:maj
+  ges1:maj
+  e1:maj
+  f1:maj
+  des1:maj
+  a1:maj
+  g1:maj
+  f1:maj
+  ees1:m
+  des1:maj
+  f1:maj
 }
 
 notation = {

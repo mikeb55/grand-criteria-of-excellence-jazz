@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 \header {
-  title = "Crystal Silence"
+  title = "First Light"
   subtitle = "Level 2 Shell Voicing Map"
   composer = "Mike Bryant"
   tagline = ##f
@@ -19,70 +19,69 @@
 }
 
 chordNames = \chordmode {
-  a1:maj
-  fis1:m
-  d1:maj
-  e1:7
-  a1:maj
-  cis1:m
-  b1:m
-  e2:sus4 e2:7
-  f1:maj
   g1:maj
-  a1:maj
+  g1:maj
+  c1:maj
   d1:maj
+  e1:m
+  a1:m
+  d1:maj
+  g1:maj
+  g1:maj
   b1:m
-  e1:7
-  a1:maj
-  a1:maj
+  d1
+  g1:maj
+  c1:maj
+  e1:m
+  a1:m
+  g1:maj
 }
 
 notation = {
   \clef "treble_8"
-  \key a \major
+  \key g \major
   \time 4/4
   
   \mark \markup { \box "A" }
-  <d gis cis'>1
-  <b d' gis'>1
-  <g d' fis'>1
-  <e gis d'>1
-  <d gis cis'>1
-  <b e' fis'>1
-  <a d' e'>1
-  <e a d'>2 <e gis d'>2
-  \break
+  <d g d'>1
+  <d g d'>1
+  <g c' fis'>1
+  <a d' f'>1
+  <e g c'>1
+  <d g d'>1
+  <a d' f'>1
+  <d g d'>1
   \mark \markup { \box "B" }
-  <f a e'>1
-  <d b d'>1
-  <d gis cis'>1
-  <g d' fis'>1
-  \mark \markup { \box "A'" }
-  <a d' e'>1
-  <e a d'>1
-  <d gis cis'>1
-  <d gis cis'>1
+  <d g d'>1
+  <a c' e'>1
+  <a d' fis'>1
+  <d g d'>1
+  <g c' fis'>1
+  <e g c'>1
+  <d g d'>1
+  <d g d'>1
   \bar "|."
 }
 
 tabNotation = {
-  <d\5 gis\4 cis'\3>1
-  <b\4 d'\3 gis'\2>1
-  <g\4 d'\3 fis'\2>1
-  <e\5 gis\4 d'\3>1
-  <d\5 gis\4 cis'\3>1
-  <b\4 e'\3 fis'\2>1
-  <a\4 d'\3 e'\2>1
-  <e\5 a\4 d'\3>2 <e\5 gis\4 d'\3>2
-  \break
-  <f\5 a\4 e'\3>1
-  <d\5 b\4 d'\3>1
-  <d\5 gis\4 cis'\3>1
-  <g\4 d'\3 fis'\2>1
-  <a\4 d'\3 e'\2>1
-  <e\5 a\4 d'\3>1
-  <d\5 gis\4 cis'\3>1
-  <d\5 gis\4 cis'\3>1
+  \mark \markup { \box "A" }
+  <d\5 g\4 d'\3>1
+  <d\5 g\4 d'\3>1
+  <g\4 c'\3 fis'\2>1
+  <a\4 d'\3 f'\2>1
+  <e\5 g\4 c'\3>1
+  <d\5 g\4 d'\3>1
+  <a\4 d'\3 f'\2>1
+  <d\5 g\4 d'\3>1
+  \mark \markup { \box "B" }
+  <d\5 g\4 d'\3>1
+  <a\4 c'\3 e'\2>1
+  <a\4 d'\3 fis'\2>1
+  <d\5 g\4 d'\3>1
+  <g\4 c'\3 fis'\2>1
+  <e\5 g\4 c'\3>1
+  <d\5 g\4 d'\3>1
+  <d\5 g\4 d'\3>1
   \bar "|."
 }
 
