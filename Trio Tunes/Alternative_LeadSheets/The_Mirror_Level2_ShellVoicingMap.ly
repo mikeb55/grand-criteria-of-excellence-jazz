@@ -8,11 +8,13 @@
 
 \paper {
   #(set-paper-size "a4")
-  top-margin = 15\mm
-  bottom-margin = 15\mm
-  left-margin = 15\mm
-  right-margin = 15\mm
+  top-margin = 12\mm
+  bottom-margin = 12\mm
+  left-margin = 12\mm
+  right-margin = 12\mm
   indent = 0
+  system-system-spacing.basic-distance = #16
+  score-system-spacing.basic-distance = #14
 }
 
 chordNames = \chordmode {
@@ -50,8 +52,8 @@ notation = {
   <ees bes c'>2 <f aes ees'>2
   \break
   \mark \markup { \box "B" }
-  <ees bes ees'>1
-  <e aes ees'>1
+  <dis ais dis'>1
+  <e gis dis'>1
   <bes des' aes'>1
   <ees g des'>1
   \mark \markup { \box "A'" }
@@ -72,8 +74,8 @@ tabNotation = {
   <f\5 bes\4 des'\3>1
   <ees\5 bes\4 c'\3>2 <f\5 aes\4 ees'\3>2
   \break
-  <ees\5 bes\4 ees'\3>1
-  <e\5 aes\4 ees'\3>1
+  <dis\5 ais\4 dis'\3>1
+  <e\5 gis\4 dis'\3>1
   <bes\4 des'\3 aes'\2>1
   <ees\5 g\4 des'\3>1
   <aes\4 c'\3 g'\2>1
@@ -92,5 +94,10 @@ tabNotation = {
       \tabNotation
     }
   >>
-  \layout { }
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner.uniform-stretching = ##t
+    }
+  }
 }

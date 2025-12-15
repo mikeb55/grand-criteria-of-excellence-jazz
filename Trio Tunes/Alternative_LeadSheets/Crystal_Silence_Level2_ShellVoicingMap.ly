@@ -8,18 +8,20 @@
 
 \paper {
   #(set-paper-size "a4")
-  top-margin = 15\mm
-  bottom-margin = 15\mm
-  left-margin = 15\mm
-  right-margin = 15\mm
+  top-margin = 12\mm
+  bottom-margin = 12\mm
+  left-margin = 12\mm
+  right-margin = 12\mm
   indent = 0
+  system-system-spacing.basic-distance = #16
+  score-system-spacing.basic-distance = #14
 }
 
 chordNames = \chordmode {
   a1:maj7
   fis1:m7
   d1:maj7
-  e1:maj7
+  e1:7
   a1:maj7
   cis1:m7
   b1:m7
@@ -29,7 +31,7 @@ chordNames = \chordmode {
   a1:maj7
   d1:maj7
   b1:m7
-  e1:sus4
+  e1:7.11
   a1:maj7
   a1:maj7
 }
@@ -40,46 +42,46 @@ notation = {
   \time 4/4
   
   \mark \markup { \box "A" }
-  <d aes des'>1
-  <b d' aes'>1
-  <g d' f'>1
-  <e aes d'>1
-  <d aes des'>1
-  <b e' ges'>1
+  <d gis cis'>1
+  <b d' gis'>1
+  <g d' fis'>1
+  <e gis d'>1
+  <d gis cis'>1
+  <b e' fis'>1
   <a d' e'>1
-  <e a d'>2 <e aes d'>2
+  <e a d'>2 <e gis d'>2
   \break
   \mark \markup { \box "B" }
   <f a e'>1
   <d b d'>1
-  <d aes des'>1
-  <g d' f'>1
+  <d gis cis'>1
+  <g d' fis'>1
   \mark \markup { \box "A'" }
   <a d' e'>1
   <e a d'>1
-  <d aes des'>1
-  <d aes des'>1
+  <d gis cis'>1
+  <d gis cis'>1
   \bar "|."
 }
 
 tabNotation = {
-  <d\5 aes\4 des'\3>1
-  <b\4 d'\3 aes'\2>1
-  <g\4 d'\3 f'\2>1
-  <e\5 aes\4 d'\3>1
-  <d\5 aes\4 des'\3>1
-  <b\4 e'\3 ges'\2>1
+  <d\5 gis\4 cis'\3>1
+  <b\4 d'\3 gis'\2>1
+  <g\4 d'\3 fis'\2>1
+  <e\5 gis\4 d'\3>1
+  <d\5 gis\4 cis'\3>1
+  <b\4 e'\3 fis'\2>1
   <a\4 d'\3 e'\2>1
-  <e\5 a\4 d'\3>2 <e\5 aes\4 d'\3>2
+  <e\5 a\4 d'\3>2 <e\5 gis\4 d'\3>2
   \break
   <f\5 a\4 e'\3>1
   <d\5 b\4 d'\3>1
-  <d\5 aes\4 des'\3>1
-  <g\4 d'\3 f'\2>1
+  <d\5 gis\4 cis'\3>1
+  <g\4 d'\3 fis'\2>1
   <a\4 d'\3 e'\2>1
   <e\5 a\4 d'\3>1
-  <d\5 aes\4 des'\3>1
-  <d\5 aes\4 des'\3>1
+  <d\5 gis\4 cis'\3>1
+  <d\5 gis\4 cis'\3>1
   \bar "|."
 }
 
@@ -92,5 +94,10 @@ tabNotation = {
       \tabNotation
     }
   >>
-  \layout { }
+  \layout {
+    \context {
+      \Score
+      \override SpacingSpanner.uniform-stretching = ##t
+    }
+  }
 }
