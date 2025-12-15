@@ -12,35 +12,29 @@
   bottom-margin = 15\mm
   left-margin = 15\mm
   right-margin = 15\mm
-  system-system-spacing.basic-distance = #18
   indent = 0
 }
 
-% Chord names
 chordNames = \chordmode {
   aes1:maj7
   f1:m7
   des1:maj7
-  ees2:sus4
-  ees2:7
+  ees2:sus4 ees2:7
   aes1:maj7
   bes1:m7
   ges1:maj7
-  c2:m7
-  f2:m7
+  c2:m7 f2:m7
   b1:maj7
   e1:maj7
   bes1:m7
   ees1:7
   aes1:maj7
   f1:m7
-  des2:maj7
-  des2:m
+  des2:maj7 des2:m
   aes1:maj7
-  }
+}
 
-% Main notation
-notation = \relative c' {
+notation = {
   \clef "treble_8"
   \key aes \major
   \time 4/4
@@ -48,54 +42,43 @@ notation = \relative c' {
   \mark \markup { \box "A" }
   <aes c' g'>1
   <f aes ees'>1
-  <c' f' cis''>1
-  <ees aes cis'>2
-  <ees g cis'>2
+  <g des' aes'>1
+  <ees aes des'>2 <ees g des'>2
   <aes c' g'>1
-  <bes cis' aes'>1
-  <f bes cis'>1
-  <ees bes c'>2
-  <f aes ees'>2
+  <bes des' aes'>1
+  <f bes des'>1
+  <ees bes c'>2 <f aes ees'>2
   \break
   \mark \markup { \box "B" }
   <ees bes ees'>1
   <e aes ees'>1
-  <bes cis' aes'>1
-  <ees g cis'>1
+  <bes des' aes'>1
+  <ees g des'>1
   \mark \markup { \box "A'" }
   <aes c' g'>1
   <f aes ees'>1
-  <c' f' cis''>2
-  <e aes cis'>2
+  <g des' aes'>2 <e aes des'>2
   <aes c' g'>1
   \bar "|."
 }
 
-% TAB notation  
-tabNotation = \relative c {
-  \clef "moderntab"
-  \key aes \major
-  \time 4/4
-  
+tabNotation = {
   <aes\4 c'\3 g'\2>1
   <f\5 aes\4 ees'\3>1
-  <c'\3 f'\2 cis''\1>1
-  <ees\5 aes\4 cis'\3>2
-  <ees\5 g\4 cis'\3>2
+  <g\4 des'\3 aes'\2>1
+  <ees\5 aes\4 des'\3>2 <ees\5 g\4 des'\3>2
   <aes\4 c'\3 g'\2>1
-  <bes\4 cis'\3 aes'\2>1
-  <f\5 bes\4 cis'\3>1
-  <ees\5 bes\4 c'\3>2
-  <f\5 aes\4 ees'\3>2
+  <bes\4 des'\3 aes'\2>1
+  <f\5 bes\4 des'\3>1
+  <ees\5 bes\4 c'\3>2 <f\5 aes\4 ees'\3>2
   \break
   <ees\5 bes\4 ees'\3>1
   <e\5 aes\4 ees'\3>1
-  <bes\4 cis'\3 aes'\2>1
-  <ees\5 g\4 cis'\3>1
+  <bes\4 des'\3 aes'\2>1
+  <ees\5 g\4 des'\3>1
   <aes\4 c'\3 g'\2>1
   <f\5 aes\4 ees'\3>1
-  <c'\3 f'\2 cis''\1>2
-  <e\5 aes\4 cis'\3>2
+  <g\4 des'\3 aes'\2>2 <e\5 aes\4 des'\3>2
   <aes\4 c'\3 g'\2>1
   \bar "|."
 }
@@ -109,10 +92,5 @@ tabNotation = \relative c {
       \tabNotation
     }
   >>
-  \layout {
-    \context {
-      \Score
-      \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/1)
-    }
-  }
+  \layout { }
 }

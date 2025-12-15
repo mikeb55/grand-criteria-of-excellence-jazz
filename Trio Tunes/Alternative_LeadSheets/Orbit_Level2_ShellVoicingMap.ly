@@ -12,11 +12,9 @@
   bottom-margin = 15\mm
   left-margin = 15\mm
   right-margin = 15\mm
-  system-system-spacing.basic-distance = #18
   indent = 0
 }
 
-% Chord names
 chordNames = \chordmode {
   f1:maj7
   ees1:maj7
@@ -34,10 +32,9 @@ chordNames = \chordmode {
   ees1:m7
   des1:maj7
   f1:maj7
-  }
+}
 
-% Main notation
-notation = \relative c' {
+notation = {
   \clef "treble_8"
   \key f \major
   \time 3/4
@@ -45,48 +42,43 @@ notation = \relative c' {
   \mark \markup { \box "A" }
   <f a e'>1
   <ees g d'>1
-  <g cis' aes'>1
+  <g des' aes'>1
   <ees bes ees'>1
-  <bes cis' aes'>1
+  <bes des' aes'>1
   <aes c' g'>1
-  <f bes cis'>1
+  <f bes des'>1
   <e aes ees'>1
   \break
   \mark \markup { \box "B" }
   <f a e'>1
-  <g cis' aes'>1
-  <d aes cis'>1
-  <g b fis'>1
+  <g des' aes'>1
+  <d aes des'>1
+  <d b d'>1
   \mark \markup { \box "A'" }
   <f a e'>1
-  <aes b aes'>1
-  <g cis' aes'>1
+  <ees aes des'>1
+  <g des' aes'>1
   <f a e'>1
   \bar "|."
 }
 
-% TAB notation  
-tabNotation = \relative c {
-  \clef "moderntab"
-  \key f \major
-  \time 3/4
-  
+tabNotation = {
   <f\5 a\4 e'\3>1
   <ees\5 g\4 d'\3>1
-  <g\4 cis'\3 aes'\2>1
+  <g\4 des'\3 aes'\2>1
   <ees\5 bes\4 ees'\3>1
-  <bes\4 cis'\3 aes'\2>1
+  <bes\4 des'\3 aes'\2>1
   <aes\4 c'\3 g'\2>1
-  <f\5 bes\4 cis'\3>1
+  <f\5 bes\4 des'\3>1
   <e\5 aes\4 ees'\3>1
   \break
   <f\5 a\4 e'\3>1
-  <g\4 cis'\3 aes'\2>1
-  <d\5 aes\4 cis'\3>1
-  <g\4 b\3 fis'\2>1
+  <g\4 des'\3 aes'\2>1
+  <d\5 aes\4 des'\3>1
+  <d\5 b\4 d'\3>1
   <f\5 a\4 e'\3>1
-  <aes\4 b\3 aes'\2>1
-  <g\4 cis'\3 aes'\2>1
+  <ees\5 aes\4 des'\3>1
+  <g\4 des'\3 aes'\2>1
   <f\5 a\4 e'\3>1
   \bar "|."
 }
@@ -100,10 +92,5 @@ tabNotation = \relative c {
       \tabNotation
     }
   >>
-  \layout {
-    \context {
-      \Score
-      \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/1)
-    }
-  }
+  \layout { }
 }
