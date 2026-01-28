@@ -51,21 +51,45 @@
 - **dB offset vs reference preset (XA)**
 
 ### Balance Method:
-- **Use:** Amp Channel Volume ONLY
-- **Do NOT use:** Drive, Cab Level, or Output block to fix loudness
+- **Primary:** Amp Channel Volume (does NOT affect tone)
+- **Secondary:** Final Output block (safest - after all non-linear blocks)
+- **Do NOT use:** Drive, Cab Level, or Master Volume to fix loudness
+- **Master Volume Warning:** Master Volume affects tone (power tube behavior) - use for tone shaping only, NOT for leveling
+
+### Target LUFS Range:
+- **Target Range:** -17 to -19 LUFS-S
+- **Aim For:** Approximately -18 LUFS-S
+- **Reason:** Provides enough headroom to avoid clipping other devices, maximizes signal-to-noise ratio
 
 ### Cubase – Helix Preset Level Testing (Required Workflow):
 1. Create a mono audio track and select your Helix input
 2. Insert SuperVision on the track
 3. Add only two meters: True Peak (dBFS) and Loudness – Short-Term (LUFS)
 4. Select the reference preset (XA / 3A / 4A)
-5. Play a real musical phrase (riff plus held note)
-6. Note the True Peak and LUFS-S readings
-7. Switch to the next preset
-8. Play the same phrase again
-9. Adjust Amp Channel Volume to match LUFS-S
-10. Confirm True Peak stays in a similar range
-11. Repeat for all presets
+5. **Use Helix Looper:** Record a real musical phrase (riff plus held note) into looper for consistent testing
+6. Play the looped phrase
+7. Note the True Peak and LUFS-S readings
+8. Switch to the next preset
+9. Play the same looped phrase again (ensures identical performance)
+10. Adjust Amp Channel Volume to match LUFS-S target (-17 to -19 range)
+11. Confirm True Peak stays in a similar range
+12. **If leveling before compressor:** Re-check and re-adjust compressor settings (compression amount will change)
+13. Repeat for all presets
+14. **Final step:** Use ears for final adjustments after LUFS meter gets you in the ballpark
+
+### Linear vs Non-Linear Blocks (Critical Understanding):
+- **Linear Blocks:** Reverb, Cab, EQ - do NOT change behavior with input level changes
+  - Safe to adjust level before or after these blocks
+- **Non-Linear Blocks:** Compressors, Vintage Digital Delay, Drive pedals - WILL change behavior with input level
+  - **Compressors:** More input = more compression
+  - **Vintage Digital Delay:** More input = digital clipping (by design)
+  - **Rule:** If leveling before non-linear blocks, must re-adjust those block settings
+  - **Safest approach:** Use Final Output block for leveling (after all non-linear blocks)
+
+### Helix Big Volume Knob:
+- **Keep at:** Full (unity gain)
+- **Reason:** All level control should be done within presets
+- **Exception:** Only adjust if live clipping occurs (rare if presets are properly leveled)
 
 ---
 
