@@ -26,11 +26,21 @@
   - [ ] **Loudness – Short-Term (LUFS-S)**
 - [ ] Remove all other meters (clutter reduction)
 
-### 4. Helix Looper Setup
-- [ ] **Record a real musical phrase** into Helix looper
-  - [ ] Include: **riff + held note**
-  - [ ] Use phrase that represents typical playing dynamics
-  - [ ] **Critical:** Same phrase for ALL presets (ensures identical performance)
+### 4. Level-Matching / Monitoring Rule (PERSISTENT)
+- [ ] **CRITICAL RULE:** Record ONE short, representative guitar phrase PER PRESET into Cubase
+- [ ] **Use the SAME phrase, guitar, pickup, and playing intent each time**
+- [ ] **Do NOT reuse audio across presets**
+- [ ] **Procedure:**
+  - [ ] Select the preset
+  - [ ] Record the phrase into Cubase
+  - [ ] Loop that recording so meters stabilise
+  - [ ] Read SuperVision (True Peak + LUFS-S)
+  - [ ] Adjust AMP CHANNEL VOLUME only
+- [ ] **Important:**
+  - [ ] The Cubase loop is for measurement stability, not signal routing
+  - [ ] Cubase audio is NOT sent back into the Helix
+  - [ ] Each preset is evaluated using its own recorded loop
+- [ ] **If a preset is adjusted without its own recorded loop, the leveling is INVALID**
 
 ---
 
@@ -40,9 +50,14 @@
 - [ ] Load **reference preset** (XA / 3A / 4A)
 - [ ] **Do NOT adjust levels yet** — establish baseline first
 
-### 6. Play Reference Loop
-- [ ] Play the **looped phrase** from Helix looper
+### 6. Record Reference Phrase
+- [ ] **Record ONE short, representative guitar phrase** into Cubase
+  - [ ] Use phrase that represents typical playing dynamics
+  - [ ] Include: **riff + held note** (if applicable)
+  - [ ] **Use same phrase, guitar, pickup, and playing intent** for all presets
+- [ ] **Loop the recorded phrase** in Cubase
 - [ ] Let loop play for **at least 10-15 seconds** (for meter settling)
+- [ ] **Note:** Cubase loop is for measurement stability only — NOT sent back to Helix
 
 ### 7. Record Reference Readings
 - [ ] Note **True Peak (dBFS)** reading: _______________
@@ -91,9 +106,13 @@
 - [ ] Load next preset (XB / 3B / 4B, etc.)
 - [ ] **Do NOT adjust levels yet** — check baseline first
 
-### 12. Play Same Loop
-- [ ] Play the **same looped phrase** (from step 4)
-- [ ] Let loop play for **at least 10-15 seconds**
+### 12. Record Preset-Specific Phrase
+- [ ] **Record ONE short, representative guitar phrase** into Cubase for THIS preset
+  - [ ] **Use the SAME phrase, guitar, pickup, and playing intent** as reference preset
+  - [ ] **Do NOT reuse audio from previous presets**
+- [ ] **Loop the recorded phrase** in Cubase
+- [ ] Let loop play for **at least 10-15 seconds** (for meter settling)
+- [ ] **Note:** Each preset must have its own recorded loop — leveling is INVALID without it
 
 ### 13. Record Current Readings
 - [ ] Note **True Peak (dBFS):** _______________
@@ -142,7 +161,7 @@
 
 ### 19. A/B Comparison Test
 - [ ] Switch between reference preset and each other preset
-- [ ] Play the **same looped phrase** for each
+- [ ] Play each preset's **own recorded loop** (from Cubase)
 - [ ] **Listen with ears** (LUFS meter gets you in ballpark, ears make final call)
 - [ ] **Check for:**
   - [ ] Smooth volume transitions (no jarring jumps)
@@ -219,9 +238,40 @@
 
 ### Critical Rules
 - **Helix big volume knob:** Keep at FULL (unity gain)
-- **Use looper:** Same phrase for all presets (consistent testing)
+- **Level-Matching Rule:** Record ONE phrase PER PRESET into Cubase — do NOT reuse audio across presets
+- **Same phrase/guitar/pickup/playing intent:** Use identical source material for all presets
+- **Cubase loop is for measurement only:** NOT sent back to Helix
 - **Re-check non-linear blocks:** If leveling before them, must re-adjust their settings
 - **Use ears for final adjustments:** LUFS meter gets you in ballpark, ears make final call
+- **Invalid leveling:** If preset is adjusted without its own recorded loop, the leveling is INVALID
+
+---
+
+## LEVEL-MATCHING / MONITORING RULE (PERSISTENT)
+
+**When leveling Helix Stadium presets using Cubase:**
+
+- Record **ONE short, representative guitar phrase PER PRESET**.
+- Use the **SAME phrase, guitar, pickup, and playing intent** each time.
+- **Do NOT reuse audio across presets.**
+
+**Procedure:**
+- Select the preset.
+- Record the phrase into Cubase.
+- Loop that recording so meters stabilise.
+- Read SuperVision (True Peak + LUFS-S).
+- Adjust **AMP CHANNEL VOLUME only**.
+
+**Reference logic:**
+- Preset XA / 3A / 4A is the loudness reference.
+- All other presets are matched back to that reference.
+
+**Important:**
+- The Cubase loop is for measurement stability, not signal routing.
+- Cubase audio is **NOT sent back into the Helix**.
+- Each preset is evaluated using its own recorded loop.
+
+**If a preset is adjusted without its own recorded loop, the leveling is INVALID.**
 
 ---
 
