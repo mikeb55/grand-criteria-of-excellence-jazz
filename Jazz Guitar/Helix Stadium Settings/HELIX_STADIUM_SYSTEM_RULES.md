@@ -54,6 +54,19 @@
 - **Use:** Amp Channel Volume ONLY
 - **Do NOT use:** Drive, Cab Level, or Output block to fix loudness
 
+### Cubase – Helix Preset Level Testing (Required Workflow):
+1. Create a mono audio track and select your Helix input
+2. Insert SuperVision on the track
+3. Add only two meters: True Peak (dBFS) and Loudness – Short-Term (LUFS)
+4. Select the reference preset (XA / 3A / 4A)
+5. Play a real musical phrase (riff plus held note)
+6. Note the True Peak and LUFS-S readings
+7. Switch to the next preset
+8. Play the same phrase again
+9. Adjust Amp Channel Volume to match LUFS-S
+10. Confirm True Peak stays in a similar range
+11. Repeat for all presets
+
 ---
 
 ## HELIX SELECTION RULES
